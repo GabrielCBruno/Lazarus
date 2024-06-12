@@ -39,12 +39,18 @@ implementation
 
 function TcalcAreaF.calcularAreaCirculo (Raio: Double) : Double;
 begin
-
+     //Função que irá calcular a área do circulo.
+       Result := PI * (Raio * Raio)  //Result = return
 end;
 
 procedure TcalcAreaF.btnCalcAreaClick(Sender: TObject);
+var
+  raio : Double;
+  area : Double;
 begin
-
+     raio := StrToFloat(edtRaio.Text);
+     area := calcularAreaCirculo(raio);
+     edtArea.Text:= FloatToStr(area);
 end;
 
 end.

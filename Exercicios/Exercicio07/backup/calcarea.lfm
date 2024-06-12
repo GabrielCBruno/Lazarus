@@ -1,11 +1,11 @@
 object calcAreaF: TcalcAreaF
-  Left = 685
+  Left = 402
   Height = 375
-  Top = 274
+  Top = 169
   Width = 640
   Caption = 'Calcular Área Circulo'
-  ClientHeight = 375
-  ClientWidth = 640
+  ClientHeight = 0
+  ClientWidth = 0
   LCLVersion = '3.4.0.0'
   object btnCalcArea: TButton
     Cursor = crHandPoint

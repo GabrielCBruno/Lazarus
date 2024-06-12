@@ -38,6 +38,7 @@
         <Filename Value="calcarea.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="calcAreaF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="calcArea"/>
       </Unit>
