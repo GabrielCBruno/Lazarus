@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="prjImagem.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit>
+      <Unit>
+        <Filename Value="visableimage.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="VisableImageF"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="VisableImage"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="12"/>
+        <CursorPos X="36" Y="43"/>
+        <ComponentState Value="1"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="9">
+      <Position>
+        <Filename Value="visableimage.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="visableimage.pas"/>
+        <Caret Line="39" Column="46" TopLine="7"/>
+      </Position>
+      <Position>
+        <Filename Value="visableimage.pas"/>
+        <Caret Line="38" Column="9" TopLine="7"/>
+      </Position>
+      <Position>
+        <Filename Value="visableimage.pas"/>
+        <Caret Line="39" Column="35" TopLine="7"/>
+      </Position>
+      <Position>
+        <Filename Value="visableimage.pas"/>
+        <Caret Line="38" Column="8" TopLine="7"/>
+      </Position>
+      <Position>
+        <Filename Value="visableimage.pas"/>
+        <Caret Line="25" Column="178" TopLine="5"/>
+      </Position>
+      <Position>
+        <Filename Value="visableimage.pas"/>
+        <Caret Line="26" Column="178" TopLine="5"/>
+      </Position>
+      <Position>
+        <Filename Value="visableimage.pas"/>
+        <Caret Line="25" Column="178" TopLine="5"/>
+      </Position>
+      <Position>
+        <Filename Value="visableimage.pas"/>
+        <Caret Line="27" Column="71" TopLine="7"/>
+      </Position>
+      <Position>
+        <Filename Value="visableimage.pas"/>
+        <Caret Line="39" Column="36" TopLine="8"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

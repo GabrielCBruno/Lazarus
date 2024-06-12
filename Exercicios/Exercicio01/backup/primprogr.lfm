@@ -1,0 +1,21 @@
+object PrimProgrF: TPrimProgrF
+  Left = 679
+  Height = 206
+  Top = 184
+  Width = 405
+  Caption = 'PRIMEIRO PROGRAMA'
+  ClientHeight = 206
+  ClientWidth = 405
+  Color = 14408667
+  LCLVersion = '3.4.0.0'
+  object btnMensagem: TButton
+    Cursor = crHandPoint
+    Left = 144
+    Height = 49
+    Top = 72
+    Width = 91
+    Caption = 'Mensagem'
+    TabOrder = 0
+    OnClick = btnMensagemClick
+  end
+end

@@ -1,0 +1,44 @@
+object corFundoF: TcorFundoF
+  Left = 534
+  Height = 454
+  Top = 212
+  Width = 716
+  Caption = 'MUDAR COR DE FUNDO'
+  ClientHeight = 454
+  ClientWidth = 716
+  Color = clWhite
+  LCLVersion = '3.4.0.0'
+  object btnMudar: TButton
+    Cursor = crHandPoint
+    Left = 416
+    Height = 42
+    Top = 184
+    Width = 99
+    Caption = 'Mudar'
+    TabOrder = 0
+    OnClick = btnMudarClick
+  end
+  object lbl1: TLabel
+    Left = 80
+    Height = 22
+    Top = 72
+    Width = 533
+    Caption = 'Escolha uma cor para o fundo e depois clique no botão mundar'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object CBprincipal: TColorBox
+    Cursor = crHandPoint
+    Left = 216
+    Height = 24
+    Top = 192
+    Width = 116
+    ItemHeight = 16
+    OnChange = CBprincipalChange
+    TabOrder = 1
+  end
+end

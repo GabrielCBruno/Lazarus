@@ -1,0 +1,53 @@
+object CaptFormF: TCaptFormF
+  Left = 830
+  Height = 447
+  Top = 240
+  Width = 759
+  Caption = 'Programa'
+  ClientHeight = 447
+  ClientWidth = 759
+  LCLVersion = '3.4.0.0'
+  object Label1: TLabel
+    Left = 96
+    Height = 22
+    Top = 64
+    Width = 587
+    Caption = 'Digite um nome e clique no botão para mudar o caption do Formulário'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object btnMudarCapt: TButton
+    Cursor = crHandPoint
+    Left = 480
+    Height = 40
+    Top = 160
+    Width = 96
+    Caption = 'Mudar'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    OnClick = btnMudarCaptClick
+  end
+  object editEntrar: TEdit
+    Cursor = crHandPoint
+    Left = 152
+    Height = 30
+    Top = 160
+    Width = 256
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 1
+  end
+end
