@@ -1,0 +1,80 @@
+object calcAreaF: TcalcAreaF
+  Left = 685
+  Height = 375
+  Top = 274
+  Width = 640
+  Caption = 'Calcular Área Circulo'
+  ClientHeight = 375
+  ClientWidth = 640
+  LCLVersion = '3.4.0.0'
+  object btnCalcArea: TButton
+    Cursor = crHandPoint
+    Left = 320
+    Height = 39
+    Top = 112
+    Width = 104
+    Caption = 'Calcular Área'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 0
+    OnClick = btnCalcAreaClick
+  end
+  object Label1: TLabel
+    Left = 136
+    Height = 24
+    Top = 119
+    Width = 50
+    Caption = 'Raio:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object edtRaio: TEdit
+    Cursor = crHandPoint
+    Left = 200
+    Height = 23
+    Top = 119
+    Width = 104
+    TabOrder = 1
+  end
+  object Label2: TLabel
+    Left = 136
+    Height = 24
+    Top = 166
+    Width = 50
+    Caption = 'Área:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object edtArea: TEdit
+    Cursor = crHandPoint
+    Left = 200
+    Height = 23
+    Top = 168
+    Width = 104
+    TabOrder = 2
+  end
+  object Label3: TLabel
+    Left = 32
+    Height = 30
+    Top = 40
+    Width = 570
+    Caption = 'Digite o Raio no campo abaixo para calcular a área do circulo'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+end
