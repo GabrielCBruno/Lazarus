@@ -22,111 +22,16 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="calcArea"/>
         <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="36"/>
-        <CursorPos X="117" Y="40"/>
+        <CursorPos X="2" Y="26"/>
         <UsageCount Value="20"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="23">
-      <Position>
-        <Filename Value="calcarea.pas"/>
-        <Caret Line="23" Column="16"/>
-      </Position>
-      <Position>
-        <Filename Value="calcarea.pas"/>
-        <Caret Line="27" Column="16"/>
-      </Position>
-      <Position>
-        <Filename Value="calcarea.pas"/>
-        <Caret Line="26" Column="16"/>
-      </Position>
-      <Position>
-        <Filename Value="calcarea.pas"/>
-        <Caret Line="27" Column="16"/>
-      </Position>
-      <Position>
-        <Filename Value="calcarea.pas"/>
-        <Caret Line="28" Column="16"/>
-      </Position>
-      <Position>
-        <Filename Value="calcarea.pas"/>
-        <Caret Line="29" Column="16"/>
-      </Position>
-      <Position>
-        <Filename Value="calcarea.pas"/>
-        <Caret Line="30" Column="16"/>
-      </Position>
-      <Position>
-        <Filename Value="calcarea.pas"/>
-        <Caret Line="31" Column="16"/>
-      </Position>
-      <Position>
-        <Filename Value="calcarea.pas"/>
-        <Caret Line="33" Column="16"/>
-      </Position>
-      <Position>
-        <Filename Value="calcarea.pas"/>
-        <Caret Line="40" Column="5" TopLine="12"/>
-      </Position>
-      <Position>
-        <Filename Value="calcarea.pas"/>
-        <Caret Line="33" Column="12" TopLine="12"/>
-      </Position>
-      <Position>
-        <Filename Value="calcarea.pas"/>
-        <Caret Line="26" Column="59" TopLine="12"/>
-      </Position>
-      <Position>
-        <Filename Value="calcarea.pas"/>
-        <Caret Line="32" Column="6" TopLine="12"/>
-      </Position>
-      <Position>
-        <Filename Value="calcarea.pas"/>
-        <Caret Line="38" Column="38" TopLine="12"/>
-      </Position>
-      <Position>
-        <Filename Value="calcarea.pas"/>
-        <Caret Line="40" Column="10" TopLine="12"/>
-      </Position>
-      <Position>
-        <Filename Value="calcarea.pas"/>
-        <Caret Line="42" Column="3" TopLine="12"/>
-      </Position>
-      <Position>
-        <Filename Value="calcarea.pas"/>
-        <Caret Line="40" Column="10" TopLine="15"/>
-      </Position>
-      <Position>
-        <Filename Value="calcarea.pas"/>
-        <Caret Line="39" Column="31" TopLine="15"/>
-      </Position>
-      <Position>
-        <Filename Value="calcarea.pas"/>
-        <Caret Line="32" Column="42" TopLine="15"/>
-      </Position>
-      <Position>
-        <Filename Value="calcarea.pas"/>
-        <Caret Line="34" Column="51" TopLine="15"/>
-      </Position>
-      <Position>
-        <Filename Value="calcarea.pas"/>
-        <Caret Line="42" Column="9" TopLine="15"/>
-      </Position>
-      <Position>
-        <Filename Value="calcarea.pas"/>
-        <Caret Line="40" Column="21" TopLine="15"/>
-      </Position>
-      <Position>
-        <Filename Value="calcarea.pas"/>
-        <Caret Line="25" Column="9" TopLine="16"/>
-      </Position>
-      <Position>
-        <Filename Value="calcarea.pas"/>
-        <Caret Line="41" Column="56" TopLine="33"/>
-      </Position>
-    </JumpHistory>
+    <General>
+      <ActiveWindowIndexAtStart Value="-1"/>
+    </General>
+    <JumpHistory HistoryIndex="-1"/>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>
