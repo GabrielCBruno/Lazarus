@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="prjMedia.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit>
+      <Unit>
+        <Filename Value="calcmedia.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CalcMediaF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CalcMedia"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="26"/>
+        <CursorPos X="70" Y="53"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="16">
+      <Position>
+        <Filename Value="calcmedia.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="calcmedia.pas"/>
+        <Caret Line="52" Column="12" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="calcmedia.pas"/>
+        <Caret Line="50" Column="23" TopLine="23"/>
+      </Position>
+      <Position>
+        <Filename Value="calcmedia.pas"/>
+        <Caret Line="58" Column="15" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="calcmedia.pas"/>
+        <Caret Line="51" Column="34" TopLine="26"/>
+      </Position>
+      <Position>
+        <Filename Value="calcmedia.pas"/>
+        <Caret Line="53" Column="52" TopLine="27"/>
+      </Position>
+      <Position>
+        <Filename Value="calcmedia.pas"/>
+        <Caret Line="46" Column="5" TopLine="27"/>
+      </Position>
+      <Position>
+        <Filename Value="calcmedia.pas"/>
+        <Caret Line="54" Column="12" TopLine="27"/>
+      </Position>
+      <Position>
+        <Filename Value="calcmedia.pas"/>
+        <Caret Line="55" Column="20" TopLine="31"/>
+      </Position>
+      <Position>
+        <Filename Value="calcmedia.pas"/>
+        <Caret Line="45" Column="24" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="calcmedia.pas"/>
+        <Caret Line="48" Column="57" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="calcmedia.pas"/>
+        <Caret Line="49" Column="57" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="calcmedia.pas"/>
+        <Caret Line="50" Column="57" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="calcmedia.pas"/>
+        <Caret Line="61" Column="43" TopLine="27"/>
+      </Position>
+      <Position>
+        <Filename Value="calcmedia.pas"/>
+        <Caret Line="55" Column="70" TopLine="28"/>
+      </Position>
+      <Position>
+        <Filename Value="calcmedia.pas"/>
+        <Caret Line="54" Column="70" TopLine="27"/>
+      </Position>
+      <Position>
+        <Filename Value="calcmedia.pas"/>
+        <Caret Line="53" Column="70" TopLine="26"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

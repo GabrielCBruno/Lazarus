@@ -1,0 +1,172 @@
+object CalcMediaF: TCalcMediaF
+  Left = 493
+  Height = 418
+  Top = 223
+  Width = 481
+  Caption = 'Media'
+  ClientHeight = 418
+  ClientWidth = 481
+  LCLVersion = '3.4.0.0'
+  object Label1: TLabel
+    Left = 80
+    Height = 23
+    Top = 40
+    Width = 276
+    Caption = 'Digite a idade das 4 pessoas'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 64
+    Height = 18
+    Top = 105
+    Width = 75
+    Caption = 'Pessoa 1: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 64
+    Height = 18
+    Top = 161
+    Width = 75
+    Caption = 'Pessoa 2: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 64
+    Height = 18
+    Top = 217
+    Width = 75
+    Caption = 'Pessoa 3: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 64
+    Height = 18
+    Top = 273
+    Width = 75
+    Caption = 'Pessoa 4: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object edtPessoa1: TEdit
+    Cursor = crHandPoint
+    Left = 152
+    Height = 26
+    Top = 96
+    Width = 104
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 0
+  end
+  object edtPessoa2: TEdit
+    Cursor = crHandPoint
+    Left = 152
+    Height = 26
+    Top = 161
+    Width = 104
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 1
+  end
+  object edtPessoa3: TEdit
+    Cursor = crHandPoint
+    Left = 152
+    Height = 26
+    Top = 217
+    Width = 104
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 2
+  end
+  object edtPessoa4: TEdit
+    Cursor = crHandPoint
+    Left = 152
+    Height = 26
+    Top = 273
+    Width = 104
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 3
+  end
+  object btnCalcMedia: TButton
+    Cursor = crHandPoint
+    Left = 280
+    Height = 41
+    Top = 272
+    Width = 104
+    Caption = 'Calcular Média'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -15
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 4
+    OnClick = btnCalcMediaClick
+  end
+  object Label7: TLabel
+    Left = 24
+    Height = 22
+    Top = 344
+    Width = 323
+    Caption = 'A media das idades das 4 pessoas é: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSaida: TLabel
+    Left = 352
+    Height = 24
+    Top = 344
+    Width = 90
+    Caption = 'Resposta'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+end
