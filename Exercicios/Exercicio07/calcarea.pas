@@ -22,7 +22,7 @@ type
   private
 
   public
-        function calcularAreaCirculo (Raio: Double) : Double;
+       function calcularAreaCirculo (Raio: Double) : Double;
   end;
 
 var
@@ -40,7 +40,7 @@ implementation
 function TcalcAreaF.calcularAreaCirculo (Raio: Double) : Double;
 begin
      //Função que irá calcular a área do circulo.
-       Result := PI * (Raio * Raio)  //Result = return
+       Result := PI * (Raio * Raio);  //Result = return
 end;
 
 procedure TcalcAreaF.btnCalcAreaClick(Sender: TObject);
@@ -49,8 +49,8 @@ var
   area : Double;
 begin
      raio := StrToFloat(edtRaio.Text);
-     area := calcularAreaCirculo(raio);
-     edtArea.Text:= FloatToStr(area);
+     //area := calcularAreaCirculo(raio);
+     edtArea.Text:= FloatToStr(calcularAreaCirculo(raio));
 end;
 
 end.

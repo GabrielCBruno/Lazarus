@@ -2,16 +2,16 @@ object calcAreaF: TcalcAreaF
   Left = 402
   Height = 375
   Top = 169
-  Width = 640
+  Width = 615
   Caption = 'Calcular Área Circulo'
-  ClientHeight = 0
-  ClientWidth = 0
+  ClientHeight = 375
+  ClientWidth = 615
   LCLVersion = '3.4.0.0'
   object btnCalcArea: TButton
     Cursor = crHandPoint
-    Left = 320
+    Left = 224
     Height = 39
-    Top = 112
+    Top = 216
     Width = 104
     Caption = 'Calcular Área'
     Font.CharSet = ANSI_CHARSET
@@ -24,7 +24,7 @@ object calcAreaF: TcalcAreaF
     OnClick = btnCalcAreaClick
   end
   object Label1: TLabel
-    Left = 136
+    Left = 200
     Height = 24
     Top = 119
     Width = 50
@@ -38,14 +38,15 @@ object calcAreaF: TcalcAreaF
   end
   object edtRaio: TEdit
     Cursor = crHandPoint
-    Left = 200
+    Left = 264
     Height = 23
     Top = 119
     Width = 104
+    Color = clWhite
     TabOrder = 1
   end
   object Label2: TLabel
-    Left = 136
+    Left = 200
     Height = 24
     Top = 166
     Width = 50
@@ -59,7 +60,7 @@ object calcAreaF: TcalcAreaF
   end
   object edtArea: TEdit
     Cursor = crHandPoint
-    Left = 200
+    Left = 264
     Height = 23
     Top = 168
     Width = 104

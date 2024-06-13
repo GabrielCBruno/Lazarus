@@ -42,6 +42,7 @@ object calcAreaF: TcalcAreaF
     Height = 23
     Top = 119
     Width = 104
+    Color = clWhite
     TabOrder = 1
   end
   object Label2: TLabel
