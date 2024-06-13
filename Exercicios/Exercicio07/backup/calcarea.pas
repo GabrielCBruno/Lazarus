@@ -49,9 +49,8 @@ var
   area : Double;
 begin
      raio := StrToFloat(edtRaio.Text);
-     area := calcularAreaCirculo(raio);
-     edtArea.Text:= FloatToStr(area);
-     //edtArea.Text:= FloatToStr(PI);
+     //area := calcularAreaCirculo(raio);
+     edtArea.Text:= FloatToStr(calcularAreaCirculo(raio));
 end;
 
 end.

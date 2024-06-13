@@ -62,7 +62,7 @@ object calcAreaF: TcalcAreaF
     Cursor = crHandPoint
     Left = 264
     Height = 23
-    Top = 168
+    Top = 167
     Width = 104
     TabOrder = 2
   end
