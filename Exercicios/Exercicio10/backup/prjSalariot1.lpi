@@ -38,6 +38,7 @@
         <Filename Value="salario.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="SalarioF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Salario"/>
       </Unit>

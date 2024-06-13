@@ -1,0 +1,915 @@
+object SalarioF: TSalarioF
+  Left = 252
+  Height = 694
+  Top = 16
+  Width = 924
+  Caption = 'Calculo Salario Final Colaborador'
+  ClientHeight = 694
+  ClientWidth = 924
+  OnCreate = FormCreate
+  LCLVersion = '3.4.0.0'
+  object Label1: TLabel
+    Left = 32
+    Height = 25
+    Top = 16
+    Width = 687
+    Caption = 'Digite o Salário Bruto + o percentual de desconto do Funcionário'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 60
+    Height = 19
+    Top = 96
+    Width = 90
+    Caption = 'Janeiro: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'NSimSun'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 40
+    Height = 19
+    Top = 143
+    Width = 110
+    Caption = 'Fevereiro: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'NSimSun'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 80
+    Height = 19
+    Top = 192
+    Width = 70
+    Caption = 'Março: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'NSimSun'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 80
+    Height = 19
+    Top = 240
+    Width = 70
+    Caption = 'Abril: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'NSimSun'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 80
+    Height = 19
+    Top = 288
+    Width = 60
+    Caption = 'Maio: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'NSimSun'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 80
+    Height = 19
+    Top = 336
+    Width = 70
+    Caption = 'Junho: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'NSimSun'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label8: TLabel
+    Left = 86
+    Height = 19
+    Top = 384
+    Width = 70
+    Caption = 'Julho: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'NSimSun'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label9: TLabel
+    Left = 76
+    Height = 19
+    Top = 431
+    Width = 80
+    Caption = 'Agosto: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'NSimSun'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label10: TLabel
+    Left = 56
+    Height = 19
+    Top = 480
+    Width = 100
+    Caption = 'Setembro: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'NSimSun'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label11: TLabel
+    Left = 66
+    Height = 19
+    Top = 528
+    Width = 90
+    Caption = 'Outubro: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'NSimSun'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label12: TLabel
+    Left = 56
+    Height = 19
+    Top = 576
+    Width = 100
+    Caption = 'Novembro: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'NSimSun'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label13: TLabel
+    Left = 56
+    Height = 19
+    Top = 624
+    Width = 100
+    Caption = 'Dezembro: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'NSimSun'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object SalBrutoJan: TEdit
+    Left = 152
+    Height = 26
+    Top = 96
+    Width = 112
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 0
+    Text = '0'
+  end
+  object SalBrutoFev: TEdit
+    Left = 152
+    Height = 26
+    Top = 144
+    Width = 112
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 1
+    Text = '0'
+  end
+  object SalBrutoMar: TEdit
+    Left = 152
+    Height = 26
+    Top = 192
+    Width = 112
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 2
+    Text = '0'
+  end
+  object SalBrutoAbril: TEdit
+    Left = 152
+    Height = 26
+    Top = 240
+    Width = 112
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 3
+    Text = '0'
+  end
+  object SalBrutoMai: TEdit
+    Left = 152
+    Height = 26
+    Top = 288
+    Width = 112
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 4
+    Text = '0'
+  end
+  object SalBrutoJun: TEdit
+    Left = 152
+    Height = 26
+    Top = 336
+    Width = 112
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 5
+    Text = '0'
+  end
+  object SalBrutoJul: TEdit
+    Left = 152
+    Height = 26
+    Top = 384
+    Width = 112
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 6
+    Text = '0'
+  end
+  object SalBrutoAgo: TEdit
+    Left = 152
+    Height = 26
+    Top = 431
+    Width = 112
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 7
+    Text = '0'
+  end
+  object SalBrutoSet: TEdit
+    Left = 152
+    Height = 26
+    Top = 480
+    Width = 112
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 8
+    Text = '0'
+  end
+  object SalBrutoOut: TEdit
+    Left = 152
+    Height = 26
+    Top = 528
+    Width = 112
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 9
+    Text = '0'
+  end
+  object SalBrutoNov: TEdit
+    Left = 152
+    Height = 26
+    Top = 576
+    Width = 112
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 10
+    Text = '0'
+  end
+  object SalBrutoDez: TEdit
+    Left = 152
+    Height = 26
+    Top = 624
+    Width = 112
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 11
+    Text = '0'
+  end
+  object Label14: TLabel
+    Left = 152
+    Height = 22
+    Top = 64
+    Width = 108
+    Caption = 'Salário Bruto'
+    Font.Height = -19
+    Font.Name = 'Noto Serif Armenian'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label15: TLabel
+    Left = 312
+    Height = 22
+    Top = 64
+    Width = 104
+    Caption = '% Desconto'
+    Font.Height = -19
+    Font.Name = 'Noto Serif Armenian'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object descontoJan: TEdit
+    Left = 306
+    Height = 26
+    Top = 96
+    Width = 112
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 12
+    Text = '0'
+  end
+  object descontoFev: TEdit
+    Left = 306
+    Height = 26
+    Top = 144
+    Width = 112
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 13
+    Text = '0'
+  end
+  object descontoMar: TEdit
+    Left = 306
+    Height = 26
+    Top = 192
+    Width = 112
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 14
+    Text = '0'
+  end
+  object descontoAbril: TEdit
+    Left = 306
+    Height = 26
+    Top = 240
+    Width = 112
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 15
+    Text = '0'
+  end
+  object descontoMai: TEdit
+    Left = 306
+    Height = 26
+    Top = 288
+    Width = 112
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 16
+    Text = '0'
+  end
+  object descontoJun: TEdit
+    Left = 306
+    Height = 26
+    Top = 336
+    Width = 112
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 17
+    Text = '0'
+  end
+  object descontoJul: TEdit
+    Left = 306
+    Height = 26
+    Top = 384
+    Width = 112
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 18
+    Text = '0'
+  end
+  object descontoAgo: TEdit
+    Left = 306
+    Height = 26
+    Top = 431
+    Width = 112
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 19
+    Text = '0'
+  end
+  object descontoSet: TEdit
+    Left = 306
+    Height = 26
+    Top = 480
+    Width = 112
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 20
+    Text = '0'
+  end
+  object descontoOut: TEdit
+    Left = 306
+    Height = 26
+    Top = 528
+    Width = 112
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 21
+    Text = '0'
+  end
+  object descontoNov: TEdit
+    Left = 306
+    Height = 26
+    Top = 576
+    Width = 112
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 22
+    Text = '0'
+  end
+  object descontoDez: TEdit
+    Left = 306
+    Height = 26
+    Top = 624
+    Width = 112
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 23
+    Text = '0'
+  end
+  object Label16: TLabel
+    Left = 464
+    Height = 22
+    Top = 64
+    Width = 125
+    Caption = 'Salário Liquido'
+    Font.Height = -19
+    Font.Name = 'Noto Serif Armenian'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSaidaJan: TLabel
+    Left = 632
+    Height = 22
+    Top = 96
+    Width = 86
+    Caption = 'Resultado'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object btnCalcularSalario: TButton
+    Left = 761
+    Height = 41
+    Top = 328
+    Width = 100
+    Caption = 'Calcular'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Caladea'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 24
+    OnClick = btnCalcularSalarioClick
+  end
+  object lblSalarioLiqJan: TLabel
+    Left = 472
+    Height = 22
+    Top = 100
+    Width = 106
+    Caption = 'R$ 0.000,00'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSalarioLiqFev: TLabel
+    Left = 472
+    Height = 22
+    Top = 144
+    Width = 106
+    Caption = 'R$ 0.000,00'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSalarioLiqMar: TLabel
+    Left = 472
+    Height = 22
+    Top = 192
+    Width = 106
+    Caption = 'R$ 0.000,00'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSalarioLiqMai: TLabel
+    Left = 472
+    Height = 22
+    Top = 288
+    Width = 106
+    Caption = 'R$ 0.000,00'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSalarioLiqJun: TLabel
+    Left = 472
+    Height = 22
+    Top = 336
+    Width = 106
+    Caption = 'R$ 0.000,00'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSalarioLiqAgo: TLabel
+    Left = 472
+    Height = 22
+    Top = 431
+    Width = 106
+    Caption = 'R$ 0.000,00'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSalarioLiqNov: TLabel
+    Left = 472
+    Height = 22
+    Top = 580
+    Width = 106
+    Caption = 'R$ 0.000,00'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSalarioLiqAbril: TLabel
+    Left = 472
+    Height = 22
+    Top = 240
+    Width = 106
+    Caption = 'R$ 0.000,00'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSalarioLiqJul: TLabel
+    Left = 472
+    Height = 22
+    Top = 384
+    Width = 106
+    Caption = 'R$ 0.000,00'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSalarioLiqSet: TLabel
+    Left = 472
+    Height = 22
+    Top = 480
+    Width = 106
+    Caption = 'R$ 0.000,00'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSalarioLiqOut: TLabel
+    Left = 472
+    Height = 22
+    Top = 528
+    Width = 106
+    Caption = 'R$ 0.000,00'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSalarioLiqDez: TLabel
+    Left = 472
+    Height = 22
+    Top = 624
+    Width = 106
+    Caption = 'R$ 0.000,00'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSaidaFev: TLabel
+    Left = 632
+    Height = 22
+    Top = 144
+    Width = 86
+    Caption = 'Resultado'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSaidaMai: TLabel
+    Left = 632
+    Height = 22
+    Top = 288
+    Width = 86
+    Caption = 'Resultado'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSaidaAbril: TLabel
+    Left = 632
+    Height = 22
+    Top = 240
+    Width = 86
+    Caption = 'Resultado'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSaidaMar: TLabel
+    Left = 632
+    Height = 22
+    Top = 192
+    Width = 86
+    Caption = 'Resultado'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSaidaJul: TLabel
+    Left = 632
+    Height = 22
+    Top = 384
+    Width = 86
+    Caption = 'Resultado'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSaidaJun: TLabel
+    Left = 632
+    Height = 22
+    Top = 336
+    Width = 86
+    Caption = 'Resultado'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSaidaAgo: TLabel
+    Left = 632
+    Height = 22
+    Top = 431
+    Width = 86
+    Caption = 'Resultado'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSaidaSet: TLabel
+    Left = 632
+    Height = 22
+    Top = 480
+    Width = 86
+    Caption = 'Resultado'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSaidaDez: TLabel
+    Left = 632
+    Height = 22
+    Top = 624
+    Width = 86
+    Caption = 'Resultado'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSaidaNov: TLabel
+    Left = 632
+    Height = 22
+    Top = 576
+    Width = 86
+    Caption = 'Resultado'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSaidaOut: TLabel
+    Left = 632
+    Height = 22
+    Top = 528
+    Width = 86
+    Caption = 'Resultado'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label17: TLabel
+    Left = 644
+    Height = 22
+    Top = 64
+    Width = 40
+    Caption = 'Total'
+    Font.Height = -19
+    Font.Name = 'Noto Serif Armenian'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label18: TLabel
+    Left = 768
+    Height = 22
+    Top = 64
+    Width = 78
+    Caption = 'Total Ano'
+    Font.Height = -19
+    Font.Name = 'Noto Serif Armenian'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSaidaTotalAno: TLabel
+    Left = 760
+    Height = 22
+    Top = 96
+    Width = 101
+    Caption = 'R$0.000,00'
+    Font.Height = -19
+    Font.Name = 'Noto Serif Armenian'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+end

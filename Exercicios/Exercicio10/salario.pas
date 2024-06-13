@@ -14,22 +14,34 @@ type
   TSalarioF = class(TForm)
     btnCalcularSalario: TButton;
     descontoAbril: TEdit;
-    descontoAbril1: TEdit;
-    descontoAgo1: TEdit;
-    descontoDez1: TEdit;
-    descontoFev1: TEdit;
-    descontoJan1: TEdit;
-    descontoJul1: TEdit;
-    descontoJun1: TEdit;
-    descontoMai1: TEdit;
-    descontoMar1: TEdit;
-    descontoNov1: TEdit;
-    descontoOut1: TEdit;
-    descontoSet1: TEdit;
     Label16: TLabel;
     Label17: TLabel;
     Label18: TLabel;
-    Label19: TLabel;
+    lblSaidaTotalAno: TLabel;
+    lblSaidaJan: TLabel;
+    lblSaidaFev: TLabel;
+    lblSaidaNov: TLabel;
+    lblSaidaOut: TLabel;
+    lblSaidaMai: TLabel;
+    lblSaidaAbril: TLabel;
+    lblSaidaMar: TLabel;
+    lblSaidaJul: TLabel;
+    lblSaidaJun: TLabel;
+    lblSaidaAgo: TLabel;
+    lblSaidaSet: TLabel;
+    lblSaidaDez: TLabel;
+    lblSalarioLiqJan: TLabel;
+    lblSalarioLiqFev: TLabel;
+    lblSalarioLiqOut: TLabel;
+    lblSalarioLiqDez: TLabel;
+    lblSalarioLiqMar: TLabel;
+    lblSalarioLiqMai: TLabel;
+    lblSalarioLiqJun: TLabel;
+    lblSalarioLiqAgo: TLabel;
+    lblSalarioLiqNov: TLabel;
+    lblSalarioLiqAbril: TLabel;
+    lblSalarioLiqJul: TLabel;
+    lblSalarioLiqSet: TLabel;
     SalBrutoAgo: TEdit;
     descontoAgo: TEdit;
     SalBrutoDez: TEdit;
@@ -40,7 +52,6 @@ type
     descontoJun: TEdit;
     descontoMai: TEdit;
     descontoMar: TEdit;
-    SalBrutoTotal: TEdit;
     SalBrutoNov: TEdit;
     descontoNov: TEdit;
     SalBrutoOut: TEdit;
@@ -69,13 +80,12 @@ type
     Label8: TLabel;
     Label9: TLabel;
     descontoSet: TEdit;
-    SalLiquidoTotal1: TEdit;
     procedure btnCalcularSalarioClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
 
   public
-
+      procedure calcularSalarioLiq();
   end;
 
 var
@@ -87,16 +97,109 @@ implementation
 
 { TSalarioF }
 
-procedure TSalarioF.calcularSalarioLiq ();
+procedure TSalarioF.calcularSalarioLiq();
 var
-  somaB, somaL, salLiq, salBru, percentual : Double;
+  soma, somaT, salLiq, salBru, percentual : Double;
 begin
-  somaB := 0;
-  somaL :=0;
-  //
+   somaT := 0;
+  // Calculo do Salário liquido, Soma do bruto + liquido e Impressão no label.
   salBru := StrToFloat(SalBrutoJan.Text);
   percentual := StrToFloat(descontoJan.Text);
-  salLiq := salBru + (salBru * (percentual/100));
+  salLiq := salBru - (salBru * (percentual/100));
+  soma := salBru + salLiq;
+  lblSalarioLiqJan.Caption:= FloatToStr(salLiq);
+  lblSaidaJan.Caption:= FloatToStr(soma);
+  somaT := somaT + soma;
+  //
+  salBru := StrToFloat(SalBrutoFev.Text);
+  percentual := StrToFloat(descontoFev.Text);
+  salLiq := salBru - (salBru * (percentual/100));
+  soma := salBru + salLiq;
+  lblSalarioLiqFev.Caption:= FloatToStr(salLiq);
+  lblSaidaFev.Caption:= FloatToStr(soma);
+  somaT := somaT + soma;
+  //
+  salBru := StrToFloat(SalBrutoMar.Text);
+  percentual := StrToFloat(descontoMar.Text);
+  salLiq := salBru - (salBru * (percentual/100));
+  soma := salBru + salLiq;
+  lblSalarioLiqMar.Caption:= FloatToStr(salLiq);
+  lblSaidaMar.Caption:= FloatToStr(soma);
+  somaT := somaT + soma;
+  //
+  salBru := StrToFloat(SalBrutoAbril.Text);
+  percentual := StrToFloat(descontoAbril.Text);
+  salLiq := salBru - (salBru * (percentual/100));
+  soma := salBru + salLiq;
+  lblSalarioLiqAbril.Caption:= FloatToStr(salLiq);
+  lblSaidaAbril.Caption:= FloatToStr(soma);
+  somaT := somaT + soma;
+  //
+  salBru := StrToFloat(SalBrutoMai.Text);
+  percentual := StrToFloat(descontoMai.Text);
+  salLiq := salBru - (salBru * (percentual/100));
+  soma := salBru + salLiq;
+  lblSalarioLiqMai.Caption:= FloatToStr(salLiq);
+  lblSaidaMai.Caption:= FloatToStr(soma);
+  somaT := somaT + soma;
+  //
+  salBru := StrToFloat(SalBrutoJun.Text);
+  percentual := StrToFloat(descontoJun.Text);
+  salLiq := salBru - (salBru * (percentual/100));
+  soma := salBru + salLiq;
+  lblSalarioLiqJun.Caption:= FloatToStr(salLiq);
+  lblSaidaJun.Caption:= FloatToStr(soma);
+  somaT := somaT + soma;
+  //
+  salBru := StrToFloat(SalBrutoJul.Text);
+  percentual := StrToFloat(descontoJul.Text);
+  salLiq := salBru - (salBru * (percentual/100));
+  soma := salBru + salLiq;
+  lblSalarioLiqJul.Caption:= FloatToStr(salLiq);
+  lblSaidaJul.Caption:= FloatToStr(soma);
+  somaT := somaT + soma;
+  //
+  salBru := StrToFloat(SalBrutoAgo.Text);
+  percentual := StrToFloat(descontoAgo.Text);
+  salLiq := salBru - (salBru * (percentual/100));
+  soma := salBru + salLiq;
+  lblSalarioLiqAgo.Caption:= FloatToStr(salLiq);
+  lblSaidaAgo.Caption:= FloatToStr(soma);
+  somaT := somaT + soma;
+  //
+  salBru := StrToFloat(SalBrutoSet.Text);
+  percentual := StrToFloat(descontoSet.Text);
+  salLiq := salBru - (salBru * (percentual/100));
+  soma := salBru + salLiq;
+  lblSalarioLiqSet.Caption:= FloatToStr(salLiq);
+  lblSaidaSet.Caption:= FloatToStr(soma);
+  somaT := somaT + soma;
+  //
+  salBru := StrToFloat(SalBrutoOut.Text);
+  percentual := StrToFloat(descontoOut.Text);
+  salLiq := salBru - (salBru * (percentual/100));
+  soma := salBru + salLiq;
+  lblSalarioLiqOut.Caption:= FloatToStr(salLiq);
+  lblSaidaOut.Caption:= FloatToStr(soma);
+  somaT := somaT + soma;
+  //
+  salBru := StrToFloat(SalBrutoNov.Text);
+  percentual := StrToFloat(descontoNov.Text);
+  salLiq := salBru - (salBru * (percentual/100));
+  soma := salBru + salLiq;
+  lblSalarioLiqNov.Caption:= FloatToStr(salLiq);
+  lblSaidaNov.Caption:= FloatToStr(soma);
+  somaT := somaT + soma;
+  //
+  salBru := StrToFloat(SalBrutoDez.Text);
+  percentual := StrToFloat(descontoDez.Text);
+  salLiq := salBru - (salBru * (percentual/100));
+  soma := salBru + salLiq;
+  lblSalarioLiqDez.Caption:= FloatToStr(salLiq);
+  lblSaidaDez.Caption:= FloatToStr(soma);
+  somaT := somaT + soma;
+  //
+  lblSaidaTotalAno.Caption:= FloatToStr(somaT);
 end;
 
 procedure TSalarioF.FormCreate(Sender: TObject);
@@ -106,7 +209,7 @@ end;
 
 procedure TSalarioF.btnCalcularSalarioClick(Sender: TObject);
 begin
-
+   calcularSalarioLiq();
 end;
 
 end.
