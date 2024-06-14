@@ -22,13 +22,13 @@
         <UnitName Value="Evento"/>
         <IsVisibleTab Value="True"/>
         <TopLine Value="15"/>
-        <CursorPos X="28" Y="42"/>
+        <CursorPos X="38" Y="38"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="12">
+    <JumpHistory HistoryIndex="13">
       <Position>
         <Filename Value="evento.pas"/>
       </Position>
@@ -79,6 +79,10 @@
       <Position>
         <Filename Value="evento.pas"/>
         <Caret Line="29" Column="64" TopLine="15"/>
+      </Position>
+      <Position>
+        <Filename Value="evento.pas"/>
+        <Caret Line="42" Column="28" TopLine="15"/>
       </Position>
     </JumpHistory>
     <RunParams>

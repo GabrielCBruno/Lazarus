@@ -21,70 +21,16 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Evento"/>
         <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="15"/>
-        <CursorPos X="38" Y="38"/>
+        <CursorPos X="104" Y="29"/>
         <UsageCount Value="20"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="13">
-      <Position>
-        <Filename Value="evento.pas"/>
-      </Position>
-      <Position>
-        <Filename Value="evento.pas"/>
-        <Caret Line="23" Column="80"/>
-      </Position>
-      <Position>
-        <Filename Value="evento.pas"/>
-        <Caret Line="24" Column="80"/>
-      </Position>
-      <Position>
-        <Filename Value="evento.pas"/>
-        <Caret Line="25" Column="80"/>
-      </Position>
-      <Position>
-        <Filename Value="evento.pas"/>
-        <Caret Line="26" Column="80"/>
-      </Position>
-      <Position>
-        <Filename Value="evento.pas"/>
-        <Caret Line="27" Column="80"/>
-      </Position>
-      <Position>
-        <Filename Value="evento.pas"/>
-        <Caret Line="26" Column="80"/>
-      </Position>
-      <Position>
-        <Filename Value="evento.pas"/>
-        <Caret Line="28" Column="80"/>
-      </Position>
-      <Position>
-        <Filename Value="evento.pas"/>
-        <Caret Line="41" Column="23" TopLine="13"/>
-      </Position>
-      <Position>
-        <Filename Value="evento.pas"/>
-        <Caret Line="32" Column="51" TopLine="15"/>
-      </Position>
-      <Position>
-        <Filename Value="evento.pas"/>
-        <Caret Line="38" Column="36" TopLine="15"/>
-      </Position>
-      <Position>
-        <Filename Value="evento.pas"/>
-        <Caret Line="40" Column="26" TopLine="15"/>
-      </Position>
-      <Position>
-        <Filename Value="evento.pas"/>
-        <Caret Line="29" Column="64" TopLine="15"/>
-      </Position>
-      <Position>
-        <Filename Value="evento.pas"/>
-        <Caret Line="42" Column="28" TopLine="15"/>
-      </Position>
-    </JumpHistory>
+    <General>
+      <ActiveWindowIndexAtStart Value="-1"/>
+    </General>
+    <JumpHistory HistoryIndex="-1"/>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>
