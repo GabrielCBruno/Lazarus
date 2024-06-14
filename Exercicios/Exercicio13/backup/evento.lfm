@@ -1,0 +1,81 @@
+object EventoF: TEventoF
+  Left = 483
+  Height = 337
+  Top = 173
+  Width = 644
+  Caption = 'Calculo duração evento'
+  ClientHeight = 337
+  ClientWidth = 644
+  LCLVersion = '3.4.0.0'
+  object Label1: TLabel
+    Left = 56
+    Height = 41
+    Top = 24
+    Width = 516
+    Caption = 'Calculo de duração de um Evento'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlue
+    Font.Height = -35
+    Font.Name = 'Cambria'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 56
+    Height = 22
+    Top = 128
+    Width = 273
+    Caption = 'Tempo de Duração (segundos): '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object edtEntrada: TEdit
+    Cursor = crHandPoint
+    Left = 336
+    Height = 26
+    Top = 128
+    Width = 112
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 0
+  end
+  object btnCalcularTempo: TButton
+    Cursor = crHandPoint
+    Left = 464
+    Height = 39
+    Top = 120
+    Width = 99
+    Caption = 'Calcular'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Comic Sans MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 1
+    OnClick = btnCalcularTempoClick
+  end
+  object lblSaida: TLabel
+    Left = 64
+    Height = 22
+    Top = 216
+    Width = 86
+    Caption = 'Resultado'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+end
