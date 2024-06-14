@@ -38,6 +38,7 @@
         <Filename Value="modelo.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="ModeloF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Modelo"/>
       </Unit>

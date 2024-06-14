@@ -59,5 +59,6 @@ object ModeloF: TModeloF
     Font.Quality = fqDraft
     ParentFont = False
     TabOrder = 1
+    OnClick = btnEnviarClick
   end
 end
