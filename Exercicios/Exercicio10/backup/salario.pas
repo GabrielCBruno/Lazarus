@@ -16,6 +16,8 @@ type
     descontoAbril: TEdit;
     Label16: TLabel;
     Label17: TLabel;
+    Label18: TLabel;
+    lblSaidaTotalAno: TLabel;
     lblSaidaJan: TLabel;
     lblSaidaFev: TLabel;
     lblSaidaNov: TLabel;
@@ -97,8 +99,9 @@ implementation
 
 procedure TSalarioF.calcularSalarioLiq();
 var
-  soma, salLiq, salBru, percentual : Double;
+  soma, somaT, salLiq, salBru, percentual : Double;
 begin
+   somaT := 0;
   // Calculo do Salário liquido, Soma do bruto + liquido e Impressão no label.
   salBru := StrToFloat(SalBrutoJan.Text);
   percentual := StrToFloat(descontoJan.Text);
@@ -106,6 +109,7 @@ begin
   soma := salBru + salLiq;
   lblSalarioLiqJan.Caption:= FloatToStr(salLiq);
   lblSaidaJan.Caption:= FloatToStr(soma);
+  somaT := somaT + soma;
   //
   salBru := StrToFloat(SalBrutoFev.Text);
   percentual := StrToFloat(descontoFev.Text);
@@ -113,6 +117,7 @@ begin
   soma := salBru + salLiq;
   lblSalarioLiqFev.Caption:= FloatToStr(salLiq);
   lblSaidaFev.Caption:= FloatToStr(soma);
+  somaT := somaT + soma;
   //
   salBru := StrToFloat(SalBrutoMar.Text);
   percentual := StrToFloat(descontoMar.Text);
@@ -120,6 +125,7 @@ begin
   soma := salBru + salLiq;
   lblSalarioLiqMar.Caption:= FloatToStr(salLiq);
   lblSaidaMar.Caption:= FloatToStr(soma);
+  somaT := somaT + soma;
   //
   salBru := StrToFloat(SalBrutoAbril.Text);
   percentual := StrToFloat(descontoAbril.Text);
@@ -127,6 +133,7 @@ begin
   soma := salBru + salLiq;
   lblSalarioLiqAbril.Caption:= FloatToStr(salLiq);
   lblSaidaAbril.Caption:= FloatToStr(soma);
+  somaT := somaT + soma;
   //
   salBru := StrToFloat(SalBrutoMai.Text);
   percentual := StrToFloat(descontoMai.Text);
@@ -134,6 +141,7 @@ begin
   soma := salBru + salLiq;
   lblSalarioLiqMai.Caption:= FloatToStr(salLiq);
   lblSaidaMai.Caption:= FloatToStr(soma);
+  somaT := somaT + soma;
   //
   salBru := StrToFloat(SalBrutoJun.Text);
   percentual := StrToFloat(descontoJun.Text);
@@ -141,6 +149,7 @@ begin
   soma := salBru + salLiq;
   lblSalarioLiqJun.Caption:= FloatToStr(salLiq);
   lblSaidaJun.Caption:= FloatToStr(soma);
+  somaT := somaT + soma;
   //
   salBru := StrToFloat(SalBrutoJul.Text);
   percentual := StrToFloat(descontoJul.Text);
@@ -148,6 +157,7 @@ begin
   soma := salBru + salLiq;
   lblSalarioLiqJul.Caption:= FloatToStr(salLiq);
   lblSaidaJul.Caption:= FloatToStr(soma);
+  somaT := somaT + soma;
   //
   salBru := StrToFloat(SalBrutoAgo.Text);
   percentual := StrToFloat(descontoAgo.Text);
@@ -155,6 +165,7 @@ begin
   soma := salBru + salLiq;
   lblSalarioLiqAgo.Caption:= FloatToStr(salLiq);
   lblSaidaAgo.Caption:= FloatToStr(soma);
+  somaT := somaT + soma;
   //
   salBru := StrToFloat(SalBrutoSet.Text);
   percentual := StrToFloat(descontoSet.Text);
@@ -162,6 +173,7 @@ begin
   soma := salBru + salLiq;
   lblSalarioLiqSet.Caption:= FloatToStr(salLiq);
   lblSaidaSet.Caption:= FloatToStr(soma);
+  somaT := somaT + soma;
   //
   salBru := StrToFloat(SalBrutoOut.Text);
   percentual := StrToFloat(descontoOut.Text);
@@ -169,6 +181,7 @@ begin
   soma := salBru + salLiq;
   lblSalarioLiqOut.Caption:= FloatToStr(salLiq);
   lblSaidaOut.Caption:= FloatToStr(soma);
+  somaT := somaT + soma;
   //
   salBru := StrToFloat(SalBrutoNov.Text);
   percentual := StrToFloat(descontoNov.Text);
@@ -176,6 +189,7 @@ begin
   soma := salBru + salLiq;
   lblSalarioLiqNov.Caption:= FloatToStr(salLiq);
   lblSaidaNov.Caption:= FloatToStr(soma);
+  somaT := somaT + soma;
   //
   salBru := StrToFloat(SalBrutoDez.Text);
   percentual := StrToFloat(descontoDez.Text);
@@ -183,7 +197,9 @@ begin
   soma := salBru + salLiq;
   lblSalarioLiqDez.Caption:= FloatToStr(salLiq);
   lblSaidaDez.Caption:= FloatToStr(soma);
+  somaT := somaT + soma;
   //
+  lblSaidaTotalAno.Caption:= FloatToStr(somaT);
 end;
 
 procedure TSalarioF.FormCreate(Sender: TObject);

@@ -2,10 +2,10 @@ object SalarioF: TSalarioF
   Left = 252
   Height = 694
   Top = 16
-  Width = 847
+  Width = 924
   Caption = 'Calculo Salario Final Colaborador'
-  ClientHeight = 0
-  ClientWidth = 0
+  ClientHeight = 694
+  ClientWidth = 924
   OnCreate = FormCreate
   LCLVersion = '3.4.0.0'
   object Label1: TLabel
@@ -563,9 +563,9 @@ object SalarioF: TSalarioF
     ParentFont = False
   end
   object btnCalcularSalario: TButton
-    Left = 736
+    Left = 761
     Height = 41
-    Top = 312
+    Top = 328
     Width = 100
     Caption = 'Calcular'
     Font.CharSet = ANSI_CHARSET
@@ -882,6 +882,30 @@ object SalarioF: TSalarioF
     Top = 64
     Width = 40
     Caption = 'Total'
+    Font.Height = -19
+    Font.Name = 'Noto Serif Armenian'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label18: TLabel
+    Left = 768
+    Height = 22
+    Top = 64
+    Width = 78
+    Caption = 'Total Ano'
+    Font.Height = -19
+    Font.Name = 'Noto Serif Armenian'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSaidaTotalAno: TLabel
+    Left = 760
+    Height = 22
+    Top = 96
+    Width = 101
+    Caption = 'R$0.000,00'
     Font.Height = -19
     Font.Name = 'Noto Serif Armenian'
     Font.Pitch = fpVariable
