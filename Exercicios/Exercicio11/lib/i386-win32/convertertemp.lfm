@@ -1,0 +1,91 @@
+object ConverterTempF: TConverterTempF
+  Left = 325
+  Height = 412
+  Top = 118
+  Width = 639
+  Caption = 'Conversor de temperatura'
+  ClientHeight = 412
+  ClientWidth = 639
+  LCLVersion = '3.4.0.0'
+  object Label1: TLabel
+    Left = 24
+    Height = 25
+    Top = 32
+    Width = 598
+    Caption = 'Informe a temperatura em Celsius para converter para Fahrenheit.'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Cambria'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object edtCelc: TEdit
+    Left = 250
+    Height = 26
+    Top = 97
+    Width = 80
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Label2: TLabel
+    Left = 170
+    Height = 22
+    Top = 97
+    Width = 73
+    Caption = 'Celcius: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 144
+    Height = 22
+    Top = 160
+    Width = 99
+    Caption = 'Fahrenheit: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSaida: TLabel
+    Left = 250
+    Height = 22
+    Top = 160
+    Width = 86
+    Caption = 'Resultado'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object btnConverterTemp: TButton
+    Left = 376
+    Height = 33
+    Top = 128
+    Width = 96
+    Caption = 'Converter'
+    Color = clWhite
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Constantia'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 1
+    OnClick = btnConverterTempClick
+  end
+end
