@@ -1,0 +1,8 @@
+object ModeloF: TModeloF
+  Left = 555
+  Height = 455
+  Top = 211
+  Width = 678
+  Caption = 'Modelo'
+  LCLVersion = '3.4.0.0'
+end
