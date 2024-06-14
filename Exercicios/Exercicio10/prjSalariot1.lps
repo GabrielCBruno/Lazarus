@@ -21,16 +21,24 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Salario"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
         <TopLine Value="64"/>
         <CursorPos X="44" Y="72"/>
         <UsageCount Value="22"/>
       </Unit>
+      <Unit>
+        <Filename Value="..\Exercicio11\convertertemp.pas"/>
+        <ComponentName Value="ConverterTempF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ConverterTemp"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="71" Y="17"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
     </Units>
-    <General>
-      <ActiveWindowIndexAtStart Value="-1"/>
-    </General>
     <JumpHistory HistoryIndex="-1"/>
     <RunParams>
       <FormatVersion Value="2"/>
