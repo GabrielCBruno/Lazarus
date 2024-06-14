@@ -1,0 +1,85 @@
+object IdadeDiasF: TIdadeDiasF
+  Left = 504
+  Height = 462
+  Top = 241
+  Width = 710
+  Caption = 'Calcular idade e converter em dias'
+  ClientHeight = 462
+  ClientWidth = 710
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -19
+  Font.Name = 'Cambria'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  LCLVersion = '3.4.0.0'
+  object Label1: TLabel
+    Left = 72
+    Height = 37
+    Top = 48
+    Width = 585
+    Caption = 'Informe uma idade para converter em dias'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -32
+    Font.Name = 'Cambria'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 96
+    Height = 24
+    Top = 144
+    Width = 64
+    Caption = 'Idade: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object edtIdade: TEdit
+    Left = 160
+    Height = 26
+    Top = 142
+    Width = 88
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 0
+  end
+  object lblSaida: TLabel
+    Left = 96
+    Height = 22
+    Top = 232
+    Width = 82
+    Caption = 'Resposta'
+    Color = clBlack
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object btnConverterIdade: TButton
+    Left = 264
+    Height = 42
+    Top = 128
+    Width = 96
+    Caption = 'Converter'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Cambria'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 1
+    OnClick = btnConverterIdadeClick
+  end
+end
