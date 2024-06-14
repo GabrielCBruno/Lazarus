@@ -1,7 +1,7 @@
 object IdadeDiasF: TIdadeDiasF
-  Left = 504
+  Left = 619
   Height = 462
-  Top = 241
+  Top = 222
   Width = 710
   Caption = 'Calcular idade e converter em dias'
   ClientHeight = 462
@@ -26,11 +26,11 @@ object IdadeDiasF: TIdadeDiasF
     ParentFont = False
   end
   object Label2: TLabel
-    Left = 96
+    Left = 80
     Height = 24
     Top = 144
-    Width = 64
-    Caption = 'Idade: '
+    Width = 143
+    Caption = 'Idade em dias: '
     Font.CharSet = ANSI_CHARSET
     Font.Height = -21
     Font.Name = 'Arial'
@@ -39,9 +39,9 @@ object IdadeDiasF: TIdadeDiasF
     ParentFont = False
   end
   object edtIdade: TEdit
-    Left = 160
+    Left = 232
     Height = 26
-    Top = 142
+    Top = 144
     Width = 88
     Font.CharSet = ANSI_CHARSET
     Font.Height = -16
@@ -52,7 +52,7 @@ object IdadeDiasF: TIdadeDiasF
     TabOrder = 0
   end
   object lblSaida: TLabel
-    Left = 96
+    Left = 80
     Height = 22
     Top = 232
     Width = 82
@@ -68,9 +68,9 @@ object IdadeDiasF: TIdadeDiasF
     ParentFont = False
   end
   object btnConverterIdade: TButton
-    Left = 264
+    Left = 344
     Height = 42
-    Top = 128
+    Top = 136
     Width = 96
     Caption = 'Converter'
     Font.CharSet = ANSI_CHARSET

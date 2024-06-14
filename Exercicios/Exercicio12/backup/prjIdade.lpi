@@ -38,6 +38,7 @@
         <Filename Value="idadedias.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="IdadeDiasF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="IdadeDias"/>
       </Unit>
