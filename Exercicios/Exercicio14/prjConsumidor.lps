@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="prjConsumidor.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit>
+      <Unit>
+        <Filename Value="consumo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ConsumoF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Consumo"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="16"/>
+        <CursorPos X="20" Y="36"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="12">
+      <Position>
+        <Filename Value="consumo.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="consumo.pas"/>
+        <Caret Line="34" Column="61"/>
+      </Position>
+      <Position>
+        <Filename Value="consumo.pas"/>
+        <Caret Line="43" Column="61" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="consumo.pas"/>
+        <Caret Line="39" Column="3" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="consumo.pas"/>
+        <Caret Line="40" Column="3" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="consumo.pas"/>
+        <Caret Line="41" Column="3" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="consumo.pas"/>
+        <Caret Line="42" Column="3" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="consumo.pas"/>
+        <Caret Line="43" Column="3" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="consumo.pas"/>
+        <Caret Line="45" Column="3" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="consumo.pas"/>
+        <Caret Line="32" Column="16" TopLine="13"/>
+      </Position>
+      <Position>
+        <Filename Value="consumo.pas"/>
+        <Caret Line="56" Column="20" TopLine="28"/>
+      </Position>
+      <Position>
+        <Filename Value="consumo.pas"/>
+        <Caret Line="53" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="consumo.pas"/>
+        <Caret Line="54" Column="37" TopLine="19"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

@@ -1,0 +1,25 @@
+program prjConsumidor;
+
+{$mode objfpc}{$H+}
+
+uses
+  {$IFDEF UNIX}
+  cthreads,
+  {$ENDIF}
+  {$IFDEF HASAMIGA}
+  athreads,
+  {$ENDIF}
+  Interfaces, // this includes the LCL widgetset
+  Forms, Consumo, unit1
+  { you can add units after this };
+
+{$R *.res}
+
+begin
+  RequireDerivedFormResource:=True;
+  Application.Scaled:=True;
+  Application.Initialize;
+  Application.CreateForm(TConsumoF, ConsumoF);
+  Application.Run;
+end.
+
