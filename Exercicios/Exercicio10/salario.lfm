@@ -1,11 +1,11 @@
 object SalarioF: TSalarioF
-  Left = 252
+  Left = 295
   Height = 694
-  Top = 16
+  Top = 102
   Width = 924
   Caption = 'Calculo Salario Final Colaborador'
-  ClientHeight = 0
-  ClientWidth = 0
+  ClientHeight = 694
+  ClientWidth = 924
   OnCreate = FormCreate
   LCLVersion = '3.4.0.0'
   object Label1: TLabel
