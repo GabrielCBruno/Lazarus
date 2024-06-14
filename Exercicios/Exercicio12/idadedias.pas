@@ -21,11 +21,12 @@ type
   private
 
   public
-      procedure calcularAnoMesesDias (var Dias, Meses, Anos : Integer);
+      procedure calcularAnoMesesDias ();
   end;
 
 var
   IdadeDiasF: TIdadeDiasF;
+  Meses, Dias, Idade : Integer;
 
 implementation
 
@@ -33,29 +34,28 @@ implementation
 
 { TIdadeDiasF }
 
-procedure TIdadeDiasF.calcularAnoMesesDias (var Dias, Meses, Anos : Integer);
+procedure TIdadeDiasF.calcularAnoMesesDias ();
 begin
    if edtIdade.Text = '' then
    begin
      Dias := 0;
      Meses := 0;
-     Anos := 0;
+     Idade := 0;
    end
    else
    begin
      //Dias := 1202;
      Dias := StrToInt(edtIdade.Text);
-     Anos :=  Dias / 365;  //Resolver
-     //Meses := idade * 12;
+     Idade :=  Dias div 365;
+     Meses := Idade * 12;
    end;
 end;
 
 procedure TIdadeDiasF.btnConverterIdadeClick(Sender: TObject);
 var
   msg : String;
-  meses, dias, idade : Integer;
 begin
-     calcularAnoMesesDias(dias, meses, idade);
+     calcularAnoMesesDias();
      msg := '';
      msg := msg + 'Idade: ' + idade.ToString + #10 + 'Dias: ' + dias.ToString + #10 + 'Meses: ' + meses.ToString;
      lblSaida.Caption:= msg;
