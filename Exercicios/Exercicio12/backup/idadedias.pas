@@ -34,8 +34,6 @@ implementation
 { TIdadeDiasF }
 
 procedure TIdadeDiasF.calcularAnoMesesDias (var Dias, Meses, Anos : Integer);
-var
-  dive : Integer;
 begin
    if edtIdade.Text = '' then
    begin
@@ -45,9 +43,9 @@ begin
    end
    else
    begin
-     dive := 13054;
+     //Dias := 1202;
      Dias := StrToInt(edtIdade.Text);
-     Anos := dive / 365;
+     Anos :=  Dias / 365;
      //Meses := idade * 12;
    end;
 end;
@@ -55,7 +53,7 @@ end;
 procedure TIdadeDiasF.btnConverterIdadeClick(Sender: TObject);
 var
   msg : String;
-  idade, meses, dias : Integer;
+  meses, dias, idade : Integer;
 begin
      calcularAnoMesesDias(dias, meses, idade);
      msg := '';
