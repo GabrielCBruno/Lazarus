@@ -14,22 +14,20 @@ type
   TConsumoF = class(TForm)
     btnCalcularCusto: TButton;
     edtCustoFab: TEdit;
-    edtCustoFab1: TEdit;
-    edtCustoFab2: TEdit;
-    edtCustoFab3: TEdit;
+    edtPorcDistribuidor: TEdit;
+    edtPercImposto: TEdit;
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
     Label4: TLabel;
     Label5: TLabel;
     Label6: TLabel;
+    lblSaida: TLabel;
     procedure btnCalcularCustoClick(Sender: TObject);
-    procedure edtCustoFabChange(Sender: TObject);
-    procedure Label2Click(Sender: TObject);
   private
 
   public
-
+     procedure calcularCustoFinal();
   end;
 
 var
@@ -41,18 +39,21 @@ implementation
 
 { TConsumoF }
 
-procedure TConsumoF.btnCalcularCustoClick(Sender: TObject);
+procedure TConsumoF.calcularCustoFinal();
 var
-  custo : String;
+  custoFab, custoFinal : Double;
+  distribuidor, imposto : Integer;
 begin
-     if edtCustoFab = '' then
-     begin
-         custo := '931';
-     end
-     else
-     begin
-       custo := edtCustoFab.Text;
-     end;
+  custoFab := StrToFloat(edtCustoFab.Text);
+  distribuidor:= StrToInt(edtPorcDistribuidor.Text);
+  imposto:= StrToInt(edtPercImposto.Text);
+  custoFinal:= custoFab + (custoFab * (distribuidor + imposto))/100;
+  lblSaida.Caption:= 'R$: ' + custoFinal.ToString();
+end;
+
+procedure TConsumoF.btnCalcularCustoClick(Sender: TObject);
+begin
+    calcularCustoFinal ();
 end;
 
 

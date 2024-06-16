@@ -1,0 +1,168 @@
+object ConsumoF: TConsumoF
+  Left = 911
+  Height = 297
+  Top = 153
+  Width = 376
+  Caption = 'Cálculo de Custo ao Consumidor'
+  ClientHeight = 297
+  ClientWidth = 376
+  LCLVersion = '3.4.0.0'
+  object Label1: TLabel
+    Left = 49
+    Height = 24
+    Top = 42
+    Width = 173
+    Caption = 'Custo de Fábrica: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 79
+    Height = 24
+    Top = 82
+    Width = 143
+    Caption = '% Distribuidor: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 111
+    Height = 24
+    Top = 128
+    Width = 111
+    Caption = '% Imposto: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 8
+    Height = 24
+    Top = 178
+    Width = 214
+    Caption = 'Custo ao Consumidor: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object btnCalcularCusto: TButton
+    Cursor = crHandPoint
+    Left = 136
+    Height = 51
+    Top = 224
+    Width = 102
+    Caption = 'Calcular'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 3
+    OnClick = btnCalcularCustoClick
+  end
+  object edtCustoFab: TEdit
+    Cursor = crHandPoint
+    Left = 224
+    Height = 26
+    Top = 40
+    Width = 112
+    Alignment = taRightJustify
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    NumbersOnly = True
+    ParentFont = False
+    TabOrder = 0
+    Text = '0'
+  end
+  object edtPorcDistribuidor: TEdit
+    Cursor = crHandPoint
+    Left = 224
+    Height = 26
+    Top = 80
+    Width = 112
+    Alignment = taRightJustify
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    NumbersOnly = True
+    ParentFont = False
+    TabOrder = 1
+    Text = '0'
+  end
+  object edtPercImposto: TEdit
+    Cursor = crHandPoint
+    Left = 224
+    Height = 26
+    Top = 128
+    Width = 112
+    Alignment = taRightJustify
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    NumbersOnly = True
+    ParentFont = False
+    TabOrder = 2
+    Text = '0'
+  end
+  object Label5: TLabel
+    Left = 344
+    Height = 24
+    Top = 82
+    Width = 19
+    Caption = '%'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 344
+    Height = 24
+    Top = 130
+    Width = 19
+    Caption = '%'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSaida: TLabel
+    Left = 224
+    Height = 24
+    Top = 178
+    Width = 106
+    Caption = 'Custo Final'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+end
