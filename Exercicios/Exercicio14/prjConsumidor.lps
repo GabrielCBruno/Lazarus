@@ -21,135 +21,16 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Consumo"/>
         <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="39"/>
         <CursorPos X="91" Y="50"/>
         <UsageCount Value="22"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="34" Column="61"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="43" Column="61" TopLine="6"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="39" Column="3" TopLine="6"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="40" Column="3" TopLine="6"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="41" Column="3" TopLine="6"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="42" Column="3" TopLine="6"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="43" Column="3" TopLine="6"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="45" Column="3" TopLine="8"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="32" Column="16" TopLine="13"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="56" Column="20" TopLine="28"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="53" TopLine="19"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="54" Column="37" TopLine="19"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="31" Column="60" TopLine="17"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="46" Column="16" TopLine="31"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="26" Column="54" TopLine="16"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="40" Column="37" TopLine="27"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="42" TopLine="27"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="41" TopLine="26"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="42" TopLine="27"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="41" TopLine="26"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="46" Column="34" TopLine="33"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="48" Column="14" TopLine="36"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="49" Column="28" TopLine="42"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="31" Column="16" TopLine="23"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="48" Column="6" TopLine="37"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="46" Column="4" TopLine="35"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="47" Column="23" TopLine="35"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="53" Column="8" TopLine="42"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="47" Column="25" TopLine="36"/>
-      </Position>
-      <Position>
-        <Filename Value="consumo.pas"/>
-        <Caret Line="49" Column="35" TopLine="38"/>
-      </Position>
-    </JumpHistory>
+    <General>
+      <ActiveWindowIndexAtStart Value="-1"/>
+    </General>
+    <JumpHistory HistoryIndex="-1"/>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>
