@@ -1,0 +1,86 @@
+object TabuadaF: TTabuadaF
+  Left = 327
+  Height = 364
+  Top = 157
+  Width = 285
+  Caption = 'Gerador de Tabuada'
+  ClientHeight = 364
+  ClientWidth = 285
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -15
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  LCLVersion = '3.4.0.0'
+  object Label1: TLabel
+    Left = 72
+    Height = 18
+    Top = 16
+    Width = 145
+    Caption = 'Escolha um número: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object CBTabuada: TComboBox
+    Cursor = crHandPoint
+    Left = 88
+    Height = 24
+    Top = 48
+    Width = 104
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 16
+    ItemIndex = 0
+    Items.Strings = (
+      '1'
+      '2'
+      '3'
+      '4'
+      '5'
+      '6'
+      '7'
+      '8'
+      '9'
+      '10'
+    )
+    ParentFont = False
+    TabOrder = 1
+    Text = '1'
+  end
+  object memoTabuada: TMemo
+    Left = 88
+    Height = 208
+    Top = 88
+    Width = 104
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Cambria'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 2
+  end
+  object btnCalcTabuada: TButton
+    Cursor = crHandPoint
+    Left = 96
+    Height = 40
+    Top = 304
+    Width = 88
+    Caption = 'Gerar Tabuada'
+    Color = clWhite
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Segoe UI Light'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 0
+    OnClick = btnCalcTabuadaClick
+  end
+end
