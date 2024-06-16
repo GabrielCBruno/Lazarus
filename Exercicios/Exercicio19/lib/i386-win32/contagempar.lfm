@@ -1,0 +1,39 @@
+object ContagemParF: TContagemParF
+  Left = 306
+  Height = 181
+  Top = 103
+  Width = 341
+  Caption = 'Contagem até achar três par'
+  ClientHeight = 181
+  ClientWidth = 341
+  LCLVersion = '3.4.0.0'
+  object btnGerar: TButton
+    Cursor = crHandPoint
+    Left = 128
+    Height = 35
+    Top = 104
+    Width = 80
+    Caption = 'Gerar'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 0
+    OnClick = btnGerarClick
+  end
+  object Label1: TLabel
+    Left = 104
+    Height = 34
+    Top = 40
+    Width = 123
+    Caption = 'Contagem'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -29
+    Font.Name = 'Cambria'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+end
