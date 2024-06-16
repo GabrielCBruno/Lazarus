@@ -1,0 +1,107 @@
+object IntervaloF: TIntervaloF
+  Left = 397
+  Height = 350
+  Top = 100
+  Width = 388
+  Caption = 'Contagem regressiva'
+  ClientHeight = 350
+  ClientWidth = 388
+  LCLVersion = '3.4.0.0'
+  object Label1: TLabel
+    Left = 56
+    Height = 37
+    Top = 24
+    Width = 293
+    Caption = 'Contagem Regressiva'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -32
+    Font.Name = 'Cambria'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 104
+    Height = 22
+    Top = 88
+    Width = 93
+    Caption = 'Número 1: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 104
+    Height = 22
+    Top = 144
+    Width = 93
+    Caption = 'Número 2: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object edtNum1: TEdit
+    Cursor = crHandPoint
+    Left = 200
+    Height = 26
+    Top = 88
+    Width = 80
+    Alignment = taRightJustify
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    NumbersOnly = True
+    ParentFont = False
+    TabOrder = 0
+    Text = '0'
+  end
+  object edtNum2: TEdit
+    Cursor = crHandPoint
+    Left = 200
+    Height = 26
+    Top = 144
+    Width = 80
+    Alignment = taRightJustify
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    NumbersOnly = True
+    ParentFont = False
+    TabOrder = 1
+    Text = '0'
+  end
+  object btnGerarCont: TButton
+    Cursor = crHandPoint
+    Left = 152
+    Height = 40
+    Top = 192
+    Width = 80
+    Caption = 'Gerar'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 2
+    OnClick = btnGerarContClick
+  end
+  object memoSaida: TMemo
+    Left = 40
+    Height = 82
+    Top = 248
+    Width = 321
+    ScrollBars = ssVertical
+    TabOrder = 3
+  end
+end
