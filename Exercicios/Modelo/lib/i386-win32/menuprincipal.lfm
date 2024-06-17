@@ -1,0 +1,24 @@
+object MenuPrincipalF: TMenuPrincipalF
+  Left = 701
+  Height = 570
+  Top = 212
+  Width = 904
+  Caption = 'Programa'
+  Menu = menuPrincipalComponente
+  LCLVersion = '3.4.0.0'
+  object menuPrincipalComponente: TMainMenu
+    Left = 112
+    Top = 72
+    object Abrir: TMenuItem
+      Caption = 'Abrir'
+      object ModeloNovo: TMenuItem
+        Caption = 'ModeloNovo'
+        OnClick = ModeloNovoClick
+      end
+    end
+    object Sair: TMenuItem
+      Caption = 'Sair'
+      OnClick = SairClick
+    end
+  end
+end

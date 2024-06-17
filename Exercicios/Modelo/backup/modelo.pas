@@ -13,13 +13,9 @@ type
 
   TModeloF = class(TForm)
     btnEnviar: TButton;
-    btnTeste: TButton;
     edtEntrada: TEdit;
-    FindDialog1: TFindDialog;
     Label1: TLabel;
     Label2: TLabel;
-    OpenDialog1: TOpenDialog;
-    SaveDialog1: TSaveDialog;
     procedure btnEnviarClick(Sender: TObject);
   private
 

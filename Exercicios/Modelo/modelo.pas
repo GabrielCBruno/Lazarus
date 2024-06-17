@@ -17,6 +17,7 @@ type
     Label1: TLabel;
     Label2: TLabel;
     procedure btnEnviarClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
   private
 
   public
@@ -35,6 +36,12 @@ implementation
 procedure TModeloF.btnEnviarClick(Sender: TObject);
 begin
 
+end;
+
+procedure TModeloF.FormClose(Sender: TObject; var CloseAction: TCloseAction);
+begin
+  //Limpa a memória.
+  CloseAction := caFree;
 end;
 
 end.

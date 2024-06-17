@@ -6,6 +6,7 @@ object ModeloF: TModeloF
   Caption = 'Modelo'
   ClientHeight = 548
   ClientWidth = 722
+  OnClose = FormClose
   LCLVersion = '3.4.0.0'
   object Label1: TLabel
     Left = 208

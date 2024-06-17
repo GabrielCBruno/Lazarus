@@ -61,32 +61,4 @@ object ModeloF: TModeloF
     TabOrder = 1
     OnClick = btnEnviarClick
   end
-  object btnTeste: TButton
-    Left = 392
-    Height = 33
-    Top = 248
-    Width = 88
-    Caption = 'Teste'
-    Font.CharSet = ANSI_CHARSET
-    Font.Height = -19
-    Font.Name = 'Arial'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    ParentFont = False
-    TabOrder = 2
-  end
-  object OpenDialog1: TOpenDialog
-    Left = 88
-    Top = 304
-  end
-  object SaveDialog1: TSaveDialog
-    Left = 184
-    Top = 304
-  end
-  object FindDialog1: TFindDialog
-    FindText = 'Aqui'
-    Options = [frFindNext]
-    Left = 264
-    Top = 304
-  end
 end
