@@ -1,7 +1,7 @@
 object ContagemParF: TContagemParF
-  Left = 306
+  Left = 686
   Height = 181
-  Top = 103
+  Top = 158
   Width = 341
   Caption = 'Contagem até achar três par'
   ClientHeight = 181

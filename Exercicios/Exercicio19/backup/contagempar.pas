@@ -48,11 +48,19 @@ begin
   while i <= 10 do
   begin
        ShowMessage(IntToStr(i));
+       if i = 5 then
+       begin
+            break;
+       end;
        Inc(i);
   end;
   i := 0;
   repeat
         ShowMessage(IntToStr(i));
+        if i = 5 then
+        begin
+             break;
+        end;
         Inc(i);
   until i > 10; //Vai ficar repetindo até que a condição seja verdadeira;
 end;

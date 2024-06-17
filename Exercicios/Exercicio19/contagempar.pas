@@ -62,7 +62,7 @@ begin
              break;
         end;
         Inc(i);
-  until i > 10; //Vai ficar repetindo até que a condição seja verdadeira;
+  until i > 10; //Vai ficar repetindo até que a condição seja falsa;
 end;
 
 procedure TContagemParF.btnGerarClick(Sender: TObject);
