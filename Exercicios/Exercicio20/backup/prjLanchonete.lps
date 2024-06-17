@@ -21,7 +21,7 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Lanchonete"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="37"/>
+        <TopLine Value="31"/>
         <CursorPos X="19" Y="70"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>

@@ -54,15 +54,21 @@ begin
    editsQuant[3] := edtHamburger;
    editsQuant[4] := edtCheseburguer;
    editsQuant[5] := edtRefrigerante;
+   //Validação dos campos
    for i := 0 to 5 do
    begin
-     ShowMessage(editsQuant[i].Text);
+     if editsQuant[i].Text = '' then
+     begin
+       editsQuant[i].Text:= IntToStr(0);
+     end;
    end;
 end;
 
 procedure TLanchoneteF.processarPedido ();
+var
+  Total : Double;
 begin
-
+     Total := 0;
 end;
 
 procedure TLanchoneteF.btnProcessarPedidoClick(Sender: TObject);

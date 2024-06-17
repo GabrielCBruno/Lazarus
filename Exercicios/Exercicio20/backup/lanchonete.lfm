@@ -1,7 +1,7 @@
 object LanchoneteF: TLanchoneteF
-  Left = 837
+  Left = 796
   Height = 585
-  Top = 114
+  Top = 142
   Width = 555
   BorderStyle = bsSingle
   Caption = 'Programa Lanchonete'
