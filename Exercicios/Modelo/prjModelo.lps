@@ -12,7 +12,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="21"/>
+        <UsageCount Value="22"/>
       </Unit>
       <Unit>
         <Filename Value="modelo.pas"/>
@@ -22,16 +22,87 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Modelo"/>
         <IsVisibleTab Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="31"/>
-        <CursorPos X="18" Y="65"/>
-        <UsageCount Value="21"/>
+        <TopLine Value="4"/>
+        <CursorPos X="35" Y="27"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
-    <General>
-      <ActiveWindowIndexAtStart Value="-1"/>
-    </General>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory HistoryIndex="17">
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="28" Column="19" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="30" Column="19" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="44" Column="3" TopLine="11"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="45" Column="3" TopLine="11"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="42" Column="4" TopLine="11"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="52" Column="3" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="53" Column="3" TopLine="20"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="60" Column="3" TopLine="23"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="52" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="26" Column="76" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="25" Column="76" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="24" Column="76" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="51" TopLine="17"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="23" Column="47" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="22" Column="47" TopLine="7"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="21" Column="47" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="20" Column="47" TopLine="5"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="19" Column="47" TopLine="4"/>
+      </Position>
+    </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>

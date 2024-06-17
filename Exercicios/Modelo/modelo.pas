@@ -5,7 +5,7 @@ unit Modelo;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ColorBox;
 
 type
 
@@ -33,36 +33,8 @@ implementation
 { TModeloF }
 
 procedure TModeloF.btnEnviarClick(Sender: TObject);
-var
-  numero : Integer;
-  Frutas : array [0..4] of String;
-  i : Integer;
-  soma : Integer;
 begin
-  {Frutas[0] := 'Banana';
-  Frutas[1] := 'Mamão';
-  Frutas[2] := 'Uva';
-  Frutas[3] := 'Goiaba';
-  Frutas[4] := 'Abacate';
 
-  ShowMessage(Frutas[4]);
-  numero := 20;
-  while numero >=0 do
-  begin
-       ShowMessage('O número atual é: ' + IntToStr(numero));
-       //ShowMessage('Fruta: ' + Frutas[numero]);
-       numero:= numero - 1;
-  end;}
-  {for i:=10 downto 0 do
-  begin
-    ShowMessage('Estamos na posição: ' + IntToStr(i));
-  end;
-  ShowMessage('Acabou');}
-  soma := 0;
-  Repeat
-    soma := soma + 1;
-    ShowMessage(IntToStr(soma));
-  until soma = 15;
 end;
 
 end.
