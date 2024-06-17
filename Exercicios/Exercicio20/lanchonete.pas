@@ -59,7 +59,7 @@ begin
    begin
      if editsQuant[i].Text = '' then
      begin
-       editsQuant[i].Text:= IntToStr(0);
+       editsQuant[i].Text:= IntToStr(1);
      end;
    end;
 end;

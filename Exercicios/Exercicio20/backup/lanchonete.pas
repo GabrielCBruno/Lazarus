@@ -68,7 +68,7 @@ procedure TLanchoneteF.processarPedido ();
 var
   Total : Double;
 begin
-
+     Total := 0;
 end;
 
 procedure TLanchoneteF.btnProcessarPedidoClick(Sender: TObject);
