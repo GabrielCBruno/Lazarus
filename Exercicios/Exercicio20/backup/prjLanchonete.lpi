@@ -38,6 +38,7 @@
         <Filename Value="lanchonete.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="LanchoneteF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Lanchonete"/>
       </Unit>
