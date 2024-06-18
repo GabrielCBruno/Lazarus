@@ -1,7 +1,7 @@
 object LanchoneteF: TLanchoneteF
-  Left = 379
+  Left = 709
   Height = 542
-  Top = 22
+  Top = 136
   Width = 528
   BorderStyle = bsSingle
   Caption = 'Programa Lanchonete'
@@ -47,7 +47,7 @@ object LanchoneteF: TLanchoneteF
     Top = 96
     Width = 424
     AutoFill = True
-    Caption = 'Cardápio                       Preço     Quantidade'
+    Caption = 'Cardápio                       Preço         Quantidade'
     ChildSizing.LeftRightSpacing = 6
     ChildSizing.TopBottomSpacing = 6
     ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
@@ -56,7 +56,7 @@ object LanchoneteF: TLanchoneteF
     ChildSizing.ShrinkVertical = crsScaleChilds
     ChildSizing.Layout = cclLeftToRightThenTopToBottom
     ChildSizing.ControlsPerLine = 1
-    ClientHeight = 300
+    ClientHeight = 299
     ClientWidth = 420
     Color = clWhite
     Font.CharSet = ANSI_CHARSET
@@ -83,7 +83,7 @@ object LanchoneteF: TLanchoneteF
   end
   object edtCachorroQuente: TEdit
     Cursor = crHandPoint
-    Left = 384
+    Left = 360
     Height = 30
     Top = 136
     Width = 80
@@ -100,7 +100,7 @@ object LanchoneteF: TLanchoneteF
   end
   object edtBauruSimples: TEdit
     Cursor = crHandPoint
-    Left = 384
+    Left = 360
     Height = 30
     Top = 184
     Width = 80
@@ -117,7 +117,7 @@ object LanchoneteF: TLanchoneteF
   end
   object edtBauruOvo: TEdit
     Cursor = crHandPoint
-    Left = 384
+    Left = 360
     Height = 30
     Top = 232
     Width = 80
@@ -134,7 +134,7 @@ object LanchoneteF: TLanchoneteF
   end
   object edtHamburger: TEdit
     Cursor = crHandPoint
-    Left = 384
+    Left = 360
     Height = 30
     Top = 280
     Width = 80
@@ -151,7 +151,7 @@ object LanchoneteF: TLanchoneteF
   end
   object edtCheseburguer: TEdit
     Cursor = crHandPoint
-    Left = 384
+    Left = 360
     Height = 30
     Top = 328
     Width = 80
@@ -168,7 +168,7 @@ object LanchoneteF: TLanchoneteF
   end
   object edtRefrigerante: TEdit
     Cursor = crHandPoint
-    Left = 384
+    Left = 360
     Height = 30
     Top = 376
     Width = 80
@@ -215,7 +215,7 @@ object LanchoneteF: TLanchoneteF
     Left = 56
     Height = 26
     Top = 440
-    Width = 84
+    Width = 83
     Caption = 'Entrega'
     Font.CharSet = ANSI_CHARSET
     Font.Height = -19

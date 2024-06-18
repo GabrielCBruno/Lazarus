@@ -31,7 +31,6 @@ type
     Label3: TLabel;
     lblSaida: TLabel;
     procedure btnProcessarPedidoClick(Sender: TObject);
-    //procedure FormCreate(Sender: TObject);
   private
 
   public
