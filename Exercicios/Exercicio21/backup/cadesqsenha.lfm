@@ -1,0 +1,135 @@
+object CadEsqSenhaF: TCadEsqSenhaF
+  Left = 592
+  Height = 355
+  Top = 237
+  Width = 441
+  Caption = 'Esqueci Senha'
+  ClientHeight = 355
+  ClientWidth = 441
+  LCLVersion = '3.4.0.0'
+  object lblEmail: TLabel
+    Left = 111
+    Height = 22
+    Top = 112
+    Width = 57
+    Caption = 'Email: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblSenhaNova: TLabel
+    Left = 56
+    Height = 22
+    Top = 160
+    Width = 112
+    Caption = 'Senha Nova: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblConfirmarSenha: TLabel
+    Left = 16
+    Height = 22
+    Top = 208
+    Width = 152
+    Caption = 'Confirmar Senha: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object edtEmail: TEdit
+    Cursor = crHandPoint
+    Left = 168
+    Height = 26
+    Top = 108
+    Width = 232
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 0
+  end
+  object edtSenhaNova: TEdit
+    Cursor = crHandPoint
+    Left = 168
+    Height = 26
+    Top = 160
+    Width = 232
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 1
+  end
+  object edtConfirmarSenha: TEdit
+    Cursor = crHandPoint
+    Left = 164
+    Height = 26
+    Top = 208
+    Width = 232
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 2
+  end
+  object btnEntrar: TButton
+    Cursor = crHandPoint
+    Left = 104
+    Height = 40
+    Top = 272
+    Width = 86
+    Caption = 'Entrar'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Cambria'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 3
+  end
+  object btnCancelar: TButton
+    Cursor = crHandPoint
+    Left = 240
+    Height = 40
+    Top = 272
+    Width = 96
+    Caption = 'Cancelar'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Cambria'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 4
+  end
+  object lblTitulo: TLabel
+    Left = 64
+    Height = 43
+    Top = 32
+    Width = 332
+    Caption = 'Esqueci minha Senha'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -37
+    Font.Name = 'Cambria'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsUnderline]
+    ParentFont = False
+  end
+end

@@ -1,0 +1,8 @@
+object OpSobreF: TOpSobreF
+  Left = 558
+  Height = 421
+  Top = 218
+  Width = 704
+  Caption = 'Tela Sobre'
+  LCLVersion = '3.4.0.0'
+end
