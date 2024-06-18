@@ -18,10 +18,12 @@
         <Filename Value="menuprincipal.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="MenuPrincipalF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="MenuPrincipal"/>
+        <IsVisibleTab Value="True"/>
         <TopLine Value="42"/>
-        <CursorPos X="46" Y="59"/>
+        <CursorPos X="17" Y="47"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -33,7 +35,6 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadModelo"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="12"/>
         <CursorPos X="2" Y="25"/>
@@ -45,6 +46,7 @@
         <Filename Value="oplogin.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="OpLoginF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="OpLogin"/>
         <EditorIndex Value="2"/>
@@ -56,6 +58,7 @@
         <Filename Value="cadesqsenha.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="CadEsqSenhaF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadEsqSenha"/>
         <EditorIndex Value="3"/>
@@ -111,7 +114,7 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadUsuarios"/>
         <EditorIndex Value="7"/>
-        <CursorPos X="18"/>
+        <CursorPos X="49" Y="13"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -136,6 +139,7 @@
         <UnitName Value="CadVendedores"/>
         <EditorIndex Value="9"/>
         <CursorPos X="27" Y="28"/>
+        <ComponentState Value="1"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>

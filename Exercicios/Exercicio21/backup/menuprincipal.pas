@@ -5,7 +5,7 @@ unit MenuPrincipal;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, CadClientes, CadProduto, CadUsuarios;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, CadClientes, CadProduto, CadUsuarios, CadFornecedor;
 
 type
 
@@ -50,14 +50,14 @@ end;
 
 procedure TMenuPrincipalF.FornecedorClick(Sender: TObject);
 begin
-  //
+  CadFornecedorF := TCadFornecedorF.Create(Self);
+  CadFornecedorF.ShowModal;
 end;
 
 procedure TMenuPrincipalF.ProdutoClick(Sender: TObject);
 begin
 
   CadProdutosF := TCadProdutosF.Create(Self);
-  //CadProdutoF := TCadProdutoF.Create(Self);
   CadProdutosF.ShowModal;
 end;
 

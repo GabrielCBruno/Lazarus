@@ -38,6 +38,7 @@
         <Filename Value="menuprincipal.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="MenuPrincipalF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="MenuPrincipal"/>
       </Unit>
@@ -53,6 +54,7 @@
         <Filename Value="oplogin.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="OpLoginF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="OpLogin"/>
       </Unit>
@@ -60,6 +62,7 @@
         <Filename Value="cadesqsenha.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="CadEsqSenhaF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadEsqSenha"/>
       </Unit>
