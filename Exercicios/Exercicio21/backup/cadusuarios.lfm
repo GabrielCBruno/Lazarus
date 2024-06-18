@@ -1,12 +1,15 @@
 inherited CadUsuariosF: TCadUsuariosF
-  Left = 512
-  Top = 201
+  Left = 328
+  Height = 544
+  Top = 107
   Caption = 'Cadastro de Usuários'
+  ClientHeight = 544
   inherited Panel1: TPanel
+    Top = 463
     TabOrder = 2
   end
   object lblTitulo: TLabel[1]
-    Left = 280
+    Left = 264
     Height = 41
     Top = 24
     Width = 257

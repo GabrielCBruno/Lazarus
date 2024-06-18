@@ -6,7 +6,7 @@ inherited CadUsuariosF: TCadUsuariosF
   ClientHeight = 544
   inherited Panel1: TPanel
     Top = 463
-    TabOrder = 2
+    TabOrder = 13
   end
   object lblTitulo: TLabel[1]
     Left = 264
@@ -121,7 +121,7 @@ inherited CadUsuariosF: TCadUsuariosF
     Height = 23
     Top = 208
     Width = 208
-    TabOrder = 8
+    TabOrder = 7
   end
   object edtNomeFantasia: TEdit[10]
     Cursor = crHandPoint
@@ -135,14 +135,14 @@ inherited CadUsuariosF: TCadUsuariosF
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
-    TabOrder = 7
+    TabOrder = 6
   end
   object edtEndereco: TEdit[11]
     Left = 144
     Height = 23
     Top = 254
     Width = 240
-    TabOrder = 9
+    TabOrder = 8
   end
   object lblTelefone: TLabel[12]
     Left = 496
@@ -176,14 +176,14 @@ inherited CadUsuariosF: TCadUsuariosF
     Top = 301
     Width = 168
     NumbersOnly = True
-    TabOrder = 13
+    TabOrder = 12
   end
   object edtEmail: TEdit[15]
     Left = 120
     Height = 23
     Top = 301
     Width = 264
-    TabOrder = 12
+    TabOrder = 11
   end
   object lblNumero: TLabel[16]
     Left = 408
@@ -204,7 +204,7 @@ inherited CadUsuariosF: TCadUsuariosF
     Top = 254
     Width = 56
     NumbersOnly = True
-    TabOrder = 10
+    TabOrder = 9
   end
   object lblBairro: TLabel[18]
     Left = 520
@@ -224,7 +224,7 @@ inherited CadUsuariosF: TCadUsuariosF
     Height = 23
     Top = 253
     Width = 168
-    TabOrder = 11
+    TabOrder = 10
   end
   object rbFeminino: TRadioButton[20]
     Left = 648
@@ -238,7 +238,7 @@ inherited CadUsuariosF: TCadUsuariosF
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
-    TabOrder = 4
+    TabOrder = 3
   end
   object rbMasculino: TRadioButton[21]
     Left = 528
@@ -252,7 +252,7 @@ inherited CadUsuariosF: TCadUsuariosF
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
-    TabOrder = 3
+    TabOrder = 2
   end
   object lblNomeUsuario: TLabel[22]
     Left = 48
@@ -279,7 +279,7 @@ inherited CadUsuariosF: TCadUsuariosF
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
-    TabOrder = 5
+    TabOrder = 4
   end
   object lblSenha: TLabel[24]
     Left = 473
@@ -306,6 +306,6 @@ inherited CadUsuariosF: TCadUsuariosF
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
-    TabOrder = 6
+    TabOrder = 5
   end
 end

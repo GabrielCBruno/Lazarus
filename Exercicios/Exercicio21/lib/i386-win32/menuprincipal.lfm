@@ -1,7 +1,7 @@
 object MenuPrincipalF: TMenuPrincipalF
-  Left = 536
+  Left = 287
   Height = 480
-  Top = 208
+  Top = 181
   Width = 835
   Caption = 'Menu Principal'
   Menu = MainMenu
@@ -30,6 +30,7 @@ object MenuPrincipalF: TMenuPrincipalF
       end
       object Vendedor: TMenuItem
         Caption = 'Vendedor'
+        OnClick = VendedorClick
       end
     end
     object Manutencao: TMenuItem
@@ -37,6 +38,7 @@ object MenuPrincipalF: TMenuPrincipalF
     end
     object Sobre: TMenuItem
       Caption = 'Sobre'
+      OnClick = SobreClick
     end
     object Sair: TMenuItem
       Caption = 'Sair'
