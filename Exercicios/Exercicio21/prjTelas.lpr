@@ -10,7 +10,8 @@ uses
   athreads,
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, MenuPrincipal, CadModelo, OpLogin, CadEsqSenha, OpSobre
+  Forms, MenuPrincipal, CadModelo, OpLogin, CadEsqSenha, OpSobre, CadProduto,
+  CadClientes, CadUsuarios, CadFornecedor, CadVendedores
   { you can add units after this };
 
 {$R *.res}
@@ -20,8 +21,6 @@ begin
   Application.Scaled:=True;
   Application.Initialize;
   Application.CreateForm(TMenuPrincipalF, MenuPrincipalF);
-  Application.CreateForm(TCadEsqSenhaF, CadEsqSenhaF);
-  Application.CreateForm(TOpSobreF, OpSobreF);
   Application.Run;
 end.
 

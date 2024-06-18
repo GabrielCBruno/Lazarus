@@ -1,0 +1,80 @@
+object OpSobreF: TOpSobreF
+  Left = 558
+  Height = 421
+  Top = 218
+  Width = 704
+  Caption = 'Tela Sobre'
+  ClientHeight = 421
+  ClientWidth = 704
+  LCLVersion = '3.4.0.0'
+  object lblSistema: TLabel
+    Left = 96
+    Height = 22
+    Top = 88
+    Width = 74
+    Caption = 'Sistema'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblLinguagem: TLabel
+    Left = 96
+    Height = 22
+    Top = 136
+    Width = 104
+    Caption = 'Linguagem'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblBancoDados: TLabel
+    Left = 96
+    Height = 22
+    Top = 184
+    Width = 153
+    Caption = 'Banco de Dados'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblAnoDesenv: TLabel
+    Left = 96
+    Height = 22
+    Top = 232
+    Width = 231
+    Caption = 'Ano de Desenvolvimento'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblEmpresa: TLabel
+    Left = 96
+    Height = 22
+    Top = 280
+    Width = 83
+    Caption = 'Empresa'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+end

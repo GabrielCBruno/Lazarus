@@ -1,14 +1,14 @@
 object CadModeloF: TCadModeloF
-  Left = 573
+  Left = 455
   Height = 537
-  Top = 119
-  Width = 825
+  Top = 209
+  Width = 779
   Caption = 'Modelo'
-  ClientHeight = 0
-  ClientWidth = 0
+  ClientHeight = 537
+  ClientWidth = 779
   LCLVersion = '3.4.0.0'
   object Panel1: TPanel
-    Left = 0
+    Left = -23
     Height = 81
     Top = 456
     Width = 825

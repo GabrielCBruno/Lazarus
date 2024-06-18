@@ -1,0 +1,154 @@
+inherited CadProdutosF: TCadProdutosF
+  Left = 567
+  Top = 175
+  Caption = 'Cadastro de Produto'
+  OnClose = FormClose
+  inherited Panel1: TPanel
+    TabOrder = 5
+  end
+  object lblTitulo: TLabel[1]
+    Left = 256
+    Height = 43
+    Top = 24
+    Width = 270
+    Caption = 'Cadastrar Prouto'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -37
+    Font.Name = 'Cambria'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsUnderline]
+    ParentFont = False
+  end
+  object lblID: TLabel[2]
+    Left = 190
+    Height = 22
+    Top = 109
+    Width = 30
+    Caption = 'ID: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblDescSimples: TLabel[3]
+    Left = 184
+    Height = 22
+    Top = 201
+    Width = 170
+    Caption = 'Descrição Simples: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblDescComposta: TLabel[4]
+    Left = 184
+    Height = 22
+    Top = 257
+    Width = 189
+    Caption = 'Descrição Composta: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblValorVenda: TLabel[5]
+    Left = 376
+    Height = 22
+    Top = 105
+    Width = 112
+    Caption = 'Valor Venda: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblTipoProduto: TLabel[6]
+    Left = 184
+    Height = 22
+    Top = 153
+    Width = 146
+    Caption = 'Tipo do Produto: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object edtID: TEdit[7]
+    Cursor = crHandPoint
+    Left = 230
+    Height = 26
+    Top = 104
+    Width = 80
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    NumbersOnly = True
+    ParentFont = False
+    TabOrder = 0
+  end
+  object cbTipoProduto: TComboBox[8]
+    Cursor = crHandPoint
+    Left = 376
+    Height = 26
+    Top = 149
+    Width = 200
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 18
+    ParentFont = False
+    TabOrder = 2
+  end
+  object edtValorVenda: TEdit[9]
+    Cursor = crHandPoint
+    Left = 496
+    Height = 26
+    Top = 104
+    Width = 80
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    NumbersOnly = True
+    ParentFont = False
+    TabOrder = 1
+  end
+  object edtDescSimples: TEdit[10]
+    Left = 376
+    Height = 26
+    Top = 201
+    Width = 200
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 3
+  end
+  object memoDescComposta: TMemo[11]
+    Left = 376
+    Height = 74
+    Top = 256
+    Width = 200
+    ScrollBars = ssVertical
+    TabOrder = 4
+  end
+end

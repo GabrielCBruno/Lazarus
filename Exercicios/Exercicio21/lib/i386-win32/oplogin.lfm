@@ -1,7 +1,7 @@
 object OpLoginF: TOpLoginF
-  Left = 607
+  Left = 667
   Height = 312
-  Top = 163
+  Top = 268
   Width = 346
   Caption = 'Login'
   ClientHeight = 312
@@ -107,13 +107,13 @@ object OpLoginF: TOpLoginF
     TabOrder = 4
   end
   object lblTitulo: TLabel
-    Left = 128
-    Height = 43
+    Left = 73
+    Height = 41
     Top = 16
-    Width = 89
-    Caption = 'Login'
+    Width = 199
+    Caption = 'Tela de Login'
     Font.CharSet = ANSI_CHARSET
-    Font.Height = -37
+    Font.Height = -35
     Font.Name = 'Cambria'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft

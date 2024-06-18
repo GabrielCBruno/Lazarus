@@ -1,0 +1,5 @@
+inherited CadFornecedorF: TCadFornecedorF
+  Left = 565
+  Top = 215
+  Caption = 'Cadastro de Fornecedor'
+end

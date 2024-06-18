@@ -1,0 +1,251 @@
+inherited CadClientesF: TCadClientesF
+  Left = 536
+  Top = 210
+  OnClose = FormClose
+  object lblTitulo: TLabel[1]
+    Left = 280
+    Height = 41
+    Top = 24
+    Width = 246
+    Caption = 'Cadastro Cliente'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -35
+    Font.Name = 'Cambria'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsUnderline]
+    ParentFont = False
+  end
+  object lblID: TLabel[2]
+    Left = 40
+    Height = 22
+    Top = 114
+    Width = 30
+    Caption = 'ID: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblRazaoSocial: TLabel[3]
+    Left = 408
+    Height = 22
+    Top = 162
+    Width = 121
+    Caption = 'Razão Social: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblEndereco: TLabel[4]
+    Left = 40
+    Height = 22
+    Top = 208
+    Width = 93
+    Caption = 'Endereço: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblCPF: TLabel[5]
+    Left = 168
+    Height = 22
+    Top = 114
+    Width = 114
+    Caption = 'CPF / CNPJ: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblNomeFantasia: TLabel[6]
+    Left = 40
+    Height = 22
+    Top = 162
+    Width = 137
+    Caption = 'Nome Fantasia: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object edtID: TEdit[7]
+    Cursor = crHandPoint
+    Left = 72
+    Height = 26
+    Top = 112
+    Width = 80
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    NumbersOnly = True
+    ParentFont = False
+    TabOrder = 1
+  end
+  object edtCPF: TEdit[8]
+    Cursor = crHandPoint
+    Left = 288
+    Height = 26
+    Top = 112
+    Width = 176
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 2
+  end
+  object edtRazaoSocial: TEdit[9]
+    Left = 528
+    Height = 23
+    Top = 162
+    Width = 208
+    TabOrder = 3
+  end
+  object edtNomeFantasia: TEdit[10]
+    Cursor = crHandPoint
+    Left = 176
+    Height = 26
+    Top = 162
+    Width = 200
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 4
+  end
+  object edtEndereco: TEdit[11]
+    Left = 136
+    Height = 23
+    Top = 208
+    Width = 240
+    TabOrder = 5
+  end
+  object lblTelefone: TLabel[12]
+    Left = 480
+    Height = 22
+    Top = 256
+    Width = 84
+    Caption = 'Telefone: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblEmail: TLabel[13]
+    Left = 40
+    Height = 22
+    Top = 256
+    Width = 57
+    Caption = 'Email: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object edtEndereco1: TEdit[14]
+    Left = 568
+    Height = 23
+    Top = 256
+    Width = 168
+    NumbersOnly = True
+    TabOrder = 6
+  end
+  object edtEmail: TEdit[15]
+    Left = 112
+    Height = 23
+    Top = 256
+    Width = 264
+    TabOrder = 7
+  end
+  object lblNumero: TLabel[16]
+    Left = 400
+    Height = 22
+    Top = 208
+    Width = 31
+    Caption = 'N°: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object edtNumero: TEdit[17]
+    Left = 432
+    Height = 23
+    Top = 208
+    Width = 56
+    NumbersOnly = True
+    TabOrder = 8
+  end
+  object lblBairro: TLabel[18]
+    Left = 504
+    Height = 22
+    Top = 208
+    Width = 60
+    Caption = 'Bairro: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object edtRazaoSocial1: TEdit[19]
+    Left = 568
+    Height = 23
+    Top = 208
+    Width = 168
+    TabOrder = 9
+  end
+  object rbMasculino: TRadioButton[20]
+    Left = 528
+    Height = 26
+    Top = 112
+    Width = 102
+    Caption = 'Masculino'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 10
+  end
+  object rbFeminino: TRadioButton[21]
+    Left = 640
+    Height = 26
+    Top = 112
+    Width = 96
+    Caption = 'Feminino'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 11
+  end
+end

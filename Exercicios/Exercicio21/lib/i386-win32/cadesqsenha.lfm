@@ -76,7 +76,7 @@ object CadEsqSenhaF: TCadEsqSenhaF
   end
   object edtConfirmarSenha: TEdit
     Cursor = crHandPoint
-    Left = 164
+    Left = 168
     Height = 26
     Top = 208
     Width = 232

@@ -1,7 +1,7 @@
 object OpLoginF: TOpLoginF
-  Left = 607
+  Left = 667
   Height = 312
-  Top = 163
+  Top = 268
   Width = 346
   Caption = 'Login'
   ClientHeight = 312
