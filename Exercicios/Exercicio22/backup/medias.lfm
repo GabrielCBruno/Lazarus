@@ -1,0 +1,8 @@
+object MediasF: TMediasF
+  Left = 530
+  Height = 506
+  Top = 169
+  Width = 836
+  Caption = 'Cálculo de Médias'
+  LCLVersion = '3.4.0.0'
+end

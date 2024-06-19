@@ -1,0 +1,24 @@
+object MediasF: TMediasF
+  Left = 530
+  Height = 506
+  Top = 169
+  Width = 836
+  Caption = 'Cálculo de Médias'
+  ClientHeight = 506
+  ClientWidth = 836
+  LCLVersion = '3.4.0.0'
+  object Label1: TLabel
+    Left = 40
+    Height = 41
+    Top = 32
+    Width = 761
+    Caption = 'Calcular Média Aritmética, Ponderada e Harmônica'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -35
+    Font.Name = 'Cambria'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsUnderline]
+    ParentFont = False
+  end
+end
