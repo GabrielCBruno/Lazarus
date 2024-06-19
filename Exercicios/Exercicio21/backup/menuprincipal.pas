@@ -24,6 +24,7 @@ type
     Sobre: TMenuItem;
     procedure ClienteClick(Sender: TObject);
     procedure FornecedorClick(Sender: TObject);
+    //procedure ManutencaoClick(Sender: TObject);
     procedure ProdutoClick(Sender: TObject);
     procedure SairClick(Sender: TObject);
     procedure SobreClick(Sender: TObject);
@@ -59,8 +60,6 @@ end;
 
 procedure TMenuPrincipalF.ClienteClick(Sender: TObject);
 begin
-  OpSobreF := TOpSobreF.Create(Self);
-  OpSobreF.Close;
   CadClientesF := TCadClientesF.Create(Self);
   CadClientesF.ShowModal;
 end;

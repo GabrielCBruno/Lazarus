@@ -65,8 +65,6 @@ begin
   begin
     MenuPrincipalF := TMenuPrincipalF.Create(Self);
     MenuPrincipalF.ShowModal;
-    ShowMessage('teste');
-    Close;
   end
   else
   begin
