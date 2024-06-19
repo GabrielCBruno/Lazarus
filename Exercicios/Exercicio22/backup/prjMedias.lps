@@ -12,21 +12,61 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="21"/>
       </Unit>
       <Unit>
         <Filename Value="medias.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="MediasF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Medias"/>
         <IsVisibleTab Value="True"/>
-        <UsageCount Value="20"/>
+        <TopLine Value="48"/>
+        <CursorPos X="28" Y="72"/>
+        <UsageCount Value="21"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory HistoryIndex="8">
+      <Position>
+        <Filename Value="medias.pas"/>
+        <Caret Line="6" Column="75"/>
+      </Position>
+      <Position>
+        <Filename Value="medias.pas"/>
+        <Caret Line="36" Column="126"/>
+      </Position>
+      <Position>
+        <Filename Value="medias.pas"/>
+        <Caret Line="54" Column="31" TopLine="23"/>
+      </Position>
+      <Position>
+        <Filename Value="medias.pas"/>
+        <Caret Line="52" Column="21" TopLine="28"/>
+      </Position>
+      <Position>
+        <Filename Value="medias.pas"/>
+        <Caret Line="66" Column="11" TopLine="37"/>
+      </Position>
+      <Position>
+        <Filename Value="medias.pas"/>
+        <Caret Line="70" Column="46" TopLine="43"/>
+      </Position>
+      <Position>
+        <Filename Value="medias.pas"/>
+        <Caret Line="55" Column="15" TopLine="40"/>
+      </Position>
+      <Position>
+        <Filename Value="medias.pas"/>
+        <Caret Line="70" Column="46" TopLine="45"/>
+      </Position>
+      <Position>
+        <Filename Value="medias.pas"/>
+        <Caret Line="73" Column="25" TopLine="46"/>
+      </Position>
+    </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>

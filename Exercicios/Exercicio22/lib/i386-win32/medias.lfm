@@ -1,0 +1,186 @@
+object MediasF: TMediasF
+  Left = 518
+  Height = 506
+  Top = 161
+  Width = 836
+  Caption = 'Cálculo de Médias'
+  ClientHeight = 506
+  ClientWidth = 836
+  Color = 16755285
+  Font.CharSet = ANSI_CHARSET
+  Font.Color = clBlack
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  LCLVersion = '3.4.0.0'
+  object Label1: TLabel
+    Left = 40
+    Height = 41
+    Top = 32
+    Width = 761
+    Caption = 'Calcular Média Aritmética, Ponderada e Harmônica'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -35
+    Font.Name = 'Cambria'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsUnderline]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 136
+    Height = 22
+    Top = 132
+    Width = 65
+    Caption = 'Nota 1: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 320
+    Height = 22
+    Top = 131
+    Width = 65
+    Caption = 'Nota 2: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 512
+    Height = 22
+    Top = 132
+    Width = 70
+    Caption = 'Nota 3:  '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object edtNota1: TEdit
+    Cursor = crHandPoint
+    Left = 208
+    Height = 26
+    Top = 128
+    Width = 80
+    Alignment = taRightJustify
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    MaxLength = 3
+    NumbersOnly = True
+    ParentFont = False
+    TabOrder = 0
+  end
+  object edtNota2: TEdit
+    Cursor = crHandPoint
+    Left = 392
+    Height = 26
+    Top = 128
+    Width = 80
+    Alignment = taRightJustify
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    MaxLength = 100
+    NumbersOnly = True
+    ParentFont = False
+    TabOrder = 1
+  end
+  object edtNota3: TEdit
+    Cursor = crHandPoint
+    Left = 584
+    Height = 26
+    Top = 127
+    Width = 80
+    Alignment = taRightJustify
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    MaxLength = 100
+    NumbersOnly = True
+    ParentFont = False
+    TabOrder = 2
+  end
+  object cmbMedia: TComboBox
+    Cursor = crHandPoint
+    Left = 264
+    Height = 26
+    Top = 240
+    Width = 152
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 18
+    ItemIndex = 0
+    Items.Strings = (
+      'Aritmética'
+      'Poderada'
+      'Harmônica'
+    )
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 3
+    Text = 'Aritmética'
+  end
+  object Label5: TLabel
+    Left = 136
+    Height = 22
+    Top = 192
+    Width = 537
+    Caption = 'Escolha o tipo de média que deseja calcular à partir das 3 notas'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object btnCalcularMedia: TButton
+    Cursor = crHandPoint
+    Left = 456
+    Height = 47
+    Top = 232
+    Width = 96
+    Caption = 'Calcular'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Playfair Display'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 4
+    OnClick = btnCalcularMediaClick
+  end
+  object lblSaida: TLabel
+    Left = 352
+    Height = 22
+    Top = 320
+    Width = 82
+    Caption = 'Resposta'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+end

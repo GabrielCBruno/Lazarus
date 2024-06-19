@@ -35,10 +35,12 @@
         <IsPartOfProject Value="True"/>
       </Unit>
       <Unit>
-        <Filename Value="unit1.pas"/>
+        <Filename Value="medias.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="MediasF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Medias"/>
       </Unit>
     </Units>
   </ProjectOptions>
@@ -53,6 +55,9 @@
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf3"/>
+      </Debugging>
       <Options>
         <Win32>
           <GraphicApplication Value="True"/>
