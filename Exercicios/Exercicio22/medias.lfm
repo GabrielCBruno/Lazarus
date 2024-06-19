@@ -1,12 +1,12 @@
 object MediasF: TMediasF
-  Left = 518
+  Left = 302
   Height = 506
-  Top = 161
+  Top = 42
   Width = 836
   Caption = 'Cálculo de Médias'
   ClientHeight = 506
   ClientWidth = 836
-  Color = 16755285
+  Color = 13880267
   Font.CharSet = ANSI_CHARSET
   Font.Color = clBlack
   Font.Pitch = fpVariable
@@ -132,7 +132,7 @@ object MediasF: TMediasF
     ItemIndex = 0
     Items.Strings = (
       'Aritmética'
-      'Poderada'
+      'Ponderada'
       'Harmônica'
     )
     ParentFont = False

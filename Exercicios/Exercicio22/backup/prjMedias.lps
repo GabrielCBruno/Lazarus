@@ -12,7 +12,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="21"/>
+        <UsageCount Value="22"/>
       </Unit>
       <Unit>
         <Filename Value="medias.pas"/>
@@ -22,14 +22,14 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Medias"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="48"/>
-        <CursorPos X="28" Y="72"/>
-        <UsageCount Value="21"/>
+        <TopLine Value="89"/>
+        <CursorPos X="60" Y="96"/>
+        <UsageCount Value="22"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="8">
+    <JumpHistory HistoryIndex="9">
       <Position>
         <Filename Value="medias.pas"/>
         <Caret Line="6" Column="75"/>
@@ -65,6 +65,10 @@
       <Position>
         <Filename Value="medias.pas"/>
         <Caret Line="73" Column="25" TopLine="46"/>
+      </Position>
+      <Position>
+        <Filename Value="medias.pas"/>
+        <Caret Line="72" Column="28" TopLine="48"/>
       </Position>
     </JumpHistory>
     <RunParams>
