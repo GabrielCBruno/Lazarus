@@ -1,7 +1,7 @@
 inherited CadUsuariosF: TCadUsuariosF
-  Left = 484
+  Left = 556
   Height = 544
-  Top = 251
+  Top = 219
   Caption = 'Cadastro de Usuários'
   ClientHeight = 544
   OnClose = FormClose

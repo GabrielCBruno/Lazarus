@@ -24,7 +24,6 @@ type
     Sobre: TMenuItem;
     procedure ClienteClick(Sender: TObject);
     procedure FornecedorClick(Sender: TObject);
-    //procedure ManutencaoClick(Sender: TObject);
     procedure ProdutoClick(Sender: TObject);
     procedure SairClick(Sender: TObject);
     procedure SobreClick(Sender: TObject);

@@ -19,10 +19,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="MenuPrincipal"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="54"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="51"/>
         <CursorPos Y="27"/>
         <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="cadmodelo.pas"/>
@@ -31,11 +33,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadModelo"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="-1"/>
+        <EditorIndex Value="3"/>
         <TopLine Value="12"/>
-        <CursorPos X="14" Y="17"/>
+        <CursorPos X="45" Y="26"/>
         <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="oplogin.pas"/>
@@ -44,9 +47,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="OpLogin"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="53" Y="25"/>
+        <EditorIndex Value="8"/>
+        <CursorPos X="73" Y="11"/>
         <UsageCount Value="23"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="cadesqsenha.pas"/>
@@ -55,10 +59,11 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadEsqSenha"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="39"/>
-        <CursorPos X="29" Y="28"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="37"/>
+        <CursorPos X="14" Y="55"/>
         <UsageCount Value="23"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="opsobre.pas"/>
@@ -67,10 +72,13 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="OpSobre"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="6"/>
-        <CursorPos Y="6"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="13"/>
+        <CursorPos X="9" Y="46"/>
         <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="cadproduto.pas"/>
@@ -79,10 +87,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadProduto"/>
-        <EditorIndex Value="-1"/>
+        <EditorIndex Value="4"/>
         <TopLine Value="12"/>
-        <CursorPos X="20" Y="12"/>
+        <CursorPos X="8" Y="30"/>
         <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="cadclientes.pas"/>
@@ -91,10 +101,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadClientes"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="37"/>
+        <TopLine Value="22"/>
         <CursorPos X="3" Y="55"/>
         <UsageCount Value="23"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="cadusuarios.pas"/>
@@ -103,10 +113,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadUsuarios"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="42"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="27"/>
         <CursorPos X="24" Y="60"/>
         <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="cadfornecedor.pas"/>
@@ -115,10 +127,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadFornecedor"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="35"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="20"/>
         <CursorPos Y="45"/>
         <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="cadvendedores.pas"/>
@@ -127,10 +141,11 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadVendedores"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="37"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="22"/>
         <CursorPos Y="45"/>
         <UsageCount Value="23"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="untsistema.pas"/>
@@ -141,10 +156,24 @@
         <UsageCount Value="21"/>
       </Unit>
     </Units>
-    <General>
-      <ActiveWindowIndexAtStart Value="-1"/>
-    </General>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory HistoryIndex="3">
+      <Position>
+        <Filename Value="cadesqsenha.pas"/>
+        <Caret Line="39" Column="23" TopLine="37"/>
+      </Position>
+      <Position>
+        <Filename Value="opsobre.pas"/>
+        <Caret Line="6" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="opsobre.pas"/>
+        <Caret Line="29" Column="13" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="opsobre.pas"/>
+        <Caret Line="31" Column="13" TopLine="6"/>
+      </Position>
+    </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>

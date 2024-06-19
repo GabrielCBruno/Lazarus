@@ -1,11 +1,13 @@
 object MenuPrincipalF: TMenuPrincipalF
-  Left = 430
+  Left = 462
   Height = 480
-  Top = 165
+  Top = 205
   Width = 835
   Caption = 'Menu Principal'
+  Color = 14671839
   Menu = MainMenu
   LCLVersion = '3.4.0.0'
+  WindowState = wsMaximized
   object MainMenu: TMainMenu
     Left = 112
     Top = 80

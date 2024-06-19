@@ -34,6 +34,7 @@ type
     rbFeminino: TRadioButton;
     rbMasculino: TRadioButton;
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
+    procedure FormCreate(Sender: TObject);
   private
 
   public
@@ -53,6 +54,11 @@ procedure TCadClientesF.FormClose(Sender: TObject; var CloseAction: TCloseAction
   );
 begin
   CloseAction:= caFree;
+end;
+
+procedure TCadClientesF.FormCreate(Sender: TObject);
+begin
+
 end;
 
 end.

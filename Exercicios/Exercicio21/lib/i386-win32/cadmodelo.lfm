@@ -1,11 +1,12 @@
 object CadModeloF: TCadModeloF
-  Left = 455
+  Left = 573
   Height = 537
-  Top = 209
+  Top = 212
   Width = 779
   Caption = 'Modelo'
   ClientHeight = 537
   ClientWidth = 779
+  Color = 14671839
   LCLVersion = '3.4.0.0'
   object Panel1: TPanel
     Left = -23
@@ -15,6 +16,7 @@ object CadModeloF: TCadModeloF
     Anchors = [akBottom]
     ClientHeight = 81
     ClientWidth = 825
+    ParentBackground = False
     TabOrder = 0
     object btnNovo: TButton
       Cursor = crHandPoint

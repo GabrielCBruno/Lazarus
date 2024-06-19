@@ -61,8 +61,10 @@ begin
     ShowMessage('As senhas não Coincidem ou usuário inexistente.');
   end
   else
-      MenuPrincipalF := TMenuPrincipalF.Create(Self);
-      MenuPrincipalF.ShowModal;
+  begin
+    MenuPrincipalF := TMenuPrincipalF.Create(Self);
+    MenuPrincipalF.ShowModal;
+  end;
 end;
 
 procedure TCadEsqSenhaF.FormClose(Sender: TObject; var CloseAction: TCloseAction

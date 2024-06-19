@@ -1,7 +1,9 @@
 inherited CadClientesF: TCadClientesF
-  Left = 428
-  Top = 165
+  Left = 640
+  Top = 216
+  Color = 14671839
   OnClose = FormClose
+  OnCreate = FormCreate
   inherited Panel1: TPanel
     TabOrder = 11
   end

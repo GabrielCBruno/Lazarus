@@ -38,6 +38,7 @@ type
     lblTitulo: TLabel;
     rbFeminino: TRadioButton;
     rbMasculino: TRadioButton;
+    procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
   private
 
   public
@@ -50,6 +51,14 @@ var
 implementation
 
 {$R *.lfm}
+
+{ TCadUsuariosF }
+
+procedure TCadUsuariosF.FormClose(Sender: TObject; var CloseAction: TCloseAction
+  );
+begin
+  CloseAction:= caFree;
+end;
 
 end.
 

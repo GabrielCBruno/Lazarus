@@ -1,9 +1,12 @@
 inherited CadVendedoresF: TCadVendedoresF
-  Left = 338
-  Top = 67
+  Left = 556
+  Height = 544
+  Top = 178
   Caption = 'Cadastro de Vendedores'
+  ClientHeight = 544
   OnClose = FormClose
   inherited Panel1: TPanel
+    Top = 463
     TabOrder = 10
   end
   object lblTitulo: TLabel[1]

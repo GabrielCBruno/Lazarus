@@ -1,11 +1,12 @@
 object CadModeloF: TCadModeloF
-  Left = 455
+  Left = 573
   Height = 537
-  Top = 209
+  Top = 212
   Width = 779
   Caption = 'Modelo'
   ClientHeight = 537
   ClientWidth = 779
+  Color = 14671839
   LCLVersion = '3.4.0.0'
   object Panel1: TPanel
     Left = -23
@@ -15,6 +16,7 @@ object CadModeloF: TCadModeloF
     Anchors = [akBottom]
     ClientHeight = 81
     ClientWidth = 825
+    ParentBackground = False
     TabOrder = 0
     object btnNovo: TButton
       Cursor = crHandPoint
@@ -29,7 +31,7 @@ object CadModeloF: TCadModeloF
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
       ParentFont = False
-      TabOrder = 3
+      TabOrder = 0
       OnClick = btnNovoClick
     end
     object btnEditar: TButton
@@ -45,7 +47,7 @@ object CadModeloF: TCadModeloF
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
       ParentFont = False
-      TabOrder = 4
+      TabOrder = 1
     end
     object btnGravar: TButton
       Cursor = crHandPoint
@@ -60,7 +62,7 @@ object CadModeloF: TCadModeloF
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
       ParentFont = False
-      TabOrder = 0
+      TabOrder = 2
     end
     object btnExcluir: TButton
       Cursor = crHandPoint
@@ -75,7 +77,7 @@ object CadModeloF: TCadModeloF
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
       ParentFont = False
-      TabOrder = 1
+      TabOrder = 3
     end
     object btnSair: TButton
       Cursor = crHandPoint
@@ -90,7 +92,7 @@ object CadModeloF: TCadModeloF
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
       ParentFont = False
-      TabOrder = 2
+      TabOrder = 4
     end
   end
 end
