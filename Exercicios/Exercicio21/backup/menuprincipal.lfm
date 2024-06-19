@@ -1,11 +1,10 @@
 object MenuPrincipalF: TMenuPrincipalF
-  Left = 307
+  Left = 430
   Height = 480
-  Top = 104
+  Top = 165
   Width = 835
   Caption = 'Menu Principal'
   Menu = MainMenu
-  OnCreate = FormCreate
   LCLVersion = '3.4.0.0'
   object MainMenu: TMainMenu
     Left = 112

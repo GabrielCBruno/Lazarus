@@ -23,7 +23,6 @@ type
     Sair: TMenuItem;
     Sobre: TMenuItem;
     procedure ClienteClick(Sender: TObject);
-    procedure FormCreate(Sender: TObject);
     procedure FornecedorClick(Sender: TObject);
     procedure ProdutoClick(Sender: TObject);
     procedure SairClick(Sender: TObject);
@@ -45,11 +44,6 @@ implementation
 
 { TMenuPrincipalF }
 
-procedure TMenuPrincipalF.FormCreate(Sender: TObject);
-begin
-
-end;
-
 procedure TMenuPrincipalF.FornecedorClick(Sender: TObject);
 begin
   CadFornecedorF := TCadFornecedorF.Create(Self);
@@ -65,6 +59,8 @@ end;
 
 procedure TMenuPrincipalF.ClienteClick(Sender: TObject);
 begin
+  OpSobreF := TOpSobreF.Create(Self);
+  OpSobreF.Close;
   CadClientesF := TCadClientesF.Create(Self);
   CadClientesF.ShowModal;
 end;
@@ -79,6 +75,7 @@ begin
     OpSobreF := TOpSobreF.Create(Self);
     OpSobreF.ShowModal;
 end;
+
 
 procedure TMenuPrincipalF.UsuarioClick(Sender: TObject);
 begin

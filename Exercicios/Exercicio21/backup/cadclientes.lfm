@@ -2,6 +2,9 @@ inherited CadClientesF: TCadClientesF
   Left = 536
   Top = 210
   OnClose = FormClose
+  inherited Panel1: TPanel
+    TabOrder = 11
+  end
   object lblTitulo: TLabel[1]
     Left = 280
     Height = 41
@@ -94,7 +97,7 @@ inherited CadClientesF: TCadClientesF
     Font.Quality = fqDraft
     NumbersOnly = True
     ParentFont = False
-    TabOrder = 1
+    TabOrder = 0
   end
   object edtCPF: TEdit[8]
     Cursor = crHandPoint
@@ -108,14 +111,14 @@ inherited CadClientesF: TCadClientesF
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
-    TabOrder = 2
+    TabOrder = 1
   end
   object edtRazaoSocial: TEdit[9]
     Left = 528
     Height = 23
     Top = 162
     Width = 208
-    TabOrder = 3
+    TabOrder = 5
   end
   object edtNomeFantasia: TEdit[10]
     Cursor = crHandPoint
@@ -136,7 +139,7 @@ inherited CadClientesF: TCadClientesF
     Height = 23
     Top = 208
     Width = 240
-    TabOrder = 5
+    TabOrder = 6
   end
   object lblTelefone: TLabel[12]
     Left = 480
@@ -170,14 +173,14 @@ inherited CadClientesF: TCadClientesF
     Top = 256
     Width = 168
     NumbersOnly = True
-    TabOrder = 6
+    TabOrder = 10
   end
   object edtEmail: TEdit[15]
     Left = 112
     Height = 23
     Top = 256
     Width = 264
-    TabOrder = 7
+    TabOrder = 9
   end
   object lblNumero: TLabel[16]
     Left = 400
@@ -195,10 +198,10 @@ inherited CadClientesF: TCadClientesF
   object edtNumero: TEdit[17]
     Left = 432
     Height = 23
-    Top = 208
+    Top = 207
     Width = 56
     NumbersOnly = True
-    TabOrder = 8
+    TabOrder = 7
   end
   object lblBairro: TLabel[18]
     Left = 504
@@ -218,7 +221,7 @@ inherited CadClientesF: TCadClientesF
     Height = 23
     Top = 208
     Width = 168
-    TabOrder = 9
+    TabOrder = 8
   end
   object rbMasculino: TRadioButton[20]
     Left = 528
@@ -232,7 +235,7 @@ inherited CadClientesF: TCadClientesF
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
-    TabOrder = 10
+    TabOrder = 2
   end
   object rbFeminino: TRadioButton[21]
     Left = 640
@@ -246,6 +249,6 @@ inherited CadClientesF: TCadClientesF
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
-    TabOrder = 11
+    TabOrder = 3
   end
 end

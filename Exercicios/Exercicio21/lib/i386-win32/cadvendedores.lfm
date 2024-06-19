@@ -1,7 +1,8 @@
 inherited CadVendedoresF: TCadVendedoresF
-  Left = 390
-  Top = 180
+  Left = 338
+  Top = 67
   Caption = 'Cadastro de Vendedores'
+  OnClose = FormClose
   inherited Panel1: TPanel
     TabOrder = 10
   end

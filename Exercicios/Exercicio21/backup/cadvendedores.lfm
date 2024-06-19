@@ -1,9 +1,12 @@
 inherited CadVendedoresF: TCadVendedoresF
-  Left = 390
-  Top = 180
+  Left = 338
+  Top = 67
   Caption = 'Cadastro de Vendedores'
   ClientHeight = 0
   ClientWidth = 0
+  inherited Panel1: TPanel
+    TabOrder = 10
+  end
   object lblTitulo: TLabel[1]
     Left = 240
     Height = 41
@@ -96,13 +99,13 @@ inherited CadVendedoresF: TCadVendedoresF
     Font.Quality = fqDraft
     NumbersOnly = True
     ParentFont = False
-    TabOrder = 1
+    TabOrder = 0
   end
   object edtCPF: TEdit[8]
     Cursor = crHandPoint
     Left = 576
     Height = 26
-    Top = 111
+    Top = 112
     Width = 168
     Font.CharSet = ANSI_CHARSET
     Font.Height = -16
@@ -117,7 +120,7 @@ inherited CadVendedoresF: TCadVendedoresF
     Height = 23
     Top = 160
     Width = 168
-    TabOrder = 3
+    TabOrder = 4
   end
   object edtNomeFantasia: TEdit[10]
     Cursor = crHandPoint
@@ -131,7 +134,7 @@ inherited CadVendedoresF: TCadVendedoresF
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
-    TabOrder = 4
+    TabOrder = 3
   end
   object edtEndereco: TEdit[11]
     Left = 144
@@ -172,14 +175,14 @@ inherited CadVendedoresF: TCadVendedoresF
     Top = 253
     Width = 168
     NumbersOnly = True
-    TabOrder = 6
+    TabOrder = 9
   end
   object edtEmail: TEdit[15]
     Left = 120
     Height = 23
     Top = 254
     Width = 264
-    TabOrder = 7
+    TabOrder = 8
   end
   object lblNumero: TLabel[16]
     Left = 408
@@ -200,7 +203,7 @@ inherited CadVendedoresF: TCadVendedoresF
     Top = 206
     Width = 56
     NumbersOnly = True
-    TabOrder = 8
+    TabOrder = 6
   end
   object lblBairro: TLabel[18]
     Left = 520
@@ -220,7 +223,7 @@ inherited CadVendedoresF: TCadVendedoresF
     Height = 23
     Top = 205
     Width = 168
-    TabOrder = 9
+    TabOrder = 7
   end
   object lblPercentual: TLabel[20]
     Left = 216
@@ -247,6 +250,6 @@ inherited CadVendedoresF: TCadVendedoresF
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
-    TabOrder = 10
+    TabOrder = 1
   end
 end

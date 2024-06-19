@@ -33,6 +33,7 @@ type
     lblRazaoSocial: TLabel;
     lblTelefone: TLabel;
     lblTitulo: TLabel;
+    procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
   private
 
   public
@@ -45,6 +46,14 @@ var
 implementation
 
 {$R *.lfm}
+
+{ TCadVendedoresF }
+
+procedure TCadVendedoresF.FormClose(Sender: TObject;
+  var CloseAction: TCloseAction);
+begin
+  CloseAction:= caFree;
+end;
 
 end.
 

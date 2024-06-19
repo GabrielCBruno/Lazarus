@@ -6,6 +6,7 @@ object OpSobreF: TOpSobreF
   Caption = 'Tela Sobre'
   ClientHeight = 421
   ClientWidth = 704
+  OnClose = FormClose
   LCLVersion = '3.4.0.0'
   object lblSistema: TLabel
     Left = 136

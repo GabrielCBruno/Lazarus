@@ -1,6 +1,6 @@
 inherited CadClientesF: TCadClientesF
-  Left = 536
-  Top = 210
+  Left = 428
+  Top = 165
   OnClose = FormClose
   inherited Panel1: TPanel
     TabOrder = 11

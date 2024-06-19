@@ -1,11 +1,12 @@
 object OpLoginF: TOpLoginF
-  Left = 623
+  Left = 445
   Height = 312
-  Top = 140
+  Top = 97
   Width = 346
   Caption = 'Login'
   ClientHeight = 312
   ClientWidth = 346
+  OnClose = FormClose
   LCLVersion = '3.4.0.0'
   object lblEmail: TLabel
     Left = 33
@@ -38,7 +39,7 @@ object OpLoginF: TOpLoginF
     Left = 96
     Height = 26
     Top = 80
-    Width = 216
+    Width = 176
     Font.CharSet = ANSI_CHARSET
     Font.Height = -16
     Font.Name = 'Arial'
@@ -52,7 +53,7 @@ object OpLoginF: TOpLoginF
     Left = 96
     Height = 26
     Top = 134
-    Width = 216
+    Width = 176
     Font.CharSet = ANSI_CHARSET
     Font.Height = -16
     Font.Name = 'Arial'
@@ -75,6 +76,7 @@ object OpLoginF: TOpLoginF
     Font.Quality = fqDraft
     ParentFont = False
     TabOrder = 2
+    OnClick = btnEntrarClick
   end
   object btnCancelar: TButton
     Cursor = crHandPoint
@@ -90,6 +92,7 @@ object OpLoginF: TOpLoginF
     Font.Quality = fqDraft
     ParentFont = False
     TabOrder = 3
+    OnClick = btnCancelarClick
   end
   object btnEsqueciSenha: TButton
     Cursor = crHandPoint
@@ -105,9 +108,10 @@ object OpLoginF: TOpLoginF
     Font.Quality = fqDraft
     ParentFont = False
     TabOrder = 4
+    OnClick = btnEsqueciSenhaClick
   end
   object lblTitulo: TLabel
-    Left = 73
+    Left = 80
     Height = 41
     Top = 16
     Width = 199

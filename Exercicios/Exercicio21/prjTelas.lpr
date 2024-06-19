@@ -20,7 +20,7 @@ begin
   RequireDerivedFormResource:=True;
   Application.Scaled:=True;
   Application.Initialize;
-  Application.CreateForm(TMenuPrincipalF, MenuPrincipalF);
+  Application.CreateForm(TOpLoginF, OpLoginF);
   Application.Run;
 end.
 

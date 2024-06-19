@@ -70,6 +70,7 @@
         <Filename Value="opsobre.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="OpSobreF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="OpSobre"/>
       </Unit>

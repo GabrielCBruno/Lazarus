@@ -17,6 +17,7 @@ type
     lblEmpresa: TLabel;
     lblSistema: TLabel;
     lblLinguagem: TLabel;
+    lblTittulo: TLabel;
   private
 
   public

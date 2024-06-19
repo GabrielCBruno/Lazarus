@@ -1,7 +1,10 @@
 inherited CadFornecedorF: TCadFornecedorF
-  Left = 565
-  Top = 215
+  Left = 298
+  Top = 71
   Caption = 'Cadastro de Fornecedor'
+  inherited Panel1: TPanel
+    TabOrder = 9
+  end
   object lblTitulo: TLabel[1]
     Left = 240
     Height = 41
@@ -94,7 +97,7 @@ inherited CadFornecedorF: TCadFornecedorF
     Font.Quality = fqDraft
     NumbersOnly = True
     ParentFont = False
-    TabOrder = 1
+    TabOrder = 0
   end
   object edtCPF: TEdit[8]
     Cursor = crHandPoint
@@ -108,7 +111,7 @@ inherited CadFornecedorF: TCadFornecedorF
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
-    TabOrder = 2
+    TabOrder = 1
   end
   object edtRazaoSocial: TEdit[9]
     Left = 576
@@ -129,14 +132,14 @@ inherited CadFornecedorF: TCadFornecedorF
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
-    TabOrder = 4
+    TabOrder = 2
   end
   object edtEndereco: TEdit[11]
     Left = 144
     Height = 23
-    Top = 206
+    Top = 208
     Width = 240
-    TabOrder = 5
+    TabOrder = 4
   end
   object lblTelefone: TLabel[12]
     Left = 496
@@ -170,7 +173,7 @@ inherited CadFornecedorF: TCadFornecedorF
     Top = 253
     Width = 168
     NumbersOnly = True
-    TabOrder = 6
+    TabOrder = 8
   end
   object edtEmail: TEdit[15]
     Left = 120
@@ -198,7 +201,7 @@ inherited CadFornecedorF: TCadFornecedorF
     Top = 206
     Width = 56
     NumbersOnly = True
-    TabOrder = 8
+    TabOrder = 5
   end
   object lblBairro: TLabel[18]
     Left = 520
@@ -218,6 +221,6 @@ inherited CadFornecedorF: TCadFornecedorF
     Height = 23
     Top = 205
     Width = 168
-    TabOrder = 9
+    TabOrder = 6
   end
 end
