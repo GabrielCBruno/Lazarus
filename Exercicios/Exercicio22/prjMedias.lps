@@ -18,14 +18,18 @@
         <Filename Value="medias.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="MediasF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Medias"/>
         <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="66" Y="9"/>
         <UsageCount Value="20"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="-1"/>
+    </General>
     <JumpHistory HistoryIndex="-1"/>
     <RunParams>
       <FormatVersion Value="2"/>

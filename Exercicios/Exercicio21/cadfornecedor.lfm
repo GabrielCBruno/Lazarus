@@ -1,6 +1,6 @@
 inherited CadFornecedorF: TCadFornecedorF
-  Left = 298
-  Top = 71
+  Left = 430
+  Top = 205
   Caption = 'Cadastro de Fornecedor'
   OnClose = FormClose
   inherited Panel1: TPanel

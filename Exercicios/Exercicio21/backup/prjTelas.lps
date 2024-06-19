@@ -8,11 +8,9 @@
       <Unit>
         <Filename Value="prjTelas.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="-1"/>
         <CursorPos X="57" Y="14"/>
         <UsageCount Value="23"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="menuprincipal.pas"/>
@@ -34,6 +32,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadModelo"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="12"/>
         <CursorPos X="14" Y="17"/>
@@ -61,9 +60,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadEsqSenha"/>
-        <EditorIndex Value="4"/>
-        <TopLine Value="19"/>
-        <CursorPos X="4" Y="54"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="39"/>
+        <CursorPos X="29" Y="28"/>
         <UsageCount Value="23"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -75,7 +74,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="OpSobre"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="4"/>
         <TopLine Value="6"/>
         <CursorPos Y="6"/>
         <UsageCount Value="23"/>
@@ -89,7 +88,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadProduto"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="5"/>
         <TopLine Value="12"/>
         <CursorPos X="20" Y="12"/>
         <UsageCount Value="23"/>
@@ -103,7 +102,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadClientes"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="6"/>
         <TopLine Value="37"/>
         <CursorPos X="3" Y="55"/>
         <UsageCount Value="23"/>
@@ -117,7 +116,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadUsuarios"/>
-        <EditorIndex Value="8"/>
+        <EditorIndex Value="7"/>
         <TopLine Value="42"/>
         <CursorPos X="24" Y="60"/>
         <UsageCount Value="23"/>
@@ -131,7 +130,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadFornecedor"/>
-        <EditorIndex Value="9"/>
+        <EditorIndex Value="8"/>
         <TopLine Value="35"/>
         <CursorPos Y="45"/>
         <UsageCount Value="23"/>
@@ -145,7 +144,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadVendedores"/>
-        <EditorIndex Value="10"/>
+        <EditorIndex Value="9"/>
         <TopLine Value="37"/>
         <CursorPos Y="45"/>
         <UsageCount Value="23"/>
@@ -161,7 +160,7 @@
         <UsageCount Value="21"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
+    <JumpHistory HistoryIndex="28">
       <Position>
         <Filename Value="oplogin.pas"/>
         <Caret Line="48" Column="14" TopLine="48"/>
@@ -261,10 +260,6 @@
       <Position>
         <Filename Value="menuprincipal.pas"/>
         <Caret Line="56" Column="25" TopLine="46"/>
-      </Position>
-      <Position>
-        <Filename Value="menuprincipal.pas"/>
-        <Caret Line="8" Column="149" TopLine="25"/>
       </Position>
       <Position>
         <Filename Value="oplogin.pas"/>
