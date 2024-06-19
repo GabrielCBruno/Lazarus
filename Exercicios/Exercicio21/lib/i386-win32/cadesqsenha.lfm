@@ -1,11 +1,12 @@
 object CadEsqSenhaF: TCadEsqSenhaF
-  Left = 544
+  Left = 744
   Height = 355
-  Top = 152
+  Top = 276
   Width = 441
   Caption = 'Esqueci Senha'
   ClientHeight = 355
   ClientWidth = 441
+  Color = 15066597
   OnClose = FormClose
   OnCreate = FormCreate
   LCLVersion = '3.4.0.0'

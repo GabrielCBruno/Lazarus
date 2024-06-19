@@ -4,8 +4,9 @@ object OpLoginF: TOpLoginF
   Top = 280
   Width = 346
   Caption = 'Login'
-  ClientHeight = 312
-  ClientWidth = 346
+  ClientHeight = 0
+  ClientWidth = 0
+  Color = 15066597
   OnClose = FormClose
   LCLVersion = '3.4.0.0'
   object lblEmail: TLabel

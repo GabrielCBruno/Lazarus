@@ -1,11 +1,12 @@
 object OpSobreF: TOpSobreF
-  Left = 546
+  Left = 478
   Height = 463
-  Top = 175
+  Top = 205
   Width = 726
   Caption = 'Tela Sobre'
   ClientHeight = 463
   ClientWidth = 726
+  Color = 15066597
   OnClose = FormClose
   LCLVersion = '3.4.0.0'
   object lblSistema: TLabel
@@ -74,13 +75,13 @@ object OpSobreF: TOpSobreF
     ParentFont = False
   end
   object lblTittulo: TLabel
-    Left = 120
-    Height = 43
-    Top = 48
-    Width = 486
+    Left = 64
+    Height = 57
+    Top = 32
+    Width = 630
     Caption = 'Informações Sobre o Programa'
     Font.CharSet = ANSI_CHARSET
-    Font.Height = -37
+    Font.Height = -48
     Font.Name = 'Cambria'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft

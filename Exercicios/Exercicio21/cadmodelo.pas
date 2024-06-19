@@ -5,17 +5,18 @@ unit CadModelo;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls,
+  Buttons;
 
 type
 
   { TCadModeloF }
 
   TCadModeloF = class(TForm)
-    btnEditar: TButton;
+    bitbtnGravar: TBitBtn;
+    bitbtnNovo: TBitBtn;
+    bitbtnEditar: TBitBtn;
     btnExcluir: TButton;
-    btnGravar: TButton;
-    btnNovo: TButton;
     btnSair: TButton;
     Panel1: TPanel;
     procedure btnNovoClick(Sender: TObject);

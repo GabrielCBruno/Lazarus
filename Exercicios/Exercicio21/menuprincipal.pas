@@ -65,7 +65,7 @@ end;
 
 procedure TMenuPrincipalF.SairClick(Sender: TObject);
 begin
-  Close;
+  Application.Terminate;
 end;
 
 procedure TMenuPrincipalF.SobreClick(Sender: TObject);

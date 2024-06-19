@@ -115,8 +115,17 @@ inherited CadProdutosF: TCadProdutosF
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ItemHeight = 18
+    ItemIndex = 0
+    Items.Strings = (
+      'Limpeza'
+      'Construção'
+      'Escritório'
+      'Industriais'
+    )
     ParentFont = False
+    ReadOnly = True
     TabOrder = 2
+    Text = 'Limpeza'
   end
   object edtValorVenda: TEdit[9]
     Cursor = crHandPoint
