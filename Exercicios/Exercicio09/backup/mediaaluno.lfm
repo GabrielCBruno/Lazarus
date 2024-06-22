@@ -1,7 +1,7 @@
 object MediaAlunoF: TMediaAlunoF
-  Left = 469
+  Left = 351
   Height = 429
-  Top = 175
+  Top = 112
   Width = 777
   Caption = 'Calcular Aprovação/Reprovação aluno'
   ClientHeight = 429
@@ -110,6 +110,7 @@ object MediaAlunoF: TMediaAlunoF
     Font.Name = 'Arial'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
+    NumbersOnly = True
     ParentFont = False
     TabOrder = 1
   end
@@ -124,6 +125,7 @@ object MediaAlunoF: TMediaAlunoF
     Font.Name = 'Arial'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
+    NumbersOnly = True
     ParentFont = False
     TabOrder = 2
   end
@@ -138,6 +140,7 @@ object MediaAlunoF: TMediaAlunoF
     Font.Name = 'Arial'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
+    NumbersOnly = True
     ParentFont = False
     TabOrder = 3
   end
@@ -152,10 +155,12 @@ object MediaAlunoF: TMediaAlunoF
     Font.Name = 'Arial'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
+    NumbersOnly = True
     ParentFont = False
     TabOrder = 4
   end
   object btnCalcMedia: TButton
+    Cursor = crHandPoint
     Left = 448
     Height = 49
     Top = 232

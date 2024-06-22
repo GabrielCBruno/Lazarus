@@ -38,6 +38,7 @@
         <Filename Value="mediaaluno.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="MediaAlunoF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="MediaAluno"/>
       </Unit>

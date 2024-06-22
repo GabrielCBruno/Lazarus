@@ -72,7 +72,7 @@ begin
    if (mediaFinal >= 60) AND (faltasFinal < 55) then
    begin
      //Aprovado
-      msg := 'O Aluno ' + edtNome.Text + ' ficou com a seguinte média ' + FloatToStr(mediaFinal) + ', O aluno está APROVADO.';
+      msg := 'O Aluno ' + edtNome.Text + ' ficou com a seguinte média ' + FloatToStr(mediaFinal) + '. O aluno está APROVADO.';
       lblSaida.Caption:= msg;
    end
    else
