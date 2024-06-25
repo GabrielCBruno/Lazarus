@@ -1,0 +1,48 @@
+1) Dados de produto com status ATIVO.
+
+select *
+from produto p where status_produto = 'ATIVO';
+
+2) Descrição do produto + descrição da categoria do produto.
+
+select p.ds_produto, cp.ds_categoria_produto 
+from produto as p inner join categoria_produto as cp on cp.categoriaprodutoid = p.categoriaprodutoid;
+
+3) Dados de produtos onde o valor de venda é maior do que 50,00.
+
+select *
+from produto
+where vl_venda_produto > 50.00; 
+
+4) Dados de orçamento + nome do cliente.
+
+select o.*, c.nome_cliente
+from orcamento as o inner join cliente as c on o.clienteid = c.clienteid;
+
+5) Dados de item do orçamento + nome do produto + nome da categoria. 
+
+select oi.*, p.ds_produto, cp.ds_categoria_produto
+from orcamento as o, orcamento_item as oi, produto as p, categoria_produto as cp, cliente as c
+where oi.orcamentoid = o.orcamentoid and oi.produtoid = p.produtoid and p.categoriaprodutoid = cp.categoriaprodutoid and o.clienteid = c.clienteid;
+
+6) Orçamentos feitos entre 01/02/2022 e 18/02/2022
+
+select o.*
+from orcamento as o inner join cliente as c on o.clienteid = c.clienteid
+where o.dt_orcamento between '01/02/2022' and '18/02/2022';
+
+7) Orçamentos vencidos (utilizando data atual CURRENT_DATE)
+
+select *
+from orcamento
+where dt_validade_orcamento < current_date; 
+
+8) Maior valor de item orçamento (por produto)	
+
+select max(oi.vl_unitario), oi.produtodesc
+from orcamento_item as oi, produto as p, orcamento as o, categoria_produto as cp
+where oi.orcamentoid = o.orcamentoid and oi.produtoid = p.produtoid
+group by oi.produtodesc;
+
+9) Valor do item Mais caro de todos os orçados
+
