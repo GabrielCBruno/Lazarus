@@ -1,331 +1,444 @@
 object Form1: TForm1
-  Left = 483
+  Left = 700
   Height = 562
-  Top = 175
-  Width = 672
+  Top = 210
+  Width = 847
   Caption = 'Form1'
   ClientHeight = 562
-  ClientWidth = 672
+  ClientWidth = 847
   OnClose = FormClose
   OnShow = FormShow
   LCLVersion = '3.4.0.0'
-  object DBGrid1: TDBGrid
-    Left = 24
-    Height = 144
-    Top = 8
-    Width = 624
-    Color = clWindow
-    Columns = <    
-      item
-        Alignment = taCenter
-        Font.CharSet = ANSI_CHARSET
-        Font.Height = -16
-        Font.Name = 'Arial'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Title.Alignment = taCenter
-        Title.Font.CharSet = ANSI_CHARSET
-        Title.Font.Height = -16
-        Title.Font.Name = 'Arial'
-        Title.Font.Pitch = fpVariable
-        Title.Font.Quality = fqDraft
-        Title.Font.Style = [fsBold]
-        Title.Caption = 'ID'
-        Width = 45
-        FieldName = 'clienteid'
-      end    
-      item
-        Alignment = taCenter
-        Font.CharSet = ANSI_CHARSET
-        Font.Height = -16
-        Font.Name = 'Arial'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Title.Alignment = taCenter
-        Title.Font.CharSet = ANSI_CHARSET
-        Title.Font.Height = -16
-        Title.Font.Name = 'Arial'
-        Title.Font.Pitch = fpVariable
-        Title.Font.Quality = fqDraft
-        Title.Font.Style = [fsBold]
-        Title.Caption = 'F/J'
-        Width = 55
-        FieldName = 'tipo_cliente'
-      end    
-      item
-        Font.CharSet = ANSI_CHARSET
-        Font.Height = -16
-        Font.Name = 'Arial'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Title.Font.CharSet = ANSI_CHARSET
-        Title.Font.Height = -16
-        Title.Font.Name = 'Arial'
-        Title.Font.Pitch = fpVariable
-        Title.Font.Quality = fqDraft
-        Title.Font.Style = [fsBold]
-        Title.Caption = 'CPF/CNPJ'
-        Width = 150
-        FieldName = 'cpf_cnpj_cliente'
-      end    
-      item
-        Font.CharSet = ANSI_CHARSET
-        Font.Height = -16
-        Font.Name = 'Arial'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Title.Font.CharSet = ANSI_CHARSET
-        Title.Font.Height = -16
-        Title.Font.Name = 'Arial'
-        Title.Font.Pitch = fpVariable
-        Title.Font.Quality = fqDraft
-        Title.Font.Style = [fsBold]
-        Title.Caption = 'Nome Completo'
-        Width = 340
-        FieldName = 'nome_cliente'
-      end>
-    DataSource = dsCliente
-    ReadOnly = True
-    TabOrder = 4
-  end
-  object Label1: TLabel
-    Left = 576
-    Height = 22
-    Top = 220
-    Width = 27
-    Caption = 'Id: '
-    Font.CharSet = ANSI_CHARSET
-    Font.Height = -19
-    Font.Name = 'Arial'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    ParentFont = False
-  end
-  object Label2: TLabel
-    Left = 568
-    Height = 22
-    Top = 268
-    Width = 37
-    Caption = 'F/J: '
-    Font.CharSet = ANSI_CHARSET
-    Font.Height = -19
-    Font.Name = 'Arial'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    ParentFont = False
-  end
-  object Label3: TLabel
-    Left = 72
-    Height = 22
-    Top = 268
-    Width = 104
-    Caption = 'CPF/CNPJ: '
-    Font.CharSet = ANSI_CHARSET
-    Font.Height = -19
-    Font.Name = 'Arial'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    ParentFont = False
-  end
-  object Label4: TLabel
-    Left = 24
-    Height = 22
-    Top = 220
-    Width = 152
-    Caption = 'Nome do Cliente: '
-    Font.CharSet = ANSI_CHARSET
-    Font.Height = -19
-    Font.Name = 'Arial'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    ParentFont = False
-  end
-  object DBedtID: TDBEdit
-    Cursor = crHandPoint
-    Left = 608
-    Height = 30
-    Top = 216
-    Width = 48
-    DataField = 'clienteid'
-    DataSource = dsCliente
-    Alignment = taRightJustify
-    Font.CharSet = ANSI_CHARSET
-    Font.Height = -19
-    Font.Name = 'Arial'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    MaxLength = 0
-    ParentFont = False
-    TabOrder = 1
-  end
-  object DBedtFJ: TDBEdit
-    Cursor = crHandPoint
-    Left = 611
-    Height = 30
-    Top = 264
-    Width = 45
-    DataField = 'tipo_cliente'
-    DataSource = dsCliente
-    Alignment = taRightJustify
-    Font.CharSet = ANSI_CHARSET
-    Font.Height = -19
-    Font.Name = 'Arial'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    MaxLength = 1
-    ParentFont = False
-    TabOrder = 3
-  end
-  object DBedtCPFCNPJ: TDBEdit
-    Cursor = crHandPoint
-    Left = 176
-    Height = 30
-    Top = 264
-    Width = 288
-    DataField = 'cpf_cnpj_cliente'
-    DataSource = dsCliente
-    Font.CharSet = ANSI_CHARSET
-    Font.Height = -19
-    Font.Name = 'Arial'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    MaxLength = 18
-    ParentFont = False
-    TabOrder = 2
-  end
-  object DBedtNome: TDBEdit
-    Cursor = crHandPoint
-    Left = 176
-    Height = 30
-    Top = 216
-    Width = 384
-    DataField = 'nome_cliente'
-    DataSource = dsCliente
-    Font.CharSet = ANSI_CHARSET
-    Font.Height = -19
-    Font.Name = 'Arial'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    MaxLength = 100
-    ParentFont = False
+  WindowState = wsMaximized
+  object pagPrincipal: TPageControl
+    Left = 0
+    Height = 562
+    Top = 0
+    Width = 847
+    ActivePage = tabsPesquisar
+    Align = alClient
+    TabIndex = 0
     TabOrder = 0
-  end
-  object bitbtnNovo: TBitBtn
-    Cursor = crHandPoint
-    Left = 40
-    Height = 38
-    Top = 480
-    Width = 75
-    Caption = 'Novo'
-    Font.CharSet = ANSI_CHARSET
-    Font.Height = -16
-    Font.Name = 'Arial'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    Font.Style = [fsBold]
-    OnClick = bitbtnNovoClick
-    ParentFont = False
-    TabOrder = 5
-  end
-  object bitbtnEditar: TBitBtn
-    Cursor = crHandPoint
-    Left = 144
-    Height = 38
-    Top = 480
-    Width = 75
-    Caption = 'Editar'
-    Font.CharSet = ANSI_CHARSET
-    Font.Height = -16
-    Font.Name = 'Arial'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    Font.Style = [fsBold]
-    OnClick = bitbtnEditarClick
-    ParentFont = False
-    TabOrder = 6
-  end
-  object bitbtnGravar: TBitBtn
-    Cursor = crHandPoint
-    Left = 248
-    Height = 38
-    Top = 480
-    Width = 75
-    Caption = 'Gravar'
-    Font.CharSet = ANSI_CHARSET
-    Font.Height = -16
-    Font.Name = 'Arial'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    Font.Style = [fsBold]
-    OnClick = bitbtnGravarClick
-    ParentFont = False
-    TabOrder = 7
-  end
-  object bitbtnExcluir: TBitBtn
-    Cursor = crHandPoint
-    Left = 352
-    Height = 38
-    Top = 480
-    Width = 75
-    Caption = 'Excluir'
-    Font.CharSet = ANSI_CHARSET
-    Font.Height = -16
-    Font.Name = 'Arial'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    Font.Style = [fsBold]
-    OnClick = bitbtnExcluirClick
-    ParentFont = False
-    TabOrder = 8
-  end
-  object bitbtnCancelar: TBitBtn
-    Cursor = crHandPoint
-    Left = 456
-    Height = 38
-    Top = 480
-    Width = 75
-    Caption = 'Cancelar'
-    Font.CharSet = ANSI_CHARSET
-    Font.Height = -16
-    Font.Name = 'Arial'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    Font.Style = [fsBold]
-    OnClick = bitbtnCancelarClick
-    ParentFont = False
-    TabOrder = 9
-  end
-  object bitbtnFechar: TBitBtn
-    Cursor = crHandPoint
-    Left = 560
-    Height = 38
-    Top = 480
-    Width = 75
-    Caption = 'Fechar'
-    Font.CharSet = ANSI_CHARSET
-    Font.Height = -16
-    Font.Name = 'Arial'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    Font.Style = [fsBold]
-    OnClick = bitbtnFecharClick
-    ParentFont = False
-    TabOrder = 10
+    object tabsPesquisar: TTabSheet
+      Caption = 'Pesquisar'
+      ClientHeight = 534
+      ClientWidth = 839
+      object DBGrid1: TDBGrid
+        Left = 0
+        Height = 364
+        Top = 82
+        Width = 839
+        Align = alClient
+        Color = clWindow
+        Columns = <        
+          item
+            Alignment = taCenter
+            Font.CharSet = ANSI_CHARSET
+            Font.Height = -16
+            Font.Name = 'Arial'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            Title.Alignment = taCenter
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Height = -16
+            Title.Font.Name = 'Arial'
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'ID'
+            Width = 45
+            FieldName = 'clienteid'
+          end        
+          item
+            Alignment = taCenter
+            Font.CharSet = ANSI_CHARSET
+            Font.Height = -16
+            Font.Name = 'Arial'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            Title.Alignment = taCenter
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Height = -16
+            Title.Font.Name = 'Arial'
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'F/J'
+            Width = 55
+            FieldName = 'tipo_cliente'
+          end        
+          item
+            Font.CharSet = ANSI_CHARSET
+            Font.Height = -16
+            Font.Name = 'Arial'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Height = -16
+            Title.Font.Name = 'Arial'
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'CPF/CNPJ'
+            Width = 150
+            FieldName = 'cpf_cnpj_cliente'
+          end        
+          item
+            Font.CharSet = ANSI_CHARSET
+            Font.Height = -16
+            Font.Name = 'Arial'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Height = -16
+            Title.Font.Name = 'Arial'
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Nome Completo'
+            Width = 340
+            FieldName = 'nome_cliente'
+          end>
+        DataSource = dsCliente
+        ReadOnly = True
+        TabOrder = 0
+        OnDblClick = DBGrid1DblClick
+      end
+      object Panel2: TPanel
+        Left = 0
+        Height = 88
+        Top = 446
+        Width = 839
+        Align = alBottom
+        ClientHeight = 88
+        ClientWidth = 839
+        TabOrder = 1
+        object bitbtnFechar: TBitBtn
+          Cursor = crHandPoint
+          Left = 720
+          Height = 38
+          Top = 16
+          Width = 75
+          Anchors = [akRight, akBottom]
+          Caption = 'Fechar'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          OnClick = bitbtnFecharClick
+          ParentFont = False
+          TabOrder = 0
+        end
+        object bitbtnNovo: TBitBtn
+          Cursor = crHandPoint
+          Left = 64
+          Height = 38
+          Top = 16
+          Width = 75
+          Caption = 'Novo'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          OnClick = bitbtnNovoClick
+          ParentFont = False
+          TabOrder = 1
+        end
+      end
+      object Panel3: TPanel
+        Left = 0
+        Height = 82
+        Top = 0
+        Width = 839
+        Align = alTop
+        ClientHeight = 82
+        ClientWidth = 839
+        TabOrder = 2
+        object Label5: TLabel
+          Left = 40
+          Height = 20
+          Top = 28
+          Width = 123
+          Caption = 'Pesquisar por ID: '
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -15
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object edtPesquisa: TEdit
+          Left = 168
+          Height = 23
+          Top = 27
+          Width = 120
+          TabOrder = 0
+        end
+        object btnPesquisarID: TButton
+          Cursor = crHandPoint
+          Left = 424
+          Height = 28
+          Top = 24
+          Width = 75
+          Caption = 'Pesquisar'
+          TabOrder = 1
+          OnClick = btnPesquisarIDClick
+        end
+      end
+      object cbPesquisar: TComboBox
+        Cursor = crHandPoint
+        Left = 304
+        Height = 23
+        Top = 27
+        Width = 100
+        ItemHeight = 15
+        ItemIndex = 0
+        Items.Strings = (
+          'ID'
+          'Nome Cliente'
+        )
+        ReadOnly = True
+        TabOrder = 3
+        Text = 'ID'
+      end
+    end
+    object tabsCadastrar: TTabSheet
+      Caption = 'Cadastrar'
+      ClientHeight = 534
+      ClientWidth = 839
+      object Label3: TLabel
+        Left = 664
+        Height = 22
+        Top = 292
+        Width = 104
+        Caption = 'CPF/CNPJ: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label4: TLabel
+        Left = 616
+        Height = 22
+        Top = 244
+        Width = 152
+        Caption = 'Nome do Cliente: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object DBedtNome: TDBEdit
+        Cursor = crHandPoint
+        Left = 768
+        Height = 30
+        Top = 240
+        Width = 384
+        DataField = 'nome_cliente'
+        DataSource = dsCliente
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 0
+        ParentFont = False
+        TabOrder = 0
+      end
+      object DBedtCPFCNPJ: TDBEdit
+        Cursor = crHandPoint
+        Left = 768
+        Height = 30
+        Top = 288
+        Width = 288
+        DataField = 'cpf_cnpj_cliente'
+        DataSource = dsCliente
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 0
+        ParentFont = False
+        TabOrder = 1
+      end
+      object Label2: TLabel
+        Left = 1160
+        Height = 22
+        Top = 292
+        Width = 37
+        Caption = 'F/J: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label1: TLabel
+        Left = 1168
+        Height = 22
+        Top = 244
+        Width = 27
+        Caption = 'Id: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object DBedtID: TDBEdit
+        Cursor = crHandPoint
+        Left = 1200
+        Height = 30
+        Top = 240
+        Width = 48
+        DataField = 'clienteid'
+        DataSource = dsCliente
+        Alignment = taRightJustify
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 0
+        ParentFont = False
+        TabOrder = 2
+      end
+      object DBedtFJ: TDBEdit
+        Cursor = crHandPoint
+        Left = 1203
+        Height = 30
+        Top = 288
+        Width = 45
+        DataField = 'tipo_cliente'
+        DataSource = dsCliente
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 0
+        ParentFont = False
+        TabOrder = 3
+      end
+      object lblTitulo: TLabel
+        Left = 667
+        Height = 75
+        Top = 40
+        Width = 528
+        Caption = 'Cadastro de Cliente'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -64
+        Font.Name = 'Cambria'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsUnderline]
+        ParentFont = False
+      end
+      object Panel1: TPanel
+        Left = 0
+        Height = 96
+        Top = 438
+        Width = 839
+        Align = alBottom
+        ClientHeight = 96
+        ClientWidth = 839
+        TabOrder = 4
+        object bitbtnEditar: TBitBtn
+          Cursor = crHandPoint
+          Left = 228
+          Height = 38
+          Top = 24
+          Width = 75
+          Anchors = [akTop, akBottom]
+          Caption = 'Editar'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          OnClick = bitbtnEditarClick
+          ParentFont = False
+          TabOrder = 0
+        end
+        object bitbtnGravar: TBitBtn
+          Cursor = crHandPoint
+          Left = 752
+          Height = 38
+          Top = 24
+          Width = 75
+          Caption = 'Gravar'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          OnClick = bitbtnGravarClick
+          ParentFont = False
+          TabOrder = 1
+        end
+        object bitbtnExcluir: TBitBtn
+          Cursor = crHandPoint
+          Left = 960
+          Height = 38
+          Top = 24
+          Width = 75
+          Caption = 'Excluir'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          OnClick = bitbtnExcluirClick
+          ParentFont = False
+          TabOrder = 2
+        end
+        object bitbtnCancelar: TBitBtn
+          Cursor = crHandPoint
+          Left = 1184
+          Height = 38
+          Top = 24
+          Width = 75
+          Caption = 'Cancelar'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          OnClick = bitbtnCancelarClick
+          ParentFont = False
+          TabOrder = 3
+        end
+      end
+    end
   end
   object dsCliente: TDataSource
     DataSet = qryCliente
-    Left = 504
-    Top = 160
+    Left = 360
+    Top = 496
   end
   object qryCliente: TZQuery
     Connection = DataModule1.ZConnection1
-    Active = True
     SQL.Strings = (
       'select * from cliente;'
     )
     Params = <>
-    Left = 552
-    Top = 160
+    Left = 424
+    Top = 496
     object qryClienteclienteid: TZIntegerField
       FieldKind = fkData
       FieldName = 'clienteid'
