@@ -164,7 +164,7 @@ begin
             //String o vetor começa em 1.
             nome := UpperCase(edtPesquisa.Text[1]);
             //Copy (String que vai copiar, posição inicial, posição final).
-            nome := palavra + Copy(edtPesquisa.Text, 2, Length(edtPesquisa.Text));
+            nome := nome + Copy(edtPesquisa.Text, 2, Length(edtPesquisa.Text));
             qryCliente.SQL.Text := 'select * from cliente where nome_cliente LIKE ''' + nome +'%''';
             qryCliente.Open;
        end;
