@@ -10,10 +10,6 @@ uses
 
 type
 
-  DadosDBEdits = record
-    edits : TDBEdit;
-  end;
-
   { TForm1 }
 
   TForm1 = class(TForm)
@@ -67,7 +63,7 @@ type
 
 var
   Form1: TForm1;
-  DBEdits : array [0..4] of DadosDBEdits;
+  DBEdits : array [0..4] of TDBEdit;
 
 implementation
 
@@ -81,14 +77,14 @@ var
   val : Boolean;
 begin
      //Função que irá validar os campos verificando se estão prenchidos.
-     DBedits[0].edits := DBedtNome;
-     DBedits[1].edits := DBedtCPFCNPJ;
-     DBedits[2].edits := DBedtID;
-     DBedits[3].edits := DBedtFJ;
+     DBedits[0] := DBedtNome;
+     DBedits[1] := DBedtCPFCNPJ;
+     DBedits[2] := DBedtID;
+     DBedits[3] := DBedtFJ;
      val := true;
      for i := 0 to 3 do
      begin
-          if DBedits[i].edits.Text = '' then
+          if DBedits[i].Text = '' then
           begin
                val := false;
           end;
