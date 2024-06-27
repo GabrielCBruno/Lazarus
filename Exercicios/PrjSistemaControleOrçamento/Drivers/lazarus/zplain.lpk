@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <Name Value="zplain"/>
+    <AddToProjectUsesSection Value="True"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <SearchPaths>
+        <OtherUnitFiles Value="../../src/plain"/>
+        <UnitOutputDirectory Value="lib/zplain/$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Parsing>
+        <SyntaxOptions>
+          <SyntaxMode Value="Delphi"/>
+          <UseAnsiStrings Value="False"/>
+        </SyntaxOptions>
+      </Parsing>
+    </CompilerOptions>
+    <Description Value="Zeos Plain Database API"/>
+    <Version Major="8" Minor="0"/>
+    <Files Count="23">
+      <Item5>
+        <Filename Value="../../src/plain/ZPlainAdo.pas"/>
+        <UnitName Value="ZPlainAdo"/>
+      </Item5>
+      <Item6>
+        <Filename Value="../../src/plain/ZPlainAdoDriver.pas"/>
+        <UnitName Value="ZPlainAdoDriver"/>
+      </Item6>
+      <Item7>
+        <Filename Value="../../src/plain/ZPlainASADriver.pas"/>
+        <UnitName Value="ZPlainASADriver"/>
+      </Item7>
+      <Item8>
+        <Filename Value="../../src/plain/ZPlainDbLibDriver.pas"/>
+        <UnitName Value="ZPlainDbLibDriver"/>
+      </Item8>
+      <Item9>
+        <Filename Value="../../src/plain/ZPlainDriver.pas"/>
+        <UnitName Value="ZPlainDriver"/>
+      </Item9>
+      <Item10>
+        <Filename Value="../../src/plain/ZPlainFirebird.pas"/>
+        <UnitName Value="ZPlainFirebird"/>
+      </Item10>
+      <Item11>
+        <Filename Value="../../src/plain/ZPlainFirebirdInterbaseDriver.pas"/>
+        <UnitName Value="ZPlainFirebirdInterbaseDriver"/>
+      </Item11>
+      <Item12>
+        <Filename Value="../../src/plain/ZPlainLoader.pas"/>
+        <UnitName Value="ZPlainLoader"/>
+      </Item12>
+      <Item13>
+        <Filename Value="../../src/plain/ZPlainMySqlDriver.pas"/>
+        <UnitName Value="ZPlainMySqlDriver"/>
+      </Item13>
+      <Item14>
+        <Filename Value="../../src/plain/ZPlainODBCDriver.pas"/>
+        <UnitName Value="ZPlainODBCDriver"/>
+      </Item14>
+      <Item15>
+        <Filename Value="../../src/plain/ZPlainOleDBDriver.pas"/>
+        <UnitName Value="ZPlainOleDBDriver"/>
+      </Item15>
+      <Item16>
+        <Filename Value="../../src/plain/ZPlainOracleDriver.pas"/>
+        <UnitName Value="ZPlainOracleDriver"/>
+      </Item16>
+      <Item17>
+        <Filename Value="../../src/plain/ZPlainPostgreSqlDriver.pas"/>
+        <UnitName Value="ZPlainPostgreSqlDriver"/>
+      </Item17>
+      <Item18>
+        <Filename Value="../../src/plain/ZPlainProxyDriver.pas"/>
+        <UnitName Value="ZPlainProxyDriver"/>
+      </Item18>
+      <Item19>
+        <Filename Value="../../src/plain/ZPlainProxyDriverInternalProxy.pas"/>
+        <UnitName Value="ZPlainProxyDriverInternalProxy"/>
+      </Item19>
+      <Item20>
+        <Filename Value="../../src/plain/ZPlainProxyDriverIntf.pas"/>
+        <UnitName Value="ZPlainProxyDriverIntf"/>
+      </Item20>
+      <Item21>
+        <Filename Value="../../src/plain/ZPlainProxyDriverSoapProxy.pas"/>
+        <UnitName Value="ZPlainProxyDriverSoapProxy"/>
+      </Item21>
+      <Item22>
+        <Filename Value="../../src/plain/ZPlainSQLAnywhere.pas"/>
+        <UnitName Value="ZPlainSQLAnywhere"/>
+      </Item22>
+      <Item23>
+        <Filename Value="../../src/plain/ZPlainSqLiteDriver.pas"/>
+        <UnitName Value="ZPlainSqLiteDriver"/>
+      </Item23>
+    </Files>
+    <RequiredPkgs Count="2">
+      <Item1>
+        <PackageName Value="zcore"/>
+        <MaxVersion Major="8" Minor="0"/>
+        <MinVersion Major="8" Minor="0" Valid="True"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="FCL"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item2>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+    </PublishOptions>
+    <CustomOptions Items="ExternHelp" Version="2">
+      <_ExternHelp Items="Count"/>
+    </CustomOptions>
+  </Package>
+</CONFIG>
