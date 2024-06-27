@@ -1,0 +1,172 @@
+inherited CadCategoriaF: TCadCategoriaF
+  Left = 461
+  Height = 553
+  Top = 146
+  Caption = 'Cadastro de Categoria'
+  ClientHeight = 553
+  OnClose = FormClose
+  OnCreate = FormCreate
+  inherited pagPrincipal: TPageControl
+    Height = 553
+    ActivePage = pagCadastro
+    TabIndex = 1
+    inherited pagPesquisa: TTabSheet
+      ClientHeight = 525
+      inherited Panel1: TPanel
+        inherited Label1: TLabel
+          Height = 22
+          Top = 24
+          Width = 72
+          Font.Height = -19
+          Font.Style = []
+        end
+        inherited edtPesquisar: TEdit
+          Top = 23
+        end
+      end
+      inherited Panel2: TPanel
+        Top = 455
+        inherited bitbtnNovo: TBitBtn
+          OnClick = bitbtnNovoClick
+        end
+        inherited bitbtnFechar: TBitBtn
+          OnClick = bitbtnFecharClick
+        end
+      end
+      inherited DBGridPrincipal: TDBGrid
+        Height = 375
+        Columns = <        
+          item
+            Alignment = taCenter
+            Font.CharSet = ANSI_CHARSET
+            Font.Height = -16
+            Font.Name = 'Arial'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Height = -16
+            Title.Font.Name = 'Arial'
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'ID'
+            Width = 50
+            FieldName = 'categoriaprodutoid'
+          end        
+          item
+            Alignment = taLeftJustify
+            Font.CharSet = ANSI_CHARSET
+            Font.Height = -16
+            Font.Name = 'Arial'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            PickList.Strings = (            )
+            Title.Alignment = taLeftJustify
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Height = -16
+            Title.Font.Name = 'Arial'
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Categoria'
+            Width = 150
+            FieldName = 'ds_categoria_produto'
+          end>
+        DataSource = dsCategoria
+        OnDblClick = DBGridPrincipalDblClick
+      end
+    end
+    inherited pagCadastro: TTabSheet
+      ClientHeight = 525
+      inherited Panel3: TPanel
+        Top = 455
+        inherited bitbtnGravar: TBitBtn
+          OnClick = bitbtnGravarClick
+        end
+        inherited bitbtnExcluir: TBitBtn
+          OnClick = bitbtnExcluirClick
+        end
+        inherited bitbtnCancelar: TBitBtn
+          OnClick = bitbtnCancelarClick
+        end
+      end
+      object lblID: TLabel[1]
+        Left = 85
+        Height = 22
+        Top = 56
+        Width = 27
+        Caption = 'Id: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object lblDesc: TLabel[2]
+        Left = 16
+        Height = 22
+        Top = 104
+        Width = 96
+        Caption = 'Descrição: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object DBedtId: TDBEdit[3]
+        Cursor = crHandPoint
+        Left = 120
+        Height = 26
+        Top = 56
+        Width = 40
+        DataField = 'categoriaprodutoid'
+        DataSource = dsCategoria
+        Alignment = taRightJustify
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 0
+        ParentFont = False
+        TabOrder = 1
+      end
+      object DBedtDesc: TDBEdit[4]
+        Cursor = crHandPoint
+        Left = 112
+        Height = 26
+        Top = 104
+        Width = 304
+        DataField = 'ds_categoria_produto'
+        DataSource = dsCategoria
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 0
+        ParentFont = False
+        TabOrder = 2
+      end
+    end
+  end
+  object dsCategoria: TDataSource[1]
+    DataSet = qryCategoria
+    Left = 808
+    Top = 48
+  end
+  object qryCategoria: TZQuery[2]
+    Connection = DMPrincipalF.ZConnection1
+    SQL.Strings = (
+      'select * from categoria_produto;'
+    )
+    Params = <>
+    Left = 640
+    Top = 48
+  end
+end

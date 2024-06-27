@@ -26,6 +26,12 @@
     </RunParams>
     <RequiredPackages>
       <Item>
+        <PackageName Value="zcomponentdesign"/>
+      </Item>
+      <Item>
+        <PackageName Value="zcomponent"/>
+      </Item>
+      <Item>
         <PackageName Value="FCL"/>
       </Item>
       <Item>
@@ -54,12 +60,19 @@
         <UnitName Value="CadModelo"/>
       </Unit>
       <Unit>
-        <Filename Value="produto.pas"/>
+        <Filename Value="cadcategoria.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="CadProdutosF"/>
+        <ComponentName Value="CadCategoriaF"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="Produto"/>
+        <UnitName Value="CadCategoria"/>
+      </Unit>
+      <Unit>
+        <Filename Value="dmprincipal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DMPrincipalF"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="DMPrincipal"/>
       </Unit>
     </Units>
   </ProjectOptions>

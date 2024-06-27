@@ -14,6 +14,7 @@ object MenuPrincipalF: TMenuPrincipalF
       Caption = 'Cadastrar'
       object submiCatergoria: TMenuItem
         Caption = 'Categoria'
+        OnClick = submiCatergoriaClick
       end
       object submiCliente: TMenuItem
         Caption = 'Cliente'

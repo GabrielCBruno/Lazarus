@@ -1,9 +1,9 @@
 object MenuPrincipalF: TMenuPrincipalF
-  Left = 617
+  Left = 552
   Height = 486
-  Top = 270
+  Top = 230
   Width = 873
-  Caption = 'Menu Principal'
+  Caption = 'Menu Principal - Sistema de Controle de Orçamentos'
   Menu = MainMenu1
   LCLVersion = '3.4.0.0'
   WindowState = wsMaximized
@@ -14,6 +14,7 @@ object MenuPrincipalF: TMenuPrincipalF
       Caption = 'Cadastrar'
       object submiCatergoria: TMenuItem
         Caption = 'Categoria'
+        OnClick = submiCatergoriaClick
       end
       object submiCliente: TMenuItem
         Caption = 'Cliente'

@@ -10,8 +10,7 @@ uses
   athreads,
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, MenuPrincipal, CadModelo
-  { you can add units after this };
+  Forms, zcomponent, MenuPrincipal, CadModelo, CadCategoria, DMPrincipal;
 
 {$R *.res}
 
@@ -19,7 +18,7 @@ begin
   RequireDerivedFormResource:=True;
   Application.Scaled:=True;
   Application.Initialize;
-  Application.CreateForm(TCadModeloF, CadModeloF);
+  Application.CreateForm(TDMPrincipalF, DMPrincipalF);
   Application.CreateForm(TMenuPrincipalF, MenuPrincipalF);
   //Application.CreateForm(TCadProdutosF, CadProdutosF);
   Application.Run;

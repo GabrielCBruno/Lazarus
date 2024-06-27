@@ -28,7 +28,6 @@ type
     Panel3: TPanel;
     pagPesquisa: TTabSheet;
     pagCadastro: TTabSheet;
-    procedure bitbtnCancelarClick(Sender: TObject);
   private
 
   public
@@ -43,12 +42,6 @@ implementation
 {$R *.lfm}
 
 { TCadModeloF }
-
-procedure TCadModeloF.bitbtnCancelarClick(Sender: TObject);
-begin
-  pagPrincipal.ActivePage := pagPesquisa;
-end;
-
 
 end.
 

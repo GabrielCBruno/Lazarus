@@ -1,7 +1,7 @@
 object CadModeloF: TCadModeloF
-  Left = 494
+  Left = 481
   Height = 551
-  Top = 165
+  Top = 187
   Width = 913
   Caption = 'Modelo'
   ClientHeight = 551
@@ -501,7 +501,6 @@ object CadModeloF: TCadModeloF
             696156491C85858585858585858585852F375F6D737371696154351585858585
             858585858585858585852F37454549422E1C8585858585858585
           }
-          OnClick = bitbtnCancelarClick
           ParentFont = False
           TabOrder = 2
         end
