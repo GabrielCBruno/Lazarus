@@ -1,0 +1,60 @@
+object MenuPrincipalF: TMenuPrincipalF
+  Left = 617
+  Height = 486
+  Top = 270
+  Width = 873
+  Caption = 'Menu Principal'
+  Menu = MainMenu1
+  LCLVersion = '3.4.0.0'
+  WindowState = wsMaximized
+  object MainMenu1: TMainMenu
+    Left = 352
+    Top = 80
+    object miCadastrar: TMenuItem
+      Caption = 'Cadastrar'
+      object submiCatergoria: TMenuItem
+        Caption = 'Categoria'
+      end
+      object submiCliente: TMenuItem
+        Caption = 'Cliente'
+      end
+      object submiProdutos: TMenuItem
+        Caption = 'Produtos'
+      end
+      object submiUsuarios: TMenuItem
+        Caption = 'Usuários'
+      end
+    end
+    object miVendas: TMenuItem
+      Caption = 'Vendas'
+      object MenuItem5: TMenuItem
+        Caption = 'Orçamento'
+      end
+    end
+    object miRelatorios: TMenuItem
+      Caption = 'Relatórios'
+      object submiClientes: TMenuItem
+        Caption = 'Clientes'
+      end
+      object MenuItem1: TMenuItem
+        Caption = 'Produtos'
+      end
+      object MenuItem2: TMenuItem
+        Caption = 'Orçamento'
+      end
+      object MenuItem3: TMenuItem
+        Caption = 'Categorias'
+      end
+      object MenuItem4: TMenuItem
+        Caption = 'Rel Teste Clientes'
+      end
+    end
+    object miSobre: TMenuItem
+      Caption = 'Sobre'
+    end
+    object miSair: TMenuItem
+      Caption = 'Sair'
+      OnClick = miSairClick
+    end
+  end
+end
