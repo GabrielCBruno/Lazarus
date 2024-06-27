@@ -1,7 +1,7 @@
 inherited CadCategoriaF: TCadCategoriaF
-  Left = 461
+  Left = 257
   Height = 553
-  Top = 146
+  Top = 56
   Caption = 'Cadastro de Categoria'
   ClientHeight = 553
   OnClose = FormClose
@@ -56,14 +56,12 @@ inherited CadCategoriaF: TCadCategoriaF
             FieldName = 'categoriaprodutoid'
           end        
           item
-            Alignment = taLeftJustify
             Font.CharSet = ANSI_CHARSET
             Font.Height = -16
             Font.Name = 'Arial'
             Font.Pitch = fpVariable
             Font.Quality = fqDraft
             PickList.Strings = (            )
-            Title.Alignment = taLeftJustify
             Title.Font.CharSet = ANSI_CHARSET
             Title.Font.Height = -16
             Title.Font.Name = 'Arial'
