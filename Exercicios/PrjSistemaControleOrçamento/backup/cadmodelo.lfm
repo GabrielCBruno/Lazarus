@@ -1,7 +1,7 @@
 object CadModeloF: TCadModeloF
-  Left = 453
+  Left = 583
   Height = 551
-  Top = 119
+  Top = 186
   Width = 913
   Caption = 'Modelo'
   ClientHeight = 551
@@ -507,9 +507,5 @@ object CadModeloF: TCadModeloF
         end
       end
     end
-  end
-  object DataSourceModelo: TDataSource
-    Left = 768
-    Top = 48
   end
 end

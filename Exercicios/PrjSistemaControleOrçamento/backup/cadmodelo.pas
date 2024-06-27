@@ -19,7 +19,6 @@ type
     bitbtnGravar: TBitBtn;
     bitbtnNovo: TBitBtn;
     bitbtnPesquisar: TBitBtn;
-    DataSourceModelo: TDataSource;
     DBGridPrincipal: TDBGrid;
     edtPesquisar: TEdit;
     Label1: TLabel;
