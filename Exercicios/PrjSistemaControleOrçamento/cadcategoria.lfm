@@ -119,8 +119,7 @@ inherited CadCategoriaF: TCadCategoriaF
         ParentFont = False
       end
       object DBedtId: TDBEdit[3]
-        Cursor = crHandPoint
-        Left = 120
+        Left = 112
         Height = 26
         Top = 56
         Width = 40
@@ -137,7 +136,6 @@ inherited CadCategoriaF: TCadCategoriaF
         TabOrder = 1
       end
       object DBedtDesc: TDBEdit[4]
-        Cursor = crHandPoint
         Left = 112
         Height = 26
         Top = 104

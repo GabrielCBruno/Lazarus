@@ -119,11 +119,12 @@ inherited CadCategoriaF: TCadCategoriaF
         ParentFont = False
       end
       object DBedtId: TDBEdit[3]
-        Cursor = crHandPoint
-        Left = 120
+        Left = 112
         Height = 26
         Top = 56
         Width = 40
+        DataField = 'categoriaprodutoid'
+        DataSource = dsCategoria
         Alignment = taRightJustify
         Font.CharSet = ANSI_CHARSET
         Font.Height = -16
@@ -135,11 +136,12 @@ inherited CadCategoriaF: TCadCategoriaF
         TabOrder = 1
       end
       object DBedtDesc: TDBEdit[4]
-        Cursor = crHandPoint
         Left = 112
         Height = 26
         Top = 104
         Width = 304
+        DataField = 'ds_categoria_produto'
+        DataSource = dsCategoria
         Font.CharSet = ANSI_CHARSET
         Font.Height = -16
         Font.Name = 'Arial'

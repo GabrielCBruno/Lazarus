@@ -1,4 +1,4 @@
-object DataModule1: TDataModule1
+object DMPrincipalF: TDMPrincipalF
   OnCreate = DataModuleCreate
   OldCreateOrder = False
   Height = 470

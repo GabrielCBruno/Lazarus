@@ -9,9 +9,9 @@ uses
 
 type
 
-  { TDataModule1 }
+  { TDMPrincipalF }
 
-  TDataModule1 = class(TDataModule)
+  TDMPrincipalF = class(TDataModule)
     ZConnection1: TZConnection;
     procedure DataModuleCreate(Sender: TObject);
   private
@@ -21,15 +21,15 @@ type
   end;
 
 var
-  DataModule1: TDataModule1;
+  DMPrincipalF: TDMPrincipalF;
 
 implementation
 
 {$R *.lfm}
 
-{ TDataModule1 }
+{ TDMPrincipalF }
 
-procedure TDataModule1.DataModuleCreate(Sender: TObject);
+procedure TDMPrincipalF.DataModuleCreate(Sender: TObject);
 begin
      ZConnection1.HostName := 'localhost';
      ZConnection1.Password := '1234';
