@@ -1,7 +1,7 @@
 object CadModeloF: TCadModeloF
-  Left = 481
+  Left = 385
   Height = 551
-  Top = 187
+  Top = 101
   Width = 913
   Caption = 'Modelo'
   ClientHeight = 551
@@ -13,9 +13,9 @@ object CadModeloF: TCadModeloF
     Height = 551
     Top = 0
     Width = 913
-    ActivePage = pagPesquisa
+    ActivePage = pagCadastro
     Align = alClient
-    TabIndex = 0
+    TabIndex = 1
     TabOrder = 0
     object pagPesquisa: TTabSheet
       Caption = 'Pesquisa'
@@ -190,7 +190,7 @@ object CadModeloF: TCadModeloF
             4D4D4D4D4D4D4D4D4D4D4D4D4D4D4D4D4D4D4D4D4D4D
           }
           ParentFont = False
-          TabOrder = 1
+          TabOrder = 0
         end
         object bitbtnFechar: TBitBtn
           Cursor = crHandPoint
@@ -261,7 +261,7 @@ object CadModeloF: TCadModeloF
             0101010101010101010101010101010101010101010101010101
           }
           ParentFont = False
-          TabOrder = 0
+          TabOrder = 1
         end
       end
       object DBGridPrincipal: TDBGrid
@@ -504,6 +504,20 @@ object CadModeloF: TCadModeloF
           ParentFont = False
           TabOrder = 2
         end
+      end
+      object lblTitulo: TLabel
+        Left = 40
+        Height = 57
+        Top = 24
+        Width = 405
+        Caption = 'Cadastro de Modelo'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -48
+        Font.Name = 'Cambria'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsUnderline]
+        ParentFont = False
       end
     end
   end

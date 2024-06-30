@@ -22,6 +22,7 @@ type
     DBGridPrincipal: TDBGrid;
     edtPesquisar: TEdit;
     Label1: TLabel;
+    lblTitulo: TLabel;
     pagPrincipal: TPageControl;
     Panel1: TPanel;
     Panel2: TPanel;

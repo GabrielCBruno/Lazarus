@@ -18,6 +18,7 @@ object MenuPrincipalF: TMenuPrincipalF
       end
       object submiCliente: TMenuItem
         Caption = 'Cliente'
+        OnClick = submiClienteClick
       end
       object submiProdutos: TMenuItem
         Caption = 'Produtos'

@@ -1,18 +1,18 @@
 inherited CadCategoriaF: TCadCategoriaF
-  Left = 374
-  Height = 553
-  Top = 99
+  Left = 362
+  Height = 549
+  Top = 94
   Width = 741
   Caption = 'Cadastro de Categoria'
-  ClientHeight = 553
+  ClientHeight = 549
   ClientWidth = 741
   OnClose = FormClose
   OnCreate = FormCreate
   inherited pagPrincipal: TPageControl
-    Height = 553
+    Height = 549
     Width = 741
     inherited pagPesquisa: TTabSheet
-      ClientHeight = 525
+      ClientHeight = 521
       ClientWidth = 733
       inherited Panel1: TPanel
         Width = 733
@@ -32,7 +32,7 @@ inherited CadCategoriaF: TCadCategoriaF
         end
       end
       inherited Panel2: TPanel
-        Top = 455
+        Top = 451
         Width = 733
         ClientWidth = 733
         inherited bitbtnNovo: TBitBtn
@@ -44,7 +44,7 @@ inherited CadCategoriaF: TCadCategoriaF
         end
       end
       inherited DBGridPrincipal: TDBGrid
-        Height = 375
+        Height = 371
         Width = 733
         Columns = <        
           item
@@ -88,12 +88,13 @@ inherited CadCategoriaF: TCadCategoriaF
       end
     end
     inherited pagCadastro: TTabSheet
-      ClientHeight = 525
+      ClientHeight = 521
       ClientWidth = 733
       inherited Panel3: TPanel
-        Top = 455
+        Top = 451
         Width = 733
         ClientWidth = 733
+        TabOrder = 2
         inherited bitbtnGravar: TBitBtn
           OnClick = bitbtnGravarClick
         end
@@ -105,10 +106,14 @@ inherited CadCategoriaF: TCadCategoriaF
           OnClick = bitbtnCancelarClick
         end
       end
-      object lblID: TLabel[1]
+      inherited lblTitulo: TLabel
+        Width = 447
+        Caption = 'Cadastro de Categoria'
+      end
+      object lblID: TLabel[2]
         Left = 85
         Height = 22
-        Top = 59
+        Top = 140
         Width = 27
         Caption = 'Id: '
         Font.CharSet = ANSI_CHARSET
@@ -118,10 +123,10 @@ inherited CadCategoriaF: TCadCategoriaF
         Font.Quality = fqDraft
         ParentFont = False
       end
-      object lblDesc: TLabel[2]
+      object lblDesc: TLabel[3]
         Left = 16
         Height = 22
-        Top = 108
+        Top = 189
         Width = 96
         Caption = 'Descrição: '
         Font.CharSet = ANSI_CHARSET
@@ -131,10 +136,10 @@ inherited CadCategoriaF: TCadCategoriaF
         Font.Quality = fqDraft
         ParentFont = False
       end
-      object DBeditId: TDBEdit[3]
+      object DBeditId: TDBEdit[4]
         Left = 112
         Height = 30
-        Top = 55
+        Top = 136
         Width = 56
         DataField = 'categoriaprodutoid'
         DataSource = dsCategoria
@@ -146,12 +151,12 @@ inherited CadCategoriaF: TCadCategoriaF
         Font.Quality = fqDraft
         MaxLength = 0
         ParentFont = False
-        TabOrder = 1
+        TabOrder = 0
       end
-      object DBeditDesc: TDBEdit[4]
+      object DBeditDesc: TDBEdit[5]
         Left = 112
         Height = 30
-        Top = 104
+        Top = 185
         Width = 344
         DataField = 'ds_categoria_produto'
         DataSource = dsCategoria
@@ -160,24 +165,25 @@ inherited CadCategoriaF: TCadCategoriaF
         Font.Name = 'Arial'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
-        MaxLength = 0
+        MaxLength = 50
         ParentFont = False
-        TabOrder = 2
+        TabOrder = 1
       end
     end
   end
   object dsCategoria: TDataSource[1]
     DataSet = qryCategoria
-    Left = 544
+    Left = 656
     Top = 48
   end
   object qryCategoria: TZQuery[2]
     Connection = DataModule1.ZConnection1
+    Active = True
     SQL.Strings = (
       'select * from categoria_produto;'
     )
     Params = <>
-    Left = 622
+    Left = 552
     Top = 48
   end
 end

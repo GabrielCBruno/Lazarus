@@ -71,8 +71,17 @@
         <Filename Value="dmprincipal.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="DataModule1"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
         <UnitName Value="dmPrincipal"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Drivers\lazarus\cadcliente.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="cadclienteF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Cadcliente"/>
       </Unit>
     </Units>
   </ProjectOptions>
@@ -84,6 +93,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="Drivers\lazarus"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>

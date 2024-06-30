@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, StdCtrls, DBCtrls,
-  ZDataset, CadModelo, dmPrincipal;
+  CadModelo, dmPrincipal, ZDataset;
 
 type
 
@@ -25,6 +25,7 @@ type
     procedure bitbtnGravarClick(Sender: TObject);
     procedure bitbtnNovoClick(Sender: TObject);
     procedure bitbtnPesquisarClick(Sender: TObject);
+    //procedure Button1Click(Sender: TObject);
     procedure DBGridPrincipalDblClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
