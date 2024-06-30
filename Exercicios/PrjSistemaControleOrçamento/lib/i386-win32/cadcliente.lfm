@@ -1,51 +1,69 @@
 inherited CadClienteF: TCadClienteF
-  Left = 282
-  Top = 86
+  Left = 266
+  Top = 73
+  Width = 999
+  Caption = 'Cadastro de Cliente'
+  ClientWidth = 999
   OnClose = FormClose
   OnShow = FormShow
   inherited pagPrincipal: TPageControl
+    Width = 999
     inherited pagPesquisa: TTabSheet
+      ClientWidth = 991
       inherited Panel1: TPanel
+        Width = 991
+        ClientWidth = 991
         inherited Label1: TLabel
           Width = 117
           Caption = 'Pesquisar por: '
         end
         inherited edtPesquisar: TEdit
-          Left = 248
-          Width = 104
+          Left = 256
+          Width = 240
+          NumbersOnly = False
+          TabOrder = 1
         end
         inherited bitbtnPesquisar: TBitBtn
-          Left = 368
+          Left = 504
           OnClick = bitbtnPesquisarClick
+          TabOrder = 2
         end
         object cbPesquisar: TComboBox[3]
+          Cursor = crHandPoint
           Left = 160
           Height = 26
           Top = 24
-          Width = 64
+          Width = 88
           Font.CharSet = ANSI_CHARSET
           Font.Height = -16
           Font.Name = 'Arial'
           Font.Pitch = fpVariable
           Font.Quality = fqDraft
           ItemHeight = 18
+          ItemIndex = 0
           Items.Strings = (
             'ID'
             'Nome'
           )
           ParentFont = False
-          TabOrder = 2
+          ReadOnly = True
+          TabOrder = 0
+          Text = 'ID'
         end
       end
       inherited Panel2: TPanel
+        Width = 991
+        ClientWidth = 991
         inherited bitbtnNovo: TBitBtn
           OnClick = bitbtnNovoClick
         end
         inherited bitbtnFechar: TBitBtn
+          Left = 870
           OnClick = bitbtnFecharClick
         end
       end
       inherited DBGridPrincipal: TDBGrid
+        Width = 991
         Columns = <        
           item
             Alignment = taCenter
@@ -120,18 +138,31 @@ inherited CadClienteF: TCadClienteF
             FieldName = 'tipo_cliente'
           end>
         DataSource = dsCliente
+        OnDblClick = DBGridPrincipalDblClick
       end
     end
     inherited pagCadastro: TTabSheet
+      ClientWidth = 991
       inherited Panel3: TPanel
+        Width = 991
+        ClientWidth = 991
+        TabOrder = 4
         inherited bitbtnGravar: TBitBtn
           OnClick = bitbtnGravarClick
         end
         inherited bitbtnExcluir: TBitBtn
+          Left = 584
+          Width = 83
           OnClick = bitbtnExcluirClick
         end
         inherited bitbtnCancelar: TBitBtn
+          Left = 864
+          Width = 105
           OnClick = bitbtnCancelarClick
+        end
+        inherited bitbtnEditar: TBitBtn
+          Left = 304
+          OnClick = bitbtnEditarClick
         end
       end
       inherited lblTitulo: TLabel
@@ -202,7 +233,7 @@ inherited CadClienteF: TCadClienteF
         Font.Name = 'Arial'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
-        MaxLength = 100
+        MaxLength = 0
         ParentFont = False
         TabOrder = 1
       end
@@ -218,9 +249,9 @@ inherited CadClienteF: TCadClienteF
         Font.Name = 'Arial'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
-        MaxLength = 1
+        MaxLength = 0
         ParentFont = False
-        TabOrder = 2
+        TabOrder = 3
       end
       object DBId: TDBEdit[8]
         Left = 72
@@ -237,7 +268,7 @@ inherited CadClienteF: TCadClienteF
         Font.Quality = fqDraft
         MaxLength = 0
         ParentFont = False
-        TabOrder = 3
+        TabOrder = 0
       end
       object DBCPF: TDBEdit[9]
         Left = 536
@@ -251,9 +282,9 @@ inherited CadClienteF: TCadClienteF
         Font.Name = 'Arial'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
-        MaxLength = 18
+        MaxLength = 0
         ParentFont = False
-        TabOrder = 4
+        TabOrder = 2
       end
     end
   end
@@ -263,12 +294,12 @@ inherited CadClienteF: TCadClienteF
       'select * from cliente;'
     )
     Params = <>
-    Left = 536
-    Top = 48
+    Left = 712
+    Top = 40
   end
   object dsCliente: TDataSource[2]
     DataSet = qryCliente
-    Left = 632
-    Top = 48
+    Left = 800
+    Top = 40
   end
 end

@@ -25,11 +25,13 @@ type
     lblID: TLabel;
     qryCliente: TZQuery;
     procedure bitbtnCancelarClick(Sender: TObject);
+    procedure bitbtnEditarClick(Sender: TObject);
     procedure bitbtnExcluirClick(Sender: TObject);
     procedure bitbtnFecharClick(Sender: TObject);
     procedure bitbtnGravarClick(Sender: TObject);
     procedure bitbtnNovoClick(Sender: TObject);
     procedure bitbtnPesquisarClick(Sender: TObject);
+    procedure DBGridPrincipalDblClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormShow(Sender: TObject);
   private
@@ -92,15 +94,39 @@ begin
 end;
 
 procedure TCadClienteF.bitbtnPesquisarClick(Sender: TObject);
+var
+  cod : Integer;
+  nome : String;
 begin
-     if cbPesquisar.Text = 'ID' then
+     if edtPesquisar.Text <> '' then
      begin
-
+          if cbPesquisar.Text = 'ID' then
+          begin
+               qryCliente.Close;
+               cod := StrToInt(edtPesquisar.Text);
+               qryCliente.SQL.Text := 'select * from cliente where clienteid = ' + IntToStr(cod) + ';';
+               qryCliente.Open;
+          end
+          else
+          begin
+            qryCliente.Close;
+            nome := edtPesquisar.Text;
+            nome := UpperCase(nome);
+            qryCliente.SQL.Text := 'select * from cliente where nome_cliente LIKE ''' + nome + '%'';';
+            qryCliente.Open;
+          end;
      end
      else
      begin
-
+          qryCliente.Close;
+          qryCliente.SQL.Text := 'select * from cliente';
+          qryCliente.Open;
      end;
+end;
+
+procedure TCadClienteF.DBGridPrincipalDblClick(Sender: TObject);
+begin
+  pagPrincipal.ActivePage := pagCadastro;
 end;
 
 procedure TCadClienteF.bitbtnFecharClick(Sender: TObject);
@@ -120,6 +146,12 @@ end;
 procedure TCadClienteF.bitbtnCancelarClick(Sender: TObject);
 begin
   qryCliente.Cancel;
+  pagPrincipal.ActivePage := pagPesquisa;
+end;
+
+procedure TCadClienteF.bitbtnEditarClick(Sender: TObject);
+begin
+  qryCliente.Edit;
   pagPrincipal.ActivePage := pagPesquisa;
 end;
 

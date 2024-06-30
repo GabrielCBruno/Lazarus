@@ -20,6 +20,7 @@ type
     lblDesc: TLabel;
     qryCategoria: TZQuery;
     procedure bitbtnCancelarClick(Sender: TObject);
+    procedure bitbtnEditarClick(Sender: TObject);
     procedure bitbtnExcluirClick(Sender: TObject);
     procedure bitbtnFecharClick(Sender: TObject);
     procedure bitbtnGravarClick(Sender: TObject);
@@ -50,7 +51,7 @@ var
 begin
   //Procedimento que irá guardar o endereço de todos os TDBEdit do form em um array
   Count := 0;
-  for i := 0 to ComponentCount.Size - 1 do
+  for i := 0 to ComponentCount - 1 do
   begin
     if Components[i] is TDBEdit then
     begin
@@ -110,6 +111,12 @@ end;
 procedure TCadCategoriaF.bitbtnCancelarClick(Sender: TObject);
 begin
   qryCategoria.Cancel;
+  pagPrincipal.ActivePage := pagPesquisa;
+end;
+
+procedure TCadCategoriaF.bitbtnEditarClick(Sender: TObject);
+begin
+  qryCategoria.Edit;
   pagPrincipal.ActivePage := pagPesquisa;
 end;
 

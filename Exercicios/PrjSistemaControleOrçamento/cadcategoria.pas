@@ -20,6 +20,7 @@ type
     lblDesc: TLabel;
     qryCategoria: TZQuery;
     procedure bitbtnCancelarClick(Sender: TObject);
+    procedure bitbtnEditarClick(Sender: TObject);
     procedure bitbtnExcluirClick(Sender: TObject);
     procedure bitbtnFecharClick(Sender: TObject);
     procedure bitbtnGravarClick(Sender: TObject);
@@ -66,7 +67,8 @@ var
   i : Integer;
   val : Boolean;
 begin
-  //Função que irá validar os campos, retornando true caso todos os campos tenham sido preenchidos ou false caso um ou mais campos estejam em branco.
+  {Função que irá validar os campos, retornando true caso todos os campos
+  tenham sido preenchidos ou false caso um ou mais campos estejam em branco.}
   val := true;
   for i := 0 to High(vetor) do
   begin
@@ -110,6 +112,12 @@ end;
 procedure TCadCategoriaF.bitbtnCancelarClick(Sender: TObject);
 begin
   qryCategoria.Cancel;
+  pagPrincipal.ActivePage := pagPesquisa;
+end;
+
+procedure TCadCategoriaF.bitbtnEditarClick(Sender: TObject);
+begin
+  qryCategoria.Edit;
   pagPrincipal.ActivePage := pagPesquisa;
 end;
 
