@@ -59,7 +59,8 @@ end;
 
 procedure TMenuPrincipalF.submiClienteClick(Sender: TObject);
 begin
-
+  CadClienteF := TCadClienteF.Create(Self);
+  CadClienteF.ShowModal;
 end;
 
 end.

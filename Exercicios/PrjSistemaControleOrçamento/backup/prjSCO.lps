@@ -45,9 +45,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadCategoria"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="34"/>
-        <CursorPos Y="42"/>
+        <TopLine Value="105"/>
+        <CursorPos X="41" Y="120"/>
         <UsageCount Value="35"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -70,7 +71,6 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadCliente"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="140"/>
         <CursorPos Y="144"/>
@@ -143,7 +143,7 @@
         <UsageCount Value="10"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="17">
+    <JumpHistory HistoryIndex="18">
       <Position>
         <Filename Value="cadcliente.pas"/>
         <Caret Line="91" Column="3" TopLine="89"/>
@@ -215,6 +215,10 @@
       <Position>
         <Filename Value="cadcliente.pas"/>
         <Caret Line="125" Column="28" TopLine="107"/>
+      </Position>
+      <Position>
+        <Filename Value="cadcategoria.pas"/>
+        <Caret Line="43" TopLine="35"/>
       </Position>
     </JumpHistory>
     <RunParams>

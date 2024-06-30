@@ -1,14 +1,14 @@
 object MenuPrincipalF: TMenuPrincipalF
-  Left = 285
+  Left = 308
   Height = 486
-  Top = 65
+  Top = 76
   Width = 873
   Caption = 'Menu Principal - Sistema de Controle de Orçamentos'
   Menu = MainMenu1
   LCLVersion = '3.4.0.0'
   WindowState = wsMaximized
   object MainMenu1: TMainMenu
-    Left = 352
+    Left = 360
     Top = 80
     object miCadastrar: TMenuItem
       Caption = 'Cadastrar'
