@@ -1,12 +1,42 @@
 inherited CadClienteF: TCadClienteF
-  Left = 383
-  Top = 120
+  Left = 282
+  Top = 86
   OnClose = FormClose
   OnShow = FormShow
   inherited pagPrincipal: TPageControl
-    ActivePage = pagCadastro
-    TabIndex = 1
     inherited pagPesquisa: TTabSheet
+      inherited Panel1: TPanel
+        inherited Label1: TLabel
+          Width = 117
+          Caption = 'Pesquisar por: '
+        end
+        inherited edtPesquisar: TEdit
+          Left = 240
+          Width = 104
+        end
+        inherited bitbtnPesquisar: TBitBtn
+          Left = 352
+          OnClick = bitbtnPesquisarClick
+        end
+        object cbPesquisar: TComboBox[3]
+          Left = 160
+          Height = 26
+          Top = 24
+          Width = 64
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ItemHeight = 18
+          Items.Strings = (
+            'ID'
+            'Nome'
+          )
+          ParentFont = False
+          TabOrder = 2
+        end
+      end
       inherited Panel2: TPanel
         inherited bitbtnNovo: TBitBtn
           OnClick = bitbtnNovoClick
@@ -94,6 +124,12 @@ inherited CadClienteF: TCadClienteF
     end
     inherited pagCadastro: TTabSheet
       inherited Panel3: TPanel
+        inherited bitbtnGravar: TBitBtn
+          OnClick = bitbtnGravarClick
+        end
+        inherited bitbtnExcluir: TBitBtn
+          OnClick = bitbtnExcluirClick
+        end
         inherited bitbtnCancelar: TBitBtn
           OnClick = bitbtnCancelarClick
         end
@@ -116,9 +152,9 @@ inherited CadClienteF: TCadClienteF
         ParentFont = False
       end
       object lblTipo: TLabel[3]
-        Left = 40
+        Left = 752
         Height = 22
-        Top = 240
+        Top = 184
         Width = 117
         Caption = 'Tipo Pessoa: '
         Font.CharSet = ANSI_CHARSET
@@ -171,9 +207,9 @@ inherited CadClienteF: TCadClienteF
         TabOrder = 1
       end
       object DBTipo: TDBEdit[7]
-        Left = 160
+        Left = 872
         Height = 26
-        Top = 240
+        Top = 184
         Width = 56
         DataField = 'tipo_cliente'
         DataSource = dsCliente
@@ -218,14 +254,6 @@ inherited CadClienteF: TCadClienteF
         MaxLength = 18
         ParentFont = False
         TabOrder = 4
-      end
-      object Button1: TButton[10]
-        Left = 336
-        Height = 25
-        Top = 304
-        Width = 75
-        Caption = 'Button1'
-        TabOrder = 5
       end
     end
   end

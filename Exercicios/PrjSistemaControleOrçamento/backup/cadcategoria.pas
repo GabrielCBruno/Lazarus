@@ -25,56 +25,68 @@ type
     procedure bitbtnGravarClick(Sender: TObject);
     procedure bitbtnNovoClick(Sender: TObject);
     procedure bitbtnPesquisarClick(Sender: TObject);
-    //procedure Button1Click(Sender: TObject);
     procedure DBGridPrincipalDblClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
   private
 
   public
-      function validarDBEdits () : Boolean;
+      procedure povoarArray ();
+      function validarCampos () : Boolean;
   end;
 
 var
   CadCategoriaF: TCadCategoriaF;
-  DBEdits : array [0..1] of TDBEdit;
+  vetor: array of TDBEdit;
 implementation
 
 {$R *.lfm}
 
 { TCadCategoriaF }
 
-function TCadCategoriaF.validarDBEdits () : Boolean;
+procedure TCadCategoriaF.povoarArray ();
+var
+  i, Count: Integer;
+begin
+  //Procedimento que irá guardar o endereço de todos os TDBEdit do form em um array
+  Count := 0;
+  for i := 0 to ComponentCount.Size - 1 do
+  begin
+    if Components[i] is TDBEdit then
+    begin
+      Inc(Count);
+      SetLength(vetor, Count);
+      vetor[Count - 1] := TDBEdit(Components[i]);
+    end;
+  end;
+end;
+
+function TCadCategoriaF.validarCampos () : Boolean;
 var
   i : Integer;
   val : Boolean;
 begin
-     //Função que irá validar os campos verificando se estão prenchidos.
-     DBedits[0] := DBeditId;
-     DBedits[1] := DBeditDesc;
-     val := true;
-     for i := 0 to 1 do
-     begin
-          if DBedits[i].Text = '' then
-          begin
-               val := false;
-          end;
-     end;
-     if val = false then
-     begin
-          ShowMessage('Por Favor prencha todos os campos!!!');
-          Result := false;
-     end
-     else
-     begin
-          Result := true;
-     end;
+  //Função que irá validar os campos, retornando true caso todos os campos tenham sido preenchidos ou false caso um ou mais campos estejam em branco.
+  val := true;
+  for i := 0 to High(vetor) do
+  begin
+    if vetor[i].Text = '' then
+    begin
+      val := false;
+    end;
+  end;
+  if val = false then
+  begin
+       ShowMessage('Por favor, prencha todos os campos!');
+  end;
+  Result := val;
 end;
 
 procedure TCadCategoriaF.FormClose(Sender: TObject;
   var CloseAction: TCloseAction);
 begin
   qryCategoria.Close;
+  SetLength(vetor, 0);
   CloseAction := caFree;
 end;
 
@@ -85,7 +97,7 @@ end;
 
 procedure TCadCategoriaF.bitbtnExcluirClick(Sender: TObject);
 begin
-     if (validarDBEdits() = true) then
+     if (validarCampos = true) then
      begin
           If  MessageDlg('Você tem certeza que deseja excluir o registro?', mtConfirmation,[mbyes,mbno],0)= mryes then
           begin
@@ -103,7 +115,7 @@ end;
 
 procedure TCadCategoriaF.bitbtnGravarClick(Sender: TObject);
 begin
-  if validarDBEdits() = true then
+  if (validarCampos = true) then
   begin
     qryCategoria.Post;
     pagPrincipal.ActivePage := pagPesquisa;
@@ -144,6 +156,7 @@ end;
 procedure TCadCategoriaF.FormCreate(Sender: TObject);
 begin
     qryCategoria.Open;
+    povoarArray();
     pagPrincipal.ActivePage := pagPesquisa;
 end;
 

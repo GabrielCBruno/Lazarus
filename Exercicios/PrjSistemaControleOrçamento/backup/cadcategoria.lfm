@@ -4,8 +4,8 @@ inherited CadCategoriaF: TCadCategoriaF
   Top = 21
   Width = 741
   Caption = 'Cadastro de Categoria'
-  ClientHeight = 0
-  ClientWidth = 0
+  ClientHeight = 549
+  ClientWidth = 741
   OnClose = FormClose
   OnCreate = FormCreate
   inherited pagPrincipal: TPageControl
