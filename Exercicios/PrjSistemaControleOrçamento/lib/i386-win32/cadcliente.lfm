@@ -1,41 +1,21 @@
-inherited cadclienteF: TcadclienteF
-  Left = 252
-  Height = 559
-  Top = 62
-  Width = 983
-  Caption = 'Cadastro de Cliente'
-  ClientHeight = 559
-  ClientWidth = 983
+inherited CadClienteF: TCadClienteF
+  Left = 383
+  Top = 120
   OnClose = FormClose
   OnShow = FormShow
   inherited pagPrincipal: TPageControl
-    Height = 559
-    Width = 983
+    ActivePage = pagCadastro
+    TabIndex = 1
     inherited pagPesquisa: TTabSheet
-      ClientHeight = 531
-      ClientWidth = 975
-      inherited Panel1: TPanel
-        Width = 975
-        ClientWidth = 975
-        inherited bitbtnPesquisar: TBitBtn
-          OnClick = bitbtnPesquisarClick
-        end
-      end
       inherited Panel2: TPanel
-        Top = 461
-        Width = 975
-        ClientWidth = 975
         inherited bitbtnNovo: TBitBtn
           OnClick = bitbtnNovoClick
         end
         inherited bitbtnFechar: TBitBtn
-          Left = 854
           OnClick = bitbtnFecharClick
         end
       end
       inherited DBGridPrincipal: TDBGrid
-        Height = 381
-        Width = 975
         Columns = <        
           item
             Alignment = taCenter
@@ -69,7 +49,7 @@ inherited cadclienteF: TcadclienteF
             Title.Font.Pitch = fpVariable
             Title.Font.Quality = fqDraft
             Title.Font.Style = [fsBold]
-            Title.Caption = 'Nome Cliente'
+            Title.Caption = 'Nome do Cliente'
             Width = 400
             FieldName = 'nome_cliente'
           end        
@@ -87,7 +67,7 @@ inherited cadclienteF: TcadclienteF
             Title.Font.Quality = fqDraft
             Title.Font.Style = [fsBold]
             Title.Caption = 'CPF/CNPJ'
-            Width = 170
+            Width = 220
             FieldName = 'cpf_cnpj_cliente'
           end        
           item
@@ -98,31 +78,23 @@ inherited cadclienteF: TcadclienteF
             Font.Pitch = fpVariable
             Font.Quality = fqDraft
             PickList.Strings = (            )
+            Title.Alignment = taCenter
             Title.Font.CharSet = ANSI_CHARSET
             Title.Font.Height = -16
             Title.Font.Name = 'Arial'
             Title.Font.Pitch = fpVariable
             Title.Font.Quality = fqDraft
             Title.Font.Style = [fsBold]
-            Title.Caption = 'Tipo_Pessoa'
+            Title.Caption = 'Tipo Cliente'
+            Width = 100
             FieldName = 'tipo_cliente'
           end>
         DataSource = dsCliente
       end
     end
     inherited pagCadastro: TTabSheet
-      ClientHeight = 531
-      ClientWidth = 975
       inherited Panel3: TPanel
-        Top = 461
-        Width = 975
-        ClientWidth = 975
-        TabOrder = 4
-        inherited bitbtnGravar: TBitBtn
-          OnClick = bitbtnGravarClick
-        end
         inherited bitbtnCancelar: TBitBtn
-          Left = 862
           OnClick = bitbtnCancelarClick
         end
       end
@@ -130,12 +102,12 @@ inherited cadclienteF: TcadclienteF
         Width = 395
         Caption = 'Cadastro de Cliente'
       end
-      object lblID: TLabel[2]
-        Left = 24
+      object lblNome: TLabel[2]
+        Left = 40
         Height = 22
-        Top = 130
-        Width = 25
-        Caption = 'ID:'
+        Top = 184
+        Width = 61
+        Caption = 'Nome: '
         Font.CharSet = ANSI_CHARSET
         Font.Height = -19
         Font.Name = 'Arial'
@@ -143,12 +115,12 @@ inherited cadclienteF: TcadclienteF
         Font.Quality = fqDraft
         ParentFont = False
       end
-      object lblNome: TLabel[3]
-        Left = 24
+      object lblTipo: TLabel[3]
+        Left = 40
         Height = 22
-        Top = 178
-        Width = 56
-        Caption = 'Nome:'
+        Top = 240
+        Width = 117
+        Caption = 'Tipo Pessoa: '
         Font.CharSet = ANSI_CHARSET
         Font.Height = -19
         Font.Name = 'Arial'
@@ -156,10 +128,23 @@ inherited cadclienteF: TcadclienteF
         Font.Quality = fqDraft
         ParentFont = False
       end
-      object lblCPF: TLabel[4]
-        Left = 456
+      object lblID: TLabel[4]
+        Left = 40
         Height = 22
-        Top = 178
+        Top = 128
+        Width = 35
+        Caption = 'ID:  '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object lblCPFCNPJ: TLabel[5]
+        Left = 432
+        Height = 22
+        Top = 188
         Width = 104
         Caption = 'CPF/CNPJ: '
         Font.CharSet = ANSI_CHARSET
@@ -169,55 +154,46 @@ inherited cadclienteF: TcadclienteF
         Font.Quality = fqDraft
         ParentFont = False
       end
-      object lblID1: TLabel[5]
-        Left = 760
-        Height = 22
-        Top = 178
-        Width = 138
-        Caption = 'Tipo de Cliente: '
-        Font.CharSet = ANSI_CHARSET
-        Font.Height = -19
-        Font.Name = 'Arial'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        ParentFont = False
-      end
-      object DBeditNome: TDBEdit[6]
-        Left = 88
+      object DBNome: TDBEdit[6]
+        Left = 104
         Height = 26
-        Top = 176
-        Width = 360
+        Top = 184
+        Width = 312
+        DataField = 'nome_cliente'
         DataSource = dsCliente
         Font.CharSet = ANSI_CHARSET
         Font.Height = -16
         Font.Name = 'Arial'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
-        MaxLength = 0
+        MaxLength = 100
         ParentFont = False
         TabOrder = 1
       end
-      object DBeditCPF: TDBEdit[7]
-        Left = 568
+      object DBTipo: TDBEdit[7]
+        Left = 160
         Height = 26
-        Top = 176
-        Width = 176
+        Top = 240
+        Width = 56
+        DataField = 'tipo_cliente'
         DataSource = dsCliente
         Font.CharSet = ANSI_CHARSET
         Font.Height = -16
         Font.Name = 'Arial'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
-        MaxLength = 0
+        MaxLength = 1
         ParentFont = False
         TabOrder = 2
       end
-      object DBeditTipoP: TDBEdit[8]
-        Left = 904
+      object DBId: TDBEdit[8]
+        Left = 72
         Height = 26
-        Top = 176
-        Width = 56
+        Top = 128
+        Width = 48
+        DataField = 'clienteid'
         DataSource = dsCliente
+        Alignment = taRightJustify
         Font.CharSet = ANSI_CHARSET
         Font.Height = -16
         Font.Name = 'Arial'
@@ -227,36 +203,44 @@ inherited cadclienteF: TcadclienteF
         ParentFont = False
         TabOrder = 3
       end
-      object DBId: TDBEdit[9]
-        Left = 56
+      object DBCPF: TDBEdit[9]
+        Left = 536
         Height = 26
-        Top = 128
-        Width = 56
+        Top = 184
+        Width = 192
+        DataField = 'cpf_cnpj_cliente'
         DataSource = dsCliente
         Font.CharSet = ANSI_CHARSET
         Font.Height = -16
         Font.Name = 'Arial'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
-        MaxLength = 0
+        MaxLength = 18
         ParentFont = False
-        TabOrder = 0
+        TabOrder = 4
+      end
+      object Button1: TButton[10]
+        Left = 336
+        Height = 25
+        Top = 304
+        Width = 75
+        Caption = 'Button1'
+        TabOrder = 5
       end
     end
   end
-  object dsCliente: TDataSource[1]
-    DataSet = qryCliente
-    Left = 840
-    Top = 48
-  end
-  object qryCliente: TZQuery[2]
+  object qryCliente: TZQuery[1]
     Connection = DataModule1.ZConnection1
-    Active = True
     SQL.Strings = (
       'select * from cliente;'
     )
     Params = <>
-    Left = 768
+    Left = 536
+    Top = 48
+  end
+  object dsCliente: TDataSource[2]
+    DataSet = qryCliente
+    Left = 632
     Top = 48
   end
 end

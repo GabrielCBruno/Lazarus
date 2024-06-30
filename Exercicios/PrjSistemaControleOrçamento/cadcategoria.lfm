@@ -1,7 +1,7 @@
 inherited CadCategoriaF: TCadCategoriaF
-  Left = 362
+  Left = 273
   Height = 549
-  Top = 94
+  Top = 21
   Width = 741
   Caption = 'Cadastro de Categoria'
   ClientHeight = 549
@@ -11,6 +11,8 @@ inherited CadCategoriaF: TCadCategoriaF
   inherited pagPrincipal: TPageControl
     Height = 549
     Width = 741
+    ActivePage = pagCadastro
+    TabIndex = 1
     inherited pagPesquisa: TTabSheet
       ClientHeight = 521
       ClientWidth = 733
@@ -178,7 +180,6 @@ inherited CadCategoriaF: TCadCategoriaF
   end
   object qryCategoria: TZQuery[2]
     Connection = DataModule1.ZConnection1
-    Active = True
     SQL.Strings = (
       'select * from categoria_produto;'
     )

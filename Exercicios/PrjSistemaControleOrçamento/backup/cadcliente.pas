@@ -1,55 +1,78 @@
-unit cadcliente;
+unit CadCliente;
 
 {$mode ObjFPC}{$H+}
 
 interface
 
 uses
-  Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, CadModelo,
-  ZDataset ;
+  Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, StdCtrls, DBCtrls,
+  ZDataset, CadModelo;
 
 type
 
-  { TcadclienteF }
+  { TCadClienteF }
 
-  TcadclienteF = class(TCadModeloF)
+  TCadClienteF = class(TCadModeloF)
+    Button1: TButton;
+    DBNome: TDBEdit;
+    DBId: TDBEdit;
+    DBCPF: TDBEdit;
+    DBTipo: TDBEdit;
     dsCliente: TDataSource;
+    lblNome: TLabel;
+    lblTipo: TLabel;
+    lblCPFCNPJ: TLabel;
+    lblID: TLabel;
     qryCliente: TZQuery;
+    procedure bitbtnCancelarClick(Sender: TObject);
+    procedure bitbtnFecharClick(Sender: TObject);
     procedure bitbtnNovoClick(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormShow(Sender: TObject);
   private
 
   public
-
+      //procedure ButtonMostrarClick(Sender: TObject);
   end;
 
 var
-  cadclienteF: TcadclienteF;
+  CadClienteF: TCadClienteF;
 
 implementation
 
 {$R *.lfm}
 
-{ TcadclienteF }
+{ TCadClienteF }
 
-procedure TcadclienteF.bitbtnNovoClick(Sender: TObject);
+procedure TCadClienteF.bitbtnNovoClick(Sender: TObject);
 begin
   qryCliente.Insert;
   pagPrincipal.ActivePage := pagCadastro;
 end;
 
-procedure TcadclienteF.FormClose(Sender: TObject; var CloseAction: TCloseAction
+procedure TCadClienteF.bitbtnFecharClick(Sender: TObject);
+begin
+  CadClienteF.Close;
+end;
+
+procedure TCadClienteF.bitbtnCancelarClick(Sender: TObject);
+begin
+  qryCliente.Cancel;
+  pagPrincipal.ActivePage := pagPesquisa;
+end;
+
+procedure TCadClienteF.FormClose(Sender: TObject; var CloseAction: TCloseAction
   );
 begin
   qryCliente.Close;
   CloseAction := caFree;
 end;
 
-procedure TcadclienteF.FormShow(Sender: TObject);
+procedure TCadClienteF.FormShow(Sender: TObject);
 begin
   qryCliente.Open;
-  pag
+  pagPrincipal.ActivePage := pagPesquisa;
 end;
 
 end.

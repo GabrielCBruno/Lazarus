@@ -29,6 +29,7 @@ type
     Panel3: TPanel;
     pagPesquisa: TTabSheet;
     pagCadastro: TTabSheet;
+    //procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
   private
 
   public
@@ -43,6 +44,7 @@ implementation
 {$R *.lfm}
 
 { TCadModeloF }
+
 
 end.
 

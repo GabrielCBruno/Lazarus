@@ -76,12 +76,12 @@
         <UnitName Value="dmPrincipal"/>
       </Unit>
       <Unit>
-        <Filename Value="Drivers\lazarus\cadcliente.pas"/>
+        <Filename Value="cadcliente.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="cadclienteF"/>
+        <ComponentName Value="CadClienteF"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="Cadcliente"/>
+        <UnitName Value="CadCliente"/>
       </Unit>
     </Units>
   </ProjectOptions>
@@ -93,7 +93,6 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="Drivers\lazarus"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>
