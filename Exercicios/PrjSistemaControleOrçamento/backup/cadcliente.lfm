@@ -8,8 +8,6 @@ inherited CadClienteF: TCadClienteF
   OnShow = FormShow
   inherited pagPrincipal: TPageControl
     Width = 999
-    ActivePage = pagPesquisa
-    TabIndex = 0
     inherited pagPesquisa: TTabSheet
       ClientWidth = 991
       inherited Panel1: TPanel
@@ -232,7 +230,7 @@ inherited CadClienteF: TCadClienteF
         Font.Name = 'Arial'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
-        MaxLength = 100
+        MaxLength = 0
         ParentFont = False
         TabOrder = 1
       end
@@ -248,7 +246,7 @@ inherited CadClienteF: TCadClienteF
         Font.Name = 'Arial'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
-        MaxLength = 1
+        MaxLength = 0
         ParentFont = False
         TabOrder = 3
       end
@@ -281,7 +279,7 @@ inherited CadClienteF: TCadClienteF
         Font.Name = 'Arial'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
-        MaxLength = 18
+        MaxLength = 0
         ParentFont = False
         TabOrder = 2
       end

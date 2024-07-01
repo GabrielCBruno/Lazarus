@@ -16,6 +16,9 @@ type
     DBEdit1: TDBEdit;
     dsUsuario: TDataSource;
     Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
     procedure bitbtnCancelarClick(Sender: TObject);
     procedure bitbtnExcluirClick(Sender: TObject);
     procedure bitbtnFecharClick(Sender: TObject);
@@ -79,7 +82,7 @@ end;
 
 procedure TCadUsuarioF.bitbtnFecharClick(Sender: TObject);
 begin
-  dmPrincipal.DataModule1.qryUsuario.Close;
+  CadUsuarioF.Close;
 end;
 
 procedure TCadUsuarioF.bitbtnGravarClick(Sender: TObject);

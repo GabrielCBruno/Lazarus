@@ -1,0 +1,19 @@
+inherited CadOrcamentoF: TCadOrcamentoF
+  Caption = 'Cadastro de Orçamento'
+  OnClose = FormClose
+  inherited pagPrincipal: TPageControl
+    ActivePage = pagPesquisa
+    TabIndex = 0
+    inherited pagCadastro: TTabSheet
+      inherited Panel3: TPanel
+        inherited bitbtnCancelar: TBitBtn
+          OnClick = bitbtnCancelarClick
+        end
+      end
+      inherited lblTitulo: TLabel
+        Width = 478
+        Caption = 'Cadastro de Orçamento'
+      end
+    end
+  end
+end

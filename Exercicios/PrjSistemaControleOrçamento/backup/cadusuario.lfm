@@ -63,7 +63,7 @@ inherited CadUsuarioF: TCadUsuarioF
       object DBEdit1: TDBEdit[3]
         Left = 80
         Height = 26
-        Top = 132
+        Top = 136
         Width = 80
         Font.CharSet = ANSI_CHARSET
         Font.Height = -16
@@ -73,6 +73,45 @@ inherited CadUsuarioF: TCadUsuarioF
         MaxLength = 0
         ParentFont = False
         TabOrder = 1
+      end
+      object Label3: TLabel[4]
+        Left = 488
+        Height = 22
+        Top = 192
+        Width = 74
+        Caption = 'Usuário: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label4: TLabel[5]
+        Left = 40
+        Height = 22
+        Top = 192
+        Width = 149
+        Caption = 'Nome Completo: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label5: TLabel[6]
+        Left = 736
+        Height = 22
+        Top = 192
+        Width = 64
+        Caption = 'Senha: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
       end
     end
   end

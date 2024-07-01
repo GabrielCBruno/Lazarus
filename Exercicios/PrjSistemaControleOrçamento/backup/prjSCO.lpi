@@ -99,6 +99,21 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadUsuario"/>
       </Unit>
+      <Unit>
+        <Filename Value="cadorcamento.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CadOrcamentoF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadOrcamento"/>
+      </Unit>
+      <Unit>
+        <Filename Value="telasobre.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="TelaSobreF"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="TelaSobre"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

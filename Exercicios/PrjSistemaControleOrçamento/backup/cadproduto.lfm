@@ -1,6 +1,6 @@
 inherited CadProdutoF: TCadProdutoF
-  Left = 496
-  Top = 199
+  Left = 436
+  Top = 198
   Width = 1077
   Caption = 'Cadastro de Produto'
   ClientWidth = 1077
@@ -8,8 +8,6 @@ inherited CadProdutoF: TCadProdutoF
   OnShow = FormShow
   inherited pagPrincipal: TPageControl
     Width = 1077
-    ActivePage = pagPesquisa
-    TabIndex = 0
     inherited pagPesquisa: TTabSheet
       ClientWidth = 1069
       inherited Panel1: TPanel
@@ -285,6 +283,7 @@ inherited CadProdutoF: TCadProdutoF
         DataField = 'produtoid'
         DataSource = dsProduto
         Alignment = taRightJustify
+        Enabled = False
         Font.CharSet = ANSI_CHARSET
         Font.Height = -16
         Font.Name = 'Arial'

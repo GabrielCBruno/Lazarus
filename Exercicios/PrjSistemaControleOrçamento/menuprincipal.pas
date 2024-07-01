@@ -67,8 +67,8 @@ end;
 
 procedure TMenuPrincipalF.submiProdutosClick(Sender: TObject);
 begin
-  CadProdutoF := TCadProdutoF.Create(Self);
-  CadProdutoF.ShowModal;
+   CadProdutoF := TCadProdutoF.Create(Self);
+   CadProdutoF.ShowModal;
 end;
 
 procedure TMenuPrincipalF.submiUsuariosClick(Sender: TObject);

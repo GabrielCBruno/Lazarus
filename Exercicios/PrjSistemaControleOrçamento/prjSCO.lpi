@@ -99,6 +99,14 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadUsuario"/>
       </Unit>
+      <Unit>
+        <Filename Value="cadorcamento.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CadOrcamentoF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadOrcamento"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

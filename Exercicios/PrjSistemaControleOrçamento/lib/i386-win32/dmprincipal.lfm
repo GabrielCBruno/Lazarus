@@ -1,10 +1,10 @@
 object DataModule1: TDataModule1
   OnCreate = DataModuleCreate
   OldCreateOrder = False
-  Height = 562
-  HorizontalOffset = 718
-  VerticalOffset = 174
-  Width = 380
+  Height = 530
+  HorizontalOffset = 859
+  VerticalOffset = 148
+  Width = 327
   object ZConnection1: TZConnection
     ControlsCodePage = cCP_UTF8
     Properties.Strings = (
@@ -187,6 +187,7 @@ object DataModule1: TDataModule1
   object qryUsuario: TZQuery
     Connection = ZConnection1
     AfterInsert = qryUsuarioAfterInsert
+    Active = True
     SQL.Strings = (
       'select * from usuarios;'
     )

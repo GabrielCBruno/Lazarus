@@ -1,24 +1,22 @@
 inherited CadUsuarioF: TCadUsuarioF
-  Left = 527
-  Height = 565
-  Top = 214
+  Left = 484
+  Height = 571
+  Top = 140
   Caption = 'Cadastro de Usuario'
-  ClientHeight = 565
+  ClientHeight = 571
   OnClose = FormClose
   OnShow = FormShow
   inherited pagPrincipal: TPageControl
-    Height = 565
-    ActivePage = pagPesquisa
-    TabIndex = 0
+    Height = 571
     inherited pagPesquisa: TTabSheet
-      ClientHeight = 537
+      ClientHeight = 543
       inherited Panel1: TPanel
         inherited bitbtnPesquisar: TBitBtn
           OnClick = bitbtnPesquisarClick
         end
       end
       inherited Panel2: TPanel
-        Top = 467
+        Top = 473
         inherited bitbtnNovo: TBitBtn
           OnClick = bitbtnNovoClick
         end
@@ -27,14 +25,85 @@ inherited CadUsuarioF: TCadUsuarioF
         end
       end
       inherited DBGridPrincipal: TDBGrid
-        Height = 387
+        Height = 393
+        Columns = <        
+          item
+            Alignment = taCenter
+            Font.CharSet = ANSI_CHARSET
+            Font.Height = -16
+            Font.Name = 'Arial'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Height = -16
+            Title.Font.Name = 'Arial'
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'ID'
+            Width = 50
+            FieldName = 'id'
+          end        
+          item
+            Font.CharSet = ANSI_CHARSET
+            Font.Height = -16
+            Font.Name = 'Arial'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            PickList.Strings = (            )
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Height = -16
+            Title.Font.Name = 'Arial'
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Nome Completo'
+            Width = 400
+            FieldName = 'nome_completo'
+          end        
+          item
+            Font.CharSet = ANSI_CHARSET
+            Font.Height = -16
+            Font.Name = 'Arial'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            PickList.Strings = (            )
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Height = -16
+            Title.Font.Name = 'Arial'
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Usuário'
+            Width = 200
+            FieldName = 'usuario'
+          end        
+          item
+            Font.CharSet = ANSI_CHARSET
+            Font.Height = -16
+            Font.Name = 'Arial'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            PickList.Strings = (            )
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Height = -16
+            Title.Font.Name = 'Arial'
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Senha'
+            Width = 200
+            FieldName = 'senha'
+          end>
         DataSource = dsUsuario
       end
     end
     inherited pagCadastro: TTabSheet
-      ClientHeight = 537
+      ClientHeight = 543
       inherited Panel3: TPanel
-        Top = 467
+        Top = 473
         inherited bitbtnGravar: TBitBtn
           OnClick = bitbtnGravarClick
         end
@@ -50,9 +119,9 @@ inherited CadUsuarioF: TCadUsuarioF
         Caption = 'Cadastro de Usuário'
       end
       object Label2: TLabel[2]
-        Left = 40
+        Left = 44
         Height = 22
-        Top = 136
+        Top = 160
         Width = 30
         Caption = 'ID: '
         Font.CharSet = ANSI_CHARSET
@@ -62,11 +131,14 @@ inherited CadUsuarioF: TCadUsuarioF
         Font.Quality = fqDraft
         ParentFont = False
       end
-      object DBEdit1: TDBEdit[3]
-        Left = 80
+      object DBeditID: TDBEdit[3]
+        Left = 84
         Height = 26
-        Top = 132
-        Width = 80
+        Top = 160
+        Width = 64
+        DataField = 'id'
+        DataSource = dsUsuario
+        Alignment = taRightJustify
         Font.CharSet = ANSI_CHARSET
         Font.Height = -16
         Font.Name = 'Arial'
@@ -75,6 +147,93 @@ inherited CadUsuarioF: TCadUsuarioF
         MaxLength = 0
         ParentFont = False
         TabOrder = 1
+      end
+      object Label3: TLabel[4]
+        Left = 40
+        Height = 22
+        Top = 272
+        Width = 74
+        Caption = 'Usuário: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label4: TLabel[5]
+        Left = 44
+        Height = 22
+        Top = 224
+        Width = 149
+        Caption = 'Nome Completo: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label5: TLabel[6]
+        Left = 344
+        Height = 22
+        Top = 276
+        Width = 64
+        Caption = 'Senha: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object DBeditNome: TDBEdit[7]
+        Left = 196
+        Height = 26
+        Top = 224
+        Width = 428
+        DataField = 'nome_completo'
+        DataSource = dsUsuario
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 60
+        ParentFont = False
+        TabOrder = 2
+      end
+      object DBEdit2: TDBEdit[8]
+        Left = 117
+        Height = 26
+        Top = 272
+        Width = 208
+        DataField = 'usuario'
+        DataSource = dsUsuario
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 30
+        ParentFont = False
+        TabOrder = 3
+      end
+      object DBEdit3: TDBEdit[9]
+        Left = 416
+        Height = 26
+        Top = 272
+        Width = 208
+        DataField = 'senha'
+        DataSource = dsUsuario
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 50
+        ParentFont = False
+        TabOrder = 4
       end
     end
   end
