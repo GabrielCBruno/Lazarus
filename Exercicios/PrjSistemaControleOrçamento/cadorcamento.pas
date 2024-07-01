@@ -5,13 +5,14 @@ unit CadOrcamento;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, CadModelo;
+  Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, CadModelo;
 
 type
 
   { TCadOrcamentoF }
 
   TCadOrcamentoF = class(TCadModeloF)
+    dsOrcamento: TDataSource;
     procedure bitbtnCancelarClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
   private

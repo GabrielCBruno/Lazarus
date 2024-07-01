@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, StdCtrls, DBCtrls,
-  Buttons, CadModelo, dmPrincipal, ZDataset;
+  Buttons, CadModelo, dmPrincipal, ZDataset, CadProduto;
 
 type
 
@@ -24,6 +24,7 @@ type
     procedure bitbtnGravarClick(Sender: TObject);
     procedure bitbtnNovoClick(Sender: TObject);
     procedure bitbtnPesquisarClick(Sender: TObject);
+    procedure DBeditIdChange(Sender: TObject);
     procedure DBGridPrincipalDblClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
@@ -68,7 +69,7 @@ begin
   {Função que irá validar os campos, retornando true caso todos os campos
   tenham sido preenchidos ou false caso um ou mais campos estejam em branco.}
   val := true;
-  for i := 0 to High(vetor) do
+  for i := 0 to Length(vetor) -1 do
   begin
     if vetor[i].Text = '' then
     begin
@@ -97,7 +98,7 @@ end;
 
 procedure TCadCategoriaF.bitbtnExcluirClick(Sender: TObject);
 begin
-     if (validarCampos = true) then
+     if (validarCampos() = true) then
      begin
           If  MessageDlg('Você tem certeza que deseja excluir o registro?', mtConfirmation,[mbyes,mbno],0)= mryes then
           begin
@@ -115,7 +116,7 @@ end;
 
 procedure TCadCategoriaF.bitbtnGravarClick(Sender: TObject);
 begin
-  if (validarCampos = true) then
+  if (validarCampos() = true) then
   begin
        dmPrincipal.DataModule1.qryCategoria.Post;
        pagPrincipal.ActivePage := pagPesquisa;
@@ -145,6 +146,11 @@ begin
           dmPrincipal.DataModule1.qryCategoria.SQL.Text := 'select * from categoria_produto where categoriaprodutoid = ' + IntToStr(cod) + ';';
           dmPrincipal.DataModule1.qryCategoria.Close;
      end;
+end;
+
+procedure TCadCategoriaF.DBeditIdChange(Sender: TObject);
+begin
+
 end;
 
 procedure TCadCategoriaF.DBGridPrincipalDblClick(Sender: TObject);

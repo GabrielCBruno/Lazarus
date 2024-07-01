@@ -1,3 +1,124 @@
 inherited CadOrcamentoF: TCadOrcamentoF
-  Caption = 'Cadastro de Orçamento'
+  Caption = 'Orçamentos'
+  OnClose = FormClose
+  inherited pagPrincipal: TPageControl
+    ActivePage = pagPesquisa
+    TabIndex = 0
+    inherited pagPesquisa: TTabSheet
+      inherited DBGridPrincipal: TDBGrid
+        Columns = <        
+          item
+            Alignment = taCenter
+            Font.CharSet = ANSI_CHARSET
+            Font.Height = -16
+            Font.Name = 'Arial'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Height = -16
+            Title.Font.Name = 'Arial'
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'ID'
+            Width = 50
+            FieldName = 'orcamentoid'
+          end        
+          item
+            Alignment = taCenter
+            Font.CharSet = ANSI_CHARSET
+            Font.Height = -16
+            Font.Name = 'Arial'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Height = -16
+            Title.Font.Name = 'Arial'
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'ClienteID'
+            Width = 90
+            FieldName = 'clienteid'
+          end        
+          item
+            Alignment = taRightJustify
+            Font.CharSet = ANSI_CHARSET
+            Font.Height = -16
+            Font.Name = 'Arial'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Height = -16
+            Title.Font.Name = 'Arial'
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Data_Orçamento'
+            Width = 200
+            FieldName = 'dt_orcamento'
+          end        
+          item
+            Alignment = taRightJustify
+            Font.CharSet = ANSI_CHARSET
+            Font.Height = -16
+            Font.Name = 'Arial'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Height = -16
+            Title.Font.Name = 'Arial'
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Data_Validade'
+            Width = 200
+            FieldName = 'dt_validade_orcamento'
+          end        
+          item
+            Font.CharSet = ANSI_CHARSET
+            Font.Height = -16
+            Font.Name = 'Arial'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Height = -16
+            Title.Font.Name = 'Arial'
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Valor Total'
+            Width = 160
+            FieldName = 'vl_total_orcamento'
+          end>
+        DataSource = dsOrcamento
+      end
+    end
+    inherited pagCadastro: TTabSheet
+      inherited Panel3: TPanel
+        inherited bitbtnCancelar: TBitBtn
+          OnClick = bitbtnCancelarClick
+        end
+      end
+      inherited lblTitulo: TLabel
+        Width = 478
+        Caption = 'Cadastro de Orçamento'
+      end
+    end
+  end
+  object dsOrcamento: TDataSource[1]
+    DataSet = DataModule1.qryOrcamento
+    Left = 816
+    Top = 48
+  end
 end

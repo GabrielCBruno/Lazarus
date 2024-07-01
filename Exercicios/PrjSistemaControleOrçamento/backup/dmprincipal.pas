@@ -18,6 +18,11 @@ type
     qryClientecpf_cnpj_cliente: TZRawStringField;
     qryClientenome_cliente: TZRawStringField;
     qryClientetipo_cliente: TZRawStringField;
+    qryOrcamentoclienteid: TZIntegerField;
+    qryOrcamentodt_orcamento: TZDateTimeField;
+    qryOrcamentodt_validade_orcamento: TZDateTimeField;
+    qryOrcamentoorcamentoid: TZIntegerField;
+    qryOrcamentovl_total_orcamento: TZBCDField;
     qryProdutocategoriaprodutoid: TZIntegerField;
     qryProdutods_produto: TZRawStringField;
     qryProdutodt_cadastro_produto: TZDateTimeField;
@@ -35,6 +40,7 @@ type
     qryProduto: TZQuery;
     qryCategoria: TZQuery;
     qryUsuario: TZQuery;
+    qryOrcamento: TZQuery;
     procedure DataModuleCreate(Sender: TObject);
     function getSequence(const pNomeSequence: String): String;
     procedure qryCategoriaAfterInsert(DataSet: TDataSet);

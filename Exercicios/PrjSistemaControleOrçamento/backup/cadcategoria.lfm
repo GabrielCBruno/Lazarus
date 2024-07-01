@@ -1,7 +1,7 @@
 inherited CadCategoriaF: TCadCategoriaF
-  Left = 575
+  Left = 462
   Height = 549
-  Top = 189
+  Top = 200
   Width = 741
   Caption = 'Cadastro de Categoria'
   ClientHeight = 549
@@ -142,6 +142,7 @@ inherited CadCategoriaF: TCadCategoriaF
         Top = 136
         Width = 56
         DataField = 'categoriaprodutoid'
+        DataSource = dsCategoria
         Alignment = taRightJustify
         Font.CharSet = ANSI_CHARSET
         Font.Height = -19
@@ -151,6 +152,7 @@ inherited CadCategoriaF: TCadCategoriaF
         MaxLength = 0
         ParentFont = False
         TabOrder = 0
+        OnChange = DBeditIdChange
       end
       object DBeditDesc: TDBEdit[5]
         Left = 112
@@ -158,6 +160,7 @@ inherited CadCategoriaF: TCadCategoriaF
         Top = 185
         Width = 344
         DataField = 'ds_categoria_produto'
+        DataSource = dsCategoria
         Font.CharSet = ANSI_CHARSET
         Font.Height = -19
         Font.Name = 'Arial'
