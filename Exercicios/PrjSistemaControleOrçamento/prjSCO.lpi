@@ -91,6 +91,14 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadProduto"/>
       </Unit>
+      <Unit>
+        <Filename Value="cadusuario.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CadUsuarioF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadUsuario"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

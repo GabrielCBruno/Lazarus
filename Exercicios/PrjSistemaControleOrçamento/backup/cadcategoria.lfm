@@ -1,7 +1,7 @@
 inherited CadCategoriaF: TCadCategoriaF
-  Left = 306
+  Left = 575
   Height = 549
-  Top = 81
+  Top = 189
   Width = 741
   Caption = 'Cadastro de Categoria'
   ClientHeight = 549
@@ -142,7 +142,6 @@ inherited CadCategoriaF: TCadCategoriaF
         Top = 136
         Width = 56
         DataField = 'categoriaprodutoid'
-        DataSource = dsCategoria
         Alignment = taRightJustify
         Font.CharSet = ANSI_CHARSET
         Font.Height = -19
@@ -159,30 +158,20 @@ inherited CadCategoriaF: TCadCategoriaF
         Top = 185
         Width = 344
         DataField = 'ds_categoria_produto'
-        DataSource = dsCategoria
         Font.CharSet = ANSI_CHARSET
         Font.Height = -19
         Font.Name = 'Arial'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
-        MaxLength = 50
+        MaxLength = 0
         ParentFont = False
         TabOrder = 1
       end
     end
   end
   object dsCategoria: TDataSource[1]
-    DataSet = qryCategoria
-    Left = 656
-    Top = 48
-  end
-  object qryCategoria: TZQuery[2]
-    Connection = DataModule1.ZConnection1
-    SQL.Strings = (
-      'select * from categoria_produto;'
-    )
-    Params = <>
-    Left = 552
+    DataSet = DataModule1.qryCategoria
+    Left = 624
     Top = 48
   end
 end

@@ -6,20 +6,20 @@ interface
 
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, DBCtrls, StdCtrls,
-  ZDataset, ZAbstractRODataset, CadModelo;
+  ZDataset, ZAbstractRODataset, CadModelo, dmPrincipal;
 
 type
 
   { TCadProdutoF }
 
   TCadProdutoF = class(TCadModeloF)
-    DBeditData: TDBEdit;
-    DBeditValor: TDBEdit;
-    DBeditObs: TDBEdit;
-    DBeditID: TDBEdit;
     DBeditCatID: TDBEdit;
+    DBeditData: TDBEdit;
+    DBeditID: TDBEdit;
     DBeditIDesc: TDBEdit;
+    DBeditObs: TDBEdit;
     DBeditStatus: TDBEdit;
+    DBeditValor: TDBEdit;
     dsProduto: TDataSource;
     Label2: TLabel;
     Label3: TLabel;
@@ -42,6 +42,7 @@ type
     procedure bitbtnGravarClick(Sender: TObject);
     procedure bitbtnNovoClick(Sender: TObject);
     procedure bitbtnPesquisarClick(Sender: TObject);
+    procedure DBGridPrincipalDblClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormShow(Sender: TObject);
   private
@@ -104,7 +105,7 @@ end;
 
 procedure TCadProdutoF.bitbtnCancelarClick(Sender: TObject);
 begin
-  qryProduto.Cancel;
+  dmPrincipal.DataModule1.qryProduto.Cancel;
   pagPrincipal.ActivePage := pagPesquisa;
 end;
 
@@ -114,7 +115,7 @@ begin
      begin
           If  MessageDlg('Você tem certeza que deseja excluir o registro?', mtConfirmation,[mbyes,mbno],0)= mryes then
           begin
-               qryProduto.Delete;
+               dmPrincipal.DataModule1.qryProduto.Delete;
                pagPrincipal.ActivePage := pagPesquisa;
           end;
      end;
@@ -124,14 +125,14 @@ procedure TCadProdutoF.bitbtnGravarClick(Sender: TObject);
 begin
   if (validarCampos () = true) then
   begin
-       qryProduto.Post;
+       dmPrincipal.DataModule1.qryProduto.Post;
        pagPrincipal.ActivePage := pagPesquisa;
   end;
 end;
 
 procedure TCadProdutoF.bitbtnNovoClick(Sender: TObject);
 begin
-  qryProduto.Insert;
+  dmPrincipal.DataModule1.qryProduto.Insert;
   pagPrincipal.ActivePage := pagCadastro;
 end;
 
@@ -142,29 +143,34 @@ begin
   if edtPesquisar.Text <> '' then
   begin
        cod := StrToInt(edtPesquisar.Text);
-       qryProduto.Close;
-       qryProduto.SQL.Text := 'select * from produto where produtoid = ' + IntToStr(cod) + ';';
-       qryProduto.Open;
+       dmPrincipal.DataModule1.qryProduto.Close;
+       dmPrincipal.DataModule1.qryProduto.SQL.Text := 'select * from produto where produtoid = ' + IntToStr(cod) + ';';
+       dmPrincipal.DataModule1.qryProduto.Open;
   end
   else
   begin
-    qryProduto.Close;
-    qryProduto.SQL.Text := 'select * from produto;';
-    qryProduto.Open;
+    dmPrincipal.DataModule1.qryProduto.Close;
+    dmPrincipal.DataModule1.qryProduto.SQL.Text := 'select * from produto;';
+    dmPrincipal.DataModule1.qryProduto.Open;
   end;
+end;
+
+procedure TCadProdutoF.DBGridPrincipalDblClick(Sender: TObject);
+begin
+  pagPrincipal.ActivePage := pagCadastro;
 end;
 
 procedure TCadProdutoF.FormClose(Sender: TObject; var CloseAction: TCloseAction
   );
 begin
-  qryProduto.Close;
+  dmPrincipal.DataModule1.qryProduto.Close;
   SetLength(vetor, 0);
   CloseAction := caFree;
 end;
 
 procedure TCadProdutoF.FormShow(Sender: TObject);
 begin
-   qryProduto.Open;
+   dmPrincipal.DataModule1.qryProduto.Open;
    povoarArray();
    pagPrincipal.ActivePage := pagPesquisa;
 end;

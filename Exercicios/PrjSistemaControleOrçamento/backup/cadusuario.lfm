@@ -1,0 +1,84 @@
+inherited CadUsuarioF: TCadUsuarioF
+  Left = 527
+  Height = 565
+  Top = 214
+  Caption = 'Cadastro de Usuario'
+  ClientHeight = 565
+  OnClose = FormClose
+  OnShow = FormShow
+  inherited pagPrincipal: TPageControl
+    Height = 565
+    inherited pagPesquisa: TTabSheet
+      ClientHeight = 537
+      inherited Panel1: TPanel
+        inherited bitbtnPesquisar: TBitBtn
+          OnClick = bitbtnPesquisarClick
+        end
+      end
+      inherited Panel2: TPanel
+        Top = 467
+        inherited bitbtnNovo: TBitBtn
+          OnClick = bitbtnNovoClick
+        end
+        inherited bitbtnFechar: TBitBtn
+          OnClick = bitbtnFecharClick
+        end
+      end
+      inherited DBGridPrincipal: TDBGrid
+        Height = 387
+        DataSource = dsUsuario
+      end
+    end
+    inherited pagCadastro: TTabSheet
+      ClientHeight = 537
+      inherited Panel3: TPanel
+        Top = 467
+        inherited bitbtnGravar: TBitBtn
+          OnClick = bitbtnGravarClick
+        end
+        inherited bitbtnExcluir: TBitBtn
+          OnClick = bitbtnExcluirClick
+        end
+        inherited bitbtnCancelar: TBitBtn
+          OnClick = bitbtnCancelarClick
+        end
+      end
+      inherited lblTitulo: TLabel
+        Width = 413
+        Caption = 'Cadastro de Usuário'
+      end
+      object Label2: TLabel[2]
+        Left = 40
+        Height = 22
+        Top = 136
+        Width = 30
+        Caption = 'ID: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object DBEdit1: TDBEdit[3]
+        Left = 80
+        Height = 26
+        Top = 132
+        Width = 80
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 0
+        ParentFont = False
+        TabOrder = 1
+      end
+    end
+  end
+  object dsUsuario: TDataSource[1]
+    DataSet = DataModule1.qryUsuario
+    Left = 773
+    Top = 48
+  end
+end

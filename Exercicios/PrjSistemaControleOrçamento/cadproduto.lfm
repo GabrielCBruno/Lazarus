@@ -1,6 +1,6 @@
 inherited CadProdutoF: TCadProdutoF
-  Left = 250
-  Top = 106
+  Left = 496
+  Top = 199
   Width = 1077
   Caption = 'Cadastro de Produto'
   ClientWidth = 1077
@@ -60,6 +60,7 @@ inherited CadProdutoF: TCadProdutoF
             Font.Pitch = fpVariable
             Font.Quality = fqDraft
             PickList.Strings = (            )
+            Title.Alignment = taCenter
             Title.Font.CharSet = ANSI_CHARSET
             Title.Font.Height = -16
             Title.Font.Name = 'Arial'
@@ -67,6 +68,7 @@ inherited CadProdutoF: TCadProdutoF
             Title.Font.Quality = fqDraft
             Title.Font.Style = [fsBold]
             Title.Caption = 'CategoriaID'
+            Width = 110
             FieldName = 'categoriaprodutoid'
           end        
           item
@@ -129,7 +131,6 @@ inherited CadProdutoF: TCadProdutoF
             Font.Pitch = fpVariable
             Font.Quality = fqDraft
             PickList.Strings = (            )
-            Title.Alignment = taLeftJustify
             Title.Font.CharSet = ANSI_CHARSET
             Title.Font.Height = -16
             Title.Font.Name = 'Arial'
@@ -160,6 +161,7 @@ inherited CadProdutoF: TCadProdutoF
             FieldName = 'status_produto'
           end>
         DataSource = dsProduto
+        OnDblClick = DBGridPrincipalDblClick
       end
     end
     inherited pagCadastro: TTabSheet
@@ -280,7 +282,7 @@ inherited CadProdutoF: TCadProdutoF
         Height = 26
         Top = 144
         Width = 56
-        DataField = 'categoriaprodutoid'
+        DataField = 'produtoid'
         DataSource = dsProduto
         Alignment = taRightJustify
         Font.CharSet = ANSI_CHARSET
@@ -304,7 +306,7 @@ inherited CadProdutoF: TCadProdutoF
         Font.Name = 'Arial'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
-        MaxLength = 50
+        MaxLength = 0
         ParentFont = False
         TabOrder = 2
       end
@@ -337,7 +339,7 @@ inherited CadProdutoF: TCadProdutoF
         Font.Name = 'Arial'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
-        MaxLength = 300
+        MaxLength = 0
         ParentFont = False
         TabOrder = 3
       end
@@ -381,102 +383,20 @@ inherited CadProdutoF: TCadProdutoF
         Width = 96
         DataField = 'status_produto'
         DataSource = dsProduto
-        Alignment = taCenter
         Font.CharSet = ANSI_CHARSET
         Font.Height = -16
         Font.Name = 'Arial'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
-        MaxLength = 10
+        MaxLength = 0
         ParentFont = False
         TabOrder = 6
       end
     end
   end
   object dsProduto: TDataSource[1]
-    DataSet = qryProduto
+    DataSet = DataModule1.qryProduto
     Left = 696
     Top = 40
-  end
-  object qryProduto: TZQuery[2]
-    Connection = DataModule1.ZConnection1
-    Active = True
-    SQL.Strings = (
-      'select * from produto;'
-    )
-    Params = <>
-    Left = 592
-    Top = 40
-    object qryProdutoprodutoid: TZIntegerField
-      FieldKind = fkData
-      FieldName = 'produtoid'
-      Index = 0
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = True
-    end
-    object qryProdutocategoriaprodutoid: TZIntegerField
-      FieldKind = fkData
-      FieldName = 'categoriaprodutoid'
-      Index = 1
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = True
-    end
-    object qryProdutods_produto: TZRawStringField
-      FieldKind = fkData
-      FieldName = 'ds_produto'
-      Index = 2
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = True
-      Size = 50
-    end
-    object qryProdutoobs_produto: TZRawStringField
-      FieldKind = fkData
-      FieldName = 'obs_produto'
-      Index = 3
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = False
-      Size = 300
-    end
-    object qryProdutovl_venda_produto: TZBCDField
-      FieldKind = fkData
-      FieldName = 'vl_venda_produto'
-      Index = 4
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = True
-      Precision = 15
-      Currency = False
-      MaxValue = 0
-      MinValue = 0
-      Size = 2
-    end
-    object qryProdutodt_cadastro_produto: TZDateTimeField
-      FieldKind = fkData
-      FieldName = 'dt_cadastro_produto'
-      Index = 5
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = True
-    end
-    object qryProdutostatus_produto: TZRawStringField
-      FieldKind = fkData
-      FieldName = 'status_produto'
-      Index = 6
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = True
-      Size = 10
-    end
   end
 end

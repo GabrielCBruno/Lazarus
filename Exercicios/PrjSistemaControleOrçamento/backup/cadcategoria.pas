@@ -18,9 +18,7 @@ type
     DBeditDesc: TDBEdit;
     lblID: TLabel;
     lblDesc: TLabel;
-    qryCategoria: TZQuery;
     procedure bitbtnCancelarClick(Sender: TObject);
-    procedure bitbtnEditarClick(Sender: TObject);
     procedure bitbtnExcluirClick(Sender: TObject);
     procedure bitbtnFecharClick(Sender: TObject);
     procedure bitbtnGravarClick(Sender: TObject);
@@ -87,7 +85,7 @@ end;
 procedure TCadCategoriaF.FormClose(Sender: TObject;
   var CloseAction: TCloseAction);
 begin
-  qryCategoria.Close;
+  dmPrincipal.DataModule1.qryCategoria.Close;
   SetLength(vetor, 0);
   CloseAction := caFree;
 end;
@@ -103,7 +101,7 @@ begin
      begin
           If  MessageDlg('Você tem certeza que deseja excluir o registro?', mtConfirmation,[mbyes,mbno],0)= mryes then
           begin
-               qryCategoria.Delete;
+               dmPrincipal.DataModule1.qryCategoria.Open;
                pagPrincipal.ActivePage := pagPesquisa;
           end;
      end;
@@ -111,13 +109,7 @@ end;
 
 procedure TCadCategoriaF.bitbtnCancelarClick(Sender: TObject);
 begin
-  qryCategoria.Cancel;
-  pagPrincipal.ActivePage := pagPesquisa;
-end;
-
-procedure TCadCategoriaF.bitbtnEditarClick(Sender: TObject);
-begin
-  qryCategoria.Edit;
+  dmPrincipal.DataModule1.qryCategoria.Cancel;
   pagPrincipal.ActivePage := pagPesquisa;
 end;
 
@@ -125,14 +117,14 @@ procedure TCadCategoriaF.bitbtnGravarClick(Sender: TObject);
 begin
   if (validarCampos = true) then
   begin
-    qryCategoria.Post;
-    pagPrincipal.ActivePage := pagPesquisa;
+       dmPrincipal.DataModule1.qryCategoria.Post;
+       pagPrincipal.ActivePage := pagPesquisa;
   end;
 end;
 
 procedure TCadCategoriaF.bitbtnNovoClick(Sender: TObject);
 begin
-  qryCategoria.Insert;
+  dmPrincipal.DataModule1.qryCategoria.Insert;
   pagPrincipal.ActivePage := pagCadastro;
 end;
 
@@ -142,16 +134,16 @@ var
 begin
      if edtPesquisar.Text = '' then
      begin
-          qryCategoria.Close;
-          qryCategoria.SQL.Text := 'select * from categoria_produto;';
-          qryCategoria.Open;
+          dmPrincipal.DataModule1.qryCategoria.Close;
+          dmPrincipal.DataModule1.qryCategoria.SQL.Text := 'select * from categoria_produto;';
+          dmPrincipal.DataModule1.qryCategoria.Open;
      end
      else
      begin
-          qryCategoria.Close;
+          dmPrincipal.DataModule1.qryCategoria.Close;
           cod := StrToInt(edtPesquisar.Text);
-          qryCategoria.SQL.Text := 'select * from categoria_produto where categoriaprodutoid = ' + IntToStr(cod) + ';';
-          qryCategoria.Open;
+          dmPrincipal.DataModule1.qryCategoria.SQL.Text := 'select * from categoria_produto where categoriaprodutoid = ' + IntToStr(cod) + ';';
+          dmPrincipal.DataModule1.qryCategoria.Close;
      end;
 end;
 
@@ -163,7 +155,7 @@ end;
 
 procedure TCadCategoriaF.FormCreate(Sender: TObject);
 begin
-    qryCategoria.Open;
+    dmPrincipal.DataModule1.qryCategoria.Open;
     povoarArray();
     pagPrincipal.ActivePage := pagPesquisa;
 end;

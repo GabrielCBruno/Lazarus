@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, StdCtrls, DBCtrls,
-  Buttons, ZDataset, CadModelo, CadCategoria;
+  Buttons, ZDataset, CadModelo, CadCategoria, dmPrincipal;
 
 type
 
@@ -23,7 +23,6 @@ type
     lblTipo: TLabel;
     lblCPFCNPJ: TLabel;
     lblID: TLabel;
-    qryCliente: TZQuery;
     procedure bitbtnCancelarClick(Sender: TObject);
     procedure bitbtnEditarClick(Sender: TObject);
     procedure bitbtnExcluirClick(Sender: TObject);
@@ -34,6 +33,7 @@ type
     procedure DBGridPrincipalDblClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormShow(Sender: TObject);
+    procedure qryClienteAfterInsert(DataSet: TDataSet);
   private
 
   public
@@ -89,7 +89,7 @@ end;
 
 procedure TCadClienteF.bitbtnNovoClick(Sender: TObject);
 begin
-  qryCliente.Insert;
+  dmPrincipal.DataModule1.qryCliente.Insert;
   pagPrincipal.ActivePage := pagCadastro;
 end;
 
@@ -102,25 +102,25 @@ begin
      begin
           if cbPesquisar.Text = 'ID' then
           begin
-               qryCliente.Close;
+               dmPrincipal.DataModule1.qryCliente.Close;
                cod := StrToInt(edtPesquisar.Text);
-               qryCliente.SQL.Text := 'select * from cliente where clienteid = ' + IntToStr(cod) + ';';
-               qryCliente.Open;
+               dmPrincipal.DataModule1.qryCliente.SQL.Text := 'select * from cliente where clienteid = ' + IntToStr(cod) + ';';
+               dmPrincipal.DataModule1.qryCliente.Open;
           end
           else
           begin
-            qryCliente.Close;
+            dmPrincipal.DataModule1.qryCliente.Close;
             nome := edtPesquisar.Text;
             nome := UpperCase(nome);
-            qryCliente.SQL.Text := 'select * from cliente where nome_cliente LIKE ''' + nome + '%'';';
-            qryCliente.Open;
+            dmPrincipal.DataModule1.qryCliente.SQL.Text := 'select * from cliente where nome_cliente LIKE ''' + nome + '%'';';
+            dmPrincipal.DataModule1.qryCliente.Open;
           end;
      end
      else
      begin
-          qryCliente.Close;
-          qryCliente.SQL.Text := 'select * from cliente';
-          qryCliente.Open;
+          dmPrincipal.DataModule1.qryCliente.Close;
+          dmPrincipal.DataModule1.qryCliente.SQL.Text := 'select * from cliente';
+          dmPrincipal.DataModule1.qryCliente.Open;
      end;
 end;
 
@@ -138,20 +138,20 @@ procedure TCadClienteF.bitbtnGravarClick(Sender: TObject);
 begin
   if (validarCampos() = true) then
      begin
-          qryCLiente.Post;
+          dmPrincipal.DataModule1.qryCLiente.Post;
           pagPrincipal.ActivePage := pagPesquisa;
      end;
 end;
 
 procedure TCadClienteF.bitbtnCancelarClick(Sender: TObject);
 begin
-  qryCliente.Cancel;
+  dmPrincipal.DataModule1.qryCliente.Cancel;
   pagPrincipal.ActivePage := pagPesquisa;
 end;
 
 procedure TCadClienteF.bitbtnEditarClick(Sender: TObject);
 begin
-  qryCliente.Edit;
+  dmPrincipal.DataModule1.qryCliente.Edit;
   pagPrincipal.ActivePage := pagPesquisa;
 end;
 
@@ -161,7 +161,7 @@ begin
      begin
           If  MessageDlg('Você tem certeza que deseja excluir o registro?', mtConfirmation,[mbyes,mbno],0)= mryes then
           begin
-               qryCliente.Delete;
+               dmPrincipal.DataModule1.qryCliente.Delete;
                pagPrincipal.ActivePage := pagPesquisa;
           end;
      end;
@@ -170,16 +170,21 @@ end;
 procedure TCadClienteF.FormClose(Sender: TObject; var CloseAction: TCloseAction
   );
 begin
-  qryCliente.Close;
+  dmPrincipal.DataModule1.qryCliente.Close;
   SetLength(vetor, 0);
   CloseAction := caFree;
 end;
 
 procedure TCadClienteF.FormShow(Sender: TObject);
 begin
-  qryCliente.Open;
+  dmPrincipal.DataModule1.qryCliente.Open;
   povoarArray();
   pagPrincipal.ActivePage := pagPesquisa;
+end;
+
+procedure TCadClienteF.qryClienteAfterInsert(DataSet: TDataSet);
+begin
+
 end;
 
 end.

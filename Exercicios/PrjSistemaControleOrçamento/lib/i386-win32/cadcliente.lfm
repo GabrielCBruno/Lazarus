@@ -1,6 +1,6 @@
 inherited CadClienteF: TCadClienteF
-  Left = 254
-  Top = 44
+  Left = 513
+  Top = 227
   Width = 999
   Caption = 'Cadastro de Cliente'
   ClientWidth = 999
@@ -8,8 +8,6 @@ inherited CadClienteF: TCadClienteF
   OnShow = FormShow
   inherited pagPrincipal: TPageControl
     Width = 999
-    ActivePage = pagPesquisa
-    TabIndex = 0
     inherited pagPesquisa: TTabSheet
       ClientWidth = 991
       inherited Panel1: TPanel
@@ -287,17 +285,8 @@ inherited CadClienteF: TCadClienteF
       end
     end
   end
-  object qryCliente: TZQuery[1]
-    Connection = DataModule1.ZConnection1
-    SQL.Strings = (
-      'select * from cliente;'
-    )
-    Params = <>
-    Left = 712
-    Top = 40
-  end
-  object dsCliente: TDataSource[2]
-    DataSet = qryCliente
+  object dsCliente: TDataSource[1]
+    DataSet = DataModule1.qryCliente
     Left = 800
     Top = 40
   end
