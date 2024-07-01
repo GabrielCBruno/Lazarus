@@ -1,4 +1,6 @@
 inherited CadOrcamentoF: TCadOrcamentoF
+  Left = 513
+  Top = 230
   Caption = 'Orçamentos'
   OnClose = FormClose
   inherited pagPrincipal: TPageControl

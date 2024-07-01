@@ -1,7 +1,7 @@
 inherited CadCategoriaF: TCadCategoriaF
-  Left = 462
+  Left = 416
   Height = 549
-  Top = 200
+  Top = 88
   Width = 741
   Caption = 'Cadastro de Categoria'
   ClientHeight = 549
@@ -144,6 +144,7 @@ inherited CadCategoriaF: TCadCategoriaF
         DataField = 'categoriaprodutoid'
         DataSource = dsCategoria
         Alignment = taRightJustify
+        Enabled = False
         Font.CharSet = ANSI_CHARSET
         Font.Height = -19
         Font.Name = 'Arial'

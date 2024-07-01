@@ -258,6 +258,7 @@ inherited CadClienteF: TCadClienteF
         DataField = 'clienteid'
         DataSource = dsCliente
         Alignment = taRightJustify
+        Enabled = False
         Font.CharSet = ANSI_CHARSET
         Font.Height = -16
         Font.Name = 'Arial'

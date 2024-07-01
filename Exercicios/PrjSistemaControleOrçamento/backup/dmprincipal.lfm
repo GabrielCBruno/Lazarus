@@ -2,8 +2,8 @@ object DataModule1: TDataModule1
   OnCreate = DataModuleCreate
   OldCreateOrder = False
   Height = 530
-  HorizontalOffset = 733
-  VerticalOffset = 220
+  HorizontalOffset = 692
+  VerticalOffset = 248
   Width = 431
   object ZConnection1: TZConnection
     ControlsCodePage = cCP_UTF8
@@ -236,6 +236,7 @@ object DataModule1: TDataModule1
   end
   object qryOrcamento: TZQuery
     Connection = ZConnection1
+    Active = True
     SQL.Strings = (
       'select * from orcamento; '
     )

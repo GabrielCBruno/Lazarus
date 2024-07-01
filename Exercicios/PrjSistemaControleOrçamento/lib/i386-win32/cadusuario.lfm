@@ -1,13 +1,15 @@
 inherited CadUsuarioF: TCadUsuarioF
-  Left = 484
+  Left = 78
   Height = 571
-  Top = 140
+  Top = 65
   Caption = 'Cadastro de Usuario'
   ClientHeight = 571
   OnClose = FormClose
   OnShow = FormShow
   inherited pagPrincipal: TPageControl
     Height = 571
+    ActivePage = pagPesquisa
+    TabIndex = 0
     inherited pagPesquisa: TTabSheet
       ClientHeight = 543
       inherited Panel1: TPanel
@@ -139,6 +141,7 @@ inherited CadUsuarioF: TCadUsuarioF
         DataField = 'id'
         DataSource = dsUsuario
         Alignment = taRightJustify
+        Enabled = False
         Font.CharSet = ANSI_CHARSET
         Font.Height = -16
         Font.Name = 'Arial'
@@ -151,7 +154,7 @@ inherited CadUsuarioF: TCadUsuarioF
       object Label3: TLabel[4]
         Left = 40
         Height = 22
-        Top = 272
+        Top = 256
         Width = 74
         Caption = 'Usuário: '
         Font.CharSet = ANSI_CHARSET
@@ -164,7 +167,7 @@ inherited CadUsuarioF: TCadUsuarioF
       object Label4: TLabel[5]
         Left = 44
         Height = 22
-        Top = 224
+        Top = 208
         Width = 149
         Caption = 'Nome Completo: '
         Font.CharSet = ANSI_CHARSET
@@ -177,7 +180,7 @@ inherited CadUsuarioF: TCadUsuarioF
       object Label5: TLabel[6]
         Left = 344
         Height = 22
-        Top = 276
+        Top = 260
         Width = 64
         Caption = 'Senha: '
         Font.CharSet = ANSI_CHARSET
@@ -190,7 +193,7 @@ inherited CadUsuarioF: TCadUsuarioF
       object DBeditNome: TDBEdit[7]
         Left = 196
         Height = 26
-        Top = 224
+        Top = 208
         Width = 428
         DataField = 'nome_completo'
         DataSource = dsUsuario
@@ -206,7 +209,7 @@ inherited CadUsuarioF: TCadUsuarioF
       object DBEdit2: TDBEdit[8]
         Left = 117
         Height = 26
-        Top = 272
+        Top = 256
         Width = 208
         DataField = 'usuario'
         DataSource = dsUsuario
@@ -222,7 +225,7 @@ inherited CadUsuarioF: TCadUsuarioF
       object DBEdit3: TDBEdit[9]
         Left = 416
         Height = 26
-        Top = 272
+        Top = 256
         Width = 208
         DataField = 'senha'
         DataSource = dsUsuario

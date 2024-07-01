@@ -69,7 +69,7 @@ begin
   {Função que irá validar os campos, retornando true caso todos os campos
   tenham sido preenchidos ou false caso um ou mais campos estejam em branco.}
   val := true;
-  for i := 0 to Length(vetor) -1 do
+  for i := 0 to High(vetor) do
   begin
     if vetor[i].Text = '' then
     begin
