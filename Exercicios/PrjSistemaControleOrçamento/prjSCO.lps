@@ -20,7 +20,6 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="MenuPrincipal"/>
-        <IsVisibleTab Value="True"/>
         <TopLine Value="51"/>
         <CursorPos X="50" Y="62"/>
         <UsageCount Value="39"/>
@@ -46,11 +45,14 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadCategoria"/>
-        <EditorIndex Value="-1"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
         <TopLine Value="7"/>
         <CursorPos X="51" Y="16"/>
         <FoldState Value=" T1j902a"/>
         <UsageCount Value="39"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="dmprincipal.pas"/>
@@ -70,7 +72,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadCliente"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="3"/>
         <TopLine Value="132"/>
         <CursorPos X="22" Y="139"/>
         <UsageCount Value="30"/>
@@ -84,7 +86,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadProduto"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="2"/>
         <TopLine Value="75"/>
         <CursorPos X="43" Y="82"/>
         <UsageCount Value="22"/>
