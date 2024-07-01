@@ -35,9 +35,10 @@ type
     qryProduto: TZQuery;
     qryCategoria: TZQuery;
     qryUsuario: TZQuery;
-    //procedure DataModuleCreate(Sender: TObject);
     procedure DataModuleCreate(Sender: TObject);
     function getSequence(const pNomeSequence: String): String;
+    procedure qryClienteAfterInsert(DataSet: TDataSet);
+    procedure qryProdutoAfterInsert(DataSet: TDataSet);
   private
 
   public
@@ -67,9 +68,18 @@ begin
  end;
 end;
 
+procedure TDataModule1.qryClienteAfterInsert(DataSet: TDataSet);
+begin
+  qryClienteclienteid.AsInteger := StrtoInt(getSequence('cliente_clienteid'));
+end;
+
+procedure TDataModule1.qryProdutoAfterInsert(DataSet: TDataSet);
+begin
+  qryProdutoprodutoid.AsInteger := StrtoInt(getSequence('produto_produtoid'));
+end;
+
 procedure TDataModule1.DataModuleCreate(Sender: TObject);
 begin
- //
      ZConnection1.HostName := 'localhost';
      ZConnection1.DataBase := 'postgres';
      ZConnection1.User     := 'postgres';

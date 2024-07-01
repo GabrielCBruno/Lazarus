@@ -27,6 +27,7 @@ object DataModule1: TDataModule1
   end
   object qryCliente: TZQuery
     Connection = ZConnection1
+    AfterInsert = qryClienteAfterInsert
     SQL.Strings = (
       'select * from cliente'
     )
@@ -75,6 +76,7 @@ object DataModule1: TDataModule1
   end
   object qryProduto: TZQuery
     Connection = ZConnection1
+    AfterInsert = qryProdutoAfterInsert
     SQL.Strings = (
       'select * from produto;'
     )
@@ -155,6 +157,7 @@ object DataModule1: TDataModule1
   end
   object qryCategoria: TZQuery
     Connection = ZConnection1
+    AfterInsert = qryCategoriaAfterInsert
     SQL.Strings = (
       'select * from categoria_produto;'
     )
@@ -183,6 +186,7 @@ object DataModule1: TDataModule1
   end
   object qryUsuario: TZQuery
     Connection = ZConnection1
+    AfterInsert = qryUsuarioAfterInsert
     SQL.Strings = (
       'select * from usuarios;'
     )
