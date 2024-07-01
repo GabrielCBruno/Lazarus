@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, StdCtrls, DBCtrls,
-  CadModelo, dmPrincipal, ZDataset;
+  Buttons, CadModelo, dmPrincipal, ZDataset;
 
 type
 

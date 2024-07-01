@@ -14,7 +14,6 @@ type
 
   TCadModeloF = class(TForm)
     bitbtnCancelar: TBitBtn;
-    bitbtnEditar: TBitBtn;
     bitbtnExcluir: TBitBtn;
     bitbtnFechar: TBitBtn;
     bitbtnGravar: TBitBtn;

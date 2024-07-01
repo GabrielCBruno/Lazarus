@@ -1,7 +1,7 @@
 object MenuPrincipalF: TMenuPrincipalF
   Left = 308
-  Height = 486
-  Top = 76
+  Height = 498
+  Top = 91
   Width = 873
   Caption = 'Menu Principal - Sistema de Controle de Orçamentos'
   Menu = MainMenu1
@@ -22,6 +22,7 @@ object MenuPrincipalF: TMenuPrincipalF
       end
       object submiProdutos: TMenuItem
         Caption = 'Produtos'
+        OnClick = submiProdutosClick
       end
       object submiUsuarios: TMenuItem
         Caption = 'Usuários'

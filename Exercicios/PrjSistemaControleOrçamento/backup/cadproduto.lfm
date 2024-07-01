@@ -1,0 +1,482 @@
+inherited CadProdutoF: TCadProdutoF
+  Left = 250
+  Top = 106
+  Width = 1077
+  Caption = 'Cadastro de Produto'
+  ClientWidth = 1077
+  OnClose = FormClose
+  OnShow = FormShow
+  inherited pagPrincipal: TPageControl
+    Width = 1077
+    ActivePage = pagPesquisa
+    TabIndex = 0
+    inherited pagPesquisa: TTabSheet
+      ClientWidth = 1069
+      inherited Panel1: TPanel
+        Width = 1069
+        ClientWidth = 1069
+        inherited bitbtnPesquisar: TBitBtn
+          OnClick = bitbtnPesquisarClick
+        end
+      end
+      inherited Panel2: TPanel
+        Width = 1069
+        ClientWidth = 1069
+        inherited bitbtnNovo: TBitBtn
+          OnClick = bitbtnNovoClick
+        end
+        inherited bitbtnFechar: TBitBtn
+          Left = 948
+          OnClick = bitbtnFecharClick
+        end
+      end
+      inherited DBGridPrincipal: TDBGrid
+        Width = 1069
+        Columns = <        
+          item
+            Alignment = taCenter
+            Font.CharSet = ANSI_CHARSET
+            Font.Height = -16
+            Font.Name = 'Arial'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Height = -16
+            Title.Font.Name = 'Arial'
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'ID'
+            Width = 60
+            FieldName = 'produtoid'
+          end        
+          item
+            Alignment = taCenter
+            Font.CharSet = ANSI_CHARSET
+            Font.Height = -16
+            Font.Name = 'Arial'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            PickList.Strings = (            )
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Height = -16
+            Title.Font.Name = 'Arial'
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'CategoriaID'
+            FieldName = 'categoriaprodutoid'
+          end        
+          item
+            Font.CharSet = ANSI_CHARSET
+            Font.Height = -16
+            Font.Name = 'Arial'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            PickList.Strings = (            )
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Height = -16
+            Title.Font.Name = 'Arial'
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Descrição'
+            Width = 250
+            FieldName = 'ds_produto'
+          end        
+          item
+            Font.CharSet = ANSI_CHARSET
+            Font.Height = -16
+            Font.Name = 'Arial'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            PickList.Strings = (            )
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Height = -16
+            Title.Font.Name = 'Arial'
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Observação'
+            Width = 250
+            FieldName = 'obs_produto'
+          end        
+          item
+            Alignment = taRightJustify
+            Font.CharSet = ANSI_CHARSET
+            Font.Height = -16
+            Font.Name = 'Arial'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Height = -16
+            Title.Font.Name = 'Arial'
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Data_Cadastro'
+            Width = 145
+            FieldName = 'dt_cadastro_produto'
+          end        
+          item
+            Font.CharSet = ANSI_CHARSET
+            Font.Height = -16
+            Font.Name = 'Arial'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            PickList.Strings = (            )
+            Title.Alignment = taLeftJustify
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Height = -16
+            Title.Font.Name = 'Arial'
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Valor'
+            Width = 120
+            FieldName = 'vl_venda_produto'
+          end        
+          item
+            Alignment = taCenter
+            Font.CharSet = ANSI_CHARSET
+            Font.Height = -16
+            Font.Name = 'Arial'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Height = -16
+            Title.Font.Name = 'Arial'
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Status'
+            Width = 110
+            FieldName = 'status_produto'
+          end>
+        DataSource = dsProduto
+      end
+    end
+    inherited pagCadastro: TTabSheet
+      ClientWidth = 1069
+      inherited Panel3: TPanel
+        Width = 1069
+        ClientWidth = 1069
+        TabOrder = 7
+        inherited bitbtnGravar: TBitBtn
+          OnClick = bitbtnGravarClick
+        end
+        inherited bitbtnExcluir: TBitBtn
+          Left = 320
+          OnClick = bitbtnExcluirClick
+        end
+        inherited bitbtnCancelar: TBitBtn
+          Left = 940
+          OnClick = bitbtnCancelarClick
+        end
+      end
+      inherited lblTitulo: TLabel
+        Width = 419
+        Caption = 'Cadastro de Produto'
+      end
+      object Label2: TLabel[2]
+        Left = 131
+        Height = 22
+        Top = 144
+        Width = 30
+        Caption = 'ID: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label3: TLabel[3]
+        Left = 304
+        Height = 22
+        Top = 144
+        Width = 112
+        Caption = 'CategoriaID: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label4: TLabel[4]
+        Left = 48
+        Height = 22
+        Top = 240
+        Width = 113
+        Caption = 'Observação: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label5: TLabel[5]
+        Left = 65
+        Height = 22
+        Top = 192
+        Width = 96
+        Caption = 'Descrição: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label6: TLabel[6]
+        Left = 360
+        Height = 22
+        Top = 300
+        Width = 53
+        Caption = 'Valor: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label7: TLabel[7]
+        Left = 24
+        Height = 22
+        Top = 296
+        Width = 137
+        Caption = 'Data_Cadastro: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label8: TLabel[8]
+        Left = 528
+        Height = 22
+        Top = 296
+        Width = 63
+        Caption = 'Status: '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object DBeditID: TDBEdit[9]
+        Left = 160
+        Height = 26
+        Top = 144
+        Width = 56
+        DataField = 'categoriaprodutoid'
+        DataSource = dsProduto
+        Alignment = taRightJustify
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 0
+        ParentFont = False
+        TabOrder = 0
+      end
+      object DBeditIDesc: TDBEdit[10]
+        Left = 160
+        Height = 26
+        Top = 192
+        Width = 528
+        DataField = 'ds_produto'
+        DataSource = dsProduto
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 50
+        ParentFont = False
+        TabOrder = 2
+      end
+      object DBeditCatID: TDBEdit[11]
+        Left = 416
+        Height = 26
+        Top = 144
+        Width = 56
+        DataField = 'categoriaprodutoid'
+        DataSource = dsProduto
+        Alignment = taRightJustify
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 0
+        ParentFont = False
+        TabOrder = 1
+      end
+      object DBeditObs: TDBEdit[12]
+        Left = 160
+        Height = 26
+        Top = 240
+        Width = 528
+        DataField = 'obs_produto'
+        DataSource = dsProduto
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 300
+        ParentFont = False
+        TabOrder = 3
+      end
+      object DBeditData: TDBEdit[13]
+        Left = 160
+        Height = 26
+        Top = 296
+        Width = 184
+        DataField = 'dt_cadastro_produto'
+        DataSource = dsProduto
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 0
+        ParentFont = False
+        TabOrder = 4
+      end
+      object DBeditValor: TDBEdit[14]
+        Left = 416
+        Height = 26
+        Top = 296
+        Width = 104
+        DataField = 'vl_venda_produto'
+        DataSource = dsProduto
+        Alignment = taRightJustify
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 0
+        ParentFont = False
+        TabOrder = 5
+      end
+      object DBeditStatus: TDBEdit[15]
+        Left = 592
+        Height = 26
+        Top = 296
+        Width = 96
+        DataField = 'status_produto'
+        DataSource = dsProduto
+        Alignment = taCenter
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 10
+        ParentFont = False
+        TabOrder = 6
+      end
+    end
+  end
+  object dsProduto: TDataSource[1]
+    DataSet = qryProduto
+    Left = 696
+    Top = 40
+  end
+  object qryProduto: TZQuery[2]
+    Connection = DataModule1.ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from produto;'
+    )
+    Params = <>
+    Left = 592
+    Top = 40
+    object qryProdutoprodutoid: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'produtoid'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryProdutocategoriaprodutoid: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'categoriaprodutoid'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryProdutods_produto: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'ds_produto'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 50
+    end
+    object qryProdutoobs_produto: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'obs_produto'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 300
+    end
+    object qryProdutovl_venda_produto: TZBCDField
+      FieldKind = fkData
+      FieldName = 'vl_venda_produto'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Precision = 15
+      Currency = False
+      MaxValue = 0
+      MinValue = 0
+      Size = 2
+    end
+    object qryProdutodt_cadastro_produto: TZDateTimeField
+      FieldKind = fkData
+      FieldName = 'dt_cadastro_produto'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryProdutostatus_produto: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'status_produto'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 10
+    end
+  end
+end

@@ -1,7 +1,7 @@
 inherited CadCategoriaF: TCadCategoriaF
-  Left = 273
+  Left = 306
   Height = 549
-  Top = 21
+  Top = 81
   Width = 741
   Caption = 'Cadastro de Categoria'
   ClientHeight = 549
@@ -104,9 +104,6 @@ inherited CadCategoriaF: TCadCategoriaF
         inherited bitbtnCancelar: TBitBtn
           Left = 620
           OnClick = bitbtnCancelarClick
-        end
-        inherited bitbtnEditar: TBitBtn
-          OnClick = bitbtnEditarClick
         end
       end
       inherited lblTitulo: TLabel

@@ -1,6 +1,6 @@
 inherited CadClienteF: TCadClienteF
-  Left = 266
-  Top = 73
+  Left = 254
+  Top = 44
   Width = 999
   Caption = 'Cadastro de Cliente'
   ClientWidth = 999
@@ -8,6 +8,8 @@ inherited CadClienteF: TCadClienteF
   OnShow = FormShow
   inherited pagPrincipal: TPageControl
     Width = 999
+    ActivePage = pagPesquisa
+    TabIndex = 0
     inherited pagPesquisa: TTabSheet
       ClientWidth = 991
       inherited Panel1: TPanel
@@ -58,7 +60,7 @@ inherited CadClienteF: TCadClienteF
           OnClick = bitbtnNovoClick
         end
         inherited bitbtnFechar: TBitBtn
-          Left = 870
+          Left = 872
           OnClick = bitbtnFecharClick
         end
       end
@@ -151,18 +153,15 @@ inherited CadClienteF: TCadClienteF
           OnClick = bitbtnGravarClick
         end
         inherited bitbtnExcluir: TBitBtn
-          Left = 584
           Width = 83
           OnClick = bitbtnExcluirClick
+          TabOrder = 2
         end
         inherited bitbtnCancelar: TBitBtn
           Left = 864
           Width = 105
           OnClick = bitbtnCancelarClick
-        end
-        inherited bitbtnEditar: TBitBtn
-          Left = 304
-          OnClick = bitbtnEditarClick
+          TabOrder = 1
         end
       end
       inherited lblTitulo: TLabel

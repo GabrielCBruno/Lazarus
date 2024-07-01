@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, StdCtrls, DBCtrls,
-  CadModelo, dmPrincipal, ZDataset;
+  Buttons, CadModelo, dmPrincipal, ZDataset;
 
 type
 
@@ -67,7 +67,8 @@ var
   i : Integer;
   val : Boolean;
 begin
-  //Função que irá validar os campos, retornando true caso todos os campos tenham sido preenchidos ou false caso um ou mais campos estejam em branco.
+  {Função que irá validar os campos, retornando true caso todos os campos
+  tenham sido preenchidos ou false caso um ou mais campos estejam em branco.}
   val := true;
   for i := 0 to High(vetor) do
   begin
