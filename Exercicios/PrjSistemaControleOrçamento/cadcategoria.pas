@@ -13,9 +13,9 @@ type
   { TCadCategoriaF }
 
   TCadCategoriaF = class(TCadModeloF)
+    DBedtiDesc: TDBEdit;
+    DBedtiID: TDBEdit;
     dsCategoria: TDataSource;
-    DBeditId: TDBEdit;
-    DBeditDesc: TDBEdit;
     lblID: TLabel;
     lblDesc: TLabel;
     procedure bitbtnCancelarClick(Sender: TObject);
@@ -116,7 +116,7 @@ end;
 
 procedure TCadCategoriaF.bitbtnGravarClick(Sender: TObject);
 begin
-  if (validarCampos() = true) then
+  if validarCampos() = true then
   begin
        dmPrincipal.DataModule1.qryCategoria.Post;
        pagPrincipal.ActivePage := pagPesquisa;

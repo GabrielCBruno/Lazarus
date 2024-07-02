@@ -21,6 +21,13 @@ type
     qryOrcamentoclienteid: TZIntegerField;
     qryOrcamentodt_orcamento: TZDateTimeField;
     qryOrcamentodt_validade_orcamento: TZDateTimeField;
+    qryOrcamentoItensorcamentoid: TZIntegerField;
+    qryOrcamentoItensorcamentoitemid: TZIntegerField;
+    qryOrcamentoItensprodutodesc: TZRawStringField;
+    qryOrcamentoItensprodutoid: TZIntegerField;
+    qryOrcamentoItensqt_produto: TZBCDField;
+    qryOrcamentoItensvl_total: TZBCDField;
+    qryOrcamentoItensvl_unitario: TZBCDField;
     qryOrcamentoorcamentoid: TZIntegerField;
     qryOrcamentovl_total_orcamento: TZBCDField;
     qryProdutocategoriaprodutoid: TZIntegerField;
@@ -40,8 +47,8 @@ type
     qryProduto: TZQuery;
     qryUsuario: TZQuery;
     qryOrcamento: TZQuery;
-    qryCategoria: TZQuery;
     qryOrcamentoItens: TZQuery;
+    qryCategoria: TZQuery;
     procedure DataModuleCreate(Sender: TObject);
     function getSequence(const pNomeSequence: String): String;
     procedure qryCategoriaAfterInsert(DataSet: TDataSet);
@@ -79,7 +86,7 @@ end;
 
 procedure TDataModule1.qryCategoriaAfterInsert(DataSet: TDataSet);
 begin
-  qryCategoriacategoriaprodutoid.AsInteger := StrtoInt(getSequence('categoria_produto_categoriaprodutoid_seq'));
+ qryCategoriacategoriaprodutoid.AsInteger := StrToInt(getSequence('categoria_produto_categoriaprodutoid_seq'));
 end;
 
 procedure TDataModule1.qryClienteAfterInsert(DataSet: TDataSet);

@@ -6,19 +6,19 @@ interface
 
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, DBCtrls, StdCtrls,
-  ZDataset, ZAbstractRODataset, CadModelo, dmPrincipal;
+  DBExtCtrls, ZDataset, ZAbstractRODataset, CadModelo, dmPrincipal;
 
 type
 
   { TCadProdutoF }
 
   TCadProdutoF = class(TCadModeloF)
+    DBcbStatus: TDBComboBox;
+    DBdataDtCadastro: TDBDateEdit;
     DBeditCatID: TDBEdit;
-    DBeditData: TDBEdit;
     DBeditID: TDBEdit;
     DBeditIDesc: TDBEdit;
     DBeditObs: TDBEdit;
-    DBeditStatus: TDBEdit;
     DBeditValor: TDBEdit;
     dsProduto: TDataSource;
     Label2: TLabel;

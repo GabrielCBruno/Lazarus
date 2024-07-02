@@ -167,7 +167,7 @@ inherited CadProdutoF: TCadProdutoF
       inherited Panel3: TPanel
         Width = 1069
         ClientWidth = 1069
-        TabOrder = 7
+        TabOrder = 5
         inherited bitbtnGravar: TBitBtn
           OnClick = bitbtnGravarClick
         end
@@ -239,7 +239,7 @@ inherited CadProdutoF: TCadProdutoF
       object Label6: TLabel[6]
         Left = 360
         Height = 22
-        Top = 300
+        Top = 290
         Width = 53
         Caption = 'Valor: '
         Font.CharSet = ANSI_CHARSET
@@ -252,7 +252,7 @@ inherited CadProdutoF: TCadProdutoF
       object Label7: TLabel[7]
         Left = 24
         Height = 22
-        Top = 296
+        Top = 290
         Width = 137
         Caption = 'Data_Cadastro: '
         Font.CharSet = ANSI_CHARSET
@@ -265,7 +265,7 @@ inherited CadProdutoF: TCadProdutoF
       object Label8: TLabel[8]
         Left = 528
         Height = 22
-        Top = 296
+        Top = 290
         Width = 63
         Caption = 'Status: '
         Font.CharSet = ANSI_CHARSET
@@ -297,7 +297,7 @@ inherited CadProdutoF: TCadProdutoF
         Left = 160
         Height = 26
         Top = 192
-        Width = 528
+        Width = 568
         DataField = 'ds_produto'
         DataSource = dsProduto
         Font.CharSet = ANSI_CHARSET
@@ -330,7 +330,7 @@ inherited CadProdutoF: TCadProdutoF
         Left = 160
         Height = 26
         Top = 240
-        Width = 528
+        Width = 568
         DataField = 'obs_produto'
         DataSource = dsProduto
         Font.CharSet = ANSI_CHARSET
@@ -342,26 +342,10 @@ inherited CadProdutoF: TCadProdutoF
         ParentFont = False
         TabOrder = 3
       end
-      object DBeditData: TDBEdit[13]
-        Left = 160
-        Height = 26
-        Top = 296
-        Width = 184
-        DataField = 'dt_cadastro_produto'
-        DataSource = dsProduto
-        Font.CharSet = ANSI_CHARSET
-        Font.Height = -16
-        Font.Name = 'Arial'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        MaxLength = 0
-        ParentFont = False
-        TabOrder = 4
-      end
-      object DBeditValor: TDBEdit[14]
+      object DBeditValor: TDBEdit[13]
         Left = 416
         Height = 26
-        Top = 296
+        Top = 288
         Width = 104
         DataField = 'vl_venda_produto'
         DataSource = dsProduto
@@ -373,13 +357,13 @@ inherited CadProdutoF: TCadProdutoF
         Font.Quality = fqDraft
         MaxLength = 0
         ParentFont = False
-        TabOrder = 5
+        TabOrder = 4
       end
-      object DBeditStatus: TDBEdit[15]
+      object DBcbStatus: TDBComboBox[14]
         Left = 592
         Height = 26
-        Top = 296
-        Width = 96
+        Top = 288
+        Width = 136
         DataField = 'status_produto'
         DataSource = dsProduto
         Font.CharSet = ANSI_CHARSET
@@ -387,9 +371,32 @@ inherited CadProdutoF: TCadProdutoF
         Font.Name = 'Arial'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
+        ItemHeight = 18
+        Items.Strings = (
+          'ATIVO'
+          'CONCLUIDO'
+        )
         MaxLength = 0
         ParentFont = False
         TabOrder = 6
+      end
+      object DBdataDtCadastro: TDBDateEdit[15]
+        Left = 160
+        Height = 26
+        Top = 288
+        Width = 176
+        CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+        DateOrder = doNone
+        ButtonWidth = 23
+        NumGlyphs = 1
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 0
+        ParentFont = False
+        TabOrder = 7
       end
     end
   end

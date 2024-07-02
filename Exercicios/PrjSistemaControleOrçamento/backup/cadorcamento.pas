@@ -13,13 +13,13 @@ type
   { TCadOrcamentoF }
 
   TCadOrcamentoF = class(TCadModeloF)
-    DataSource1: TDataSource;
+    dsOrcamentoItens: TDataSource;
     DBeditClienteID: TDBEdit;
     DBeditDtOrc: TDBEdit;
     DBeditDtVal: TDBEdit;
     DBeditID: TDBEdit;
     DBeditTotOrc: TDBEdit;
-    DBGrid1: TDBGrid;
+    DBGridOrcItens: TDBGrid;
     dsOrcamento: TDataSource;
     Label3: TLabel;
     Label4: TLabel;

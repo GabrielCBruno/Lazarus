@@ -96,7 +96,6 @@ inherited CadCategoriaF: TCadCategoriaF
         Top = 451
         Width = 733
         ClientWidth = 733
-        TabOrder = 2
         inherited bitbtnGravar: TBitBtn
           OnClick = bitbtnGravarClick
         end
@@ -138,32 +137,18 @@ inherited CadCategoriaF: TCadCategoriaF
         Font.Quality = fqDraft
         ParentFont = False
       end
-      object DBeditId: TDBEdit[4]
+      object DBedtiID: TDBEdit[4]
         Left = 112
-        Height = 30
-        Top = 136
-        Width = 56
+        Height = 26
+        Top = 140
+        Width = 72
         DataField = 'categoriaprodutoid'
+        DataSource = dsCategoria
+        ReadOnly = True
         Alignment = taRightJustify
         Enabled = False
         Font.CharSet = ANSI_CHARSET
-        Font.Height = -19
-        Font.Name = 'Arial'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        MaxLength = 0
-        ParentFont = False
-        TabOrder = 0
-        OnChange = DBeditIdChange
-      end
-      object DBeditDesc: TDBEdit[5]
-        Left = 112
-        Height = 30
-        Top = 185
-        Width = 344
-        DataField = 'ds_categoria_produto'
-        Font.CharSet = ANSI_CHARSET
-        Font.Height = -19
+        Font.Height = -16
         Font.Name = 'Arial'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
@@ -171,11 +156,27 @@ inherited CadCategoriaF: TCadCategoriaF
         ParentFont = False
         TabOrder = 1
       end
+      object DBedtiDesc: TDBEdit[5]
+        Left = 112
+        Height = 26
+        Top = 192
+        Width = 408
+        DataField = 'ds_categoria_produto'
+        DataSource = dsCategoria
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 50
+        ParentFont = False
+        TabOrder = 2
+      end
     end
   end
   object dsCategoria: TDataSource[1]
     DataSet = DataModule1.qryCategoria
-    Left = 632
-    Top = 48
+    Left = 656
+    Top = 40
   end
 end
