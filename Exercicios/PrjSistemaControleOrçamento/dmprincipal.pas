@@ -46,13 +46,14 @@ type
     qryCliente: TZQuery;
     qryProduto: TZQuery;
     qryUsuario: TZQuery;
-    qryOrcamento: TZQuery;
-    qryOrcamentoItens: TZQuery;
     qryCategoria: TZQuery;
+    qryOrcamentoItens: TZQuery;
+    qryOrcamento: TZQuery;
     procedure DataModuleCreate(Sender: TObject);
     function getSequence(const pNomeSequence: String): String;
     procedure qryCategoriaAfterInsert(DataSet: TDataSet);
     procedure qryClienteAfterInsert(DataSet: TDataSet);
+    procedure qryOrcamentoAfterInsert(DataSet: TDataSet);
     procedure qryProdutoAfterInsert(DataSet: TDataSet);
     procedure qryUsuarioAfterInsert(DataSet: TDataSet);
   private
@@ -92,6 +93,11 @@ end;
 procedure TDataModule1.qryClienteAfterInsert(DataSet: TDataSet);
 begin
   qryClienteclienteid.AsInteger := StrtoInt(getSequence('cliente_clienteid'));
+end;
+
+procedure TDataModule1.qryOrcamentoAfterInsert(DataSet: TDataSet);
+begin
+  qryOrcamentoorcamentoid.AsInteger := StrToInt(getSequence('orcamento_orcamentoid_seq'));
 end;
 
 procedure TDataModule1.qryProdutoAfterInsert(DataSet: TDataSet);

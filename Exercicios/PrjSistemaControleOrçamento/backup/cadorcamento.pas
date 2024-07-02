@@ -14,13 +14,13 @@ type
   { TCadOrcamentoF }
 
   TCadOrcamentoF = class(TCadModeloF)
+    dsOrcamento: TDataSource;
+    dsOrcamentoItens: TDataSource;
     DBdateDtOrc: TDBDateEdit;
     DBdateDtVal: TDBDateEdit;
-    dsOrcamentoItens: TDataSource;
     DBeditClienteID: TDBEdit;
     DBeditID: TDBEdit;
     DBGridOrcItens: TDBGrid;
-    dsOrcamento: TDataSource;
     edtOrcamento: TEdit;
     Label4: TLabel;
     Label5: TLabel;
@@ -66,6 +66,8 @@ procedure TCadOrcamentoF.bitbtnNovoClick(Sender: TObject);
 begin
   dmPrincipal.DataModule1.qryOrcamento.Insert;
   pagPrincipal.ActivePage := pagCadastro;
+  DBdateDtOrc.Text := DateToStr(Date);
+  DBdateDtVal.Text := DateToStr(Date+1);;
 end;
 
 procedure TCadOrcamentoF.bitbtnPesquisarClick(Sender: TObject);
@@ -76,7 +78,7 @@ begin
   begin
        cod := StrToInt(edtPesquisar.Text);
        dmPrincipal.DataModule1.qryOrcamento.Close;
-       dmPrincipal.DataModule1.qryOrcamento.SQL.Text := 'select * from orcamento where produtoid = ' + IntToStr(cod) + ';';
+       dmPrincipal.DataModule1.qryOrcamento.SQL.Text := 'select * from orcamento where orcamentoid = ' + IntToStr(cod) + ';';
        dmPrincipal.DataModule1.qryOrcamento.Open;
   end
   else
@@ -90,10 +92,6 @@ end;
 procedure TCadOrcamentoF.DBGridPrincipalDblClick(Sender: TObject);
 begin
   pagPrincipal.ActivePage := pagCadastro;
-  DataModule1.qryOrcamentoItens.Close;
-  ShowMessage(DBeditID.Text);
-  //DataModule1.qryOrcamentoItens.SQL.Text := 'select * from orcamento_item where orcamentoid = ' + DBeditID.Text + ';';
-  DataModule1.qryOrcamentoItens.Open;
 end;
 
 procedure TCadOrcamentoF.FormClose(Sender: TObject;
@@ -107,7 +105,7 @@ end;
 procedure TCadOrcamentoF.FormShow(Sender: TObject);
 begin
   DataModule1.qryOrcamento.Open;
-  DataModule1.qryOrcamentoItens.Open;
+  dmPrincipal.DataModule1.qryOrcamentoItens.Open;
   pagPrincipal.ActivePage := pagPesquisa;
 end;
 
