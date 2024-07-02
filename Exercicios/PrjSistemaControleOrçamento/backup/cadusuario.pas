@@ -129,13 +129,13 @@ begin
   begin
        cod := StrToInt(edtPesquisar.Text);
        dmPrincipal.DataModule1.qryUsuario.Close;
-       dmPrincipal.DataModule1.qryUsuario.SQL.Text := 'select * from produto where produtoid = ' + IntToStr(cod) + ';';
+       dmPrincipal.DataModule1.qryUsuario.SQL.Text := 'select * from usuarios where id = ' + IntToStr(cod) + ';';
        dmPrincipal.DataModule1.qryUsuario.Open;
   end
   else
   begin
     dmPrincipal.DataModule1.qryUsuario.Close;
-    dmPrincipal.DataModule1.qryUsuario.SQL.Text := 'select * from produto;';
+    dmPrincipal.DataModule1.qryUsuario.SQL.Text := 'select * from usuarios;';
     dmPrincipal.DataModule1.qryUsuario.Open;
   end;
 end;

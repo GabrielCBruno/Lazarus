@@ -1,7 +1,7 @@
 inherited CadUsuarioF: TCadUsuarioF
-  Left = 505
+  Left = 443
   Height = 571
-  Top = 314
+  Top = 139
   Caption = 'Cadastro de Usuario'
   ClientHeight = 571
   OnClose = FormClose
@@ -98,6 +98,7 @@ inherited CadUsuarioF: TCadUsuarioF
             FieldName = 'senha'
           end>
         DataSource = dsUsuario
+        OnDblClick = DBGridPrincipalDblClick
       end
     end
     inherited pagCadastro: TTabSheet

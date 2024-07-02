@@ -45,7 +45,7 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadCategoria"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="88"/>
+        <TopLine Value="121"/>
         <CursorPos X="59" Y="105"/>
         <UsageCount Value="47"/>
         <Loaded Value="True"/>
@@ -72,10 +72,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadCliente"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="5"/>
-        <TopLine Value="154"/>
-        <CursorPos X="3" Y="160"/>
+        <TopLine Value="108"/>
+        <CursorPos X="6" Y="101"/>
         <UsageCount Value="38"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -88,7 +87,7 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadProduto"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="90"/>
+        <TopLine Value="132"/>
         <CursorPos X="9" Y="69"/>
         <UsageCount Value="30"/>
         <Loaded Value="True"/>
@@ -101,9 +100,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadUsuario"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="4"/>
-        <TopLine Value="98"/>
-        <CursorPos X="50" Y="98"/>
+        <TopLine Value="128"/>
+        <CursorPos X="41" Y="146"/>
         <UsageCount Value="28"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -116,7 +116,6 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadOrcamento"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="2"/>
         <CursorPos X="132" Y="31"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
@@ -215,17 +214,6 @@
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="cadproduto.pas"/>
-        <Caret Line="103" Column="9" TopLine="85"/>
-      </Position>
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-      </Position>
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-        <Caret Line="34" Column="10"/>
-      </Position>
       <Position>
         <Filename Value="cadproduto.pas"/>
         <Caret Line="168" Column="25" TopLine="142"/>
@@ -333,6 +321,18 @@
       <Position>
         <Filename Value="cadcliente.pas"/>
         <Caret Line="74" Column="24" TopLine="108"/>
+      </Position>
+      <Position>
+        <Filename Value="cadusuario.pas"/>
+        <Caret Line="98" Column="50" TopLine="98"/>
+      </Position>
+      <Position>
+        <Filename Value="cadcliente.pas"/>
+        <Caret Line="165" Column="143" TopLine="127"/>
+      </Position>
+      <Position>
+        <Filename Value="cadusuario.pas"/>
+        <Caret Line="139" Column="75" TopLine="123"/>
       </Position>
     </JumpHistory>
     <RunParams>
