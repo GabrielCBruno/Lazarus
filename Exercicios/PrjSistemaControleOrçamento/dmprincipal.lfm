@@ -2,8 +2,8 @@ object DataModule1: TDataModule1
   OnCreate = DataModuleCreate
   OldCreateOrder = False
   Height = 530
-  HorizontalOffset = 589
-  VerticalOffset = 84
+  HorizontalOffset = 930
+  VerticalOffset = 123
   Width = 431
   object ZConnection1: TZConnection
     ControlsCodePage = cCP_UTF8

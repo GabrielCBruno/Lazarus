@@ -1,15 +1,13 @@
 inherited CadUsuarioF: TCadUsuarioF
-  Left = 78
+  Left = 505
   Height = 571
-  Top = 65
+  Top = 314
   Caption = 'Cadastro de Usuario'
   ClientHeight = 571
   OnClose = FormClose
   OnShow = FormShow
   inherited pagPrincipal: TPageControl
     Height = 571
-    ActivePage = pagPesquisa
-    TabIndex = 0
     inherited pagPesquisa: TTabSheet
       ClientHeight = 543
       inherited Panel1: TPanel
@@ -202,7 +200,7 @@ inherited CadUsuarioF: TCadUsuarioF
         Font.Name = 'Arial'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
-        MaxLength = 60
+        MaxLength = 0
         ParentFont = False
         TabOrder = 2
       end
@@ -218,7 +216,7 @@ inherited CadUsuarioF: TCadUsuarioF
         Font.Name = 'Arial'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
-        MaxLength = 30
+        MaxLength = 0
         ParentFont = False
         TabOrder = 3
       end
@@ -234,7 +232,7 @@ inherited CadUsuarioF: TCadUsuarioF
         Font.Name = 'Arial'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
-        MaxLength = 50
+        MaxLength = 0
         ParentFont = False
         TabOrder = 4
       end
@@ -242,7 +240,7 @@ inherited CadUsuarioF: TCadUsuarioF
   end
   object dsUsuario: TDataSource[1]
     DataSet = DataModule1.qryUsuario
-    Left = 773
-    Top = 48
+    Left = 784
+    Top = 40
   end
 end

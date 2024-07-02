@@ -45,8 +45,8 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadCategoria"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="61"/>
-        <CursorPos X="12" Y="67"/>
+        <TopLine Value="88"/>
+        <CursorPos X="59" Y="105"/>
         <UsageCount Value="47"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -59,7 +59,8 @@
         <ResourceBaseClass Value="DataModule"/>
         <UnitName Value="dmPrincipal"/>
         <EditorIndex Value="6"/>
-        <CursorPos X="29" Y="13"/>
+        <TopLine Value="64"/>
+        <CursorPos X="39" Y="94"/>
         <UsageCount Value="44"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -71,9 +72,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadCliente"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="5"/>
-        <TopLine Value="66"/>
-        <CursorPos X="24" Y="74"/>
+        <TopLine Value="154"/>
+        <CursorPos X="3" Y="160"/>
         <UsageCount Value="38"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -86,7 +88,7 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadProduto"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="60"/>
+        <TopLine Value="90"/>
         <CursorPos X="9" Y="69"/>
         <UsageCount Value="30"/>
         <Loaded Value="True"/>
@@ -99,10 +101,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadUsuario"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="4"/>
-        <TopLine Value="109"/>
-        <CursorPos X="119" Y="110"/>
+        <TopLine Value="98"/>
+        <CursorPos X="50" Y="98"/>
         <UsageCount Value="28"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -115,8 +116,8 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadOrcamento"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="7"/>
-        <CursorPos X="117" Y="9"/>
+        <TopLine Value="2"/>
+        <CursorPos X="132" Y="31"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -214,10 +215,6 @@
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="cadproduto.pas"/>
-        <Caret Column="16"/>
-      </Position>
       <Position>
         <Filename Value="cadproduto.pas"/>
         <Caret Line="103" Column="9" TopLine="85"/>
@@ -332,6 +329,10 @@
       <Position>
         <Filename Value="cadusuario.pas"/>
         <Caret Line="118" Column="15" TopLine="108"/>
+      </Position>
+      <Position>
+        <Filename Value="cadcliente.pas"/>
+        <Caret Line="74" Column="24" TopLine="108"/>
       </Position>
     </JumpHistory>
     <RunParams>

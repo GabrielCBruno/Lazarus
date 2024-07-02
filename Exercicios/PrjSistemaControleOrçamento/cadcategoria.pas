@@ -102,7 +102,7 @@ begin
      begin
           If  MessageDlg('Você tem certeza que deseja excluir o registro?', mtConfirmation,[mbyes,mbno],0)= mryes then
           begin
-               dmPrincipal.DataModule1.qryCategoria.Open;
+               dmPrincipal.DataModule1.qryCategoria.Delete;
                pagPrincipal.ActivePage := pagPesquisa;
           end;
      end;

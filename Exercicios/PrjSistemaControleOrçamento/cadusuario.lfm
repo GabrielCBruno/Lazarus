@@ -1,15 +1,13 @@
 inherited CadUsuarioF: TCadUsuarioF
-  Left = 306
+  Left = 505
   Height = 571
-  Top = 86
+  Top = 314
   Caption = 'Cadastro de Usuario'
   ClientHeight = 571
   OnClose = FormClose
   OnShow = FormShow
   inherited pagPrincipal: TPageControl
     Height = 571
-    ActivePage = pagPesquisa
-    TabIndex = 0
     inherited pagPesquisa: TTabSheet
       ClientHeight = 543
       inherited Panel1: TPanel
@@ -139,6 +137,7 @@ inherited CadUsuarioF: TCadUsuarioF
         Top = 160
         Width = 64
         DataField = 'id'
+        DataSource = dsUsuario
         Alignment = taRightJustify
         Enabled = False
         Font.CharSet = ANSI_CHARSET
@@ -195,6 +194,7 @@ inherited CadUsuarioF: TCadUsuarioF
         Top = 208
         Width = 428
         DataField = 'nome_completo'
+        DataSource = dsUsuario
         Font.CharSet = ANSI_CHARSET
         Font.Height = -16
         Font.Name = 'Arial'
@@ -210,6 +210,7 @@ inherited CadUsuarioF: TCadUsuarioF
         Top = 256
         Width = 208
         DataField = 'usuario'
+        DataSource = dsUsuario
         Font.CharSet = ANSI_CHARSET
         Font.Height = -16
         Font.Name = 'Arial'
@@ -225,6 +226,7 @@ inherited CadUsuarioF: TCadUsuarioF
         Top = 256
         Width = 208
         DataField = 'senha'
+        DataSource = dsUsuario
         Font.CharSet = ANSI_CHARSET
         Font.Height = -16
         Font.Name = 'Arial'

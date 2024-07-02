@@ -4,8 +4,6 @@ inherited CadOrcamentoF: TCadOrcamentoF
   Caption = 'Orçamentos'
   OnClose = FormClose
   inherited pagPrincipal: TPageControl
-    ActivePage = pagPesquisa
-    TabIndex = 0
     inherited pagPesquisa: TTabSheet
       inherited DBGridPrincipal: TDBGrid
         Columns = <        

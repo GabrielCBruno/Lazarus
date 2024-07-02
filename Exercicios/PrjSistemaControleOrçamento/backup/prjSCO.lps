@@ -58,8 +58,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
         <UnitName Value="dmPrincipal"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="6"/>
-        <CursorPos X="17"/>
+        <TopLine Value="70"/>
+        <CursorPos X="39" Y="94"/>
         <UsageCount Value="44"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -99,10 +101,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadUsuario"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="4"/>
-        <TopLine Value="109"/>
-        <CursorPos X="15" Y="119"/>
+        <TopLine Value="108"/>
+        <CursorPos X="71" Y="124"/>
         <UsageCount Value="28"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -116,7 +117,7 @@
         <UnitName Value="CadOrcamento"/>
         <EditorIndex Value="3"/>
         <TopLine Value="7"/>
-        <CursorPos X="9" Y="15"/>
+        <CursorPos X="117" Y="9"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -213,23 +214,7 @@
         <UsageCount Value="20"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="28">
-      <Position>
-        <Filename Value="cadusuario.pas"/>
-        <Caret Line="143" Column="3"/>
-      </Position>
-      <Position>
-        <Filename Value="cadusuario.pas"/>
-        <Caret Line="144" Column="3" TopLine="107"/>
-      </Position>
-      <Position>
-        <Filename Value="cadusuario.pas"/>
-        <Caret Line="145" Column="3" TopLine="108"/>
-      </Position>
-      <Position>
-        <Filename Value="cadusuario.pas"/>
-        <Caret Line="146" Column="3" TopLine="109"/>
-      </Position>
+    <JumpHistory HistoryIndex="29">
       <Position>
         <Filename Value="cadproduto.pas"/>
         <Caret Column="16"/>
@@ -328,6 +313,26 @@
       <Position>
         <Filename Value="cadcategoria.pas"/>
         <Caret Line="81" TopLine="61"/>
+      </Position>
+      <Position>
+        <Filename Value="dmprincipal.pas"/>
+        <Caret Column="17"/>
+      </Position>
+      <Position>
+        <Filename Value="cadusuario.pas"/>
+        <Caret Line="119" Column="15" TopLine="109"/>
+      </Position>
+      <Position>
+        <Filename Value="cadusuario.pas"/>
+        <Caret Line="118" Column="15" TopLine="108"/>
+      </Position>
+      <Position>
+        <Filename Value="dmprincipal.pas"/>
+        <Caret Column="17"/>
+      </Position>
+      <Position>
+        <Filename Value="cadusuario.pas"/>
+        <Caret Line="118" Column="15" TopLine="108"/>
       </Position>
     </JumpHistory>
     <RunParams>

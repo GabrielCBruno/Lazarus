@@ -1,7 +1,7 @@
 inherited CadUsuarioF: TCadUsuarioF
-  Left = 78
+  Left = 485
   Height = 571
-  Top = 65
+  Top = 153
   Caption = 'Cadastro de Usuario'
   ClientHeight = 571
   OnClose = FormClose
@@ -139,7 +139,6 @@ inherited CadUsuarioF: TCadUsuarioF
         Top = 160
         Width = 64
         DataField = 'id'
-        DataSource = dsUsuario
         Alignment = taRightJustify
         Enabled = False
         Font.CharSet = ANSI_CHARSET
@@ -196,13 +195,12 @@ inherited CadUsuarioF: TCadUsuarioF
         Top = 208
         Width = 428
         DataField = 'nome_completo'
-        DataSource = dsUsuario
         Font.CharSet = ANSI_CHARSET
         Font.Height = -16
         Font.Name = 'Arial'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
-        MaxLength = 60
+        MaxLength = 0
         ParentFont = False
         TabOrder = 2
       end
@@ -212,13 +210,12 @@ inherited CadUsuarioF: TCadUsuarioF
         Top = 256
         Width = 208
         DataField = 'usuario'
-        DataSource = dsUsuario
         Font.CharSet = ANSI_CHARSET
         Font.Height = -16
         Font.Name = 'Arial'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
-        MaxLength = 30
+        MaxLength = 0
         ParentFont = False
         TabOrder = 3
       end
@@ -228,13 +225,12 @@ inherited CadUsuarioF: TCadUsuarioF
         Top = 256
         Width = 208
         DataField = 'senha'
-        DataSource = dsUsuario
         Font.CharSet = ANSI_CHARSET
         Font.Height = -16
         Font.Name = 'Arial'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
-        MaxLength = 50
+        MaxLength = 0
         ParentFont = False
         TabOrder = 4
       end
@@ -242,7 +238,7 @@ inherited CadUsuarioF: TCadUsuarioF
   end
   object dsUsuario: TDataSource[1]
     DataSet = DataModule1.qryUsuario
-    Left = 773
-    Top = 48
+    Left = 784
+    Top = 40
   end
 end

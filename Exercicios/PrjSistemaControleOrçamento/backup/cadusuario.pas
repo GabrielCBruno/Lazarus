@@ -13,11 +13,11 @@ type
   { TCadUsuarioF }
 
   TCadUsuarioF = class(TCadModeloF)
+    dsUsuario: TDataSource;
     DBEdit3: TDBEdit;
     DBeditID: TDBEdit;
     DBEdit2: TDBEdit;
     DBeditNome: TDBEdit;
-    dsUsuario: TDataSource;
     Label2: TLabel;
     Label3: TLabel;
     Label4: TLabel;
