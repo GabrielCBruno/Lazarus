@@ -5,6 +5,7 @@ object MenuPrincipalF: TMenuPrincipalF
   Width = 873
   Caption = 'Menu Principal - Sistema de Controle de Orçamentos'
   Menu = MainMenu1
+  OnCreate = FormCreate
   LCLVersion = '3.4.0.0'
   WindowState = wsMaximized
   object MainMenu1: TMainMenu
@@ -31,8 +32,9 @@ object MenuPrincipalF: TMenuPrincipalF
     end
     object miVendas: TMenuItem
       Caption = 'Vendas'
-      object MenuItem5: TMenuItem
+      object Orcamento: TMenuItem
         Caption = 'Orçamento'
+        OnClick = OrcamentoClick
       end
     end
     object miRelatorios: TMenuItem

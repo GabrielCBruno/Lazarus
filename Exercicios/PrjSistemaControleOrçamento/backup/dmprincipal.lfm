@@ -268,7 +268,7 @@ object DataModule1: TDataModule1
     Connection = ZConnection1
     Active = True
     SQL.Strings = (
-      'select * from orcamento_item;'
+      'select * from orcamento_item oi where oi.orcamentoid = 1;'
     )
     Params = <>
     Left = 336

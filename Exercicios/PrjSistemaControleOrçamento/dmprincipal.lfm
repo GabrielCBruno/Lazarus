@@ -266,9 +266,8 @@ object DataModule1: TDataModule1
   end
   object qryOrcamentoItens: TZQuery
     Connection = ZConnection1
-    Active = True
     SQL.Strings = (
-      'select * from orcamento_item oi where oi.orcamentoid = 1;'
+      'select * from orcamento_item;'
     )
     Params = <>
     Left = 336

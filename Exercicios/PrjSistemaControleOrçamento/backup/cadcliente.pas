@@ -182,10 +182,5 @@ begin
   pagPrincipal.ActivePage := pagPesquisa;
 end;
 
-procedure TCadClienteF.qryClienteAfterInsert(DataSet: TDataSet);
-begin
-
-end;
-
 end.
 

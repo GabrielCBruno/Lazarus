@@ -33,7 +33,6 @@ type
     procedure DBGridPrincipalDblClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormShow(Sender: TObject);
-    procedure qryClienteAfterInsert(DataSet: TDataSet);
   private
 
   public
@@ -180,11 +179,6 @@ begin
   dmPrincipal.DataModule1.qryCliente.Open;
   povoarArray();
   pagPrincipal.ActivePage := pagPesquisa;
-end;
-
-procedure TCadClienteF.qryClienteAfterInsert(DataSet: TDataSet);
-begin
-
 end;
 
 end.

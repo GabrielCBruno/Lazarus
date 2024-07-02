@@ -31,8 +31,9 @@ object MenuPrincipalF: TMenuPrincipalF
     end
     object miVendas: TMenuItem
       Caption = 'Vendas'
-      object MenuItem5: TMenuItem
+      object Orcamento: TMenuItem
         Caption = 'Orçamento'
+        OnClick = OrcamentoClick
       end
     end
     object miRelatorios: TMenuItem

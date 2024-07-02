@@ -6,22 +6,22 @@ interface
 
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, ExtCtrls, ComCtrls,
-  StdCtrls, DBCtrls, DBGrids, CadModelo, dmPrincipal;
+  StdCtrls, DBCtrls, DBGrids, DBExtCtrls, DBDateTimePicker, CadModelo,
+  dmPrincipal;
 
 type
 
   { TCadOrcamentoF }
 
   TCadOrcamentoF = class(TCadModeloF)
+    DBdateDtOrc: TDBDateEdit;
+    DBdateDtVal: TDBDateEdit;
     dsOrcamentoItens: TDataSource;
     DBeditClienteID: TDBEdit;
-    DBeditDtOrc: TDBEdit;
-    DBeditDtVal: TDBEdit;
     DBeditID: TDBEdit;
-    DBeditTotOrc: TDBEdit;
     DBGridOrcItens: TDBGrid;
     dsOrcamento: TDataSource;
-    Label3: TLabel;
+    edtOrcamento: TEdit;
     Label4: TLabel;
     Label5: TLabel;
     Label6: TLabel;
@@ -33,7 +33,9 @@ type
     procedure bitbtnFecharClick(Sender: TObject);
     procedure bitbtnNovoClick(Sender: TObject);
     procedure bitbtnPesquisarClick(Sender: TObject);
+    procedure DBGridPrincipalDblClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
+    procedure FormShow(Sender: TObject);
   private
 
   public
@@ -85,11 +87,28 @@ begin
   end;
 end;
 
+procedure TCadOrcamentoF.DBGridPrincipalDblClick(Sender: TObject);
+begin
+  pagPrincipal.ActivePage := pagCadastro;
+  DataModule1.qryOrcamentoItens.Close;
+  ShowMessage(DBeditID.Text);
+  //DataModule1.qryOrcamentoItens.SQL.Text := 'select * from orcamento_item where orcamentoid = ' + DBeditID.Text + ';';
+  DataModule1.qryOrcamentoItens.Open;
+end;
+
 procedure TCadOrcamentoF.FormClose(Sender: TObject;
   var CloseAction: TCloseAction);
 begin
-     dmPrincipal.DataModule1.qryOrcamento.Close;
+     DataModule1.qryOrcamento.Close;
+     DataModule1.qryOrcamentoItens.Close;
      CloseAction:= caFree;
+end;
+
+procedure TCadOrcamentoF.FormShow(Sender: TObject);
+begin
+  DataModule1.qryOrcamento.Open;
+  DataModule1.qryOrcamentoItens.Open;
+  pagPrincipal.ActivePage := pagPesquisa;
 end;
 
 end.
