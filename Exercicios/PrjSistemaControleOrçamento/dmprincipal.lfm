@@ -235,12 +235,13 @@ object DataModule1: TDataModule1
   end
   object qryOrcamentoItens: TZQuery
     Connection = ZConnection1
+    Active = True
     SQL.Strings = (
       'select * from orcamento_item;'
     )
     Params = <>
     Left = 336
-    Top = 152
+    Top = 144
     object qryOrcamentoItensorcamentoitemid: TZIntegerField
       FieldKind = fkData
       FieldName = 'orcamentoitemid'

@@ -57,7 +57,7 @@
         <ResourceBaseClass Value="DataModule"/>
         <UnitName Value="dmPrincipal"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="91"/>
+        <TopLine Value="66"/>
         <CursorPos X="9" Y="91"/>
         <UsageCount Value="54"/>
         <Loaded Value="True"/>
@@ -108,7 +108,7 @@
         <UnitName Value="CadOrcamento"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="59"/>
+        <TopLine Value="69"/>
         <CursorPos X="37" Y="70"/>
         <UsageCount Value="31"/>
         <Loaded Value="True"/>
@@ -212,11 +212,7 @@
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="dmprincipal.pas"/>
-        <Caret Line="100" Column="20" TopLine="84"/>
-      </Position>
+    <JumpHistory HistoryIndex="28">
       <Position>
         <Filename Value="dmprincipal.pas"/>
         <Caret Line="57" Column="37" TopLine="103"/>
@@ -332,6 +328,10 @@
       <Position>
         <Filename Value="cadorcamento.pas"/>
         <Caret Line="70" Column="37" TopLine="56"/>
+      </Position>
+      <Position>
+        <Filename Value="cadorcamento.pas"/>
+        <Caret Line="72" TopLine="53"/>
       </Position>
     </JumpHistory>
     <RunParams>
