@@ -8,8 +8,6 @@ inherited CadUsuarioF: TCadUsuarioF
   OnShow = FormShow
   inherited pagPrincipal: TPageControl
     Height = 571
-    ActivePage = pagPesquisa
-    TabIndex = 0
     inherited pagPesquisa: TTabSheet
       ClientHeight = 543
       inherited Panel1: TPanel
@@ -100,6 +98,7 @@ inherited CadUsuarioF: TCadUsuarioF
             FieldName = 'senha'
           end>
         DataSource = dsUsuario
+        OnDblClick = DBGridPrincipalDblClick
       end
     end
     inherited pagCadastro: TTabSheet

@@ -1,11 +1,40 @@
 inherited CadOrcamentoF: TCadOrcamentoF
-  Left = 258
-  Top = 61
+  Left = 644
+  Height = 579
+  Top = 164
   Caption = 'Orçamentos'
+  ClientHeight = 0
+  ClientWidth = 0
   OnClose = FormClose
   inherited pagPrincipal: TPageControl
+    Height = 0
+    Width = 0
     inherited pagPesquisa: TTabSheet
+      ClientHeight = 0
+      ClientWidth = 0
+      inherited Panel1: TPanel
+        Width = 0
+        ClientWidth = 0
+        inherited bitbtnPesquisar: TBitBtn
+          OnClick = bitbtnPesquisarClick
+        end
+      end
+      inherited Panel2: TPanel
+        Top = -70
+        Width = 0
+        ClientWidth = 0
+        inherited bitbtnNovo: TBitBtn
+          OnClick = bitbtnNovoClick
+        end
+        inherited bitbtnFechar: TBitBtn
+          Left = -121
+          OnClick = bitbtnFecharClick
+        end
+      end
       inherited DBGridPrincipal: TDBGrid
+        Height = 0
+        Top = 0
+        Width = 0
         Columns = <        
           item
             Alignment = taCenter
@@ -105,20 +134,223 @@ inherited CadOrcamentoF: TCadOrcamentoF
       end
     end
     inherited pagCadastro: TTabSheet
+      ClientHeight = 0
+      ClientWidth = 0
       inherited Panel3: TPanel
+        Top = -70
+        Width = 0
+        ClientWidth = 0
         inherited bitbtnCancelar: TBitBtn
+          Left = -129
           OnClick = bitbtnCancelarClick
         end
       end
       inherited lblTitulo: TLabel
-        Width = 478
+        Left = 664
+        Height = 34
+        Top = 104
+        Width = 288
         Caption = 'Cadastro de Orçamento'
+        Enabled = False
+        Font.Height = -29
+      end
+      object Panel4: TPanel[2]
+        Left = 0
+        Height = 176
+        Top = 0
+        Width = 0
+        Align = alTop
+        ClientHeight = 176
+        ClientWidth = 0
+        Color = clWhite
+        ParentBackground = False
+        ParentColor = False
+        TabOrder = 1
+        object Label8: TLabel
+          Left = 40
+          Height = 22
+          Top = 72
+          Width = 30
+          Caption = 'ID: '
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -19
+          Font.Name = 'Arial'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+        end
+        object Label9: TLabel
+          Left = 24
+          Height = 22
+          Top = 132
+          Width = 89
+          Caption = 'ClienteID: '
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -19
+          Font.Name = 'Arial'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+        end
+        object DBeditClienteID: TDBEdit
+          Left = 120
+          Height = 26
+          Top = 132
+          Width = 56
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          MaxLength = 0
+          ParentFont = False
+          TabOrder = 0
+        end
+        object DBeditID: TDBEdit
+          Left = 120
+          Height = 26
+          Top = 72
+          Width = 56
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          MaxLength = 0
+          ParentFont = False
+          TabOrder = 1
+        end
+        object Label4: TLabel
+          Left = 264
+          Height = 22
+          Top = 32
+          Width = 118
+          Caption = 'Dt.Orçamento'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -19
+          Font.Name = 'Arial'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+        end
+        object DBeditDtOrc: TDBEdit
+          Left = 224
+          Height = 26
+          Top = 72
+          Width = 200
+          EditMask = '__/__/____;1;-'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          MaxLength = 10
+          ParentFont = False
+          TabOrder = 2
+        end
+        object Label5: TLabel
+          Left = 272
+          Height = 22
+          Top = 106
+          Width = 97
+          Caption = 'Dt.Validade'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -19
+          Font.Name = 'Arial'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+        end
+        object DBeditDtVal: TDBEdit
+          Left = 224
+          Height = 26
+          Top = 136
+          Width = 200
+          EditMask = '__/__/____;1;_'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          MaxLength = 10
+          ParentFont = False
+          TabOrder = 3
+        end
+        object Label6: TLabel
+          Left = 512
+          Height = 32
+          Top = 80
+          Width = 171
+          Caption = 'Total Orçamento'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -13
+          Font.Name = 'Sans Serif Collection'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object DBeditTotOrc: TDBEdit
+          Left = 508
+          Height = 32
+          Top = 120
+          Width = 175
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -21
+          Font.Name = 'Arial'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          MaxLength = 0
+          ParentFont = False
+          TabOrder = 4
+        end
+        object lblTitulo1: TLabel
+          Left = 808
+          Height = 41
+          Top = 8
+          Width = 349
+          Caption = 'Cadastro de Orçamento'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -35
+          Font.Name = 'Cambria'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsUnderline]
+          ParentFont = False
+        end
+      end
+      object DBGrid1: TDBGrid[3]
+        Left = 0
+        Height = 0
+        Top = 0
+        Width = 0
+        Align = alClient
+        Color = clWindow
+        Columns = <>
+        TabOrder = 2
       end
     end
   end
-  object dsOrcamento: TDataSource[1]
+  object Label3: TLabel[1]
+    Left = 24
+    Height = 22
+    Top = 160
+    Width = 89
+    Caption = 'ClienteID: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object dsOrcamento: TDataSource[2]
     DataSet = DataModule1.qryOrcamento
-    Left = 816
+    Left = 1736
     Top = 48
+  end
+  object DataSource1: TDataSource[3]
+    Left = 1608
+    Top = 64
   end
 end

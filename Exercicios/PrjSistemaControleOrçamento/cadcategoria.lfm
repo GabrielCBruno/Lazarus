@@ -1,7 +1,7 @@
 inherited CadCategoriaF: TCadCategoriaF
-  Left = 416
+  Left = 505
   Height = 549
-  Top = 88
+  Top = 212
   Width = 741
   Caption = 'Cadastro de Categoria'
   ClientHeight = 549
@@ -175,7 +175,7 @@ inherited CadCategoriaF: TCadCategoriaF
   end
   object dsCategoria: TDataSource[1]
     DataSet = DataModule1.qryCategoria
-    Left = 624
+    Left = 632
     Top = 48
   end
 end

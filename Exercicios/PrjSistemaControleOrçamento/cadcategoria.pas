@@ -133,18 +133,18 @@ procedure TCadCategoriaF.bitbtnPesquisarClick(Sender: TObject);
 var
   cod : Integer;
 begin
-     if edtPesquisar.Text = '' then
+     if edtPesquisar.Text <> '' then
      begin
           dmPrincipal.DataModule1.qryCategoria.Close;
-          dmPrincipal.DataModule1.qryCategoria.SQL.Text := 'select * from categoria_produto;';
+          cod := StrToInt(edtPesquisar.Text);
+          dmPrincipal.DataModule1.qryCategoria.SQL.Text := 'select * from categoria_produto where categoriaprodutoid = ' + IntToStr(cod) + ';';
           dmPrincipal.DataModule1.qryCategoria.Open;
      end
      else
      begin
           dmPrincipal.DataModule1.qryCategoria.Close;
-          cod := StrToInt(edtPesquisar.Text);
-          dmPrincipal.DataModule1.qryCategoria.SQL.Text := 'select * from categoria_produto where categoriaprodutoid = ' + IntToStr(cod) + ';';
-          dmPrincipal.DataModule1.qryCategoria.Close;
+          dmPrincipal.DataModule1.qryCategoria.SQL.Text := 'select * from categoria_produto;';
+          dmPrincipal.DataModule1.qryCategoria.Open;
      end;
 end;
 

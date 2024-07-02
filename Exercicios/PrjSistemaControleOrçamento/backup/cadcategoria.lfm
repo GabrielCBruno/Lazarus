@@ -1,7 +1,7 @@
 inherited CadCategoriaF: TCadCategoriaF
-  Left = 416
+  Left = 505
   Height = 549
-  Top = 88
+  Top = 212
   Width = 741
   Caption = 'Cadastro de Categoria'
   ClientHeight = 549
@@ -11,6 +11,8 @@ inherited CadCategoriaF: TCadCategoriaF
   inherited pagPrincipal: TPageControl
     Height = 549
     Width = 741
+    ActivePage = pagPesquisa
+    TabIndex = 0
     inherited pagPesquisa: TTabSheet
       ClientHeight = 521
       ClientWidth = 733
@@ -142,7 +144,6 @@ inherited CadCategoriaF: TCadCategoriaF
         Top = 136
         Width = 56
         DataField = 'categoriaprodutoid'
-        DataSource = dsCategoria
         Alignment = taRightJustify
         Enabled = False
         Font.CharSet = ANSI_CHARSET
@@ -161,7 +162,6 @@ inherited CadCategoriaF: TCadCategoriaF
         Top = 185
         Width = 344
         DataField = 'ds_categoria_produto'
-        DataSource = dsCategoria
         Font.CharSet = ANSI_CHARSET
         Font.Height = -19
         Font.Name = 'Arial'
@@ -175,7 +175,7 @@ inherited CadCategoriaF: TCadCategoriaF
   end
   object dsCategoria: TDataSource[1]
     DataSet = DataModule1.qryCategoria
-    Left = 624
+    Left = 632
     Top = 48
   end
 end

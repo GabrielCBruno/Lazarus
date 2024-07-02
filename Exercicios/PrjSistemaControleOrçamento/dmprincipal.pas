@@ -38,9 +38,10 @@ type
     qryGenerica: TZQuery;
     qryCliente: TZQuery;
     qryProduto: TZQuery;
-    qryCategoria: TZQuery;
     qryUsuario: TZQuery;
     qryOrcamento: TZQuery;
+    qryCategoria: TZQuery;
+    qryOrcamentoItens: TZQuery;
     procedure DataModuleCreate(Sender: TObject);
     function getSequence(const pNomeSequence: String): String;
     procedure qryCategoriaAfterInsert(DataSet: TDataSet);

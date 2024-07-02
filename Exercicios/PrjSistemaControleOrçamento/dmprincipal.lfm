@@ -155,35 +155,6 @@ object DataModule1: TDataModule1
       Size = 10
     end
   end
-  object qryCategoria: TZQuery
-    Connection = ZConnection1
-    AfterInsert = qryCategoriaAfterInsert
-    SQL.Strings = (
-      'select * from categoria_produto;'
-    )
-    Params = <>
-    Left = 224
-    Top = 344
-    object qryCategoriacategoriaprodutoid: TZIntegerField
-      FieldKind = fkData
-      FieldName = 'categoriaprodutoid'
-      Index = 0
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = True
-    end
-    object qryCategoriads_categoria_produto: TZRawStringField
-      FieldKind = fkData
-      FieldName = 'ds_categoria_produto'
-      Index = 1
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = True
-      Size = 50
-    end
-  end
   object qryUsuario: TZQuery
     Connection = ZConnection1
     AfterInsert = qryUsuarioAfterInsert
@@ -242,5 +213,23 @@ object DataModule1: TDataModule1
     Params = <>
     Left = 336
     Top = 51
+  end
+  object qryCategoria: TZQuery
+    Connection = ZConnection1
+    SQL.Strings = (
+      'select * from categoria_produto;'
+    )
+    Params = <>
+    Left = 224
+    Top = 336
+  end
+  object qryOrcamentoItens: TZQuery
+    Connection = ZConnection1
+    SQL.Strings = (
+      'select * from orcamento_item;'
+    )
+    Params = <>
+    Left = 336
+    Top = 152
   end
 end

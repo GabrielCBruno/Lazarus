@@ -28,6 +28,7 @@ type
     procedure bitbtnGravarClick(Sender: TObject);
     procedure bitbtnNovoClick(Sender: TObject);
     procedure bitbtnPesquisarClick(Sender: TObject);
+    procedure DBGridPrincipalDblClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormShow(Sender: TObject);
   private
@@ -138,6 +139,11 @@ begin
     dmPrincipal.DataModule1.qryUsuario.SQL.Text := 'select * from usuarios;';
     dmPrincipal.DataModule1.qryUsuario.Open;
   end;
+end;
+
+procedure TCadUsuarioF.DBGridPrincipalDblClick(Sender: TObject);
+begin
+  pagPrincipal.ActivePage := pagCadastro;
 end;
 
 procedure TCadUsuarioF.FormClose(Sender: TObject; var CloseAction: TCloseAction
