@@ -92,6 +92,9 @@ end;
 procedure TCadOrcamentoF.DBGridPrincipalDblClick(Sender: TObject);
 begin
   pagPrincipal.ActivePage := pagCadastro;
+  DataModule1.qryOrcamentoItens.Close;
+  DataModule1.qryOrcamentoItens.SQL.Text := 'select * from orcamento_item where orcamentoid = ' + DBeditID.Text + ';';
+  DataModule1.qryOrcamentoItens.Open;
 end;
 
 procedure TCadOrcamentoF.FormClose(Sender: TObject;

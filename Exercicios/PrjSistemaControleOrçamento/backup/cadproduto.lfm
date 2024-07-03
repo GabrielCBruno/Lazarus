@@ -1,14 +1,20 @@
 inherited CadProdutoF: TCadProdutoF
-  Left = 436
-  Top = 198
+  Left = 170
+  Height = 617
+  Top = 8
   Width = 1077
   Caption = 'Cadastro de Produto'
+  ClientHeight = 617
   ClientWidth = 1077
   OnClose = FormClose
   OnShow = FormShow
   inherited pagPrincipal: TPageControl
+    Height = 617
     Width = 1077
+    ActivePage = pagPesquisa
+    TabIndex = 0
     inherited pagPesquisa: TTabSheet
+      ClientHeight = 589
       ClientWidth = 1069
       inherited Panel1: TPanel
         Width = 1069
@@ -18,6 +24,7 @@ inherited CadProdutoF: TCadProdutoF
         end
       end
       inherited Panel2: TPanel
+        Top = 519
         Width = 1069
         ClientWidth = 1069
         inherited bitbtnNovo: TBitBtn
@@ -29,6 +36,7 @@ inherited CadProdutoF: TCadProdutoF
         end
       end
       inherited DBGridPrincipal: TDBGrid
+        Height = 439
         Width = 1069
         Columns = <        
           item
@@ -163,8 +171,10 @@ inherited CadProdutoF: TCadProdutoF
       end
     end
     inherited pagCadastro: TTabSheet
+      ClientHeight = 589
       ClientWidth = 1069
       inherited Panel3: TPanel
+        Top = 519
         Width = 1069
         ClientWidth = 1069
         TabOrder = 5

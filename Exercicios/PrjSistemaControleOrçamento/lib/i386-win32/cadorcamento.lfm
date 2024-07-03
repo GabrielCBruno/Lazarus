@@ -1,7 +1,7 @@
 inherited CadOrcamentoF: TCadOrcamentoF
-  Left = 317
+  Left = 236
   Height = 576
-  Top = 55
+  Top = 79
   Width = 1090
   Caption = 'Orçamentos'
   ClientHeight = 576
@@ -230,22 +230,22 @@ inherited CadOrcamentoF: TCadOrcamentoF
           TabOrder = 1
         end
         object Label4: TLabel
-          Left = 272
-          Height = 22
-          Top = 28
-          Width = 118
+          Left = 232
+          Height = 24
+          Top = 22
+          Width = 130
           Caption = 'Dt.Orçamento'
           Font.CharSet = ANSI_CHARSET
-          Font.Height = -19
+          Font.Height = -21
           Font.Name = 'Arial'
           Font.Pitch = fpVariable
           Font.Quality = fqDraft
           ParentFont = False
         end
         object Label5: TLabel
-          Left = 280
+          Left = 247
           Height = 22
-          Top = 102
+          Top = 96
           Width = 97
           Caption = 'Dt.Validade'
           Font.CharSet = ANSI_CHARSET
@@ -256,13 +256,13 @@ inherited CadOrcamentoF: TCadOrcamentoF
           ParentFont = False
         end
         object Label6: TLabel
-          Left = 576
-          Height = 19
+          Left = 552
+          Height = 24
           Top = 88
-          Width = 125
+          Width = 166
           Caption = 'Total Orçamento'
           Font.CharSet = ANSI_CHARSET
-          Font.Height = -16
+          Font.Height = -21
           Font.Name = 'Arial'
           Font.Pitch = fpVariable
           Font.Quality = fqDraft
@@ -284,9 +284,9 @@ inherited CadOrcamentoF: TCadOrcamentoF
           ParentFont = False
         end
         object DBdateDtOrc: TDBDateEdit
-          Left = 264
+          Left = 216
           Height = 26
-          Top = 64
+          Top = 60
           Width = 176
           CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
           DateOrder = doNone
@@ -305,9 +305,9 @@ inherited CadOrcamentoF: TCadOrcamentoF
           DataSource = dsOrcamento
         end
         object DBdateDtVal: TDBDateEdit
-          Left = 264
+          Left = 216
           Height = 26
-          Top = 136
+          Top = 132
           Width = 176
           CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
           DefaultToday = True
@@ -327,10 +327,10 @@ inherited CadOrcamentoF: TCadOrcamentoF
           DataSource = dsOrcamento
         end
         object edtOrcamento: TEdit
-          Left = 560
+          Left = 576
           Height = 26
           Top = 120
-          Width = 160
+          Width = 120
           Font.CharSet = ANSI_CHARSET
           Font.Height = -16
           Font.Name = 'Arial'
@@ -380,8 +380,8 @@ inherited CadOrcamentoF: TCadOrcamentoF
             Title.Font.Pitch = fpVariable
             Title.Font.Quality = fqDraft
             Title.Font.Style = [fsBold]
-            Title.Caption = 'OrçamentoID'
-            Width = 120
+            Title.Caption = 'OrcamentoID'
+            Width = 110
             FieldName = 'orcamentoid'
           end        
           item
@@ -399,26 +399,10 @@ inherited CadOrcamentoF: TCadOrcamentoF
             Title.Font.Quality = fqDraft
             Title.Font.Style = [fsBold]
             Title.Caption = 'ProdutoID'
-            Width = 120
             FieldName = 'produtoid'
           end        
           item
-            Font.CharSet = ANSI_CHARSET
-            Font.Height = -16
-            Font.Name = 'Arial'
-            Font.Pitch = fpVariable
-            Font.Quality = fqDraft
-            Title.Font.CharSet = ANSI_CHARSET
-            Title.Font.Height = -16
-            Title.Font.Name = 'Arial'
-            Title.Font.Pitch = fpVariable
-            Title.Font.Quality = fqDraft
-            Title.Font.Style = [fsBold]
-            Title.Caption = 'Descrição Produto'
-            Width = 300
-            FieldName = 'produtodesc'
-          end        
-          item
+            Alignment = taRightJustify
             Font.CharSet = ANSI_CHARSET
             Font.Height = -16
             Font.Name = 'Arial'
@@ -432,7 +416,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
             Title.Font.Quality = fqDraft
             Title.Font.Style = [fsBold]
             Title.Caption = 'Quantidade'
-            Width = 110
+            Width = 100
             FieldName = 'qt_produto'
           end        
           item
@@ -449,7 +433,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
             Title.Font.Quality = fqDraft
             Title.Font.Style = [fsBold]
             Title.Caption = 'Valor Unitário'
-            Width = 120
+            Width = 115
             FieldName = 'vl_unitario'
           end        
           item
@@ -465,10 +449,11 @@ inherited CadOrcamentoF: TCadOrcamentoF
             Title.Font.Pitch = fpVariable
             Title.Font.Quality = fqDraft
             Title.Font.Style = [fsBold]
-            Title.Caption = 'Total'
+            Title.Caption = 'Valor Total'
             Width = 100
             FieldName = 'vl_total'
           end>
+        DataSource = dsOrcamentoItens
         TabOrder = 2
       end
     end
@@ -480,7 +465,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
   end
   object dsOrcamento: TDataSource[2]
     DataSet = DataModule1.qryOrcamento
-    Left = 784
-    Top = 40
+    Left = 920
+    Top = 104
   end
 end

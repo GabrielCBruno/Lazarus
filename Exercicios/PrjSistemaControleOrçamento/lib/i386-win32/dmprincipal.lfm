@@ -236,11 +236,11 @@ object DataModule1: TDataModule1
   object qryOrcamentoItens: TZQuery
     Connection = ZConnection1
     SQL.Strings = (
-      'select * from orcamento_item;'
+      'select * from orcamento_item where orcamento_item.orcamentoid = -1;'
     )
     Params = <>
     Left = 336
-    Top = 152
+    Top = 144
     object qryOrcamentoItensorcamentoitemid: TZIntegerField
       FieldKind = fkData
       FieldName = 'orcamentoitemid'

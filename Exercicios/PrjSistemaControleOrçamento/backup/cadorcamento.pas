@@ -67,7 +67,7 @@ begin
   dmPrincipal.DataModule1.qryOrcamento.Insert;
   pagPrincipal.ActivePage := pagCadastro;
   DBdateDtOrc.Text := DateToStr(Date);
-  DBdateDtVal.Text := DateToStr(Date);;
+  DBdateDtVal.Text := DateToStr(Date);
 end;
 
 procedure TCadOrcamentoF.bitbtnPesquisarClick(Sender: TObject);
