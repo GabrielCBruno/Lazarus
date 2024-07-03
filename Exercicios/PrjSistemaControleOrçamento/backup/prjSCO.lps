@@ -56,9 +56,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
         <UnitName Value="dmPrincipal"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="4"/>
-        <TopLine Value="66"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="99"/>
         <CursorPos X="17" Y="72"/>
         <UsageCount Value="54"/>
         <Loaded Value="True"/>
@@ -71,9 +70,11 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadCliente"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
         <TopLine Value="49"/>
         <CursorPos X="31" Y="58"/>
+        <ComponentState Value="2"/>
         <UsageCount Value="48"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -85,12 +86,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadProduto"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="156"/>
         <CursorPos X="38" Y="163"/>
         <UsageCount Value="40"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="cadusuario.pas"/>
@@ -112,8 +111,8 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadOrcamento"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="69"/>
-        <CursorPos X="37" Y="70"/>
+        <TopLine Value="72"/>
+        <CursorPos X="46" Y="81"/>
         <UsageCount Value="31"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>

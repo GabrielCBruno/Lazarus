@@ -10,7 +10,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="35" Y="14"/>
-        <UsageCount Value="57"/>
+        <UsageCount Value="60"/>
       </Unit>
       <Unit>
         <Filename Value="menuprincipal.pas"/>
@@ -21,7 +21,7 @@
         <UnitName Value="MenuPrincipal"/>
         <TopLine Value="51"/>
         <CursorPos X="25" Y="30"/>
-        <UsageCount Value="57"/>
+        <UsageCount Value="60"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -35,7 +35,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="11"/>
         <CursorPos Y="31"/>
-        <UsageCount Value="57"/>
+        <UsageCount Value="60"/>
       </Unit>
       <Unit>
         <Filename Value="cadcategoria.pas"/>
@@ -47,7 +47,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="108"/>
         <CursorPos X="40" Y="108"/>
-        <UsageCount Value="57"/>
+        <UsageCount Value="60"/>
       </Unit>
       <Unit>
         <Filename Value="dmprincipal.pas"/>
@@ -56,10 +56,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
         <UnitName Value="dmPrincipal"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="3"/>
         <TopLine Value="99"/>
         <CursorPos X="17" Y="72"/>
-        <UsageCount Value="54"/>
+        <UsageCount Value="57"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -70,10 +70,14 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadCliente"/>
-        <EditorIndex Value="-1"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
         <TopLine Value="49"/>
         <CursorPos X="31" Y="58"/>
-        <UsageCount Value="48"/>
+        <ComponentState Value="1"/>
+        <UsageCount Value="51"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="cadproduto.pas"/>
@@ -85,7 +89,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="156"/>
         <CursorPos X="38" Y="163"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="43"/>
       </Unit>
       <Unit>
         <Filename Value="cadusuario.pas"/>
@@ -97,7 +101,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="119"/>
         <CursorPos X="45" Y="122"/>
-        <UsageCount Value="38"/>
+        <UsageCount Value="41"/>
       </Unit>
       <Unit>
         <Filename Value="cadorcamento.pas"/>
@@ -106,11 +110,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadOrcamento"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="72"/>
-        <CursorPos X="38" Y="97"/>
-        <UsageCount Value="31"/>
+        <CursorPos X="46" Y="81"/>
+        <UsageCount Value="34"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
