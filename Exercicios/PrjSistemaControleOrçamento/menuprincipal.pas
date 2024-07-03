@@ -5,7 +5,7 @@ unit MenuPrincipal;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, CadCategoria, Cadcliente, CadProduto, CadUsuario, CadOrcamento;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, CadCategoria, Cadcliente, CadProduto, CadUsuario, CadOrcamento, relClientes;
 
 type
 
@@ -32,6 +32,7 @@ type
     procedure miSairClick(Sender: TObject);
     procedure submiCatergoriaClick(Sender: TObject);
     procedure submiClienteClick(Sender: TObject);
+    procedure submiClientesClick(Sender: TObject);
     procedure submiProdutosClick(Sender: TObject);
     procedure submiUsuariosClick(Sender: TObject);
   private
@@ -70,6 +71,12 @@ procedure TMenuPrincipalF.submiClienteClick(Sender: TObject);
 begin
   CadClienteF := TCadClienteF.Create(Self);
   CadClienteF.ShowModal;
+end;
+
+procedure TMenuPrincipalF.submiClientesClick(Sender: TObject);
+begin
+    relClientesF := TrelClientesF.Create(Self);
+    relClientesF.ShowModal;
 end;
 
 procedure TMenuPrincipalF.submiProdutosClick(Sender: TObject);

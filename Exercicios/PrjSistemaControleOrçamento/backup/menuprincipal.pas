@@ -28,7 +28,6 @@ type
     miRelatorios: TMenuItem;
     miCadastrar: TMenuItem;
     miVendas: TMenuItem;
-    procedure FormCreate(Sender: TObject);
     procedure OrcamentoClick(Sender: TObject);
     procedure miSairClick(Sender: TObject);
     procedure submiCatergoriaClick(Sender: TObject);

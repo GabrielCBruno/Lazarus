@@ -1,7 +1,7 @@
 inherited CadOrcamentoF: TCadOrcamentoF
-  Left = 236
+  Left = 571
   Height = 576
-  Top = 79
+  Top = 207
   Width = 1090
   Caption = 'Orçamentos'
   ClientHeight = 576
@@ -256,9 +256,9 @@ inherited CadOrcamentoF: TCadOrcamentoF
           ParentFont = False
         end
         object Label6: TLabel
-          Left = 552
+          Left = 512
           Height = 24
-          Top = 88
+          Top = 80
           Width = 166
           Caption = 'Total Orçamento'
           Font.CharSet = ANSI_CHARSET
@@ -270,9 +270,9 @@ inherited CadOrcamentoF: TCadOrcamentoF
           ParentFont = False
         end
         object lblTitulo1: TLabel
-          Left = 504
+          Left = 776
           Height = 41
-          Top = 8
+          Top = 5
           Width = 349
           Caption = 'Cadastro de Orçamento'
           Font.CharSet = ANSI_CHARSET
@@ -326,17 +326,13 @@ inherited CadOrcamentoF: TCadOrcamentoF
           DataField = 'dt_validade_orcamento'
           DataSource = dsOrcamento
         end
-        object edtOrcamento: TEdit
-          Left = 576
-          Height = 26
+        object DBEdit1: TDBEdit
+          Left = 536
+          Height = 23
           Top = 120
           Width = 120
-          Font.CharSet = ANSI_CHARSET
-          Font.Height = -16
-          Font.Name = 'Arial'
-          Font.Pitch = fpVariable
-          Font.Quality = fqDraft
-          ParentFont = False
+          DataSource = dsTeste
+          MaxLength = 0
           TabOrder = 4
         end
       end
@@ -460,12 +456,17 @@ inherited CadOrcamentoF: TCadOrcamentoF
   end
   object dsOrcamentoItens: TDataSource[1]
     DataSet = DataModule1.qryOrcamentoItens
-    Left = 920
-    Top = 40
+    Left = 1728
+    Top = 64
   end
   object dsOrcamento: TDataSource[2]
     DataSet = DataModule1.qryOrcamento
-    Left = 920
-    Top = 104
+    Left = 1728
+    Top = 128
+  end
+  object dsTeste: TDataSource[3]
+    DataSet = DataModule1.qryGenerica
+    Left = 1344
+    Top = 128
   end
 end

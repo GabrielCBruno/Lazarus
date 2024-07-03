@@ -5,7 +5,6 @@ object MenuPrincipalF: TMenuPrincipalF
   Width = 873
   Caption = 'Menu Principal - Sistema de Controle de Orçamentos'
   Menu = MainMenu1
-  OnCreate = FormCreate
   LCLVersion = '3.4.0.0'
   WindowState = wsMaximized
   object MainMenu1: TMainMenu

@@ -14,6 +14,8 @@ type
   { TCadOrcamentoF }
 
   TCadOrcamentoF = class(TCadModeloF)
+    dsTeste: TDataSource;
+    DBEdit1: TDBEdit;
     dsOrcamento: TDataSource;
     dsOrcamentoItens: TDataSource;
     DBdateDtOrc: TDBDateEdit;
@@ -21,7 +23,6 @@ type
     DBeditClienteID: TDBEdit;
     DBeditID: TDBEdit;
     DBGridOrcItens: TDBGrid;
-    edtOrcamento: TEdit;
     Label4: TLabel;
     Label5: TLabel;
     Label6: TLabel;
@@ -39,7 +40,7 @@ type
   private
 
   public
-
+     procedure calcularTotal ();
   end;
 
 var
@@ -50,6 +51,16 @@ implementation
 {$R *.lfm}
 
 { TCadOrcamentoF }
+
+procedure TCadOrcamentoF.calcularTotal ();
+var
+  sql : String;
+begin
+     sql := 'select sum(vl_total) from orcamento_item where orcamentoid = ' + DBeditID.Text + ';';
+     DataModule1.qryGenerica.Close;
+     DataModule1.qryGenerica.SQL.Text := sql;
+     DataModule1.qryGenerica.Open;
+end;
 
 procedure TCadOrcamentoF.bitbtnCancelarClick(Sender: TObject);
 begin
@@ -92,6 +103,10 @@ end;
 procedure TCadOrcamentoF.DBGridPrincipalDblClick(Sender: TObject);
 begin
   pagPrincipal.ActivePage := pagCadastro;
+  DataModule1.qryOrcamentoItens.Close;
+  DataModule1.qryOrcamentoItens.SQL.Text := 'select * from orcamento_item where orcamentoid = ' + DBeditID.Text + ';';
+  DataModule1.qryOrcamentoItens.Open;
+  calcularTotal();
 end;
 
 procedure TCadOrcamentoF.FormClose(Sender: TObject;

@@ -1,24 +1,19 @@
 inherited CadClienteF: TCadClienteF
-  Left = -8
-  Height = 705
-  Top = -8
-  Width = 1366
+  Left = 255
+  Top = 62
+  Width = 999
   Caption = 'Cadastro de Cliente'
-  ClientHeight = 705
-  ClientWidth = 1366
+  ClientHeight = 0
+  ClientWidth = 0
   OnClose = FormClose
   OnShow = FormShow
   inherited pagPrincipal: TPageControl
-    Height = 705
-    Width = 1366
-    ActivePage = pagPesquisa
-    TabIndex = 0
+    Width = 999
     inherited pagPesquisa: TTabSheet
-      ClientHeight = 677
-      ClientWidth = 1358
+      ClientWidth = 991
       inherited Panel1: TPanel
-        Width = 1358
-        ClientWidth = 1358
+        Width = 991
+        ClientWidth = 991
         inherited Label1: TLabel
           Width = 117
           Caption = 'Pesquisar por: '
@@ -58,20 +53,18 @@ inherited CadClienteF: TCadClienteF
         end
       end
       inherited Panel2: TPanel
-        Top = 607
-        Width = 1358
-        ClientWidth = 1358
+        Width = 991
+        ClientWidth = 991
         inherited bitbtnNovo: TBitBtn
           OnClick = bitbtnNovoClick
         end
         inherited bitbtnFechar: TBitBtn
-          Left = 1239
+          Left = 872
           OnClick = bitbtnFecharClick
         end
       end
       inherited DBGridPrincipal: TDBGrid
-        Height = 527
-        Width = 1358
+        Width = 991
         Columns = <        
           item
             Alignment = taCenter
@@ -150,12 +143,10 @@ inherited CadClienteF: TCadClienteF
       end
     end
     inherited pagCadastro: TTabSheet
-      ClientHeight = 677
-      ClientWidth = 1358
+      ClientWidth = 991
       inherited Panel3: TPanel
-        Top = 607
-        Width = 1358
-        ClientWidth = 1358
+        Width = 991
+        ClientWidth = 991
         TabOrder = 4
         inherited bitbtnGravar: TBitBtn
           OnClick = bitbtnGravarClick
@@ -166,7 +157,7 @@ inherited CadClienteF: TCadClienteF
           TabOrder = 2
         end
         inherited bitbtnCancelar: TBitBtn
-          Left = 1231
+          Left = 864
           Width = 105
           OnClick = bitbtnCancelarClick
           TabOrder = 1
