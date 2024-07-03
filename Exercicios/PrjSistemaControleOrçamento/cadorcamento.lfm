@@ -1,41 +1,41 @@
 inherited CadOrcamentoF: TCadOrcamentoF
-  Left = 731
-  Height = 576
-  Top = 76
-  Width = 1090
+  Left = -8
+  Height = 1009
+  Top = -8
+  Width = 1920
   Caption = 'Orçamentos'
-  ClientHeight = 576
-  ClientWidth = 1090
+  ClientHeight = 1009
+  ClientWidth = 1920
   OnClose = FormClose
   OnShow = FormShow
   inherited pagPrincipal: TPageControl
-    Height = 576
-    Width = 1090
+    Height = 1009
+    Width = 1920
     inherited pagPesquisa: TTabSheet
-      ClientHeight = 548
-      ClientWidth = 1082
+      ClientHeight = 981
+      ClientWidth = 1912
       inherited Panel1: TPanel
-        Width = 1082
-        ClientWidth = 1082
+        Width = 1912
+        ClientWidth = 1912
         inherited bitbtnPesquisar: TBitBtn
           OnClick = bitbtnPesquisarClick
         end
       end
       inherited Panel2: TPanel
-        Top = 478
-        Width = 1082
-        ClientWidth = 1082
+        Top = 911
+        Width = 1912
+        ClientWidth = 1912
         inherited bitbtnNovo: TBitBtn
           OnClick = bitbtnNovoClick
         end
         inherited bitbtnFechar: TBitBtn
-          Left = 961
+          Left = 1791
           OnClick = bitbtnFecharClick
         end
       end
       inherited DBGridPrincipal: TDBGrid
-        Height = 398
-        Width = 1082
+        Height = 831
+        Width = 1912
         Columns = <        
           item
             Alignment = taCenter
@@ -136,14 +136,20 @@ inherited CadOrcamentoF: TCadOrcamentoF
       end
     end
     inherited pagCadastro: TTabSheet
-      ClientHeight = 548
-      ClientWidth = 1082
+      ClientHeight = 981
+      ClientWidth = 1912
       inherited Panel3: TPanel
-        Top = 478
-        Width = 1082
-        ClientWidth = 1082
+        Top = 911
+        Width = 1912
+        ClientWidth = 1912
+        inherited bitbtnGravar: TBitBtn
+          OnClick = bitbtnGravarClick
+        end
+        inherited bitbtnExcluir: TBitBtn
+          OnClick = bitbtnExcluirClick
+        end
         inherited bitbtnCancelar: TBitBtn
-          Left = 953
+          Left = 1783
           OnClick = bitbtnCancelarClick
         end
       end
@@ -160,10 +166,10 @@ inherited CadOrcamentoF: TCadOrcamentoF
         Left = 0
         Height = 176
         Top = 0
-        Width = 1082
+        Width = 1912
         Align = alTop
         ClientHeight = 176
-        ClientWidth = 1082
+        ClientWidth = 1912
         Color = clWhite
         ParentBackground = False
         ParentColor = False
@@ -327,20 +333,27 @@ inherited CadOrcamentoF: TCadOrcamentoF
           DataSource = dsOrcamento
         end
         object DBEdit1: TDBEdit
-          Left = 536
-          Height = 23
+          Left = 528
+          Height = 26
           Top = 120
-          Width = 120
-          DataSource = dsTeste
+          Width = 144
+          DataField = 'vl_total_orcamento'
+          DataSource = dsOrcamento
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
           MaxLength = 0
+          ParentFont = False
           TabOrder = 4
         end
       end
       object DBGridOrcItens: TDBGrid[3]
         Left = 0
-        Height = 302
+        Height = 735
         Top = 176
-        Width = 1082
+        Width = 1912
         Align = alClient
         Color = clWindow
         Columns = <        
@@ -376,8 +389,8 @@ inherited CadOrcamentoF: TCadOrcamentoF
             Title.Font.Pitch = fpVariable
             Title.Font.Quality = fqDraft
             Title.Font.Style = [fsBold]
-            Title.Caption = 'OrcamentoID'
-            Width = 110
+            Title.Caption = 'OrçamentoID'
+            Width = 120
             FieldName = 'orcamentoid'
           end        
           item
@@ -395,10 +408,26 @@ inherited CadOrcamentoF: TCadOrcamentoF
             Title.Font.Quality = fqDraft
             Title.Font.Style = [fsBold]
             Title.Caption = 'ProdutoID'
+            Width = 120
             FieldName = 'produtoid'
           end        
           item
-            Alignment = taRightJustify
+            Font.CharSet = ANSI_CHARSET
+            Font.Height = -16
+            Font.Name = 'Arial'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Height = -16
+            Title.Font.Name = 'Arial'
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Descrição do Produto'
+            Width = 350
+            FieldName = 'produtodesc'
+          end        
+          item
             Font.CharSet = ANSI_CHARSET
             Font.Height = -16
             Font.Name = 'Arial'
@@ -412,7 +441,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
             Title.Font.Quality = fqDraft
             Title.Font.Style = [fsBold]
             Title.Caption = 'Quantidade'
-            Width = 100
+            Width = 110
             FieldName = 'qt_produto'
           end        
           item
@@ -429,7 +458,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
             Title.Font.Quality = fqDraft
             Title.Font.Style = [fsBold]
             Title.Caption = 'Valor Unitário'
-            Width = 115
+            Width = 120
             FieldName = 'vl_unitario'
           end        
           item
@@ -456,17 +485,12 @@ inherited CadOrcamentoF: TCadOrcamentoF
   end
   object dsOrcamentoItens: TDataSource[1]
     DataSet = DataModule1.qryOrcamentoItens
-    Left = 1728
+    Left = 1368
     Top = 64
   end
   object dsOrcamento: TDataSource[2]
     DataSet = DataModule1.qryOrcamento
-    Left = 1728
-    Top = 128
-  end
-  object dsTeste: TDataSource[3]
-    DataSet = DataModule1.qryGenerica
-    Left = 1456
+    Left = 1368
     Top = 128
   end
 end

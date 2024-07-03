@@ -32,6 +32,7 @@ type
     Panel4: TPanel;
     procedure bitbtnCancelarClick(Sender: TObject);
     procedure bitbtnFecharClick(Sender: TObject);
+    procedure bitbtnGravarClick(Sender: TObject);
     procedure bitbtnNovoClick(Sender: TObject);
     procedure bitbtnPesquisarClick(Sender: TObject);
     procedure DBGridPrincipalDblClick(Sender: TObject);
@@ -40,7 +41,7 @@ type
   private
 
   public
-     procedure calcularTotal ();
+
   end;
 
 var
@@ -52,17 +53,6 @@ implementation
 
 { TCadOrcamentoF }
 
-procedure TCadOrcamentoF.calcularTotal ();
-var
-  sql : String;
-begin
-     sql := 'select sum(vl_total) from orcamento_item where orcamentoid = ' + DBeditID.Text + ';';
-     DataModule1.qryGenerica.Close;
-     DataModule1.qryGenerica.SQL.Clear;
-     DataModule1.qryGenerica.SQL.Add(sql);
-     DataModule1.qryGenerica.Open;
-end;
-
 procedure TCadOrcamentoF.bitbtnCancelarClick(Sender: TObject);
 begin
   dmPrincipal.DataModule1.qryOrcamento.Cancel;
@@ -72,6 +62,12 @@ end;
 procedure TCadOrcamentoF.bitbtnFecharClick(Sender: TObject);
 begin
   Close;
+end;
+
+procedure TCadOrcamentoF.bitbtnGravarClick(Sender: TObject);
+begin
+  DataModule1.qryOrcamento.Post;
+  pagPrincipal.ActivePage := pagPesquisa;
 end;
 
 procedure TCadOrcamentoF.bitbtnNovoClick(Sender: TObject);
@@ -107,7 +103,6 @@ begin
   DataModule1.qryOrcamentoItens.Close;
   DataModule1.qryOrcamentoItens.SQL.Text := 'select * from orcamento_item where orcamentoid = ' + DBeditID.Text + ';';
   DataModule1.qryOrcamentoItens.Open;
-  calcularTotal();
 end;
 
 procedure TCadOrcamentoF.FormClose(Sender: TObject;

@@ -1,7 +1,7 @@
 inherited CadOrcamentoF: TCadOrcamentoF
-  Left = 571
+  Left = 702
   Height = 576
-  Top = 207
+  Top = 235
   Width = 1090
   Caption = 'Orçamentos'
   ClientHeight = 576
@@ -142,6 +142,9 @@ inherited CadOrcamentoF: TCadOrcamentoF
         Top = 478
         Width = 1082
         ClientWidth = 1082
+        inherited bitbtnGravar: TBitBtn
+          OnClick = bitbtnGravarClick
+        end
         inherited bitbtnCancelar: TBitBtn
           Left = 953
           OnClick = bitbtnCancelarClick
@@ -327,12 +330,19 @@ inherited CadOrcamentoF: TCadOrcamentoF
           DataSource = dsOrcamento
         end
         object DBEdit1: TDBEdit
-          Left = 536
-          Height = 23
+          Left = 528
+          Height = 26
           Top = 120
-          Width = 120
-          DataSource = dsTeste
+          Width = 144
+          DataField = 'vl_total_orcamento'
+          DataSource = dsOrcamento
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
           MaxLength = 0
+          ParentFont = False
           TabOrder = 4
         end
       end
@@ -376,8 +386,8 @@ inherited CadOrcamentoF: TCadOrcamentoF
             Title.Font.Pitch = fpVariable
             Title.Font.Quality = fqDraft
             Title.Font.Style = [fsBold]
-            Title.Caption = 'OrcamentoID'
-            Width = 110
+            Title.Caption = 'OrçamentoID'
+            Width = 120
             FieldName = 'orcamentoid'
           end        
           item
@@ -395,10 +405,26 @@ inherited CadOrcamentoF: TCadOrcamentoF
             Title.Font.Quality = fqDraft
             Title.Font.Style = [fsBold]
             Title.Caption = 'ProdutoID'
+            Width = 120
             FieldName = 'produtoid'
           end        
           item
-            Alignment = taRightJustify
+            Font.CharSet = ANSI_CHARSET
+            Font.Height = -16
+            Font.Name = 'Arial'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Height = -16
+            Title.Font.Name = 'Arial'
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Descrição do Produto'
+            Width = 350
+            FieldName = 'produtodesc'
+          end        
+          item
             Font.CharSet = ANSI_CHARSET
             Font.Height = -16
             Font.Name = 'Arial'
@@ -412,7 +438,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
             Title.Font.Quality = fqDraft
             Title.Font.Style = [fsBold]
             Title.Caption = 'Quantidade'
-            Width = 100
+            Width = 110
             FieldName = 'qt_produto'
           end        
           item
@@ -429,7 +455,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
             Title.Font.Quality = fqDraft
             Title.Font.Style = [fsBold]
             Title.Caption = 'Valor Unitário'
-            Width = 115
+            Width = 120
             FieldName = 'vl_unitario'
           end        
           item
@@ -466,7 +492,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
   end
   object dsTeste: TDataSource[3]
     DataSet = DataModule1.qryGenerica
-    Left = 1344
+    Left = 1456
     Top = 128
   end
 end

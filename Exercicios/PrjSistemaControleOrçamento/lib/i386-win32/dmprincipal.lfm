@@ -268,10 +268,20 @@ object DataModule1: TDataModule1
       ReadOnly = False
       Required = True
     end
+    object qryOrcamentoItensprodutodesc: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'produtodesc'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
     object qryOrcamentoItensqt_produto: TZBCDField
       FieldKind = fkData
       FieldName = 'qt_produto'
-      Index = 3
+      Index = 4
       LookupCache = False
       ProviderFlags = [pfInUpdate, pfInWhere]
       ReadOnly = False
@@ -285,7 +295,7 @@ object DataModule1: TDataModule1
     object qryOrcamentoItensvl_unitario: TZBCDField
       FieldKind = fkData
       FieldName = 'vl_unitario'
-      Index = 4
+      Index = 5
       LookupCache = False
       ProviderFlags = [pfInUpdate, pfInWhere]
       ReadOnly = False
@@ -299,7 +309,7 @@ object DataModule1: TDataModule1
     object qryOrcamentoItensvl_total: TZBCDField
       FieldKind = fkData
       FieldName = 'vl_total'
-      Index = 5
+      Index = 6
       LookupCache = False
       ProviderFlags = [pfInUpdate, pfInWhere]
       ReadOnly = False

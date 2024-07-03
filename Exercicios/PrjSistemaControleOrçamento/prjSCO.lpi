@@ -120,6 +120,7 @@
         <Filename Value="relclientes.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="relClientesF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="relClientes"/>
       </Unit>
