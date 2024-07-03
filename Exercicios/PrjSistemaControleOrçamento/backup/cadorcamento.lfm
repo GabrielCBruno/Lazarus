@@ -1,7 +1,7 @@
 inherited CadOrcamentoF: TCadOrcamentoF
-  Left = 446
+  Left = 157
   Height = 571
-  Top = 186
+  Top = 60
   Width = 1090
   Caption = 'Orçamentos'
   ClientHeight = 571
@@ -236,7 +236,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
           TabOrder = 1
         end
         object Label4: TLabel
-          Left = 232
+          Left = 240
           Height = 24
           Top = 22
           Width = 130
@@ -249,7 +249,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
           ParentFont = False
         end
         object Label5: TLabel
-          Left = 247
+          Left = 255
           Height = 22
           Top = 96
           Width = 97
@@ -290,7 +290,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
           ParentFont = False
         end
         object DBdateDtOrc: TDBDateEdit
-          Left = 216
+          Left = 224
           Height = 26
           Top = 60
           Width = 176
@@ -311,7 +311,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
           DataSource = dsOrcamento
         end
         object DBdateDtVal: TDBDateEdit
-          Left = 216
+          Left = 224
           Height = 26
           Top = 132
           Width = 176
@@ -488,6 +488,14 @@ inherited CadOrcamentoF: TCadOrcamentoF
           ParentFont = False
           TabOrder = 6
         end
+        object SpeedButton1: TSpeedButton
+          Left = 184
+          Height = 22
+          Top = 136
+          Width = 23
+          Caption = '...'
+          OnClick = SpeedButton1Click
+        end
       end
       object DBGridOrcItens: TDBGrid[3]
         Left = 0
@@ -496,135 +504,12 @@ inherited CadOrcamentoF: TCadOrcamentoF
         Width = 1082
         Align = alClient
         Color = clWindow
-        Columns = <        
-          item
-            Alignment = taCenter
-            Font.CharSet = ANSI_CHARSET
-            Font.Height = -16
-            Font.Name = 'Arial'
-            Font.Pitch = fpVariable
-            Font.Quality = fqDraft
-            Title.Alignment = taCenter
-            Title.Font.CharSet = ANSI_CHARSET
-            Title.Font.Height = -16
-            Title.Font.Name = 'Arial'
-            Title.Font.Pitch = fpVariable
-            Title.Font.Quality = fqDraft
-            Title.Font.Style = [fsBold]
-            Title.Caption = 'ID'
-            Width = 50
-            FieldName = 'orcamentoitemid'
-          end        
-          item
-            Alignment = taCenter
-            Font.CharSet = ANSI_CHARSET
-            Font.Height = -16
-            Font.Name = 'Arial'
-            Font.Pitch = fpVariable
-            Font.Quality = fqDraft
-            Title.Alignment = taCenter
-            Title.Font.CharSet = ANSI_CHARSET
-            Title.Font.Height = -16
-            Title.Font.Name = 'Arial'
-            Title.Font.Pitch = fpVariable
-            Title.Font.Quality = fqDraft
-            Title.Font.Style = [fsBold]
-            Title.Caption = 'OrçamentoID'
-            Width = 120
-            FieldName = 'orcamentoid'
-          end        
-          item
-            Alignment = taCenter
-            Font.CharSet = ANSI_CHARSET
-            Font.Height = -16
-            Font.Name = 'Arial'
-            Font.Pitch = fpVariable
-            Font.Quality = fqDraft
-            Title.Alignment = taCenter
-            Title.Font.CharSet = ANSI_CHARSET
-            Title.Font.Height = -16
-            Title.Font.Name = 'Arial'
-            Title.Font.Pitch = fpVariable
-            Title.Font.Quality = fqDraft
-            Title.Font.Style = [fsBold]
-            Title.Caption = 'ProdutoID'
-            Width = 120
-            FieldName = 'produtoid'
-          end        
-          item
-            Font.CharSet = ANSI_CHARSET
-            Font.Height = -16
-            Font.Name = 'Arial'
-            Font.Pitch = fpVariable
-            Font.Quality = fqDraft
-            Title.Font.CharSet = ANSI_CHARSET
-            Title.Font.Height = -16
-            Title.Font.Name = 'Arial'
-            Title.Font.Pitch = fpVariable
-            Title.Font.Quality = fqDraft
-            Title.Font.Style = [fsBold]
-            Title.Caption = 'Descrição do Produto'
-            Width = 350
-            FieldName = 'produtodesc'
-          end        
-          item
-            Font.CharSet = ANSI_CHARSET
-            Font.Height = -16
-            Font.Name = 'Arial'
-            Font.Pitch = fpVariable
-            Font.Quality = fqDraft
-            Title.Alignment = taCenter
-            Title.Font.CharSet = ANSI_CHARSET
-            Title.Font.Height = -16
-            Title.Font.Name = 'Arial'
-            Title.Font.Pitch = fpVariable
-            Title.Font.Quality = fqDraft
-            Title.Font.Style = [fsBold]
-            Title.Caption = 'Quantidade'
-            Width = 110
-            FieldName = 'qt_produto'
-          end        
-          item
-            Font.CharSet = ANSI_CHARSET
-            Font.Height = -16
-            Font.Name = 'Arial'
-            Font.Pitch = fpVariable
-            Font.Quality = fqDraft
-            Title.Alignment = taCenter
-            Title.Font.CharSet = ANSI_CHARSET
-            Title.Font.Height = -16
-            Title.Font.Name = 'Arial'
-            Title.Font.Pitch = fpVariable
-            Title.Font.Quality = fqDraft
-            Title.Font.Style = [fsBold]
-            Title.Caption = 'Valor Unitário'
-            Width = 120
-            FieldName = 'vl_unitario'
-          end        
-          item
-            Font.CharSet = ANSI_CHARSET
-            Font.Height = -16
-            Font.Name = 'Arial'
-            Font.Pitch = fpVariable
-            Font.Quality = fqDraft
-            Title.Alignment = taCenter
-            Title.Font.CharSet = ANSI_CHARSET
-            Title.Font.Height = -16
-            Title.Font.Name = 'Arial'
-            Title.Font.Pitch = fpVariable
-            Title.Font.Quality = fqDraft
-            Title.Font.Style = [fsBold]
-            Title.Caption = 'Valor Total'
-            Width = 100
-            FieldName = 'vl_total'
-          end>
-        DataSource = dsOrcamentoItens
+        Columns = <>
         TabOrder = 2
       end
     end
   end
   object dsOrcamentoItens: TDataSource[1]
-    DataSet = DataModule1.qryOrcamentoItens
     Left = 1368
     Top = 64
   end

@@ -23,7 +23,6 @@ type
     qryOrcamentodt_validade_orcamento: TZDateTimeField;
     qryOrcamentoItensorcamentoid: TZIntegerField;
     qryOrcamentoItensorcamentoitemid: TZIntegerField;
-    qryOrcamentoItensprodutodesc: TZRawStringField;
     qryOrcamentoItensprodutoid: TZIntegerField;
     qryOrcamentoItensqt_produto: TZBCDField;
     qryOrcamentoItensvl_total: TZBCDField;

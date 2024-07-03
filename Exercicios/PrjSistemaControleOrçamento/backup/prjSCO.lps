@@ -8,9 +8,11 @@
       <Unit>
         <Filename Value="prjSCO.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="35" Y="14"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="7"/>
+        <CursorPos Y="23"/>
         <UsageCount Value="66"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="menuprincipal.pas"/>
@@ -21,7 +23,6 @@
         <UnitName Value="MenuPrincipal"/>
         <TopLine Value="55"/>
         <CursorPos X="27" Y="79"/>
-        <ComponentState Value="1"/>
         <UsageCount Value="66"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -57,7 +58,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
         <UnitName Value="dmPrincipal"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="5"/>
         <CursorPos X="17"/>
         <UsageCount Value="63"/>
         <Loaded Value="True"/>
@@ -73,7 +74,6 @@
         <EditorIndex Value="1"/>
         <TopLine Value="56"/>
         <CursorPos X="31" Y="58"/>
-        <ComponentState Value="1"/>
         <UsageCount Value="57"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -109,8 +109,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadOrcamento"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="109"/>
+        <TopLine Value="119"/>
         <CursorPos X="3" Y="142"/>
         <UsageCount Value="40"/>
         <Loaded Value="True"/>
@@ -127,6 +128,20 @@
         <TopLine Value="22"/>
         <CursorPos X="14" Y="33"/>
         <UsageCount Value="25"/>
+      </Unit>
+      <Unit>
+        <Filename Value="caditemorc.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CadItemOrcF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadItemOrc"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="37"/>
+        <CursorPos X="3" Y="70"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="Drivers\lazarus\cadcliente.pas"/>
@@ -234,50 +249,8 @@
         <CursorPos Y="10"/>
         <UsageCount Value="20"/>
       </Unit>
-      <Unit>
-        <Filename Value="caditemorc.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="CadItemOrcF"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="CadItemOrc"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="37"/>
-        <CursorPos X="3" Y="70"/>
-        <UsageCount Value="21"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-      </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="dmprincipal.pas"/>
-        <Caret Line="65" Column="43" TopLine="59"/>
-      </Position>
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-        <Caret Line="56" Column="53" TopLine="56"/>
-      </Position>
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-        <Caret Line="55" TopLine="17"/>
-      </Position>
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-        <Caret Line="44" TopLine="25"/>
-      </Position>
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-        <Caret Line="43" TopLine="24"/>
-      </Position>
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-        <Caret Line="74" Column="3" TopLine="71"/>
-      </Position>
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-        <Caret Line="55" Column="58" TopLine="50"/>
-      </Position>
       <Position>
         <Filename Value="cadorcamento.pas"/>
         <Caret Line="56" Column="58" TopLine="40"/>
@@ -368,6 +341,34 @@
       <Position>
         <Filename Value="caditemorc.pas"/>
         <Caret Line="70" Column="3" TopLine="37"/>
+      </Position>
+      <Position>
+        <Filename Value="cadorcamento.pas"/>
+        <Caret Line="142" Column="3" TopLine="109"/>
+      </Position>
+      <Position>
+        <Filename Value="dmprincipal.pas"/>
+        <Caret Column="17"/>
+      </Position>
+      <Position>
+        <Filename Value="cadorcamento.pas"/>
+        <Caret Line="142" Column="3" TopLine="109"/>
+      </Position>
+      <Position>
+        <Filename Value="cadorcamento.pas"/>
+        <Caret Line="143" Column="3" TopLine="120"/>
+      </Position>
+      <Position>
+        <Filename Value="cadorcamento.pas"/>
+        <Caret Line="142" Column="3" TopLine="119"/>
+      </Position>
+      <Position>
+        <Filename Value="cadorcamento.pas"/>
+        <Caret Line="143" Column="3" TopLine="120"/>
+      </Position>
+      <Position>
+        <Filename Value="cadorcamento.pas"/>
+        <Caret Line="142" Column="3" TopLine="119"/>
       </Position>
     </JumpHistory>
     <RunParams>

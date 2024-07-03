@@ -16,6 +16,7 @@ type
   TCadOrcamentoF = class(TCadModeloF)
     bitbtnAdicionarItem: TBitBtn;
     bitbtnExcluirItem: TBitBtn;
+    dsOrcamentoItens2: TDataSource;
     DBEdit1: TDBEdit;
     dsOrcamento: TDataSource;
     dsOrcamentoItens: TDataSource;

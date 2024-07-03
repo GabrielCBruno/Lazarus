@@ -1,9 +1,9 @@
 object DataModule1: TDataModule1
   OnCreate = DataModuleCreate
   OldCreateOrder = False
-  Height = 530
-  HorizontalOffset = 936
-  VerticalOffset = 136
+  Height = 524
+  HorizontalOffset = 572
+  VerticalOffset = 80
   Width = 431
   object ZConnection1: TZConnection
     ControlsCodePage = cCP_UTF8
@@ -235,9 +235,8 @@ object DataModule1: TDataModule1
   end
   object qryOrcamentoItens: TZQuery
     Connection = ZConnection1
-    Active = True
     SQL.Strings = (
-      'select * from orcamento_item where orcamento_item.orcamentoid = -1;'
+      'select * from orcamento_item;'
     )
     Params = <>
     Left = 336
@@ -269,20 +268,10 @@ object DataModule1: TDataModule1
       ReadOnly = False
       Required = True
     end
-    object qryOrcamentoItensprodutodesc: TZRawStringField
-      FieldKind = fkData
-      FieldName = 'produtodesc'
-      Index = 3
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = False
-      Size = 50
-    end
     object qryOrcamentoItensqt_produto: TZBCDField
       FieldKind = fkData
       FieldName = 'qt_produto'
-      Index = 4
+      Index = 3
       LookupCache = False
       ProviderFlags = [pfInUpdate, pfInWhere]
       ReadOnly = False
@@ -296,7 +285,7 @@ object DataModule1: TDataModule1
     object qryOrcamentoItensvl_unitario: TZBCDField
       FieldKind = fkData
       FieldName = 'vl_unitario'
-      Index = 5
+      Index = 4
       LookupCache = False
       ProviderFlags = [pfInUpdate, pfInWhere]
       ReadOnly = False
@@ -310,7 +299,7 @@ object DataModule1: TDataModule1
     object qryOrcamentoItensvl_total: TZBCDField
       FieldKind = fkData
       FieldName = 'vl_total'
-      Index = 6
+      Index = 5
       LookupCache = False
       ProviderFlags = [pfInUpdate, pfInWhere]
       ReadOnly = False

@@ -31,6 +31,7 @@ type
     Label9: TLabel;
     lblTitulo1: TLabel;
     Panel4: TPanel;
+    SpeedButton1: TSpeedButton;
     procedure bitbtnAdicionarItemClick(Sender: TObject);
     procedure bitbtnCancelarClick(Sender: TObject);
     procedure bitbtnExcluirClick(Sender: TObject);
@@ -41,6 +42,7 @@ type
     procedure DBGridPrincipalDblClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormShow(Sender: TObject);
+    procedure SpeedButton1Click(Sender: TObject);
   private
 
   public
@@ -133,6 +135,11 @@ begin
   DataModule1.qryOrcamento.Open;
   dmPrincipal.DataModule1.qryOrcamentoItens.Open;
   pagPrincipal.ActivePage := pagPesquisa;
+end;
+
+procedure TCadOrcamentoF.SpeedButton1Click(Sender: TObject);
+begin
+
 end;
 
 end.
