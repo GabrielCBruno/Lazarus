@@ -1,7 +1,7 @@
 inherited CadOrcamentoF: TCadOrcamentoF
-  Left = 571
+  Left = 731
   Height = 576
-  Top = 207
+  Top = 76
   Width = 1090
   Caption = 'Orçamentos'
   ClientHeight = 576
@@ -466,7 +466,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
   end
   object dsTeste: TDataSource[3]
     DataSet = DataModule1.qryGenerica
-    Left = 1344
+    Left = 1456
     Top = 128
   end
 end

@@ -58,7 +58,8 @@ var
 begin
      sql := 'select sum(vl_total) from orcamento_item where orcamentoid = ' + DBeditID.Text + ';';
      DataModule1.qryGenerica.Close;
-     DataModule1.qryGenerica.SQL.Text := sql;
+     DataModule1.qryGenerica.SQL.Clear;
+     DataModule1.qryGenerica.SQL.Add(sql);
      DataModule1.qryGenerica.Open;
 end;
 

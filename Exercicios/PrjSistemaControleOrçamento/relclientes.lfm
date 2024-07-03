@@ -1,5 +1,5 @@
 object relClientesF: TrelClientesF
-  Left = 776
+  Left = 662
   Height = 220
   Top = 309
   Width = 454
@@ -10,6 +10,7 @@ object relClientesF: TrelClientesF
   OnShow = FormShow
   LCLVersion = '3.4.0.0'
   object bitbtnRelClientes: TBitBtn
+    Cursor = crHandPoint
     Left = 48
     Height = 52
     Top = 72
@@ -74,11 +75,13 @@ object relClientesF: TrelClientesF
       53535353535353535353535353535333504A413B343425255353535353535353
       5353535353532333322C2C24241E255353535353535353535353
     }
+    OnClick = bitbtnRelClientesClick
     ParentFont = False
     TabOrder = 0
   end
   object qryClienteRelatorio: TZQuery
     Connection = DataModule1.ZConnection1
+    Active = True
     SQL.Strings = (
       'Select * from cliente;'
     )

@@ -1,7 +1,7 @@
 inherited CadOrcamentoF: TCadOrcamentoF
-  Left = 698
+  Left = 571
   Height = 576
-  Top = 76
+  Top = 207
   Width = 1090
   Caption = 'Orçamentos'
   ClientHeight = 576

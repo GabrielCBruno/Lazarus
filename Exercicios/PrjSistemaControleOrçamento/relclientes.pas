@@ -21,6 +21,7 @@ type
     qryClienteRelatoriocpf_cnpj_cliente: TZRawStringField;
     qryClienteRelatorionome_cliente: TZRawStringField;
     qryClienteRelatoriotipo_cliente: TZRawStringField;
+    procedure bitbtnRelClientesClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormShow(Sender: TObject);
   private
@@ -48,6 +49,13 @@ procedure TrelClientesF.FormClose(Sender: TObject; var CloseAction: TCloseAction
 begin
   qryClienteRelatorio.Close;
   CloseAction := caFree;
+end;
+
+procedure TrelClientesF.bitbtnRelClientesClick(Sender: TObject);
+begin
+     frReport1.LoadFromFile('relClientes.lrf');
+     frReport1.PrepareReport;
+     frReport1.ShowReport;
 end;
 
 end.
