@@ -33,7 +33,6 @@ type
     procedure DBGridPrincipalDblClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormShow(Sender: TObject);
-    procedure qryClienteAfterInsert(DataSet: TDataSet);
   private
 
   public
