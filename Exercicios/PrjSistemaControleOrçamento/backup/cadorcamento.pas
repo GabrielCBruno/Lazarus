@@ -6,15 +6,16 @@ interface
 
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, ExtCtrls, ComCtrls,
-  StdCtrls, DBCtrls, DBGrids, DBExtCtrls, DBDateTimePicker, CadModelo,
-  dmPrincipal;
+  StdCtrls, DBCtrls, DBGrids, DBExtCtrls, Buttons, DBDateTimePicker, CadModelo,
+  dmPrincipal, CadItemOrc;
 
 type
 
   { TCadOrcamentoF }
 
   TCadOrcamentoF = class(TCadModeloF)
-    dsTeste: TDataSource;
+    bitbtnAdicionarItem: TBitBtn;
+    bitbtnExcluirItem: TBitBtn;
     DBEdit1: TDBEdit;
     dsOrcamento: TDataSource;
     dsOrcamentoItens: TDataSource;
@@ -30,7 +31,10 @@ type
     Label9: TLabel;
     lblTitulo1: TLabel;
     Panel4: TPanel;
+    procedure bitbtnAdicionarItemClick(Sender: TObject);
     procedure bitbtnCancelarClick(Sender: TObject);
+    procedure bitbtnExcluirClick(Sender: TObject);
+    procedure bitbtnExcluirItemClick(Sender: TObject);
     procedure bitbtnFecharClick(Sender: TObject);
     procedure bitbtnGravarClick(Sender: TObject);
     procedure bitbtnNovoClick(Sender: TObject);
@@ -56,6 +60,18 @@ implementation
 procedure TCadOrcamentoF.bitbtnCancelarClick(Sender: TObject);
 begin
   dmPrincipal.DataModule1.qryOrcamento.Cancel;
+  pagPrincipal.ActivePage := pagPesquisa;
+end;
+
+procedure TCadOrcamentoF.bitbtnAdicionarItemClick(Sender: TObject);
+begin
+     CadItemOrcF := TCadItemOrcF.Create(Self);
+     CadItemOrcF.ShowModal;
+end;
+
+procedure TCadOrcamentoF.bitbtnExcluirClick(Sender: TObject);
+begin
+  DataModule1.qryOrcamento.Close;
   pagPrincipal.ActivePage := pagPesquisa;
 end;
 
