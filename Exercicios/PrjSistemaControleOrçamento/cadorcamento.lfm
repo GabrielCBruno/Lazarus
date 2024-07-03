@@ -236,7 +236,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
           TabOrder = 1
         end
         object Label4: TLabel
-          Left = 232
+          Left = 240
           Height = 24
           Top = 22
           Width = 130
@@ -249,7 +249,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
           ParentFont = False
         end
         object Label5: TLabel
-          Left = 247
+          Left = 255
           Height = 22
           Top = 96
           Width = 97
@@ -290,7 +290,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
           ParentFont = False
         end
         object DBdateDtOrc: TDBDateEdit
-          Left = 216
+          Left = 224
           Height = 26
           Top = 60
           Width = 176
@@ -311,7 +311,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
           DataSource = dsOrcamento
         end
         object DBdateDtVal: TDBDateEdit
-          Left = 216
+          Left = 224
           Height = 26
           Top = 132
           Width = 176
@@ -487,6 +487,14 @@ inherited CadOrcamentoF: TCadOrcamentoF
           }
           ParentFont = False
           TabOrder = 6
+        end
+        object SpeedButton1: TSpeedButton
+          Left = 184
+          Height = 22
+          Top = 136
+          Width = 23
+          Caption = '...'
+          OnClick = SpeedButton1Click
         end
       end
       object DBGridOrcItens: TDBGrid[3]

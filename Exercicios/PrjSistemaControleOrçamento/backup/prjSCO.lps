@@ -109,10 +109,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadOrcamento"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="69"/>
-        <CursorPos Y="77"/>
+        <TopLine Value="109"/>
+        <CursorPos X="3" Y="142"/>
         <UsageCount Value="40"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -241,75 +240,16 @@
         <ComponentName Value="CadItemOrcF"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadItemOrc"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="25"/>
-        <CursorPos X="39" Y="53"/>
+        <TopLine Value="37"/>
+        <CursorPos X="3" Y="70"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-        <Caret Line="63" TopLine="45"/>
-      </Position>
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-        <Caret Line="58" TopLine="45"/>
-      </Position>
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-        <Caret Line="63" TopLine="45"/>
-      </Position>
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-        <Caret Line="104" TopLine="85"/>
-      </Position>
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-        <Caret Line="62" Column="41" TopLine="46"/>
-      </Position>
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-        <Caret Line="59" TopLine="46"/>
-      </Position>
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-        <Caret Line="60" TopLine="46"/>
-      </Position>
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-        <Caret Line="61" TopLine="46"/>
-      </Position>
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-        <Caret Line="62" TopLine="46"/>
-      </Position>
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-        <Caret Line="63" TopLine="46"/>
-      </Position>
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-        <Caret Line="58" TopLine="46"/>
-      </Position>
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-        <Caret Line="64" TopLine="46"/>
-      </Position>
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-        <Caret Line="58" TopLine="46"/>
-      </Position>
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-        <Caret Line="64" TopLine="46"/>
-      </Position>
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-        <Caret Line="105" TopLine="86"/>
-      </Position>
       <Position>
         <Filename Value="dmprincipal.pas"/>
         <Caret Line="65" Column="43" TopLine="59"/>
@@ -368,6 +308,66 @@
       <Position>
         <Filename Value="cadorcamento.pas"/>
         <Caret Line="68" Column="6" TopLine="34"/>
+      </Position>
+      <Position>
+        <Filename Value="cadorcamento.pas"/>
+        <Caret Line="77" TopLine="69"/>
+      </Position>
+      <Position>
+        <Filename Value="cadorcamento.pas"/>
+        <Caret Line="36" Column="51" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="cadorcamento.pas"/>
+        <Caret Line="37" Column="51" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="cadorcamento.pas"/>
+        <Caret Line="142" Column="3" TopLine="109"/>
+      </Position>
+      <Position>
+        <Filename Value="cadorcamento.pas"/>
+        <Caret Line="143" Column="3" TopLine="110"/>
+      </Position>
+      <Position>
+        <Filename Value="cadorcamento.pas"/>
+        <Caret Line="142" Column="3" TopLine="109"/>
+      </Position>
+      <Position>
+        <Filename Value="caditemorc.pas"/>
+        <Caret Line="25" Column="21" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="caditemorc.pas"/>
+        <Caret Line="26" Column="21" TopLine="26"/>
+      </Position>
+      <Position>
+        <Filename Value="caditemorc.pas"/>
+        <Caret Line="70" Column="3" TopLine="37"/>
+      </Position>
+      <Position>
+        <Filename Value="caditemorc.pas"/>
+        <Caret Line="71" Column="3" TopLine="38"/>
+      </Position>
+      <Position>
+        <Filename Value="caditemorc.pas"/>
+        <Caret Line="70" Column="3" TopLine="37"/>
+      </Position>
+      <Position>
+        <Filename Value="caditemorc.pas"/>
+        <Caret Line="71" Column="3" TopLine="38"/>
+      </Position>
+      <Position>
+        <Filename Value="caditemorc.pas"/>
+        <Caret Line="70" Column="3" TopLine="37"/>
+      </Position>
+      <Position>
+        <Filename Value="caditemorc.pas"/>
+        <Caret Line="71" Column="3" TopLine="38"/>
+      </Position>
+      <Position>
+        <Filename Value="caditemorc.pas"/>
+        <Caret Line="70" Column="3" TopLine="37"/>
       </Position>
     </JumpHistory>
     <RunParams>

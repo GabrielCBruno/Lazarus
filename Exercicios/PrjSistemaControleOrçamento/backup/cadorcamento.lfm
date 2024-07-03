@@ -485,7 +485,6 @@ inherited CadOrcamentoF: TCadOrcamentoF
             0606060606060606060606060606060606060606060606060606060606060606
             0606060606060606060606060606060606060606060606060606
           }
-          OnClick = bitbtnExcluirItemClick
           ParentFont = False
           TabOrder = 6
         end

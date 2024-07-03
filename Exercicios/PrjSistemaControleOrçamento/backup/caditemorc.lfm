@@ -29,6 +29,7 @@ object CadItemOrcF: TCadItemOrcF
     Width = 62
     DataField = 'produtoid'
     DataSource = CadOrcamentoF.dsOrcamentoItens
+    Alignment = taRightJustify
     Font.CharSet = ANSI_CHARSET
     Font.Height = -16
     Font.Name = 'Arial'
@@ -64,7 +65,7 @@ object CadItemOrcF: TCadItemOrcF
     Font.Name = 'Arial'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
-    MaxLength = 0
+    MaxLength = 50
     ParentFont = False
     TabOrder = 1
   end
@@ -89,6 +90,7 @@ object CadItemOrcF: TCadItemOrcF
     Width = 64
     DataField = 'qt_produto'
     DataSource = CadOrcamentoF.dsOrcamentoItens
+    Alignment = taRightJustify
     Font.CharSet = ANSI_CHARSET
     Font.Height = -16
     Font.Name = 'Arial'
@@ -119,6 +121,7 @@ object CadItemOrcF: TCadItemOrcF
     Width = 64
     DataField = 'vl_unitario'
     DataSource = CadOrcamentoF.dsOrcamentoItens
+    Alignment = taRightJustify
     Font.CharSet = ANSI_CHARSET
     Font.Height = -16
     Font.Name = 'Arial'
@@ -149,6 +152,7 @@ object CadItemOrcF: TCadItemOrcF
     Width = 144
     DataField = 'vl_total'
     DataSource = CadOrcamentoF.dsOrcamentoItens
+    Alignment = taRightJustify
     Font.CharSet = ANSI_CHARSET
     Font.Height = -16
     Font.Name = 'Arial'
@@ -170,6 +174,7 @@ object CadItemOrcF: TCadItemOrcF
     Font.Name = 'Arial'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
+    OnClick = bitbtnInserirClick
     ParentFont = False
     TabOrder = 5
   end

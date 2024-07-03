@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, DBCtrls,
-  Buttons;
+  Buttons, dmPrincipal;
 
 type
 
@@ -26,6 +26,7 @@ type
     Label4: TLabel;
     Label5: TLabel;
     procedure bitbtnCancelarClick(Sender: TObject);
+    procedure bitbtnInserirClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
   private
 
@@ -45,6 +46,11 @@ implementation
 procedure TCadItemOrcF.bitbtnCancelarClick(Sender: TObject);
 begin
   Close;
+end;
+
+procedure TCadItemOrcF.bitbtnInserirClick(Sender: TObject);
+begin
+  DataModule1.qryOrcamentoItens.Insert;
 end;
 
 procedure TCadItemOrcF.FormClose(Sender: TObject; var CloseAction: TCloseAction
