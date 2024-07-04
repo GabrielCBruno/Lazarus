@@ -38,12 +38,13 @@ object MenuPrincipalF: TMenuPrincipalF
     end
     object miRelatorios: TMenuItem
       Caption = 'Relatórios'
-      object submiClientes: TMenuItem
+      object RelatorioCliente: TMenuItem
         Caption = 'Clientes'
-        OnClick = submiClientesClick
+        OnClick = RelatorioClienteClick
       end
-      object MenuItem1: TMenuItem
+      object RelatorioProduto: TMenuItem
         Caption = 'Produtos'
+        OnClick = RelatorioProdutoClick
       end
       object MenuItem2: TMenuItem
         Caption = 'Orçamento'

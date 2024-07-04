@@ -5,7 +5,8 @@ unit MenuPrincipal;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, CadCategoria, Cadcliente, CadProduto, CadUsuario, CadOrcamento, relClientes;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, CadCategoria, Cadcliente, CadProduto, CadUsuario, CadOrcamento,
+  relClientes, relProdutos;
 
 type
 
@@ -13,12 +14,12 @@ type
 
   TMenuPrincipalF = class(TForm)
     MainMenu1: TMainMenu;
-    MenuItem1: TMenuItem;
+    RelatorioProduto: TMenuItem;
     MenuItem2: TMenuItem;
     MenuItem3: TMenuItem;
     MenuItem4: TMenuItem;
     Orcamento: TMenuItem;
-    submiClientes: TMenuItem;
+    RelatorioCliente: TMenuItem;
     submiCliente: TMenuItem;
     submiProdutos: TMenuItem;
     submiUsuarios: TMenuItem;
@@ -28,11 +29,12 @@ type
     miRelatorios: TMenuItem;
     miCadastrar: TMenuItem;
     miVendas: TMenuItem;
+    procedure RelatorioProdutoClick(Sender: TObject);
     procedure OrcamentoClick(Sender: TObject);
     procedure miSairClick(Sender: TObject);
     procedure submiCatergoriaClick(Sender: TObject);
     procedure submiClienteClick(Sender: TObject);
-    procedure submiClientesClick(Sender: TObject);
+    procedure RelatorioClienteClick(Sender: TObject);
     procedure submiProdutosClick(Sender: TObject);
     procedure submiUsuariosClick(Sender: TObject);
   private
@@ -61,6 +63,12 @@ begin
   CadOrcamentoF.ShowModal;
 end;
 
+procedure TMenuPrincipalF.RelatorioProdutoClick(Sender: TObject);
+begin
+  relProdutosF := TrelProdutosF.Create(Self);
+  relProdutosF.ShowModal;
+end;
+
 procedure TMenuPrincipalF.submiCatergoriaClick(Sender: TObject);
 begin
     CadCategoriaF := TCadCategoriaF.Create(Self);
@@ -73,7 +81,7 @@ begin
   CadClienteF.ShowModal;
 end;
 
-procedure TMenuPrincipalF.submiClientesClick(Sender: TObject);
+procedure TMenuPrincipalF.RelatorioClienteClick(Sender: TObject);
 begin
     relClientesF := TrelClientesF.Create(Self);
     relClientesF.ShowModal;

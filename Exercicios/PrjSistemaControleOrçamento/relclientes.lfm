@@ -1,7 +1,7 @@
 object relClientesF: TrelClientesF
-  Left = 759
+  Left = 497
   Height = 220
-  Top = 320
+  Top = 215
   Width = 454
   Caption = 'Relatório de Clientes'
   ClientHeight = 220

@@ -1,7 +1,7 @@
 object relClientesF: TrelClientesF
-  Left = 615
+  Left = 502
   Height = 220
-  Top = 301
+  Top = 243
   Width = 454
   Caption = 'Relatório de Clientes'
   ClientHeight = 220
@@ -81,6 +81,7 @@ object relClientesF: TrelClientesF
   end
   object qryClienteRelatorio: TZQuery
     Connection = DataModule1.ZConnection1
+    Active = True
     SQL.Strings = (
       'Select * from cliente;'
     )
@@ -132,7 +133,7 @@ object relClientesF: TrelClientesF
     Left = 200
     Top = 160
   end
-  object frReport1: TfrReport
+  object frRepCliente: TfrReport
     Dataset = frDBDataSet1
     InitialZoom = pzDefault
     Options = []

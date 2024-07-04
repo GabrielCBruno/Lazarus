@@ -41,6 +41,7 @@ object TelaPesqClienteF: TTelaPesqClienteF
       Font.Name = 'Arial'
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
+      NumbersOnly = True
       ParentFont = False
       TabOrder = 0
     end
