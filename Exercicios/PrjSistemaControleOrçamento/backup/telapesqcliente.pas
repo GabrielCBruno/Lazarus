@@ -79,7 +79,7 @@ procedure TTelaPesqClienteF.FormClose(Sender: TObject;
   var CloseAction: TCloseAction);
 begin
   qryClientePesq.Close;
-  //CloseAction := caFree;
+  CloseAction := caFree;
 end;
 
 procedure TTelaPesqClienteF.FormShow(Sender: TObject);

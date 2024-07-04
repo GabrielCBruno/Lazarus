@@ -17,15 +17,13 @@ type
     bitbtnAdicionarItem: TBitBtn;
     bitbtnExcluirItem: TBitBtn;
     DBedtClienteID: TDBEdit;
-    dsCliente2: TDataSource;
-    dsGenerico: TDataSource;
     dsOrcamento: TDataSource;
-    dsOrcamentoItens: TDataSource;
     DBEdit1: TDBEdit;
     DBdateDtOrc: TDBDateEdit;
     DBdateDtVal: TDBDateEdit;
     DBeditID: TDBEdit;
     DBGridOrcItens: TDBGrid;
+    dsOrcamentoItens: TDataSource;
     Label4: TLabel;
     Label5: TLabel;
     Label6: TLabel;
@@ -33,9 +31,7 @@ type
     lblCliente: TLabel;
     lblTitulo1: TLabel;
     Panel4: TPanel;
-    qryClienteOrcamento: TZQuery;
     qryGenericaOrcamento: TZQuery;
-    qryGenericaOrcamentosum: TZFMTBCDField;
     speedbtnClienteID: TSpeedButton;
     procedure bitbtnAdicionarItemClick(Sender: TObject);
     procedure bitbtnCancelarClick(Sender: TObject);
@@ -48,8 +44,8 @@ type
     procedure dsOrcamentoDataChange(Sender: TObject; Field: TField);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormShow(Sender: TObject);
-    procedure pagCadastroEnter(Sender: TObject);
     procedure pagCadastroShow(Sender: TObject);
+    procedure pagPrincipalChange(Sender: TObject);
     procedure speedbtnClienteIDClick(Sender: TObject);
   private
 
@@ -68,6 +64,29 @@ implementation
 {$R *.lfm}
 
 { TCadOrcamentoF }
+
+procedure TCadOrcamentoF.AbreOrcItens(orcamentoid : Integer);
+begin
+   if orcamentoid <> 0 then
+  begin
+      DataModule1.qryOrcamentoItens.Close;
+      DataModule1.qryOrcamentoItens.SQL.Clear;
+      DataModule1.qryOrcamentoItens.SQL.Add(
+                      'SELECT '+
+                      'ORCAMENTOITEMID, '+
+                      'ORCAMENTOID, '+
+                      'PRODUTOID, '+
+                      'produtodesc, '+
+                      'QT_PRODUTO, '+
+                      'VL_UNITARIO, '+
+                      'VL_TOTAL '+
+                      'FROM ORCAMENTO_ITEM ' +
+                      'WHERE ORCAMENTOID = '+ inttostr(orcamentoid) + ' ' +
+                      'ORDER BY ORCAMENTOID');
+    //showMessage(DataModule1.qryOrcamentoItem.SQL.Text);
+       DataModule1.qryOrcamentoItens.Open;
+  end;
+end;
 
 procedure TCadOrcamentoF.povoarArray ();
 var
@@ -147,6 +166,7 @@ procedure TCadOrcamentoF.bitbtnNovoClick(Sender: TObject);
 begin
   pagPrincipal.ActivePage := pagCadastro;
   DataModule1.qryOrcamento.Insert;
+  AbreOrcItens(DataModule1.qryOrcamentoorcamentoid.AsInteger);
 
 end;
 
@@ -174,6 +194,7 @@ end;
 procedure TCadOrcamentoF.DBGridPrincipalDblClick(Sender: TObject);
 begin
   pagPrincipal.ActivePage := pagCadastro;
+  AbreOrcItens(DataModule1.qryOrcamentoorcamentoid.AsInteger);
 end;
 
 procedure TCadOrcamentoF.dsOrcamentoDataChange(Sender: TObject; Field: TField);
@@ -197,57 +218,20 @@ begin
   pagPrincipal.ActivePage := pagPesquisa;
 end;
 
-procedure TCadOrcamentoF.pagCadastroEnter(Sender: TObject);
-begin
- { DataModule1.qryOrcamentoItens.Close;
-  DataModule1.qryOrcamentoItens.SQL.Text := 'select * from orcamento_item where orcamentoid = ' + DBeditID.Text + ';';
-  DataModule1.qryOrcamentoItens.Open;
-  //
-  if DBeditID.Text <> '' then
-  begin
-      qryGenericaOrcamento.Close;
-      qryGenericaOrcamento.SQL.Text := 'select sum(vl_total) from orcamento_item where orcamentoid = ' + DBeditID.Text + ';';
-      qryGenericaOrcamento.Open;
-  end;
-  //
-  qryClienteOrcamento.Open;
-  qryClienteOrcamento.SQL.Text := 'select clienteid as codigo from cliente;';
-  qryClienteOrcamento.Close;}
-end;
-
 procedure TCadOrcamentoF.pagCadastroShow(Sender: TObject);
 begin
   povoarArray();
+end;
+
+procedure TCadOrcamentoF.pagPrincipalChange(Sender: TObject);
+begin
+    AbreOrcItens(DataModule1.qryOrcamentoorcamentoid.AsInteger);
 end;
 
 procedure TCadOrcamentoF.speedbtnClienteIDClick(Sender: TObject);
 begin
   TelaPesqClienteF := TTelaPesqClienteF.Create(Self);
   TelaPesqClienteF.ShowModal;
-end;
-
-
-procedure TCadOrcamentoF.AbreOrcItens(orcamentoid : Integer);
-begin
-   if orcamentoid <> 0 then
-  begin
-      DataModule1.qryOrcamentoItens.Close;
-      DataModule1.qryOrcamentoItens.SQL.Clear;
-      DataModule1.qryOrcamentoItens.SQL.Add(
-                      'SELECT '+
-                      'ORCAMENTOITEMID, '+
-                      'ORCAMENTOID, '+
-                      'PRODUTOID, '+
-                      'produtodesc, '+
-                      'QT_PRODUTO, '+
-                      'VL_UNITARIO, '+
-                      'VL_TOTAL '+
-                      'FROM ORCAMENTO_ITEM ' +
-                      'WHERE ORCAMENTOID = '+ inttostr(orcamentoid) + ' ' +
-                      'ORDER BY ORCAMENTOID');
-    //showMessage(DataModule1.qryOrcamentoItem.SQL.Text);
-       DataModule1.qryOrcamentoItens.Open;
-  end;
 end;
 
 end.
