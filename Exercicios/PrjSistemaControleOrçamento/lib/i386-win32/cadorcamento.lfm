@@ -1,7 +1,7 @@
 inherited CadOrcamentoF: TCadOrcamentoF
-  Left = 446
+  Left = 755
   Height = 533
-  Top = 173
+  Top = 82
   Width = 959
   Caption = 'Orçamentos'
   ClientHeight = 533
@@ -339,8 +339,8 @@ inherited CadOrcamentoF: TCadOrcamentoF
           Height = 26
           Top = 100
           Width = 144
-          DataField = 'vl_total_orcamento'
-          DataSource = dsOrcamento
+          DataField = 'sum'
+          DataSource = dsGenerico
           Alignment = taRightJustify
           Font.CharSet = ANSI_CHARSET
           Font.Height = -16
@@ -638,12 +638,26 @@ inherited CadOrcamentoF: TCadOrcamentoF
   end
   object dsOrcamentoItens: TDataSource[1]
     DataSet = DataModule1.qryOrcamentoItens
-    Left = 744
-    Top = 48
+    Left = 1256
+    Top = 64
   end
   object dsOrcamento: TDataSource[2]
     DataSet = DataModule1.qryOrcamento
-    Left = 656
-    Top = 40
+    Left = 1256
+    Top = 120
+  end
+  object qryGenericaOrcamento: TZQuery[3]
+    Connection = DataModule1.ZConnection1
+    SQL.Strings = (
+      'select sum(vl_total) from orcamento_item where orcamentoid = -1;'
+    )
+    Params = <>
+    Left = 720
+    Top = 72
+  end
+  object dsGenerico: TDataSource[4]
+    DataSet = qryGenericaOrcamento
+    Left = 720
+    Top = 136
   end
 end

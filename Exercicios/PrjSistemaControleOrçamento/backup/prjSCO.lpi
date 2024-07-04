@@ -132,13 +132,6 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadItemOrc"/>
       </Unit>
-      <Unit>
-        <Filename Value="formgenerico.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="FormGenericoF"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="FormGenerico"/>
-      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

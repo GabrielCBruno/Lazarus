@@ -8,10 +8,10 @@
       <Unit>
         <Filename Value="prjSCO.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="3"/>
+        <EditorIndex Value="2"/>
         <CursorPos X="13" Y="15"/>
         <UsageCount Value="68"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="menuprincipal.pas"/>
@@ -107,9 +107,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadOrcamento"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="197"/>
-        <CursorPos X="82" Y="228"/>
+        <TopLine Value="185"/>
+        <CursorPos Y="196"/>
         <UsageCount Value="42"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -257,39 +258,15 @@
       </Unit>
       <Unit>
         <Filename Value="formgenerico.pas"/>
-        <IsPartOfProject Value="True"/>
         <ComponentName Value="FormGenericoF"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="FormGenerico"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="-1"/>
         <CursorPos X="18"/>
         <UsageCount Value="21"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-        <Caret Line="142" Column="3" TopLine="119"/>
-      </Position>
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-        <Caret Line="143" Column="3" TopLine="120"/>
-      </Position>
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-        <Caret Line="142" Column="3" TopLine="119"/>
-      </Position>
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-        <Caret Line="143" Column="3" TopLine="120"/>
-      </Position>
-      <Position>
-        <Filename Value="cadorcamento.pas"/>
-        <Caret Line="142" Column="3" TopLine="119"/>
-      </Position>
       <Position>
         <Filename Value="cadorcamento.pas"/>
         <Caret Line="143" Column="3" TopLine="120"/>
@@ -363,16 +340,8 @@
         <Caret Line="213" Column="23" TopLine="191"/>
       </Position>
       <Position>
-        <Filename Value="formgenerico.pas"/>
-        <Caret Column="18"/>
-      </Position>
-      <Position>
         <Filename Value="cadorcamento.pas"/>
         <Caret Line="225" Column="19" TopLine="194"/>
-      </Position>
-      <Position>
-        <Filename Value="formgenerico.pas"/>
-        <Caret Column="18"/>
       </Position>
       <Position>
         <Filename Value="cadorcamento.pas"/>
@@ -389,6 +358,34 @@
       <Position>
         <Filename Value="cadorcamento.pas"/>
         <Caret Line="229" Column="102" TopLine="198"/>
+      </Position>
+      <Position>
+        <Filename Value="cadorcamento.pas"/>
+        <Caret Line="228" Column="82" TopLine="197"/>
+      </Position>
+      <Position>
+        <Filename Value="cadorcamento.pas"/>
+        <Caret Line="182" Column="16" TopLine="156"/>
+      </Position>
+      <Position>
+        <Filename Value="cadorcamento.pas"/>
+        <Caret Line="138" Column="3" TopLine="136"/>
+      </Position>
+      <Position>
+        <Filename Value="cadorcamento.pas"/>
+        <Caret Line="225" Column="6" TopLine="192"/>
+      </Position>
+      <Position>
+        <Filename Value="cadorcamento.pas"/>
+        <Caret Line="226" Column="6" TopLine="193"/>
+      </Position>
+      <Position>
+        <Filename Value="cadorcamento.pas"/>
+        <Caret Line="207" Column="52" TopLine="191"/>
+      </Position>
+      <Position>
+        <Filename Value="cadorcamento.pas"/>
+        <Caret Line="228" Column="32" TopLine="206"/>
       </Position>
     </JumpHistory>
     <RunParams>

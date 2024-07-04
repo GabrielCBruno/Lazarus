@@ -6,8 +6,8 @@ interface
 
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, ExtCtrls, ComCtrls,
-  StdCtrls, DBCtrls, DBGrids, DBExtCtrls, Buttons, DBDateTimePicker, CadModelo,
-  dmPrincipal, CadItemOrc, FormGenerico;
+  StdCtrls, DBCtrls, DBGrids, DBExtCtrls, Buttons, ZDataset, DBDateTimePicker,
+  CadModelo, dmPrincipal, CadItemOrc, FormGenerico;
 
 type
 
@@ -16,6 +16,7 @@ type
   TCadOrcamentoF = class(TCadModeloF)
     bitbtnAdicionarItem: TBitBtn;
     bitbtnExcluirItem: TBitBtn;
+    dsGenerico: TDataSource;
     dsOrcamento: TDataSource;
     dsOrcamentoItens: TDataSource;
     DBEdit1: TDBEdit;
@@ -32,6 +33,7 @@ type
     lblTitulo1: TLabel;
     Panel4: TPanel;
     SpeedButton1: TSpeedButton;
+    qryGenericaOrcamento: TZQuery;
     procedure bitbtnAdicionarItemClick(Sender: TObject);
     procedure bitbtnCancelarClick(Sender: TObject);
     procedure bitbtnExcluirClick(Sender: TObject);
@@ -40,6 +42,7 @@ type
     procedure bitbtnNovoClick(Sender: TObject);
     procedure bitbtnPesquisarClick(Sender: TObject);
     procedure DBGridPrincipalDblClick(Sender: TObject);
+    //procedure dsGenericoDataChange(Sender: TObject; Field: TField);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormShow(Sender: TObject);
     procedure pagCadastroEnter(Sender: TObject);
@@ -212,6 +215,13 @@ begin
   DataModule1.qryOrcamentoItens.Close;
   DataModule1.qryOrcamentoItens.SQL.Text := 'select * from orcamento_item where orcamentoid = ' + DBeditID.Text + ';';
   DataModule1.qryOrcamentoItens.Open;
+  //
+  if DBeditID.Text <> '' then
+  begin
+      qryGenericaOrcamento.Close;
+      qryGenericaOrcamento.SQL.Text := 'select sum(vl_total) from orcamento_item where orcamentoid = ' + DBeditID.Text + ';';
+      qryGenericaOrcamento.Open;
+  end;
 end;
 
 procedure TCadOrcamentoF.pagCadastroShow(Sender: TObject);
@@ -222,12 +232,7 @@ end;
 
 procedure TCadOrcamentoF.SpeedButton1Click(Sender: TObject);
 begin
-     FormGenericoF := TFormGenericoF.Create(Self);
-     FormGenericoF.qryGenerica2.Close;
-     FormGenericoF.qryGenerica2.SQL.Clear;
-     FormGenericoF.qryGenerica2.SQL.Add('select clienteid as codigo from cliente;');
-     FormGenericoF.qryGenerica2.Open;
-     FormGenericoF.ShowModal;
+
 end;
 
 end.
