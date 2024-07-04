@@ -7,7 +7,7 @@ interface
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, ExtCtrls, ComCtrls,
   StdCtrls, DBCtrls, DBGrids, DBExtCtrls, Buttons, DBDateTimePicker, CadModelo,
-  dmPrincipal, CadItemOrc;
+  dmPrincipal, CadItemOrc, FormGenerico;
 
 type
 
@@ -44,7 +44,6 @@ type
     procedure FormShow(Sender: TObject);
     procedure pagCadastroEnter(Sender: TObject);
     procedure pagCadastroShow(Sender: TObject);
-    procedure pagPesquisaShow(Sender: TObject);
     procedure SpeedButton1Click(Sender: TObject);
   private
 
@@ -223,7 +222,13 @@ end;
 
 procedure TCadOrcamentoF.SpeedButton1Click(Sender: TObject);
 begin
-
+     FormGenericoF := TFormGenericoF.Create(Self);
+     FormGenericoF.qryGenerica2.Close;
+     FormGenericoF.qryGenerica2.SQL.Clear;
+     FormGenericoF.qryGenerica2.SQL.Add('select clienteid as codigo from cliente;');
+     FormGenericoF.DBcbGenerico.Items.Add(FormGenericoF.qryGenerica2.SQL.GetText);
+     FormGenericoF.qryGenerica2.Open;
+     FormGenericoF.ShowModal;
 end;
 
 end.

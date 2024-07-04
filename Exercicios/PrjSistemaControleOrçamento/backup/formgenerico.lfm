@@ -1,0 +1,47 @@
+object FormGenericoF: TFormGenericoF
+  Left = 635
+  Height = 193
+  Top = 274
+  Width = 197
+  Caption = 'FormGenericoF'
+  ClientHeight = 193
+  ClientWidth = 197
+  LCLVersion = '3.4.0.0'
+  object DBcbGenerico: TDBComboBox
+    Left = 56
+    Height = 23
+    Top = 80
+    Width = 100
+    DataSource = dsGenerica
+    ItemHeight = 15
+    MaxLength = 0
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 40
+    Height = 41
+    Top = 16
+    Width = 132
+    Caption = 'Escolha: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -35
+    Font.Name = 'Cambria'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object dsGenerica: TDataSource
+    DataSet = qryGenerica2
+    Left = 136
+    Top = 128
+  end
+  object qryGenerica2: TZQuery
+    Connection = DataModule1.ZConnection1
+    SQL.Strings = (
+      'select clienteid as codigo from cliente;'
+    )
+    Params = <>
+    Left = 48
+    Top = 128
+  end
+end

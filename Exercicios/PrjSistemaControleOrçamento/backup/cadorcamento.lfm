@@ -1,20 +1,19 @@
 inherited CadOrcamentoF: TCadOrcamentoF
-  Left = 341
-  Height = 571
-  Top = 84
+  Left = 446
+  Height = 533
+  Top = 173
   Width = 959
   Caption = 'Orçamentos'
-  ClientHeight = 571
+  ClientHeight = 533
   ClientWidth = 959
   OnClose = FormClose
   OnShow = FormShow
   inherited pagPrincipal: TPageControl
-    Height = 571
+    Height = 533
     Width = 959
     inherited pagPesquisa: TTabSheet
-      ClientHeight = 543
+      ClientHeight = 505
       ClientWidth = 951
-      OnShow = pagPesquisaShow
       inherited Panel1: TPanel
         Width = 951
         ClientWidth = 951
@@ -23,7 +22,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
         end
       end
       inherited Panel2: TPanel
-        Top = 473
+        Top = 435
         Width = 951
         ClientWidth = 951
         inherited bitbtnNovo: TBitBtn
@@ -35,7 +34,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
         end
       end
       inherited DBGridPrincipal: TDBGrid
-        Height = 393
+        Height = 355
         Width = 951
         Columns = <        
           item
@@ -137,12 +136,12 @@ inherited CadOrcamentoF: TCadOrcamentoF
       end
     end
     inherited pagCadastro: TTabSheet
-      ClientHeight = 543
+      ClientHeight = 505
       ClientWidth = 951
       OnEnter = pagCadastroEnter
       OnShow = pagCadastroShow
       inherited Panel3: TPanel
-        Top = 473
+        Top = 435
         Width = 951
         ClientWidth = 951
         inherited bitbtnGravar: TBitBtn
@@ -492,6 +491,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
           TabOrder = 6
         end
         object SpeedButton1: TSpeedButton
+          Cursor = crHandPoint
           Left = 184
           Height = 22
           Top = 136
@@ -502,7 +502,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
       end
       object DBGridOrcItens: TDBGrid[3]
         Left = 0
-        Height = 297
+        Height = 259
         Top = 176
         Width = 951
         Align = alClient

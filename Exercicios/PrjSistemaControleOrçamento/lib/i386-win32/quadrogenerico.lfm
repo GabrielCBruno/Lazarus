@@ -1,0 +1,20 @@
+object QuadroGenericoF: TQuadroGenericoF
+  Left = 0
+  Height = 156
+  Top = 0
+  Width = 173
+  ClientHeight = 156
+  ClientWidth = 173
+  TabOrder = 0
+  DesignLeft = 737
+  DesignTop = 272
+  object DBcbGenerico: TDBComboBox
+    Left = 24
+    Height = 23
+    Top = 48
+    Width = 100
+    ItemHeight = 15
+    MaxLength = 0
+    TabOrder = 0
+  end
+end

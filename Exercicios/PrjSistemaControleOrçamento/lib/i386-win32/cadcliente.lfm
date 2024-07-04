@@ -1,10 +1,9 @@
 inherited CadClienteF: TCadClienteF
-  Left = 255
-  Top = 62
+  Left = 388
+  Top = 111
   Width = 999
   Caption = 'Cadastro de Cliente'
-  ClientHeight = 0
-  ClientWidth = 0
+  ClientWidth = 999
   OnClose = FormClose
   OnShow = FormShow
   inherited pagPrincipal: TPageControl
