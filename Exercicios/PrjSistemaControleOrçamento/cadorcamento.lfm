@@ -14,7 +14,6 @@ inherited CadOrcamentoF: TCadOrcamentoF
     inherited pagPesquisa: TTabSheet
       ClientHeight = 543
       ClientWidth = 951
-      OnShow = pagPesquisaShow
       inherited Panel1: TPanel
         Width = 951
         ClientWidth = 951

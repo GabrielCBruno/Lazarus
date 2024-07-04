@@ -631,6 +631,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
             FieldName = 'vl_total'
           end>
         DataSource = dsOrcamentoItens
+        ReadOnly = True
         TabOrder = 2
       end
     end

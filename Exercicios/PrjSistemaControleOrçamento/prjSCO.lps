@@ -9,8 +9,8 @@
         <Filename Value="prjSCO.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="7"/>
-        <CursorPos Y="23"/>
+        <TopLine Value="3"/>
+        <CursorPos X="13" Y="15"/>
         <UsageCount Value="67"/>
       </Unit>
       <Unit>
@@ -108,10 +108,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadOrcamento"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="186"/>
-        <CursorPos X="3" Y="193"/>
+        <TopLine Value="36"/>
+        <CursorPos X="23" Y="45"/>
         <UsageCount Value="41"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -135,6 +134,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadItemOrc"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
         <TopLine Value="37"/>
         <CursorPos X="3" Y="70"/>
@@ -271,14 +271,6 @@
         <Caret Line="70" Column="3" TopLine="37"/>
       </Position>
       <Position>
-        <Filename Value="caditemorc.pas"/>
-        <Caret Line="71" Column="3" TopLine="38"/>
-      </Position>
-      <Position>
-        <Filename Value="caditemorc.pas"/>
-        <Caret Line="70" Column="3" TopLine="37"/>
-      </Position>
-      <Position>
         <Filename Value="cadorcamento.pas"/>
         <Caret Line="142" Column="3" TopLine="109"/>
       </Position>
@@ -369,6 +361,14 @@
       <Position>
         <Filename Value="cadorcamento.pas"/>
         <Caret Line="195" Column="38" TopLine="188"/>
+      </Position>
+      <Position>
+        <Filename Value="cadorcamento.pas"/>
+        <Caret Line="218" Column="31" TopLine="207"/>
+      </Position>
+      <Position>
+        <Filename Value="cadorcamento.pas"/>
+        <Caret Line="45" Column="23" TopLine="36"/>
       </Position>
     </JumpHistory>
     <RunParams>
