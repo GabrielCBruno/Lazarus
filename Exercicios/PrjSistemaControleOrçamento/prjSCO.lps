@@ -110,8 +110,8 @@
         <UnitName Value="CadOrcamento"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="46"/>
-        <CursorPos X="16" Y="58"/>
+        <TopLine Value="186"/>
+        <CursorPos X="3" Y="193"/>
         <UsageCount Value="41"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -252,10 +252,6 @@
     <JumpHistory HistoryIndex="29">
       <Position>
         <Filename Value="caditemorc.pas"/>
-        <Caret Line="26" Column="21" TopLine="26"/>
-      </Position>
-      <Position>
-        <Filename Value="caditemorc.pas"/>
         <Caret Line="70" Column="3" TopLine="37"/>
       </Position>
       <Position>
@@ -369,6 +365,10 @@
       <Position>
         <Filename Value="cadorcamento.pas"/>
         <Caret Line="202" Column="24" TopLine="184"/>
+      </Position>
+      <Position>
+        <Filename Value="cadorcamento.pas"/>
+        <Caret Line="195" Column="38" TopLine="188"/>
       </Position>
     </JumpHistory>
     <RunParams>

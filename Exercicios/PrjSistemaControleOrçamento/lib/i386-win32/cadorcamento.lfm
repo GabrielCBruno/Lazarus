@@ -139,6 +139,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
     inherited pagCadastro: TTabSheet
       ClientHeight = 543
       ClientWidth = 951
+      OnEnter = pagCadastroEnter
       OnShow = pagCadastroShow
       inherited Panel3: TPanel
         Top = 473
@@ -630,6 +631,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
             FieldName = 'vl_total'
           end>
         DataSource = dsOrcamentoItens
+        ReadOnly = True
         TabOrder = 2
       end
     end

@@ -42,6 +42,7 @@ type
     procedure DBGridPrincipalDblClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormShow(Sender: TObject);
+    procedure pagCadastroEnter(Sender: TObject);
     procedure pagCadastroShow(Sender: TObject);
     procedure pagPesquisaShow(Sender: TObject);
     procedure SpeedButton1Click(Sender: TObject);
@@ -55,7 +56,7 @@ type
 
 var
   CadOrcamentoF: TCadOrcamentoF;
-  vetor := array of TDBEdit;
+  vetor : array of TDBEdit;
 
 implementation
 
@@ -189,9 +190,9 @@ end;
 procedure TCadOrcamentoF.DBGridPrincipalDblClick(Sender: TObject);
 begin
   pagPrincipal.ActivePage := pagCadastro;
-  DataModule1.qryOrcamentoItens.Close;
-  DataModule1.qryOrcamentoItens.SQL.Text := 'select * from orcamento_item where orcamentoid = ' + DBeditID.Text + ';';
-  DataModule1.qryOrcamentoItens.Open;
+  //DataModule1.qryOrcamentoItens.Close;
+  //DataModule1.qryOrcamentoItens.SQL.Text := 'select * from orcamento_item where orcamentoid = ' + DBeditID.Text + ';';
+  //DataModule1.qryOrcamentoItens.Open;
 end;
 
 procedure TCadOrcamentoF.FormClose(Sender: TObject;
@@ -208,6 +209,13 @@ begin
   DataModule1.qryOrcamento.Open;
   dmPrincipal.DataModule1.qryOrcamentoItens.Open;
   pagPrincipal.ActivePage := pagPesquisa;
+end;
+
+procedure TCadOrcamentoF.pagCadastroEnter(Sender: TObject);
+begin
+  DataModule1.qryOrcamentoItens.Close;
+  DataModule1.qryOrcamentoItens.SQL.Text := 'select * from orcamento_item where orcamentoid = ' + DBeditID.Text + ';';
+  DataModule1.qryOrcamentoItens.Open;
 end;
 
 procedure TCadOrcamentoF.pagCadastroShow(Sender: TObject);
