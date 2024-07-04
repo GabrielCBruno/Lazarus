@@ -10,7 +10,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="13" Y="15"/>
-        <UsageCount Value="76"/>
+        <UsageCount Value="77"/>
       </Unit>
       <Unit>
         <Filename Value="menuprincipal.pas"/>
@@ -21,7 +21,7 @@
         <UnitName Value="MenuPrincipal"/>
         <TopLine Value="52"/>
         <CursorPos X="25" Y="69"/>
-        <UsageCount Value="76"/>
+        <UsageCount Value="77"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -35,7 +35,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="11"/>
         <CursorPos Y="31"/>
-        <UsageCount Value="76"/>
+        <UsageCount Value="77"/>
       </Unit>
       <Unit>
         <Filename Value="cadcategoria.pas"/>
@@ -47,7 +47,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="108"/>
         <CursorPos X="40" Y="108"/>
-        <UsageCount Value="76"/>
+        <UsageCount Value="77"/>
       </Unit>
       <Unit>
         <Filename Value="dmprincipal.pas"/>
@@ -59,7 +59,7 @@
         <EditorIndex Value="1"/>
         <TopLine Value="36"/>
         <CursorPos Y="108"/>
-        <UsageCount Value="73"/>
+        <UsageCount Value="74"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -73,7 +73,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="29"/>
         <CursorPos X="3" Y="35"/>
-        <UsageCount Value="67"/>
+        <UsageCount Value="68"/>
       </Unit>
       <Unit>
         <Filename Value="cadproduto.pas"/>
@@ -85,7 +85,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="146"/>
         <CursorPos X="151" Y="151"/>
-        <UsageCount Value="59"/>
+        <UsageCount Value="60"/>
       </Unit>
       <Unit>
         <Filename Value="cadusuario.pas"/>
@@ -97,7 +97,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="119"/>
         <CursorPos X="45" Y="122"/>
-        <UsageCount Value="57"/>
+        <UsageCount Value="58"/>
       </Unit>
       <Unit>
         <Filename Value="cadorcamento.pas"/>
@@ -107,11 +107,11 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadOrcamento"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="46"/>
-        <CursorPos X="41" Y="46"/>
-        <ComponentState Value="1"/>
-        <UsageCount Value="50"/>
+        <TopLine Value="132"/>
+        <CursorPos X="6" Y="135"/>
+        <UsageCount Value="51"/>
         <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="relclientes.pas"/>
@@ -120,10 +120,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="relClientes"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="5"/>
         <TopLine Value="25"/>
         <CursorPos X="6" Y="56"/>
-        <UsageCount Value="35"/>
+        <UsageCount Value="36"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -134,10 +134,13 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadItemOrc"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="37"/>
-        <CursorPos X="3" Y="70"/>
-        <UsageCount Value="31"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="33"/>
+        <CursorPos X="3" Y="40"/>
+        <UsageCount Value="32"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="telapesqcliente.pas"/>
@@ -146,11 +149,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="TelaPesqCliente"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="54"/>
-        <CursorPos X="3" Y="82"/>
-        <UsageCount Value="24"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="68"/>
+        <CursorPos X="70" Y="78"/>
+        <UsageCount Value="25"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -284,12 +286,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="relProdutos"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="20"/>
         <CursorPos X="41" Y="30"/>
         <UsageCount Value="24"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="..\..\..\..\..\Desktop\telapesqcliente.pas"/>
@@ -307,18 +307,6 @@
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="telapesqcliente.pas"/>
-        <Caret Line="93" Column="23" TopLine="59"/>
-      </Position>
-      <Position>
-        <Filename Value="telapesqcliente.pas"/>
-        <Caret Line="92" Column="23" TopLine="58"/>
-      </Position>
-      <Position>
-        <Filename Value="telapesqcliente.pas"/>
-        <Caret Line="91" Column="23" TopLine="57"/>
-      </Position>
       <Position>
         <Filename Value="telapesqcliente.pas"/>
         <Caret Line="90" Column="23" TopLine="56"/>
@@ -384,20 +372,8 @@
         <Caret Line="46" Column="41" TopLine="46"/>
       </Position>
       <Position>
-        <Filename Value="relprodutos.pas"/>
-        <Caret Line="35" Column="11" TopLine="21"/>
-      </Position>
-      <Position>
-        <Filename Value="relprodutos.pas"/>
-        <Caret Line="41" Column="3" TopLine="27"/>
-      </Position>
-      <Position>
         <Filename Value="relclientes.pas"/>
         <Caret Line="56" Column="6" TopLine="25"/>
-      </Position>
-      <Position>
-        <Filename Value="relprodutos.pas"/>
-        <Caret Line="41" Column="3" TopLine="27"/>
       </Position>
       <Position>
         <Filename Value="menuprincipal.pas"/>
@@ -416,16 +392,40 @@
         <Caret Line="69" Column="25" TopLine="52"/>
       </Position>
       <Position>
-        <Filename Value="relprodutos.pas"/>
-        <Caret Line="41" Column="3" TopLine="29"/>
+        <Filename Value="relclientes.pas"/>
+        <Caret Line="56" Column="6" TopLine="25"/>
       </Position>
       <Position>
-        <Filename Value="relprodutos.pas"/>
-        <Caret Line="49" Column="3" TopLine="37"/>
+        <Filename Value="telapesqcliente.pas"/>
+        <Caret Line="76" Column="2" TopLine="50"/>
       </Position>
       <Position>
-        <Filename Value="relprodutos.pas"/>
-        <Caret Line="51" Column="16" TopLine="40"/>
+        <Filename Value="cadorcamento.pas"/>
+        <Caret Line="46" Column="41" TopLine="46"/>
+      </Position>
+      <Position>
+        <Filename Value="cadorcamento.pas"/>
+        <Caret Line="135" Column="6" TopLine="132"/>
+      </Position>
+      <Position>
+        <Filename Value="caditemorc.pas"/>
+        <Caret Line="44" Column="3" TopLine="37"/>
+      </Position>
+      <Position>
+        <Filename Value="caditemorc.pas"/>
+        <Caret Line="43" Column="3" TopLine="36"/>
+      </Position>
+      <Position>
+        <Filename Value="caditemorc.pas"/>
+        <Caret Line="42" Column="3" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="caditemorc.pas"/>
+        <Caret Line="41" Column="3" TopLine="34"/>
+      </Position>
+      <Position>
+        <Filename Value="caditemorc.pas"/>
+        <Caret Line="40" Column="3" TopLine="33"/>
       </Position>
     </JumpHistory>
     <RunParams>

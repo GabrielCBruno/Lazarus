@@ -89,7 +89,6 @@ object CadItemOrcF: TCadItemOrcF
     Top = 208
     Width = 64
     DataField = 'qt_produto'
-    DataSource = CadOrcamentoF.dsOrcamentoItens
     Alignment = taRightJustify
     Font.CharSet = ANSI_CHARSET
     Font.Height = -16
@@ -120,7 +119,6 @@ object CadItemOrcF: TCadItemOrcF
     Top = 208
     Width = 64
     DataField = 'vl_unitario'
-    DataSource = CadOrcamentoF.dsOrcamentoItens
     Alignment = taRightJustify
     Font.CharSet = ANSI_CHARSET
     Font.Height = -16
@@ -151,7 +149,6 @@ object CadItemOrcF: TCadItemOrcF
     Top = 208
     Width = 144
     DataField = 'vl_total'
-    DataSource = CadOrcamentoF.dsOrcamentoItens
     Alignment = taRightJustify
     Font.CharSet = ANSI_CHARSET
     Font.Height = -16
