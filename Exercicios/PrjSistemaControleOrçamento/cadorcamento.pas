@@ -6,8 +6,8 @@ interface
 
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, ExtCtrls, ComCtrls,
-  StdCtrls, DBCtrls, DBGrids, DBExtCtrls, Buttons, ZDataset, DBDateTimePicker,
-  CadModelo, dmPrincipal, CadItemOrc, FormGenerico;
+  StdCtrls, DBCtrls, DBGrids, DBExtCtrls, Buttons, ZDataset, ZAbstractRODataset,
+  DBDateTimePicker, CadModelo, dmPrincipal, CadItemOrc, TelaPesqCliente;
 
 type
 
@@ -16,24 +16,27 @@ type
   TCadOrcamentoF = class(TCadModeloF)
     bitbtnAdicionarItem: TBitBtn;
     bitbtnExcluirItem: TBitBtn;
+    DBedtClienteID: TDBEdit;
+    dsCliente2: TDataSource;
     dsGenerico: TDataSource;
     dsOrcamento: TDataSource;
     dsOrcamentoItens: TDataSource;
     DBEdit1: TDBEdit;
     DBdateDtOrc: TDBDateEdit;
     DBdateDtVal: TDBDateEdit;
-    DBeditClienteID: TDBEdit;
     DBeditID: TDBEdit;
     DBGridOrcItens: TDBGrid;
     Label4: TLabel;
     Label5: TLabel;
     Label6: TLabel;
     Label8: TLabel;
-    Label9: TLabel;
+    lblCliente: TLabel;
     lblTitulo1: TLabel;
     Panel4: TPanel;
-    SpeedButton1: TSpeedButton;
+    qryClienteOrcamento: TZQuery;
     qryGenericaOrcamento: TZQuery;
+    qryGenericaOrcamentosum: TZFMTBCDField;
+    speedbtnClienteID: TSpeedButton;
     procedure bitbtnAdicionarItemClick(Sender: TObject);
     procedure bitbtnCancelarClick(Sender: TObject);
     procedure bitbtnExcluirClick(Sender: TObject);
@@ -42,12 +45,13 @@ type
     procedure bitbtnNovoClick(Sender: TObject);
     procedure bitbtnPesquisarClick(Sender: TObject);
     procedure DBGridPrincipalDblClick(Sender: TObject);
-    //procedure dsGenericoDataChange(Sender: TObject; Field: TField);
+    procedure dsOrcamentoDataChange(Sender: TObject; Field: TField);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormShow(Sender: TObject);
     procedure pagCadastroEnter(Sender: TObject);
     procedure pagCadastroShow(Sender: TObject);
-    procedure SpeedButton1Click(Sender: TObject);
+    procedure pagPrincipalChange(Sender: TObject);
+    procedure speedbtnClienteIDClick(Sender: TObject);
   private
 
   public
@@ -65,28 +69,6 @@ implementation
 {$R *.lfm}
 
 { TCadOrcamentoF }
-
-procedure TCadOrcamentoF.AbreOrcItens(orcamentoid : Integer);
-begin
-  if orcamentoid <> 0 then
-  begin
-      DataModule1.qryOrcamentoItens.Close;
-      DataModule1.qryOrcamentoItens.SQL.Clear;
-      DataModule1.qryOrcamentoItens.SQL.Add(
-                      'SELECT '+
-                      'ORCAMENTOITEMID, '+
-                      'ORCAMENTOID, '+
-                      'PRODUTOID, '+
-                      'produtodesc, '+
-                      'QT_PRODUTO, '+
-                      'VL_UNITARIO, '+
-                      'VL_TOTAL '+
-                      'FROM ORCAMENTO_ITEM ' +
-                      'WHERE ORCAMENTOID = '+ inttostr(orcamentoid) + ' ' +
-                      'ORDER BY ORCAMENTOID');
-       DataModule1.qryOrcamentoItens.Open;
-  end;
-end;
 
 procedure TCadOrcamentoF.povoarArray ();
 var
@@ -164,10 +146,10 @@ end;
 
 procedure TCadOrcamentoF.bitbtnNovoClick(Sender: TObject);
 begin
-  dmPrincipal.DataModule1.qryOrcamento.Insert;
   pagPrincipal.ActivePage := pagCadastro;
-  DBdateDtOrc.Text := DateToStr(Date);
-  DBdateDtVal.Text := DateToStr(Date);
+  DataModule1.qryOrcamento.Insert;
+  AbreOrcItens(DataModule1.qryOrcamentoorcamentoid.AsInteger);
+
 end;
 
 procedure TCadOrcamentoF.bitbtnPesquisarClick(Sender: TObject);
@@ -189,9 +171,17 @@ begin
   end;
 end;
 
+
+
 procedure TCadOrcamentoF.DBGridPrincipalDblClick(Sender: TObject);
 begin
   pagPrincipal.ActivePage := pagCadastro;
+  AbreOrcItens(DataModule1.qryOrcamentoorcamentoid.AsInteger);
+end;
+
+procedure TCadOrcamentoF.dsOrcamentoDataChange(Sender: TObject; Field: TField);
+begin
+
 end;
 
 procedure TCadOrcamentoF.FormClose(Sender: TObject;
@@ -206,13 +196,13 @@ end;
 procedure TCadOrcamentoF.FormShow(Sender: TObject);
 begin
   DataModule1.qryOrcamento.Open;
-  dmPrincipal.DataModule1.qryOrcamentoItens.Open;
+  DataModule1.qryOrcamentoItens.Open;
   pagPrincipal.ActivePage := pagPesquisa;
 end;
 
 procedure TCadOrcamentoF.pagCadastroEnter(Sender: TObject);
 begin
-  DataModule1.qryOrcamentoItens.Close;
+ { DataModule1.qryOrcamentoItens.Close;
   DataModule1.qryOrcamentoItens.SQL.Text := 'select * from orcamento_item where orcamentoid = ' + DBeditID.Text + ';';
   DataModule1.qryOrcamentoItens.Open;
   //
@@ -222,17 +212,50 @@ begin
       qryGenericaOrcamento.SQL.Text := 'select sum(vl_total) from orcamento_item where orcamentoid = ' + DBeditID.Text + ';';
       qryGenericaOrcamento.Open;
   end;
+  //
+  qryClienteOrcamento.Open;
+  qryClienteOrcamento.SQL.Text := 'select clienteid as codigo from cliente;';
+  qryClienteOrcamento.Close;}
 end;
 
 procedure TCadOrcamentoF.pagCadastroShow(Sender: TObject);
 begin
   povoarArray();
-  //AbreOrcItens(StrToInt(DBeditID.Text));
 end;
 
-procedure TCadOrcamentoF.SpeedButton1Click(Sender: TObject);
+procedure TCadOrcamentoF.pagPrincipalChange(Sender: TObject);
 begin
+    AbreOrcItens(DataModule1.qryOrcamentoorcamentoid.AsInteger);
+end;
 
+procedure TCadOrcamentoF.speedbtnClienteIDClick(Sender: TObject);
+begin
+  TelaPesqClienteF := TTelaPesqClienteF.Create(Self);
+  TelaPesqClienteF.ShowModal;
+end;
+
+
+procedure TCadOrcamentoF.AbreOrcItens(orcamentoid : Integer);
+begin
+   if orcamentoid <> 0 then
+  begin
+      DataModule1.qryOrcamentoItens.Close;
+      DataModule1.qryOrcamentoItens.SQL.Clear;
+      DataModule1.qryOrcamentoItens.SQL.Add(
+                      'SELECT '+
+                      'ORCAMENTOITEMID, '+
+                      'ORCAMENTOID, '+
+                      'PRODUTOID, '+
+                      'produtodesc, '+
+                      'QT_PRODUTO, '+
+                      'VL_UNITARIO, '+
+                      'VL_TOTAL '+
+                      'FROM ORCAMENTO_ITEM ' +
+                      'WHERE ORCAMENTOID = '+ inttostr(orcamentoid) + ' ' +
+                      'ORDER BY ORCAMENTOID');
+    //showMessage(DataModule1.qryOrcamentoItem.SQL.Text);
+       DataModule1.qryOrcamentoItens.Open;
+  end;
 end;
 
 end.

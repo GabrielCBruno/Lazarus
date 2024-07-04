@@ -1,7 +1,7 @@
 object relClientesF: TrelClientesF
-  Left = 662
+  Left = 759
   Height = 220
-  Top = 309
+  Top = 320
   Width = 454
   Caption = 'Relatório de Clientes'
   ClientHeight = 220
@@ -133,7 +133,7 @@ object relClientesF: TrelClientesF
     Left = 200
     Top = 160
   end
-  object frReport1: TfrReport
+  object frRepCliente: TfrReport
     Dataset = frDBDataSet1
     InitialZoom = pzDefault
     Options = []

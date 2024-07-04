@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Buttons, LR_DBSet,
-  LR_Class, ZDataset, ZAbstractRODataset;
+  LR_Class, ZDataset, ZAbstractRODataset, LR_DSet;
 
 type
 
@@ -15,7 +15,7 @@ type
   TrelClientesF = class(TForm)
     bitbtnRelClientes: TBitBtn;
     frDBDataSet1: TfrDBDataSet;
-    frReport1: TfrReport;
+    frRepCliente: TfrReport;
     qryClienteRelatorio: TZQuery;
     qryClienteRelatorioclienteid: TZIntegerField;
     qryClienteRelatoriocpf_cnpj_cliente: TZRawStringField;
@@ -53,9 +53,9 @@ end;
 
 procedure TrelClientesF.bitbtnRelClientesClick(Sender: TObject);
 begin
-     frReport1.LoadFromFile('relClientes.lrf');
-     frReport1.PrepareReport;
-     frReport1.ShowReport;
+     frRepCliente.LoadFromFile('relClientes.lrf');
+     frRepCliente.PrepareReport;
+     frRepCliente.ShowReport;
 end;
 
 end.

@@ -2,8 +2,8 @@ object DataModule1: TDataModule1
   OnCreate = DataModuleCreate
   OldCreateOrder = False
   Height = 524
-  HorizontalOffset = 771
-  VerticalOffset = 74
+  HorizontalOffset = 788
+  VerticalOffset = 132
   Width = 431
   object ZConnection1: TZConnection
     ControlsCodePage = cCP_UTF8
@@ -236,6 +236,7 @@ object DataModule1: TDataModule1
   object qryOrcamento: TZQuery
     Connection = ZConnection1
     AfterInsert = qryOrcamentoAfterInsert
+    OnNewRecord = qryOrcamentoNewRecord
     SQL.Strings = (
       'select *  from orcamento;'
     )
@@ -296,7 +297,7 @@ object DataModule1: TDataModule1
   object qryOrcamentoItens: TZQuery
     Connection = ZConnection1
     SQL.Strings = (
-      'select * from orcamento_item oi where orcamentoid = -1;'
+      'select * from orcamento_item'
     )
     Params = <>
     Left = 331

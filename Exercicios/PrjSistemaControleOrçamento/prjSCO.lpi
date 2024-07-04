@@ -132,6 +132,14 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadItemOrc"/>
       </Unit>
+      <Unit>
+        <Filename Value="telapesqcliente.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="TelaPesqClienteF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="TelaPesqCliente"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

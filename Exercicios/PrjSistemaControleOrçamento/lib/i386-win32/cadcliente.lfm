@@ -1,6 +1,6 @@
 inherited CadClienteF: TCadClienteF
-  Left = 388
-  Top = 111
+  Left = 611
+  Top = 203
   Width = 999
   Caption = 'Cadastro de Cliente'
   ClientWidth = 999
@@ -289,6 +289,6 @@ inherited CadClienteF: TCadClienteF
   object dsCliente: TDataSource[1]
     DataSet = DataModule1.qryCliente
     Left = 800
-    Top = 40
+    Top = 64
   end
 end

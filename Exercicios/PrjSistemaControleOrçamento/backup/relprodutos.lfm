@@ -1,0 +1,8 @@
+object relProdutos: TrelProdutos
+  Left = 740
+  Height = 220
+  Top = 325
+  Width = 454
+  Caption = 'Relatório de Produtos'
+  LCLVersion = '3.4.0.0'
+end

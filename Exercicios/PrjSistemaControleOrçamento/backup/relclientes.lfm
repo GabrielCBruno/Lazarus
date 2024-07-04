@@ -1,7 +1,7 @@
 object relClientesF: TrelClientesF
-  Left = 662
+  Left = 615
   Height = 220
-  Top = 309
+  Top = 301
   Width = 454
   Caption = 'Relatório de Clientes'
   ClientHeight = 220
@@ -10,7 +10,7 @@ object relClientesF: TrelClientesF
   OnShow = FormShow
   LCLVersion = '3.4.0.0'
   object bitbtnRelClientes: TBitBtn
-    Cursor = crArrow
+    Cursor = crHandPoint
     Left = 48
     Height = 52
     Top = 72
@@ -81,7 +81,6 @@ object relClientesF: TrelClientesF
   end
   object qryClienteRelatorio: TZQuery
     Connection = DataModule1.ZConnection1
-    Active = True
     SQL.Strings = (
       'Select * from cliente;'
     )
