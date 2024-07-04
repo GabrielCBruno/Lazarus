@@ -5,8 +5,8 @@ unit CadItemOrc;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, DBCtrls,
-  Buttons, dmPrincipal;
+  Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, StdCtrls, DBCtrls,
+  Buttons, ZDataset, ZAbstractRODataset, dmPrincipal;
 
 type
 
@@ -15,6 +15,7 @@ type
   TCadItemOrcF = class(TForm)
     bitbtnCancelar: TBitBtn;
     bitbtnInserir: TBitBtn;
+    dsInserirItem: TDataSource;
     DBedtProdutoId: TDBEdit;
     DBedtDescProduto: TDBEdit;
     DBedtQuant: TDBEdit;
@@ -25,9 +26,14 @@ type
     Label3: TLabel;
     Label4: TLabel;
     Label5: TLabel;
+    qryProdutoItemds_produto: TZRawStringField;
+    qryProdutoItemprodutoid: TZIntegerField;
+    speedbtnLocalizarProduto: TSpeedButton;
+    qryProdutoItem: TZQuery;
     procedure bitbtnCancelarClick(Sender: TObject);
     procedure bitbtnInserirClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
+    procedure speedbtnLocalizarProdutoClick(Sender: TObject);
   private
 
   public
@@ -57,6 +63,11 @@ procedure TCadItemOrcF.FormClose(Sender: TObject; var CloseAction: TCloseAction
   );
 begin
   CloseAction := caFree;
+end;
+
+procedure TCadItemOrcF.speedbtnLocalizarProdutoClick(Sender: TObject);
+begin
+
 end;
 
 end.

@@ -16,10 +16,9 @@ type
   TCadOrcamentoF = class(TCadModeloF)
     bitbtnAdicionarItem: TBitBtn;
     bitbtnExcluirItem: TBitBtn;
-    dsOrcamentoItens2: TDataSource;
-    DBEdit1: TDBEdit;
     dsOrcamento: TDataSource;
     dsOrcamentoItens: TDataSource;
+    DBEdit1: TDBEdit;
     DBdateDtOrc: TDBDateEdit;
     DBdateDtVal: TDBDateEdit;
     DBeditClienteID: TDBEdit;

@@ -23,6 +23,7 @@ type
     qryOrcamentodt_validade_orcamento: TZDateTimeField;
     qryOrcamentoItensorcamentoid: TZIntegerField;
     qryOrcamentoItensorcamentoitemid: TZIntegerField;
+    qryOrcamentoItensprodutodesc: TZRawStringField;
     qryOrcamentoItensprodutoid: TZIntegerField;
     qryOrcamentoItensqt_produto: TZBCDField;
     qryOrcamentoItensvl_total: TZBCDField;
@@ -46,8 +47,8 @@ type
     qryProduto: TZQuery;
     qryUsuario: TZQuery;
     qryCategoria: TZQuery;
-    qryOrcamentoItens: TZQuery;
     qryOrcamento: TZQuery;
+    qryOrcamentoItens: TZQuery;
     procedure DataModuleCreate(Sender: TObject);
     function getSequence(const pNomeSequence: String): String;
     procedure qryCategoriaAfterInsert(DataSet: TDataSet);

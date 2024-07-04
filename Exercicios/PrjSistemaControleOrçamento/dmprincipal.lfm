@@ -295,6 +295,7 @@ object DataModule1: TDataModule1
   end
   object qryOrcamentoItens: TZQuery
     Connection = ZConnection1
+    Active = True
     SQL.Strings = (
       'select * from orcamento_item;'
     )
