@@ -52,7 +52,9 @@ var
 begin
   if edtPesquisar.Text = '' then
   begin
-    ShowMessage('Por favor preencher todos os campos!');
+    qryProdutoPesq.Close;
+    qryProdutoPesq.SQL.Text := 'select * from produto;';
+    qryProdutoPesq.Open;
   end
   else
   begin

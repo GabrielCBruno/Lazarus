@@ -57,7 +57,6 @@ end;
 procedure TCadItemOrcF.bitbtnInserirClick(Sender: TObject);
 begin
   DataModule1.qryOrcamentoItensorcamentoid.AsInteger := StrToInt(CadOrcamentoF.DBeditID.Text);
-  DataModule1.qryOrcamentovl_total_orcamento.AsInteger := StrToInt(DataModule1.qryOrcamentovl_total_orcamento.AsInteger + DataModule1.qryOrcamentoItensvl_total);
   DataModule1.qryOrcamentoItens.Post;
   Close;
 end;

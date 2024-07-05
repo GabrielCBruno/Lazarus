@@ -11,8 +11,6 @@ inherited CadOrcamentoF: TCadOrcamentoF
   inherited pagPrincipal: TPageControl
     Height = 533
     Width = 1071
-    ActivePage = pagPesquisa
-    TabIndex = 0
     OnChange = pagPrincipalChange
     inherited pagPesquisa: TTabSheet
       ClientHeight = 505
@@ -141,7 +139,6 @@ inherited CadOrcamentoF: TCadOrcamentoF
     inherited pagCadastro: TTabSheet
       ClientHeight = 505
       ClientWidth = 1063
-      OnEnter = pagCadastroEnter
       OnShow = pagCadastroShow
       inherited Panel3: TPanel
         Top = 435
@@ -237,9 +234,9 @@ inherited CadOrcamentoF: TCadOrcamentoF
           ParentFont = False
         end
         object Label5: TLabel
-          Left = 288
+          Left = 280
           Height = 22
-          Top = 98
+          Top = 104
           Width = 97
           Caption = 'Dt.Validade'
           Font.CharSet = ANSI_CHARSET
@@ -277,49 +274,6 @@ inherited CadOrcamentoF: TCadOrcamentoF
           Font.Style = [fsUnderline]
           ParentFont = False
         end
-        object DBdateDtOrc: TDBDateEdit
-          Left = 264
-          Height = 26
-          Top = 60
-          Width = 176
-          CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
-          DateOrder = doNone
-          ButtonCursor = crHandPoint
-          ButtonWidth = 23
-          NumGlyphs = 1
-          Font.CharSet = ANSI_CHARSET
-          Font.Height = -16
-          Font.Name = 'Arial'
-          Font.Pitch = fpVariable
-          Font.Quality = fqDraft
-          MaxLength = 0
-          ParentFont = False
-          TabOrder = 1
-          DataField = 'dt_validade_orcamento'
-          DataSource = dsOrcamento
-        end
-        object DBdateDtVal: TDBDateEdit
-          Left = 264
-          Height = 26
-          Top = 134
-          Width = 176
-          CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
-          DefaultToday = True
-          DateOrder = doNone
-          ButtonCursor = crHandPoint
-          ButtonWidth = 23
-          NumGlyphs = 1
-          Font.CharSet = ANSI_CHARSET
-          Font.Height = -16
-          Font.Name = 'Arial'
-          Font.Pitch = fpVariable
-          Font.Quality = fqDraft
-          MaxLength = 0
-          ParentFont = False
-          TabOrder = 2
-          DataField = 'dt_validade_orcamento'
-          DataSource = dsOrcamento
-        end
         object DBEdit1: TDBEdit
           Left = 600
           Height = 26
@@ -327,6 +281,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
           Width = 144
           DataField = 'vl_total_orcamento'
           DataSource = dsOrcamento
+          ReadOnly = True
           Alignment = taRightJustify
           Font.CharSet = ANSI_CHARSET
           Font.Height = -16
@@ -335,14 +290,14 @@ inherited CadOrcamentoF: TCadOrcamentoF
           Font.Quality = fqDraft
           MaxLength = 0
           ParentFont = False
-          TabOrder = 3
+          TabOrder = 1
         end
         object bitbtnAdicionarItem: TBitBtn
           Cursor = crHandPoint
-          Left = 808
+          Left = 792
           Height = 32
           Top = 96
-          Width = 128
+          Width = 144
           Caption = 'Adicionar Item'
           Font.CharSet = ANSI_CHARSET
           Font.Height = -16
@@ -405,7 +360,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
           }
           OnClick = bitbtnAdicionarItemClick
           ParentFont = False
-          TabOrder = 4
+          TabOrder = 2
         end
         object bitbtnExcluirItem: TBitBtn
           Cursor = crHandPoint
@@ -473,8 +428,9 @@ inherited CadOrcamentoF: TCadOrcamentoF
             0606060606060606060606060606060606060606060606060606060606060606
             0606060606060606060606060606060606060606060606060606
           }
+          OnClick = bitbtnExcluirItemClick
           ParentFont = False
-          TabOrder = 5
+          TabOrder = 3
         end
         object DBedtClienteID: TDBEdit
           Left = 120
@@ -492,7 +448,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
           Font.Quality = fqDraft
           MaxLength = 0
           ParentFont = False
-          TabOrder = 6
+          TabOrder = 4
         end
         object speedbtnClienteID: TSpeedButton
           Left = 184
@@ -501,6 +457,48 @@ inherited CadOrcamentoF: TCadOrcamentoF
           Width = 23
           Caption = '...'
           OnClick = speedbtnClienteIDClick
+        end
+        object DBedtDataOrc: TDBDateEdit
+          Left = 263
+          Height = 26
+          Top = 64
+          Width = 177
+          CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+          DateOrder = doNone
+          ButtonCursor = crHandPoint
+          ButtonWidth = 23
+          NumGlyphs = 1
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          MaxLength = 0
+          ParentFont = False
+          TabOrder = 5
+          DataField = 'dt_orcamento'
+          DataSource = dsOrcamento
+        end
+        object DBedtDataVal: TDBDateEdit
+          Left = 263
+          Height = 26
+          Top = 136
+          Width = 177
+          CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+          DateOrder = doNone
+          ButtonCursor = crHandPoint
+          ButtonWidth = 23
+          NumGlyphs = 1
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          MaxLength = 0
+          ParentFont = False
+          TabOrder = 6
+          DataField = 'dt_validade_orcamento'
+          DataSource = dsOrcamento
         end
       end
       object DBGridOrcItens: TDBGrid[3]
@@ -634,6 +632,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
             FieldName = 'vl_total'
           end>
         DataSource = dsOrcamentoItens
+        ReadOnly = True
         TabOrder = 2
       end
     end

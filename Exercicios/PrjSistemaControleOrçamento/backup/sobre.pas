@@ -17,6 +17,7 @@ type
     Label3: TLabel;
     Label4: TLabel;
     Label5: TLabel;
+    procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
   private
 
   public
@@ -29,6 +30,13 @@ var
 implementation
 
 {$R *.lfm}
+
+{ TsobreF }
+
+procedure TsobreF.FormClose(Sender: TObject; var CloseAction: TCloseAction);
+begin
+  CloseAction := caFree;
+end;
 
 end.
 

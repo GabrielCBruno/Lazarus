@@ -6,6 +6,7 @@ object sobreF: TsobreF
   Caption = 'Sobre...'
   ClientHeight = 447
   ClientWidth = 621
+  OnClose = FormClose
   LCLVersion = '3.4.0.0'
   object Label1: TLabel
     Left = 48

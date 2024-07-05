@@ -109,8 +109,8 @@ end;
 
 procedure TDataModule1.qryOrcamentoNewRecord(DataSet: TDataSet);
 begin
-  qryOrcamentodt_orcamento.AsDateTime := now;
-  qryOrcamentodt_validade_orcamento.AsDateTime := now+15;
+  qryOrcamentodt_orcamento.AsDateTime := Date;
+  qryOrcamentodt_validade_orcamento.AsDateTime := Date+15;
 end;
 
 procedure TDataModule1.qryProdutoAfterInsert(DataSet: TDataSet);

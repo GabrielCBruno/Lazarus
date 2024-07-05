@@ -58,7 +58,9 @@ var
 begin
   if edtPesquisar.Text = '' then
   begin
-    ShowMessage('Por favor preencher o campo!');
+    qryClientePesq.Close;
+    qryClientePesq.SQL.Text := 'select * from cliente;';
+    qryClientePesq.Open;
   end
   else
   begin

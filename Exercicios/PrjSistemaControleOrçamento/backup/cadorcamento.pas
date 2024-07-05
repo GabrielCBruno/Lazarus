@@ -16,11 +16,11 @@ type
   TCadOrcamentoF = class(TCadModeloF)
     bitbtnAdicionarItem: TBitBtn;
     bitbtnExcluirItem: TBitBtn;
+    DBedtDataOrc: TDBDateEdit;
     DBedtClienteID: TDBEdit;
+    DBedtDataVal: TDBDateEdit;
     dsOrcamento: TDataSource;
     DBEdit1: TDBEdit;
-    DBdateDtOrc: TDBDateEdit;
-    DBdateDtVal: TDBDateEdit;
     DBeditID: TDBEdit;
     DBGridOrcItens: TDBGrid;
     dsOrcamentoItens: TDataSource;
@@ -35,6 +35,7 @@ type
     procedure bitbtnAdicionarItemClick(Sender: TObject);
     procedure bitbtnCancelarClick(Sender: TObject);
     procedure bitbtnExcluirClick(Sender: TObject);
+    procedure bitbtnExcluirItemClick(Sender: TObject);
     procedure bitbtnFecharClick(Sender: TObject);
     procedure bitbtnGravarClick(Sender: TObject);
     procedure bitbtnNovoClick(Sender: TObject);
@@ -42,7 +43,6 @@ type
     procedure DBGridPrincipalDblClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormShow(Sender: TObject);
-    procedure pagCadastroEnter(Sender: TObject);
     procedure pagCadastroShow(Sender: TObject);
     procedure pagPrincipalChange(Sender: TObject);
     procedure speedbtnClienteIDClick(Sender: TObject);
@@ -154,6 +154,7 @@ begin
      DataModule1.qryOrcamentoItensorcamentoid.AsInteger := StrToInt(DBeditID.Text);
      CadItemOrcF := TCadItemOrcF.Create(Self);
      CadItemOrcF.ShowModal;
+     SomaItens;
 end;
 
 procedure TCadOrcamentoF.bitbtnExcluirClick(Sender: TObject);
@@ -165,6 +166,15 @@ begin
            DataModule1.qryOrcamento.Delete;
            pagPrincipal.ActivePage := pagPesquisa;
       end;
+  end;
+end;
+
+procedure TCadOrcamentoF.bitbtnExcluirItemClick(Sender: TObject);
+begin
+  If  MessageDlg('Você tem certeza que deseja excluir o registro?',mtConfirmation,[mbyes,mbno],0)=mryes then
+  begin
+       DataModule1.qryOrcamentoItens.Delete;
+       SomaItens;
   end;
 end;
 

@@ -237,7 +237,6 @@ object DataModule1: TDataModule1
     Connection = ZConnection1
     AfterInsert = qryOrcamentoAfterInsert
     OnNewRecord = qryOrcamentoNewRecord
-    Active = True
     SQL.Strings = (
       'select *  from orcamento;'
     )
@@ -298,7 +297,6 @@ object DataModule1: TDataModule1
   object qryOrcamentoItens: TZQuery
     Connection = ZConnection1
     AfterInsert = qryOrcamentoItensAfterInsert
-    Active = True
     SQL.Strings = (
       'select * from orcamento_item'
     )

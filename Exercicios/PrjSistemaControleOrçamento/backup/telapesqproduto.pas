@@ -65,8 +65,8 @@ end;
 
 procedure TTelaPesqProdutoF.DBgridPrincipalDblClick(Sender: TObject);
 begin
-     DataModule1.qryOrcamentoItensprodutoid := qryProdutoPesqprodutoid.AsInteger;
-     DataModule1.qryOrcamentoItensprodutodesc := qryProdutoPesqds_produto.AsString;
+     DataModule1.qryOrcamentoItensprodutoid.AsInteger := qryProdutoPesqprodutoid.AsInteger;
+     DataModule1.qryOrcamentoItensprodutodesc.AsString := qryProdutoPesqds_produto.AsString;
      Close;
 end;
 
