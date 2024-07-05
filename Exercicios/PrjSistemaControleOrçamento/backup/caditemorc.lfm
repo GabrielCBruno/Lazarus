@@ -198,6 +198,7 @@ object CadItemOrcF: TCadItemOrcF
     TabOrder = 6
   end
   object speedbtnLocalizarProduto: TSpeedButton
+    Cursor = crHandPoint
     Left = 107
     Height = 22
     Top = 64

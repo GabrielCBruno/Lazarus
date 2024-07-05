@@ -208,7 +208,7 @@ begin
   begin
        cod := StrToInt(edtPesquisar.Text);
        dmPrincipal.DataModule1.qryOrcamento.Close;
-       dmPrincipal.DataModule1.qryOrcamento.SQL.Text := 'select * from orcamento where orcamentoid = ' + IntToStr(cod) + ';';
+       dmPrincipal.DataModule1.qryOrcamento.SQL.Text := 'select * from orcamento where orcamentoid = ' + edtPesquisar.Text + ';';
        dmPrincipal.DataModule1.qryOrcamento.Open;
   end
   else

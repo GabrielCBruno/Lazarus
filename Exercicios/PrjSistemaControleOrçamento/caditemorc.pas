@@ -28,6 +28,7 @@ type
     speedbtnLocalizarProduto: TSpeedButton;
     procedure bitbtnCancelarClick(Sender: TObject);
     procedure bitbtnInserirClick(Sender: TObject);
+    procedure DBedtQuantEnter(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure speedbtnLocalizarProdutoClick(Sender: TObject);
   private
@@ -59,6 +60,14 @@ begin
   DataModule1.qryOrcamentoItensorcamentoid.AsInteger := StrToInt(CadOrcamentoF.DBeditID.Text);
   DataModule1.qryOrcamentoItens.Post;
   Close;
+end;
+
+procedure TCadItemOrcF.DBedtQuantEnter(Sender: TObject);
+var
+  total : Double;
+begin
+  total := StrToFloat(DBedtQuant.Text) + StrToFloat(DBedtVl_Unit.Text);
+  DBedtVl_Total.Text := FloatToStr(total);
 end;
 
 procedure TCadItemOrcF.FormClose(Sender: TObject; var CloseAction: TCloseAction
