@@ -19,9 +19,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="MenuPrincipal"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="62"/>
-        <CursorPos X="3" Y="74"/>
+        <TopLine Value="86"/>
+        <CursorPos X="5" Y="92"/>
         <UsageCount Value="78"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -117,9 +116,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="relClientes"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="37"/>
-        <CursorPos X="6" Y="56"/>
+        <CursorPos Y="37"/>
         <UsageCount Value="37"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -155,11 +155,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="relCategoria"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="-1"/>
         <CursorPos X="18"/>
         <UsageCount Value="21"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="Drivers\lazarus\cadcliente.pas"/>
@@ -311,7 +309,7 @@
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="16">
+    <JumpHistory HistoryIndex="10">
       <Position>
         <Filename Value="relclientes.pas"/>
         <Caret Line="56" Column="6" TopLine="25"/>
@@ -337,25 +335,6 @@
         <Caret Line="56" Column="6" TopLine="25"/>
       </Position>
       <Position>
-        <Filename Value="relcategoria.pas"/>
-      </Position>
-      <Position>
-        <Filename Value="relcategoria.pas"/>
-        <Caret Line="34" Column="3" TopLine="15"/>
-      </Position>
-      <Position>
-        <Filename Value="relcategoria.pas"/>
-        <Caret Line="36" Column="3" TopLine="16"/>
-      </Position>
-      <Position>
-        <Filename Value="relcategoria.pas"/>
-        <Caret Line="37" Column="3" TopLine="16"/>
-      </Position>
-      <Position>
-        <Filename Value="relcategoria.pas"/>
-        <Caret Line="16" Column="8" TopLine="16"/>
-      </Position>
-      <Position>
         <Filename Value="menuprincipal.pas"/>
         <Caret Line="70" Column="25" TopLine="53"/>
       </Position>
@@ -366,10 +345,6 @@
       <Position>
         <Filename Value="menuprincipal.pas"/>
         <Caret Line="76" Column="17" TopLine="64"/>
-      </Position>
-      <Position>
-        <Filename Value="relcategoria.pas"/>
-        <Caret Column="18" TopLine="21"/>
       </Position>
       <Position>
         <Filename Value="menuprincipal.pas"/>
