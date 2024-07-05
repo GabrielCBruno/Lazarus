@@ -1,15 +1,15 @@
 object MenuPrincipalF: TMenuPrincipalF
-  Left = 416
+  Left = 356
   Height = 498
-  Top = 145
+  Top = 144
   Width = 873
   Caption = 'Menu Principal - Sistema de Controle de Orçamentos'
   Menu = MainMenu1
   LCLVersion = '3.4.0.0'
   WindowState = wsMaximized
   object MainMenu1: TMainMenu
-    Left = 360
-    Top = 80
+    Left = 256
+    Top = 64
     object miCadastrar: TMenuItem
       Caption = 'Cadastrar'
       object submiCatergoria: TMenuItem
@@ -46,11 +46,12 @@ object MenuPrincipalF: TMenuPrincipalF
         Caption = 'Produtos'
         OnClick = RelatorioProdutoClick
       end
-      object MenuItem2: TMenuItem
+      object RelatorioOrcamento: TMenuItem
         Caption = 'Orçamento'
       end
-      object MenuItem3: TMenuItem
+      object RelatorioCategoria: TMenuItem
         Caption = 'Categorias'
+        OnClick = RelatorioCategoriaClick
       end
       object MenuItem4: TMenuItem
         Caption = 'Rel Teste Clientes'

@@ -140,6 +140,14 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="TelaPesqCliente"/>
       </Unit>
+      <Unit>
+        <Filename Value="relcategoria.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="relCategoriaF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="relCategoria"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
