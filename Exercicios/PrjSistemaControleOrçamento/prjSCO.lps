@@ -10,7 +10,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="18" Y="16"/>
-        <UsageCount Value="85"/>
+        <UsageCount Value="86"/>
       </Unit>
       <Unit>
         <Filename Value="menuprincipal.pas"/>
@@ -21,7 +21,7 @@
         <UnitName Value="MenuPrincipal"/>
         <TopLine Value="64"/>
         <CursorPos X="21" Y="69"/>
-        <UsageCount Value="85"/>
+        <UsageCount Value="86"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -35,7 +35,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="11"/>
         <CursorPos Y="31"/>
-        <UsageCount Value="85"/>
+        <UsageCount Value="86"/>
       </Unit>
       <Unit>
         <Filename Value="cadcategoria.pas"/>
@@ -47,7 +47,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="108"/>
         <CursorPos X="40" Y="108"/>
-        <UsageCount Value="85"/>
+        <UsageCount Value="86"/>
       </Unit>
       <Unit>
         <Filename Value="dmprincipal.pas"/>
@@ -56,11 +56,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
         <UnitName Value="dmPrincipal"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
         <TopLine Value="103"/>
         <CursorPos X="49" Y="124"/>
-        <UsageCount Value="82"/>
+        <UsageCount Value="83"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -74,7 +73,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="29"/>
         <CursorPos X="3" Y="35"/>
-        <UsageCount Value="76"/>
+        <UsageCount Value="77"/>
       </Unit>
       <Unit>
         <Filename Value="cadproduto.pas"/>
@@ -83,12 +82,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadProduto"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="111"/>
-        <CursorPos X="4" Y="116"/>
-        <UsageCount Value="68"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
+        <CursorPos X="12" Y="115"/>
+        <UsageCount Value="69"/>
       </Unit>
       <Unit>
         <Filename Value="cadusuario.pas"/>
@@ -100,7 +97,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="119"/>
         <CursorPos X="45" Y="122"/>
-        <UsageCount Value="66"/>
+        <UsageCount Value="67"/>
       </Unit>
       <Unit>
         <Filename Value="cadorcamento.pas"/>
@@ -111,7 +108,7 @@
         <UnitName Value="CadOrcamento"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="47" Y="10"/>
-        <UsageCount Value="59"/>
+        <UsageCount Value="60"/>
       </Unit>
       <Unit>
         <Filename Value="relclientes.pas"/>
@@ -123,7 +120,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="37"/>
         <CursorPos Y="37"/>
-        <UsageCount Value="44"/>
+        <UsageCount Value="45"/>
       </Unit>
       <Unit>
         <Filename Value="caditemorc.pas"/>
@@ -135,7 +132,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="62"/>
         <CursorPos X="11" Y="74"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="41"/>
       </Unit>
       <Unit>
         <Filename Value="telapesqcliente.pas"/>
@@ -147,7 +144,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="19"/>
         <CursorPos X="3" Y="39"/>
-        <UsageCount Value="33"/>
+        <UsageCount Value="34"/>
       </Unit>
       <Unit>
         <Filename Value="relcategoria.pas"/>
@@ -158,7 +155,7 @@
         <UnitName Value="relCategoria"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="18"/>
-        <UsageCount Value="28"/>
+        <UsageCount Value="29"/>
       </Unit>
       <Unit>
         <Filename Value="sobre.pas"/>
@@ -166,10 +163,13 @@
         <ComponentName Value="sobreF"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="5"/>
-        <CursorPos X="27" Y="5"/>
-        <UsageCount Value="27"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="10"/>
+        <CursorPos X="90" Y="17"/>
+        <UsageCount Value="28"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="telapesqproduto.pas"/>
@@ -181,7 +181,18 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="51"/>
         <CursorPos X="96" Y="72"/>
-        <UsageCount Value="27"/>
+        <UsageCount Value="28"/>
+      </Unit>
+      <Unit>
+        <Filename Value="telapesqcategoria.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="TelaPesqCategoriaG"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="TelaPesqCategoria"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="43"/>
+        <CursorPos X="10" Y="66"/>
+        <UsageCount Value="22"/>
       </Unit>
       <Unit>
         <Filename Value="Drivers\lazarus\cadcliente.pas"/>
@@ -339,38 +350,59 @@
         <CursorPos X="28" Y="1600"/>
         <UsageCount Value="10"/>
       </Unit>
-      <Unit>
-        <Filename Value="telapesqcategoria.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="TelaPesqCategoriaG"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="TelaPesqCategoria"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="43"/>
-        <CursorPos X="10" Y="66"/>
-        <UsageCount Value="21"/>
-      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="4">
-      <Position>
-        <Filename Value="cadproduto.pas"/>
-        <Caret Line="151" Column="151" TopLine="146"/>
-      </Position>
-      <Position>
-        <Filename Value="cadproduto.pas"/>
-        <Caret Line="153" Column="151" TopLine="148"/>
-      </Position>
-      <Position>
-        <Filename Value="cadproduto.pas"/>
-        <Caret Line="181" Column="26" TopLine="153"/>
-      </Position>
-      <Position>
-        <Filename Value="cadproduto.pas"/>
-        <Caret Line="130" TopLine="111"/>
-      </Position>
+    <JumpHistory HistoryIndex="12">
       <Position>
         <Filename Value="dmprincipal.pas"/>
         <Caret Line="118" Column="52" TopLine="103"/>
+      </Position>
+      <Position>
+        <Filename Value="sobre.pas"/>
+        <Caret Line="5" Column="27" TopLine="5"/>
+      </Position>
+      <Position>
+        <Filename Value="sobre.pas"/>
+        <Caret Line="43" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="sobre.pas"/>
+        <Caret Line="29" Column="101" TopLine="10"/>
+      </Position>
+      <Position>
+        <Filename Value="sobre.pas"/>
+        <Caret Line="23" Column="101" TopLine="10"/>
+      </Position>
+      <Position>
+        <Filename Value="sobre.pas"/>
+        <Caret Line="17" Column="90" TopLine="10"/>
+      </Position>
+      <Position>
+        <Filename Value="sobre.pas"/>
+        <Caret Line="16" Column="90" TopLine="10"/>
+      </Position>
+      <Position>
+        <Filename Value="sobre.pas"/>
+        <Caret Line="17" Column="90" TopLine="10"/>
+      </Position>
+      <Position>
+        <Filename Value="sobre.pas"/>
+        <Caret Line="16" Column="90" TopLine="10"/>
+      </Position>
+      <Position>
+        <Filename Value="sobre.pas"/>
+        <Caret Line="17" Column="90" TopLine="10"/>
+      </Position>
+      <Position>
+        <Filename Value="sobre.pas"/>
+        <Caret Line="16" Column="90" TopLine="10"/>
+      </Position>
+      <Position>
+        <Filename Value="sobre.pas"/>
+        <Caret Line="17" Column="90" TopLine="10"/>
+      </Position>
+      <Position>
+        <Filename Value="sobre.pas"/>
+        <Caret Line="16" Column="90" TopLine="10"/>
       </Position>
     </JumpHistory>
     <RunParams>

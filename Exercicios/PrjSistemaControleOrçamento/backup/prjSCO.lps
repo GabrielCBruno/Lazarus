@@ -56,10 +56,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
         <UnitName Value="dmPrincipal"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="102"/>
-        <CursorPos X="34" Y="112"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="103"/>
+        <CursorPos X="49" Y="124"/>
         <UsageCount Value="82"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="cadcliente.pas"/>
@@ -80,13 +82,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadProduto"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="111"/>
-        <CursorPos X="157" Y="127"/>
+        <CursorPos X="12" Y="115"/>
         <UsageCount Value="68"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="cadusuario.pas"/>
@@ -164,10 +163,13 @@
         <ComponentName Value="sobreF"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="5"/>
-        <CursorPos X="27" Y="5"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="10"/>
+        <CursorPos X="73" Y="22"/>
         <UsageCount Value="27"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="telapesqproduto.pas"/>
@@ -180,6 +182,17 @@
         <TopLine Value="51"/>
         <CursorPos X="96" Y="72"/>
         <UsageCount Value="27"/>
+      </Unit>
+      <Unit>
+        <Filename Value="telapesqcategoria.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="TelaPesqCategoriaG"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="TelaPesqCategoria"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="43"/>
+        <CursorPos X="10" Y="66"/>
+        <UsageCount Value="21"/>
       </Unit>
       <Unit>
         <Filename Value="Drivers\lazarus\cadcliente.pas"/>
@@ -337,34 +350,19 @@
         <CursorPos X="28" Y="1600"/>
         <UsageCount Value="10"/>
       </Unit>
-      <Unit>
-        <Filename Value="telapesqcategoria.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="TelaPesqCategoriaG"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="TelaPesqCategoria"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="43"/>
-        <CursorPos X="10" Y="66"/>
-        <UsageCount Value="20"/>
-      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="3">
+    <JumpHistory HistoryIndex="2">
       <Position>
-        <Filename Value="cadproduto.pas"/>
-        <Caret Line="151" Column="151" TopLine="146"/>
+        <Filename Value="dmprincipal.pas"/>
+        <Caret Line="118" Column="52" TopLine="103"/>
       </Position>
       <Position>
-        <Filename Value="cadproduto.pas"/>
-        <Caret Line="153" Column="151" TopLine="148"/>
+        <Filename Value="sobre.pas"/>
+        <Caret Line="5" Column="27" TopLine="5"/>
       </Position>
       <Position>
-        <Filename Value="cadproduto.pas"/>
-        <Caret Line="181" Column="26" TopLine="153"/>
-      </Position>
-      <Position>
-        <Filename Value="cadproduto.pas"/>
-        <Caret Line="130" TopLine="111"/>
+        <Filename Value="sobre.pas"/>
+        <Caret Line="43" TopLine="22"/>
       </Position>
     </JumpHistory>
     <RunParams>
