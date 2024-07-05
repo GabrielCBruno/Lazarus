@@ -148,6 +148,12 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="relCategoria"/>
       </Unit>
+      <Unit>
+        <Filename Value="sobre.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="sobreF"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

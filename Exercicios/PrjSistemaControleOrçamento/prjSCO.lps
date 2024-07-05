@@ -19,8 +19,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="MenuPrincipal"/>
-        <TopLine Value="86"/>
-        <CursorPos X="5" Y="92"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="64"/>
+        <CursorPos X="21" Y="69"/>
         <UsageCount Value="78"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -116,13 +117,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="relClientes"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="37"/>
         <CursorPos Y="37"/>
         <UsageCount Value="37"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="caditemorc.pas"/>
@@ -306,14 +304,21 @@
         <TopLine Value="69"/>
         <CursorPos X="14" Y="88"/>
         <UsageCount Value="10"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="sobre.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="sobreF"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="19"/>
+        <CursorPos X="11" Y="32"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="10">
-      <Position>
-        <Filename Value="relclientes.pas"/>
-        <Caret Line="56" Column="6" TopLine="25"/>
-      </Position>
+    <JumpHistory HistoryIndex="11">
       <Position>
         <Filename Value="menuprincipal.pas"/>
         <Caret Line="62" Column="27" TopLine="39"/>
@@ -329,10 +334,6 @@
       <Position>
         <Filename Value="menuprincipal.pas"/>
         <Caret Line="69" Column="25" TopLine="52"/>
-      </Position>
-      <Position>
-        <Filename Value="relclientes.pas"/>
-        <Caret Line="56" Column="6" TopLine="25"/>
       </Position>
       <Position>
         <Filename Value="menuprincipal.pas"/>
@@ -353,6 +354,17 @@
       <Position>
         <Filename Value="menuprincipal.pas"/>
         <Caret Line="74" Column="3" TopLine="62"/>
+      </Position>
+      <Position>
+        <Filename Value="sobre.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="98" Column="5" TopLine="92"/>
+      </Position>
+      <Position>
+        <Filename Value="sobre.pas"/>
+        <Caret Column="11"/>
       </Position>
     </JumpHistory>
     <RunParams>

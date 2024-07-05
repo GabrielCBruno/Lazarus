@@ -53,9 +53,6 @@ object MenuPrincipalF: TMenuPrincipalF
         Caption = 'Categorias'
         OnClick = RelatorioCategoriaClick
       end
-      object MenuItem4: TMenuItem
-        Caption = 'Rel Teste Clientes'
-      end
     end
     object miSobre: TMenuItem
       Caption = 'Sobre'

@@ -17,7 +17,6 @@ type
     RelatorioProduto: TMenuItem;
     RelatorioOrcamento: TMenuItem;
     RelatorioCategoria: TMenuItem;
-    MenuItem4: TMenuItem;
     Orcamento: TMenuItem;
     RelatorioCliente: TMenuItem;
     submiCliente: TMenuItem;
