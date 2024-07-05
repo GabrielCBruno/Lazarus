@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, StdCtrls, DBCtrls,
-  Buttons, ZDataset, ZAbstractRODataset, dmPrincipal;
+  Buttons, ZDataset, ZAbstractRODataset, dmPrincipal, TelaPesqProduto;
 
 type
 
@@ -15,7 +15,6 @@ type
   TCadItemOrcF = class(TForm)
     bitbtnCancelar: TBitBtn;
     bitbtnInserir: TBitBtn;
-    dsInserirItem: TDataSource;
     DBedtProdutoId: TDBEdit;
     DBedtDescProduto: TDBEdit;
     DBedtQuant: TDBEdit;
@@ -26,10 +25,7 @@ type
     Label3: TLabel;
     Label4: TLabel;
     Label5: TLabel;
-    qryProdutoItemds_produto: TZRawStringField;
-    qryProdutoItemprodutoid: TZIntegerField;
     speedbtnLocalizarProduto: TSpeedButton;
-    qryProdutoItem: TZQuery;
     procedure bitbtnCancelarClick(Sender: TObject);
     procedure bitbtnInserirClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
@@ -45,18 +41,25 @@ var
 
 implementation
 
+uses
+  CadOrcamento;
+
 {$R *.lfm}
 
 { TCadItemOrcF }
 
 procedure TCadItemOrcF.bitbtnCancelarClick(Sender: TObject);
 begin
+  DataModule1.qryOrcamentoItens.Cancel;
   Close;
 end;
 
 procedure TCadItemOrcF.bitbtnInserirClick(Sender: TObject);
 begin
-  DataModule1.qryOrcamentoItens.Insert;
+  DataModule1.qryOrcamentoItensorcamentoid.AsInteger := StrToInt(CadOrcamentoF.DBeditID.Text);
+  DataModule1.qryOrcamentovl_total_orcamento.AsInteger := StrToInt(DataModule1.qryOrcamentovl_total_orcamento.AsInteger + DataModule1.qryOrcamentoItensvl_total);
+  DataModule1.qryOrcamentoItens.Post;
+  Close;
 end;
 
 procedure TCadItemOrcF.FormClose(Sender: TObject; var CloseAction: TCloseAction
@@ -67,7 +70,8 @@ end;
 
 procedure TCadItemOrcF.speedbtnLocalizarProdutoClick(Sender: TObject);
 begin
-
+  TelaPesqProdutoF := TTelaPesqProdutoF.Create(Self);
+  TelaPesqProdutoF.ShowModal;
 end;
 
 end.

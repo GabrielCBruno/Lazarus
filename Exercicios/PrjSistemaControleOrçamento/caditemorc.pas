@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, StdCtrls, DBCtrls,
-  Buttons, ZDataset, ZAbstractRODataset, dmPrincipal;
+  Buttons, ZDataset, ZAbstractRODataset, dmPrincipal, TelaPesqProduto;
 
 type
 
@@ -41,18 +41,24 @@ var
 
 implementation
 
+uses
+  CadOrcamento;
+
 {$R *.lfm}
 
 { TCadItemOrcF }
 
 procedure TCadItemOrcF.bitbtnCancelarClick(Sender: TObject);
 begin
+  DataModule1.qryOrcamentoItens.Cancel;
   Close;
 end;
 
 procedure TCadItemOrcF.bitbtnInserirClick(Sender: TObject);
 begin
-  DataModule1.qryOrcamentoItens.Insert;
+  DataModule1.qryOrcamentoItensorcamentoid.AsInteger := StrToInt(CadOrcamentoF.DBeditID.Text);
+  DataModule1.qryOrcamentoItens.Post;
+  Close;
 end;
 
 procedure TCadItemOrcF.FormClose(Sender: TObject; var CloseAction: TCloseAction
@@ -63,7 +69,8 @@ end;
 
 procedure TCadItemOrcF.speedbtnLocalizarProdutoClick(Sender: TObject);
 begin
-
+  TelaPesqProdutoF := TTelaPesqProdutoF.Create(Self);
+  TelaPesqProdutoF.ShowModal;
 end;
 
 end.

@@ -1,42 +1,44 @@
 inherited CadOrcamentoF: TCadOrcamentoF
-  Left = 72
+  Left = 498
   Height = 533
-  Top = 35
-  Width = 1191
+  Top = 220
+  Width = 1071
   Caption = 'Orçamentos'
   ClientHeight = 533
-  ClientWidth = 1191
+  ClientWidth = 1071
   OnClose = FormClose
   OnShow = FormShow
   inherited pagPrincipal: TPageControl
     Height = 533
-    Width = 1191
+    Width = 1071
+    ActivePage = pagPesquisa
+    TabIndex = 0
     OnChange = pagPrincipalChange
     inherited pagPesquisa: TTabSheet
       ClientHeight = 505
-      ClientWidth = 1183
+      ClientWidth = 1063
       inherited Panel1: TPanel
-        Width = 1183
-        ClientWidth = 1183
+        Width = 1063
+        ClientWidth = 1063
         inherited bitbtnPesquisar: TBitBtn
           OnClick = bitbtnPesquisarClick
         end
       end
       inherited Panel2: TPanel
         Top = 435
-        Width = 1183
-        ClientWidth = 1183
+        Width = 1063
+        ClientWidth = 1063
         inherited bitbtnNovo: TBitBtn
           OnClick = bitbtnNovoClick
         end
         inherited bitbtnFechar: TBitBtn
-          Left = 1062
+          Left = 942
           OnClick = bitbtnFecharClick
         end
       end
       inherited DBGridPrincipal: TDBGrid
         Height = 355
-        Width = 1183
+        Width = 1063
         Columns = <        
           item
             Alignment = taCenter
@@ -138,12 +140,12 @@ inherited CadOrcamentoF: TCadOrcamentoF
     end
     inherited pagCadastro: TTabSheet
       ClientHeight = 505
-      ClientWidth = 1183
+      ClientWidth = 1063
       OnShow = pagCadastroShow
       inherited Panel3: TPanel
         Top = 435
-        Width = 1183
-        ClientWidth = 1183
+        Width = 1063
+        ClientWidth = 1063
         inherited bitbtnGravar: TBitBtn
           OnClick = bitbtnGravarClick
         end
@@ -151,7 +153,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
           OnClick = bitbtnExcluirClick
         end
         inherited bitbtnCancelar: TBitBtn
-          Left = 1054
+          Left = 934
           OnClick = bitbtnCancelarClick
         end
       end
@@ -168,10 +170,10 @@ inherited CadOrcamentoF: TCadOrcamentoF
         Left = 0
         Height = 176
         Top = 0
-        Width = 1183
+        Width = 1063
         Align = alTop
         ClientHeight = 176
-        ClientWidth = 1183
+        ClientWidth = 1063
         Color = clWhite
         ParentBackground = False
         ParentColor = False
@@ -247,7 +249,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
           ParentFont = False
         end
         object Label6: TLabel
-          Left = 552
+          Left = 592
           Height = 24
           Top = 74
           Width = 166
@@ -261,9 +263,9 @@ inherited CadOrcamentoF: TCadOrcamentoF
           ParentFont = False
         end
         object lblTitulo1: TLabel
-          Left = 504
+          Left = 656
           Height = 41
-          Top = 5
+          Top = 8
           Width = 349
           Caption = 'Cadastro de Orçamento'
           Font.CharSet = ANSI_CHARSET
@@ -318,7 +320,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
           DataSource = dsOrcamento
         end
         object DBEdit1: TDBEdit
-          Left = 560
+          Left = 600
           Height = 26
           Top = 112
           Width = 144
@@ -336,7 +338,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
         end
         object bitbtnAdicionarItem: TBitBtn
           Cursor = crHandPoint
-          Left = 776
+          Left = 808
           Height = 32
           Top = 96
           Width = 128
@@ -406,7 +408,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
         end
         object bitbtnExcluirItem: TBitBtn
           Cursor = crHandPoint
-          Left = 920
+          Left = 968
           Height = 32
           Top = 96
           Width = 112
@@ -480,6 +482,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
           Width = 56
           DataField = 'clienteid'
           DataSource = dsOrcamento
+          Alignment = taRightJustify
           Enabled = False
           Font.CharSet = ANSI_CHARSET
           Font.Height = -16
@@ -503,7 +506,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
         Left = 0
         Height = 259
         Top = 176
-        Width = 1183
+        Width = 1063
         Align = alClient
         Color = clWindow
         Columns = <        
@@ -636,22 +639,12 @@ inherited CadOrcamentoF: TCadOrcamentoF
   end
   object dsOrcamento: TDataSource[1]
     DataSet = DataModule1.qryOrcamento
-    OnDataChange = dsOrcamentoDataChange
-    Left = 1208
-    Top = 120
+    Left = 592
+    Top = 48
   end
-  object qryGenericaOrcamento: TZQuery[2]
-    Connection = DataModule1.ZConnection1
-    SQL.Strings = (
-      'select sum(vl_total) from orcamento_item where orcamentoid = -1;'
-    )
-    Params = <>
-    Left = 1392
-    Top = 56
-  end
-  object dsOrcamentoItens: TDataSource[3]
+  object dsOrcamentoItens: TDataSource[2]
     DataSet = DataModule1.qryOrcamentoItens
-    Left = 1208
-    Top = 56
+    Left = 504
+    Top = 48
   end
 end

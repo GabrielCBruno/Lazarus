@@ -5,9 +5,9 @@ unit CadOrcamento;
 interface
 
 uses
-  Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, ExtCtrls, ComCtrls,
-  StdCtrls, DBCtrls, DBGrids, DBExtCtrls, Buttons, ZDataset, ZAbstractRODataset,
-  DBDateTimePicker, CadModelo, dmPrincipal, CadItemOrc, TelaPesqCliente;
+  Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, ExtCtrls, ComCtrls, StdCtrls, DBCtrls,
+  DBGrids, DBExtCtrls, Buttons, ZDataset, ZAbstractRODataset, DBDateTimePicker, CadModelo, dmPrincipal,
+  CadItemOrc, TelaPesqCliente, TelaPesqProduto;
 
 type
 
@@ -31,7 +31,6 @@ type
     lblCliente: TLabel;
     lblTitulo1: TLabel;
     Panel4: TPanel;
-    qryGenericaOrcamento: TZQuery;
     speedbtnClienteID: TSpeedButton;
     procedure bitbtnAdicionarItemClick(Sender: TObject);
     procedure bitbtnCancelarClick(Sender: TObject);
@@ -41,7 +40,6 @@ type
     procedure bitbtnNovoClick(Sender: TObject);
     procedure bitbtnPesquisarClick(Sender: TObject);
     procedure DBGridPrincipalDblClick(Sender: TObject);
-    procedure dsOrcamentoDataChange(Sender: TObject; Field: TField);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormShow(Sender: TObject);
     procedure pagCadastroShow(Sender: TObject);
@@ -51,6 +49,7 @@ type
 
   public
       procedure AbreOrcItens(orcamentoid : Integer);
+      procedure SomaItens;
       procedure povoarArray ();
       function validarCampos () : Boolean;
   end;
@@ -64,6 +63,25 @@ implementation
 {$R *.lfm}
 
 { TCadOrcamentoF }
+
+procedure TCadOrcamentoF.SomaItens;
+begin
+
+  if not (DataModule1.qryOrcamento.State in [dsEdit, dsInsert]) then
+     DataModule1.qryOrcamento.Edit;
+
+  if not (DataModule1.qryOrcamentoItens.State in [dsEdit, dsInsert]) then
+     DataModule1.qryOrcamentoItens.Edit;
+
+  //Vai pro Primeiro
+  DataModule1.qryOrcamentoItens.First;
+  DataModule1.qryOrcamentovl_total_orcamento.AsFloat := 0;
+  while not DataModule1.qryOrcamentoItens.Eof do
+  begin
+    DataModule1.qryOrcamentovl_total_orcamento.AsFloat := DataModule1.qryOrcamentovl_total_orcamento.AsFloat + DataModule1.qryOrcamentoItensvl_total.AsFloat;
+    DataModule1.qryOrcamentoItens.next;
+  end;
+end;
 
 procedure TCadOrcamentoF.AbreOrcItens(orcamentoid : Integer);
 begin
@@ -83,7 +101,6 @@ begin
                       'FROM ORCAMENTO_ITEM ' +
                       'WHERE ORCAMENTOID = '+ inttostr(orcamentoid) + ' ' +
                       'ORDER BY ORCAMENTOID');
-    //showMessage(DataModule1.qryOrcamentoItem.SQL.Text);
        DataModule1.qryOrcamentoItens.Open;
   end;
 end;
@@ -126,12 +143,14 @@ end;
 
 procedure TCadOrcamentoF.bitbtnCancelarClick(Sender: TObject);
 begin
-  dmPrincipal.DataModule1.qryOrcamento.Cancel;
+  DataModule1.qryOrcamento.Cancel;
   pagPrincipal.ActivePage := pagPesquisa;
 end;
 
 procedure TCadOrcamentoF.bitbtnAdicionarItemClick(Sender: TObject);
 begin
+     DataModule1.qryOrcamentoItens.Insert;
+     DataModule1.qryOrcamentoItensorcamentoid.AsInteger := StrToInt(DBeditID.Text);
      CadItemOrcF := TCadItemOrcF.Create(Self);
      CadItemOrcF.ShowModal;
 end;
@@ -189,17 +208,11 @@ begin
   end;
 end;
 
-
-
 procedure TCadOrcamentoF.DBGridPrincipalDblClick(Sender: TObject);
 begin
   pagPrincipal.ActivePage := pagCadastro;
   AbreOrcItens(DataModule1.qryOrcamentoorcamentoid.AsInteger);
-end;
-
-procedure TCadOrcamentoF.dsOrcamentoDataChange(Sender: TObject; Field: TField);
-begin
-
+  SomaItens;
 end;
 
 procedure TCadOrcamentoF.FormClose(Sender: TObject;

@@ -1,11 +1,12 @@
 object CadItemOrcF: TCadItemOrcF
-  Left = 655
+  Left = 542
   Height = 307
-  Top = 237
+  Top = 241
   Width = 500
   Caption = 'Inserir Item'
   ClientHeight = 307
   ClientWidth = 500
+  Color = clWhite
   OnClose = FormClose
   LCLVersion = '3.4.0.0'
   object Label1: TLabel
@@ -28,8 +29,9 @@ object CadItemOrcF: TCadItemOrcF
     Top = 64
     Width = 62
     DataField = 'produtoid'
-    DataSource = dsInserirItem
+    DataSource = CadOrcamentoF.dsOrcamentoItens
     Alignment = taRightJustify
+    Enabled = False
     Font.CharSet = ANSI_CHARSET
     Font.Height = -16
     Font.Name = 'Arial'
@@ -58,8 +60,9 @@ object CadItemOrcF: TCadItemOrcF
     Height = 26
     Top = 136
     Width = 360
-    DataField = 'ds_produto'
-    DataSource = dsInserirItem
+    DataField = 'produtodesc'
+    DataSource = CadOrcamentoF.dsOrcamentoItens
+    Enabled = False
     Font.CharSet = ANSI_CHARSET
     Font.Height = -16
     Font.Name = 'Arial'
@@ -89,6 +92,7 @@ object CadItemOrcF: TCadItemOrcF
     Top = 208
     Width = 64
     DataField = 'qt_produto'
+    DataSource = CadOrcamentoF.dsOrcamentoItens
     Alignment = taRightJustify
     Font.CharSet = ANSI_CHARSET
     Font.Height = -16
@@ -119,6 +123,7 @@ object CadItemOrcF: TCadItemOrcF
     Top = 208
     Width = 64
     DataField = 'vl_unitario'
+    DataSource = CadOrcamentoF.dsOrcamentoItens
     Alignment = taRightJustify
     Font.CharSet = ANSI_CHARSET
     Font.Height = -16
@@ -149,6 +154,7 @@ object CadItemOrcF: TCadItemOrcF
     Top = 208
     Width = 144
     DataField = 'vl_total'
+    DataSource = CadOrcamentoF.dsOrcamentoItens
     Alignment = taRightJustify
     Font.CharSet = ANSI_CHARSET
     Font.Height = -16
@@ -194,42 +200,9 @@ object CadItemOrcF: TCadItemOrcF
   object speedbtnLocalizarProduto: TSpeedButton
     Left = 107
     Height = 22
-    Top = 68
+    Top = 64
     Width = 23
     Caption = '...'
     OnClick = speedbtnLocalizarProdutoClick
-  end
-  object qryProdutoItem: TZQuery
-    Connection = DataModule1.ZConnection1
-    SQL.Strings = (
-      'select produtoid, ds_produto from produto;'
-    )
-    Params = <>
-    Left = 432
-    Top = 51
-    object qryProdutoItemprodutoid: TZIntegerField
-      FieldKind = fkData
-      FieldName = 'produtoid'
-      Index = 0
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = True
-    end
-    object qryProdutoItemds_produto: TZRawStringField
-      FieldKind = fkData
-      FieldName = 'ds_produto'
-      Index = 1
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = True
-      Size = 50
-    end
-  end
-  object dsInserirItem: TDataSource
-    DataSet = qryProdutoItem
-    Left = 336
-    Top = 51
   end
 end

@@ -10,9 +10,9 @@ uses
 
 type
 
-  { TForm1 }
+  { TrelCategoriaF }
 
-  TForm1 = class(TForm)
+  TrelCategoriaF = class(TForm)
     bitbtnRelCategoria: TBitBtn;
     frDBDataSet1: TfrDBDataSet;
     frRepCategoria: TfrReport;
@@ -25,15 +25,15 @@ type
   end;
 
 var
-  Form1: TForm1;
+  relCategoriaF: TrelCategoriaF;
 
 implementation
 
 {$R *.lfm}
 
-{ TForm1 }
+{ TrelCategoriaF }
 
-procedure TForm1.bitbtnRelCategoriaClick(Sender: TObject);
+procedure TrelCategoriaF.bitbtnRelCategoriaClick(Sender: TObject);
 begin
   frRepCategoria.LoadFromFile('relCategoria.lrf');
   frRepCategoria.PrepareReport;

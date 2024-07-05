@@ -54,6 +54,7 @@ type
     procedure qryCategoriaAfterInsert(DataSet: TDataSet);
     procedure qryClienteAfterInsert(DataSet: TDataSet);
     procedure qryOrcamentoAfterInsert(DataSet: TDataSet);
+    procedure qryOrcamentoItensAfterInsert(DataSet: TDataSet);
     procedure qryOrcamentoNewRecord(DataSet: TDataSet);
     procedure qryProdutoAfterInsert(DataSet: TDataSet);
     procedure qryUsuarioAfterInsert(DataSet: TDataSet);
@@ -99,6 +100,11 @@ end;
 procedure TDataModule1.qryOrcamentoAfterInsert(DataSet: TDataSet);
 begin
   qryOrcamentoorcamentoid.AsInteger := StrToInt(getSequence('orcamento_orcamentoid_seq'));
+end;
+
+procedure TDataModule1.qryOrcamentoItensAfterInsert(DataSet: TDataSet);
+begin
+  qryOrcamentoItensorcamentoitemid.AsInteger := StrToInt(getSequence('orcamento_itens_id'));
 end;
 
 procedure TDataModule1.qryOrcamentoNewRecord(DataSet: TDataSet);

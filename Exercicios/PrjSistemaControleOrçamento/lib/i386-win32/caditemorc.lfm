@@ -1,11 +1,12 @@
 object CadItemOrcF: TCadItemOrcF
-  Left = 524
+  Left = 1180
   Height = 307
-  Top = 159
+  Top = 177
   Width = 500
   Caption = 'Inserir Item'
   ClientHeight = 307
   ClientWidth = 500
+  Color = clWhite
   OnClose = FormClose
   LCLVersion = '3.4.0.0'
   object Label1: TLabel
@@ -28,7 +29,9 @@ object CadItemOrcF: TCadItemOrcF
     Top = 64
     Width = 62
     DataField = 'produtoid'
+    DataSource = CadOrcamentoF.dsOrcamentoItens
     Alignment = taRightJustify
+    Enabled = False
     Font.CharSet = ANSI_CHARSET
     Font.Height = -16
     Font.Name = 'Arial'
@@ -57,7 +60,9 @@ object CadItemOrcF: TCadItemOrcF
     Height = 26
     Top = 136
     Width = 360
-    DataField = 'ds_produto'
+    DataField = 'produtodesc'
+    DataSource = CadOrcamentoF.dsOrcamentoItens
+    Enabled = False
     Font.CharSet = ANSI_CHARSET
     Font.Height = -16
     Font.Name = 'Arial'
@@ -87,6 +92,7 @@ object CadItemOrcF: TCadItemOrcF
     Top = 208
     Width = 64
     DataField = 'qt_produto'
+    DataSource = CadOrcamentoF.dsOrcamentoItens
     Alignment = taRightJustify
     Font.CharSet = ANSI_CHARSET
     Font.Height = -16
@@ -117,6 +123,7 @@ object CadItemOrcF: TCadItemOrcF
     Top = 208
     Width = 64
     DataField = 'vl_unitario'
+    DataSource = CadOrcamentoF.dsOrcamentoItens
     Alignment = taRightJustify
     Font.CharSet = ANSI_CHARSET
     Font.Height = -16
@@ -147,6 +154,7 @@ object CadItemOrcF: TCadItemOrcF
     Top = 208
     Width = 144
     DataField = 'vl_total'
+    DataSource = CadOrcamentoF.dsOrcamentoItens
     Alignment = taRightJustify
     Font.CharSet = ANSI_CHARSET
     Font.Height = -16

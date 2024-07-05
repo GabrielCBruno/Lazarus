@@ -152,7 +152,15 @@
         <Filename Value="sobre.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="sobreF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="telapesqproduto.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="TelaPesqProdutoF"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="TelaPesqProduto"/>
       </Unit>
     </Units>
   </ProjectOptions>

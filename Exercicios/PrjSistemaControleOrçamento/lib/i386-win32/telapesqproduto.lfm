@@ -1,0 +1,337 @@
+object TelaPesqProdutoF: TTelaPesqProdutoF
+  Left = 510
+  Height = 388
+  Top = 295
+  Width = 1150
+  Caption = 'Localizar Produto'
+  ClientHeight = 388
+  ClientWidth = 1150
+  OnClose = FormClose
+  OnCreate = FormCreate
+  LCLVersion = '3.4.0.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 72
+    Top = 0
+    Width = 1150
+    Align = alTop
+    ClientHeight = 72
+    ClientWidth = 1150
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 32
+      Height = 22
+      Top = 24
+      Width = 150
+      Caption = 'Pesquisar por Id: '
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -19
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+    end
+    object edtPesquisar: TEdit
+      Left = 184
+      Height = 26
+      Top = 24
+      Width = 64
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -16
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      NumbersOnly = True
+      ParentFont = False
+      TabOrder = 0
+    end
+    object bitbtnPesquisar: TBitBtn
+      Left = 256
+      Height = 40
+      Top = 16
+      Width = 104
+      Caption = 'Pesquisar'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -16
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Glyph.Data = {
+        76060000424D7606000000000000360400002800000018000000180000000100
+        08000000000040020000320B0000320B000000010000000100005A5A5A005263
+        6B00846B6B009C6B6B00636B7300A5737300A57B73007B7B7B00AD847B00AD8C
+        8400B58C8400EFBD8400BD8C8C00C6948C00BD9C8C00C69C8C00F7BD8C00F7C6
+        8C00738494007B84940084849400C6949400C69C9400CE9C9400D69C9400BDA5
+        9400CEA59400CEAD9400F7C69400F7CE94009C9C9C00BD9C9C00CE9C9C00D69C
+        9C00CEA59C00F7CE9C00F7D69C003973A500C6A5A500ADADA500D6ADA500D6B5
+        A500D6BDA500F7D6A500C6ADAD00D6B5AD00D6C6AD00DEC6AD00E7C6AD00E7CE
+        AD00F7D6AD00F7DEAD00FFDEAD001873B5002173B5006394B500E7CEB500EFD6
+        B500EFDEB500F7DEB500FFE7B5001873BD00E7D6BD00F7DEBD00F7E7BD00FFE7
+        BD00FFEFBD00FFF7BD00EFDEC600EFE7C600FFEFC600FFF7C600FFF7CE003184
+        D600FFFFD600C6CEDE00F7EFDE00FFEFDE00FFFFDE00EFEFE700FFF7E700FFFF
+        E700218CEF00F7F7EF00FFFFEF00FFFFF700FF00FF0031A5FF0039A5FF0042A5
+        FF004AB5FF0052BDFF005ABDFF007BC6FF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00560004165656
+        5656565656565656565656565656565656562725361217565656565656565656
+        5656565656565656565637585236131756565656565656565656565656565656
+        56565A5C59523613175656565656565656565656565656565656575B5C595236
+        13175656565656565656565656565656565656575B5C59523614175656565656
+        565656565656565656565656575B5C5952361417565656565656565656565656
+        5656565656575B5C59523614565656565656565656565656565656565656575B
+        5C5849015656030A222928201556565656565656565656575B5D4B1E02093E48
+        4A4E4A4A44225656565656565656565656564F2C1A484A4E4A4A4A4E4E4E2905
+        565656565656565656562C1A4241484A4A4A4E4E515E5E265656565656565656
+        56560C3A3C32484A4A4E5154555E5E4C065656565656565656562942232B484A
+        4A4E54555E55544E1956565656565656561531421123464A4A4E545555544E4E
+        2E155656565656565615393C0B113B4A4A4E515454514E4E3E0E565656565656
+        56153942100B23464A4E4E4E4E4E4A4E3E0E56565656565656153142230B1C2B
+        464A4E4A4A4A4A4E2E1556565656565656562842413323232B40484A4A4A4A4A
+        0E5656565656565656560C3A4E544C231D1C324040464A440556565656565656
+        5656560F505E5E3F1C0B101C3242460E5656565656565656565656561F4F5448
+        3C33333C4240165656565656565656565656565656062A404242424030155656
+        565656565656565656565656565656080F222216565656565656
+      }
+      OnClick = bitbtnPesquisarClick
+      ParentFont = False
+      TabOrder = 1
+    end
+  end
+  object DBgridPrincipal: TDBGrid
+    Left = 0
+    Height = 316
+    Top = 72
+    Width = 1150
+    Align = alClient
+    Color = clWindow
+    Columns = <    
+      item
+        Alignment = taCenter
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Title.Alignment = taCenter
+        Title.Font.CharSet = ANSI_CHARSET
+        Title.Font.Height = -16
+        Title.Font.Name = 'Arial'
+        Title.Font.Pitch = fpVariable
+        Title.Font.Quality = fqDraft
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'ID'
+        Width = 50
+        FieldName = 'produtoid'
+      end    
+      item
+        Alignment = taCenter
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Title.Alignment = taCenter
+        Title.Font.CharSet = ANSI_CHARSET
+        Title.Font.Height = -16
+        Title.Font.Name = 'Arial'
+        Title.Font.Pitch = fpVariable
+        Title.Font.Quality = fqDraft
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'CategoriaID'
+        Width = 100
+        FieldName = 'categoriaprodutoid'
+      end    
+      item
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Title.Font.CharSet = ANSI_CHARSET
+        Title.Font.Height = -16
+        Title.Font.Name = 'Arial'
+        Title.Font.Pitch = fpVariable
+        Title.Font.Quality = fqDraft
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Descrição'
+        Width = 300
+        FieldName = 'ds_produto'
+      end    
+      item
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Title.Font.CharSet = ANSI_CHARSET
+        Title.Font.Height = -16
+        Title.Font.Name = 'Arial'
+        Title.Font.Pitch = fpVariable
+        Title.Font.Quality = fqDraft
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Observação'
+        Width = 300
+        FieldName = 'obs_produto'
+      end    
+      item
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Title.Alignment = taCenter
+        Title.Font.CharSet = ANSI_CHARSET
+        Title.Font.Height = -16
+        Title.Font.Name = 'Arial'
+        Title.Font.Pitch = fpVariable
+        Title.Font.Quality = fqDraft
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Valor_Venda'
+        Width = 120
+        FieldName = 'vl_venda_produto'
+      end    
+      item
+        Alignment = taRightJustify
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Title.Alignment = taCenter
+        Title.Font.CharSet = ANSI_CHARSET
+        Title.Font.Height = -16
+        Title.Font.Name = 'Arial'
+        Title.Font.Pitch = fpVariable
+        Title.Font.Quality = fqDraft
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Dt.Cadastro'
+        Width = 144
+        FieldName = 'dt_cadastro_produto'
+      end    
+      item
+        Alignment = taCenter
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Title.Alignment = taCenter
+        Title.Font.CharSet = ANSI_CHARSET
+        Title.Font.Height = -16
+        Title.Font.Name = 'Arial'
+        Title.Font.Pitch = fpVariable
+        Title.Font.Quality = fqDraft
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Status'
+        Width = 100
+        FieldName = 'status_produto'
+      end>
+    DataSource = dsProduto
+    ReadOnly = True
+    TabOrder = 1
+    OnDblClick = DBgridPrincipalDblClick
+  end
+  object dsProduto: TDataSource
+    DataSet = qryProdutoPesq
+    Left = 600
+    Top = 16
+  end
+  object qryProdutoPesq: TZQuery
+    Connection = DataModule1.ZConnection1
+    SQL.Strings = (
+      'select * from produto;'
+    )
+    Params = <>
+    Left = 720
+    Top = 16
+    object qryProdutoPesqprodutoid: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'produtoid'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryProdutoPesqcategoriaprodutoid: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'categoriaprodutoid'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryProdutoPesqds_produto: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'ds_produto'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 50
+    end
+    object qryProdutoPesqobs_produto: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'obs_produto'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 300
+    end
+    object qryProdutoPesqvl_venda_produto: TZBCDField
+      FieldKind = fkData
+      FieldName = 'vl_venda_produto'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Precision = 15
+      Currency = False
+      MaxValue = 0
+      MinValue = 0
+      Size = 2
+    end
+    object qryProdutoPesqdt_cadastro_produto: TZDateTimeField
+      FieldKind = fkData
+      FieldName = 'dt_cadastro_produto'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryProdutoPesqstatus_produto: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'status_produto'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 10
+    end
+  end
+end

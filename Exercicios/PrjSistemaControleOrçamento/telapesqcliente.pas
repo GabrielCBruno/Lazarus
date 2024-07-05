@@ -58,7 +58,7 @@ var
 begin
   if edtPesquisar.Text = '' then
   begin
-    ShowMessage('Por favor prencher o campo!');
+    ShowMessage('Por favor preencher o campo!');
   end
   else
   begin

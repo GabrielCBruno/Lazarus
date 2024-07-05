@@ -1,7 +1,7 @@
 object TelaPesqClienteF: TTelaPesqClienteF
-  Left = 319
+  Left = 951
   Height = 347
-  Top = 143
+  Top = 322
   Width = 854
   Caption = 'Pesquisar Cliente'
   ClientHeight = 347
