@@ -256,6 +256,7 @@ object TelaPesqProdutoF: TTelaPesqProdutoF
   end
   object qryProdutoPesq: TZQuery
     Connection = DataModule1.ZConnection1
+    Active = True
     SQL.Strings = (
       'select * from produto;'
     )

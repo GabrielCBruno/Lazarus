@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, DBCtrls, StdCtrls,
-  DBExtCtrls, ZDataset, ZAbstractRODataset, CadModelo, dmPrincipal;
+  DBExtCtrls, Buttons, ZDataset, ZAbstractRODataset, CadModelo, dmPrincipal, TelaPesqCategoria;
 
 type
 
@@ -36,6 +36,7 @@ type
     qryProdutoprodutoid: TZIntegerField;
     qryProdutostatus_produto: TZRawStringField;
     qryProdutovl_venda_produto: TZBCDField;
+    speedbtnCategoria: TSpeedButton;
     procedure bitbtnCancelarClick(Sender: TObject);
     procedure bitbtnExcluirClick(Sender: TObject);
     procedure bitbtnFecharClick(Sender: TObject);
@@ -45,6 +46,7 @@ type
     procedure DBGridPrincipalDblClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormShow(Sender: TObject);
+    procedure speedbtnCategoriaClick(Sender: TObject);
   private
 
   public
@@ -176,6 +178,12 @@ begin
    dmPrincipal.DataModule1.qryProduto.Open;
    povoarArray();
    pagPrincipal.ActivePage := pagPesquisa;
+end;
+
+procedure TCadProdutoF.speedbtnCategoriaClick(Sender: TObject);
+begin
+  TelaPesqCategoriaG := TTelaPesqCategoriaG.Create(Self);
+  TelaPesqCategoriaG.ShowModal;
 end;
 
 end.

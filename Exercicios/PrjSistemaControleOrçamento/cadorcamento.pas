@@ -151,7 +151,7 @@ end;
 procedure TCadOrcamentoF.bitbtnAdicionarItemClick(Sender: TObject);
 begin
      DataModule1.qryOrcamentoItens.Insert;
-     DataModule1.qryOrcamentoItensorcamentoid.AsInteger := StrToInt(DBeditID.Text);
+     DataModule1.qryOrcamentoItensorcamentoid.AsInteger := DataModule1.qryOrcamentoorcamentoid.AsInteger;
      CadItemOrcF := TCadItemOrcF.Create(Self);
      CadItemOrcF.ShowModal;
      SomaItens;

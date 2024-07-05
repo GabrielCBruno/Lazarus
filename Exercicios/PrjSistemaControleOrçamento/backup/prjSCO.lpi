@@ -159,8 +159,16 @@
         <Filename Value="telapesqproduto.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="TelaPesqProdutoF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="TelaPesqProduto"/>
+      </Unit>
+      <Unit>
+        <Filename Value="telapesqcategoria.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="TelaPesqCategoriaG"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="TelaPesqCategoria"/>
       </Unit>
     </Units>
   </ProjectOptions>

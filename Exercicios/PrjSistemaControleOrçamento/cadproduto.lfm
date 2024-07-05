@@ -1,7 +1,7 @@
 inherited CadProdutoF: TCadProdutoF
-  Left = 723
+  Left = 512
   Height = 617
-  Top = 213
+  Top = 164
   Width = 1077
   Caption = 'Cadastro de Produto'
   ClientHeight = 617
@@ -11,8 +11,6 @@ inherited CadProdutoF: TCadProdutoF
   inherited pagPrincipal: TPageControl
     Height = 617
     Width = 1077
-    ActivePage = pagPesquisa
-    TabIndex = 0
     inherited pagPesquisa: TTabSheet
       ClientHeight = 589
       ClientWidth = 1069
@@ -327,6 +325,7 @@ inherited CadProdutoF: TCadProdutoF
         DataField = 'categoriaprodutoid'
         DataSource = dsProduto
         Alignment = taRightJustify
+        Enabled = False
         Font.CharSet = ANSI_CHARSET
         Font.Height = -16
         Font.Name = 'Arial'
@@ -410,11 +409,20 @@ inherited CadProdutoF: TCadProdutoF
         DataField = 'dt_cadastro_produto'
         DataSource = dsProduto
       end
+      object speedbtnCategoria: TSpeedButton[16]
+        Cursor = crHandPoint
+        Left = 480
+        Height = 22
+        Top = 148
+        Width = 23
+        Caption = '...'
+        OnClick = speedbtnCategoriaClick
+      end
     end
   end
   object dsProduto: TDataSource[1]
     DataSet = DataModule1.qryProduto
     Left = 696
-    Top = 40
+    Top = 88
   end
 end

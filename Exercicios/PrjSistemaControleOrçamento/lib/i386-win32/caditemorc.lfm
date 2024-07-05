@@ -1,7 +1,7 @@
 object CadItemOrcF: TCadItemOrcF
-  Left = 699
+  Left = 873
   Height = 307
-  Top = 267
+  Top = 322
   Width = 500
   Caption = 'Inserir Item'
   ClientHeight = 307
@@ -102,7 +102,7 @@ object CadItemOrcF: TCadItemOrcF
     MaxLength = 0
     ParentFont = False
     TabOrder = 2
-    OnEnter = DBedtQuantEnter
+    OnKeyDown = DBedtQuantKeyDown
   end
   object Label4: TLabel
     Left = 176

@@ -1,7 +1,7 @@
 inherited CadOrcamentoF: TCadOrcamentoF
-  Left = 497
+  Left = 595
   Height = 533
-  Top = 218
+  Top = 116
   Width = 1071
   Caption = 'Orçamentos'
   ClientHeight = 533
@@ -290,7 +290,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
           Font.Quality = fqDraft
           MaxLength = 0
           ParentFont = False
-          TabOrder = 1
+          TabOrder = 4
         end
         object bitbtnAdicionarItem: TBitBtn
           Cursor = crHandPoint
@@ -360,7 +360,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
           }
           OnClick = bitbtnAdicionarItemClick
           ParentFont = False
-          TabOrder = 2
+          TabOrder = 5
         end
         object bitbtnExcluirItem: TBitBtn
           Cursor = crHandPoint
@@ -430,12 +430,12 @@ inherited CadOrcamentoF: TCadOrcamentoF
           }
           OnClick = bitbtnExcluirItemClick
           ParentFont = False
-          TabOrder = 3
+          TabOrder = 6
         end
         object DBedtClienteID: TDBEdit
           Left = 120
           Height = 26
-          Top = 130
+          Top = 131
           Width = 56
           DataField = 'clienteid'
           DataSource = dsOrcamento
@@ -448,7 +448,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
           Font.Quality = fqDraft
           MaxLength = 0
           ParentFont = False
-          TabOrder = 4
+          TabOrder = 2
         end
         object speedbtnClienteID: TSpeedButton
           Cursor = crHandPoint
@@ -476,7 +476,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
           Font.Quality = fqDraft
           MaxLength = 0
           ParentFont = False
-          TabOrder = 5
+          TabOrder = 1
           Text = '17/02/2023'
           DataField = 'dt_orcamento'
           DataSource = dsOrcamento
@@ -498,7 +498,7 @@ inherited CadOrcamentoF: TCadOrcamentoF
           Font.Quality = fqDraft
           MaxLength = 0
           ParentFont = False
-          TabOrder = 6
+          TabOrder = 3
           Text = '19/02/2023'
           DataField = 'dt_validade_orcamento'
           DataSource = dsOrcamento

@@ -28,7 +28,8 @@ type
     speedbtnLocalizarProduto: TSpeedButton;
     procedure bitbtnCancelarClick(Sender: TObject);
     procedure bitbtnInserirClick(Sender: TObject);
-    procedure DBedtQuantEnter(Sender: TObject);
+    procedure DBedtQuantKeyDown(Sender: TObject; var Key: Word;
+      Shift: TShiftState);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure speedbtnLocalizarProdutoClick(Sender: TObject);
   private
@@ -57,18 +58,33 @@ end;
 
 procedure TCadItemOrcF.bitbtnInserirClick(Sender: TObject);
 begin
-  DataModule1.qryOrcamentoItensorcamentoid.AsInteger := StrToInt(CadOrcamentoF.DBeditID.Text);
+  DataModule1.qryOrcamentoItensorcamentoid.AsInteger := DataModule1.qryOrcamentoclienteid.AsInteger;
   DataModule1.qryOrcamentoItens.Post;
   Close;
 end;
 
-procedure TCadItemOrcF.DBedtQuantEnter(Sender: TObject);
-var
-  total : Double;
+procedure TCadItemOrcF.DBedtQuantKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+  var
+    total : Double;
+    q : Integer;
 begin
-  total := StrToFloat(DBedtQuant.Text) + StrToFloat(DBedtVl_Unit.Text);
-  DBedtVl_Total.Text := FloatToStr(total);
+  if DBedtQuant.Text = '' then
+  begin
+    q := 0;
+    total := DataModule1.qryOrcamentoItensvl_unitario.AsFloat;
+    total := q * total;
+    DataModule1.qryOrcamentoItensvl_total.AsFloat := total;
+  end
+  else
+  begin
+       q := StrToInt(DBedtQuant.Text);
+       total := DataModule1.qryOrcamentoItensvl_unitario.AsFloat;
+       total := q * total;
+       DataModule1.qryOrcamentoItensvl_total.AsFloat := total;
+  end;
 end;
+
 
 procedure TCadItemOrcF.FormClose(Sender: TObject; var CloseAction: TCloseAction
   );
