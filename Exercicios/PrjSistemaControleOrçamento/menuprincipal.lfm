@@ -48,6 +48,7 @@ object MenuPrincipalF: TMenuPrincipalF
       end
       object RelatorioOrcamento: TMenuItem
         Caption = 'Orçamento'
+        OnClick = RelatorioOrcamentoClick
       end
       object RelatorioCategoria: TMenuItem
         Caption = 'Categorias'

@@ -1,7 +1,7 @@
 object sobreF: TsobreF
-  Left = 368
+  Left = 422
   Height = 447
-  Top = 125
+  Top = 130
   Width = 580
   Caption = 'Sobre...'
   ClientHeight = 447

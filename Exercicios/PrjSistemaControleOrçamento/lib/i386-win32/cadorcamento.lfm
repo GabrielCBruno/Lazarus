@@ -1,7 +1,7 @@
 inherited CadOrcamentoF: TCadOrcamentoF
-  Left = 595
+  Left = 236
   Height = 533
-  Top = 116
+  Top = 138
   Width = 1071
   Caption = 'Orçamentos'
   ClientHeight = 533
@@ -11,6 +11,8 @@ inherited CadOrcamentoF: TCadOrcamentoF
   inherited pagPrincipal: TPageControl
     Height = 533
     Width = 1071
+    ActivePage = pagPesquisa
+    TabIndex = 0
     OnChange = pagPrincipalChange
     inherited pagPesquisa: TTabSheet
       ClientHeight = 505
@@ -477,7 +479,6 @@ inherited CadOrcamentoF: TCadOrcamentoF
           MaxLength = 0
           ParentFont = False
           TabOrder = 1
-          Text = '17/02/2023'
           DataField = 'dt_orcamento'
           DataSource = dsOrcamento
         end
@@ -499,7 +500,6 @@ inherited CadOrcamentoF: TCadOrcamentoF
           MaxLength = 0
           ParentFont = False
           TabOrder = 3
-          Text = '19/02/2023'
           DataField = 'dt_validade_orcamento'
           DataSource = dsOrcamento
         end

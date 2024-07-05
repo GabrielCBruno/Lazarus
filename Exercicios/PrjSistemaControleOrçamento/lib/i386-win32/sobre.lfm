@@ -1,21 +1,21 @@
 object sobreF: TsobreF
-  Left = 291
+  Left = 422
   Height = 447
-  Top = 168
-  Width = 621
+  Top = 130
+  Width = 580
   Caption = 'Sobre...'
   ClientHeight = 447
-  ClientWidth = 621
+  ClientWidth = 580
   OnClose = FormClose
   LCLVersion = '3.4.0.0'
   object Label1: TLabel
-    Left = 48
-    Height = 29
-    Top = 96
-    Width = 412
+    Left = 32
+    Height = 34
+    Top = 112
+    Width = 500
     Caption = 'Sistema de Controle de Orçamentos'
     Font.CharSet = ANSI_CHARSET
-    Font.Height = -24
+    Font.Height = -29
     Font.Name = 'Arial'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -24,12 +24,12 @@ object sobreF: TsobreF
   end
   object Label2: TLabel
     Left = 48
-    Height = 19
-    Top = 160
-    Width = 79
+    Height = 24
+    Top = 168
+    Width = 105
     Caption = 'Versão 1.0'
     Font.CharSet = ANSI_CHARSET
-    Font.Height = -16
+    Font.Height = -21
     Font.Name = 'Arial'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -38,12 +38,12 @@ object sobreF: TsobreF
   end
   object Label3: TLabel
     Left = 48
-    Height = 19
+    Height = 24
     Top = 208
-    Width = 237
+    Width = 314
     Caption = 'Linguagem: Lazarus IDE v2.2.2'
     Font.CharSet = ANSI_CHARSET
-    Font.Height = -16
+    Font.Height = -21
     Font.Name = 'Arial'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -52,12 +52,12 @@ object sobreF: TsobreF
   end
   object Label4: TLabel
     Left = 48
-    Height = 19
+    Height = 24
     Top = 256
-    Width = 270
+    Width = 357
     Caption = 'Banco de Dados: PostgreSql 9.6.24'
     Font.CharSet = ANSI_CHARSET
-    Font.Height = -16
+    Font.Height = -21
     Font.Name = 'Arial'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -68,10 +68,10 @@ object sobreF: TsobreF
     Left = 0
     Height = 31
     Top = 416
-    Width = 621
+    Width = 580
     Align = alBottom
     ClientHeight = 31
-    ClientWidth = 621
+    ClientWidth = 580
     Color = clWhite
     ParentBackground = False
     ParentColor = False
@@ -393,18 +393,18 @@ object sobreF: TsobreF
     }
   end
   object Panel2: TPanel
-    Left = 40
-    Height = 90
+    Left = 96
+    Height = 88
     Top = 8
-    Width = 376
-    ClientHeight = 90
-    ClientWidth = 376
+    Width = 368
+    ClientHeight = 88
+    ClientWidth = 368
     Color = clWhite
     ParentBackground = False
     ParentColor = False
     TabOrder = 1
     object Image2: TImage
-      Left = 8
+      Left = 0
       Height = 74
       Top = 8
       Width = 362

@@ -1,7 +1,7 @@
 object TelaPesqProdutoF: TTelaPesqProdutoF
-  Left = 510
+  Left = 159
   Height = 388
-  Top = 295
+  Top = 132
   Width = 1150
   Caption = 'Localizar Produto'
   ClientHeight = 388
@@ -256,7 +256,6 @@ object TelaPesqProdutoF: TTelaPesqProdutoF
   end
   object qryProdutoPesq: TZQuery
     Connection = DataModule1.ZConnection1
-    Active = True
     SQL.Strings = (
       'select * from produto;'
     )

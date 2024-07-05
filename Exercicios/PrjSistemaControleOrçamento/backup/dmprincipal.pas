@@ -57,6 +57,7 @@ type
     procedure qryOrcamentoItensAfterInsert(DataSet: TDataSet);
     procedure qryOrcamentoNewRecord(DataSet: TDataSet);
     procedure qryProdutoAfterInsert(DataSet: TDataSet);
+    procedure qryProdutoNewRecord(DataSet: TDataSet);
     procedure qryUsuarioAfterInsert(DataSet: TDataSet);
   private
 
@@ -116,6 +117,11 @@ end;
 procedure TDataModule1.qryProdutoAfterInsert(DataSet: TDataSet);
 begin
   qryProdutoprodutoid.AsInteger := StrtoInt(getSequence('produto_produtoid'));
+end;
+
+procedure TDataModule1.qryProdutoNewRecord(DataSet: TDataSet);
+begin
+ qryProdutodt_cadastro_produto.AsDateTime := now;
 end;
 
 procedure TDataModule1.qryUsuarioAfterInsert(DataSet: TDataSet);

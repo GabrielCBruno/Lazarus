@@ -108,7 +108,7 @@ begin
           end
           else
           begin
-            dmPrincipal.DataModule1.qryCliente.Close;
+            DataModule1.qryCliente.Close;
             nome := edtPesquisar.Text;
             nome := UpperCase(nome);
             dmPrincipal.DataModule1.qryCliente.SQL.Text := 'select * from cliente where nome_cliente LIKE ''' + nome + '%'';';

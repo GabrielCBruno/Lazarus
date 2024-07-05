@@ -167,8 +167,16 @@
         <Filename Value="telapesqcategoria.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="TelaPesqCategoriaG"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="TelaPesqCategoria"/>
+      </Unit>
+      <Unit>
+        <Filename Value="relorcamento.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="relOrcamentoF"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="relOrcamento"/>
       </Unit>
     </Units>
   </ProjectOptions>

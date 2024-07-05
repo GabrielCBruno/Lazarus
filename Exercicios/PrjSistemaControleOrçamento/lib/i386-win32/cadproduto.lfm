@@ -1,7 +1,7 @@
 inherited CadProdutoF: TCadProdutoF
-  Left = 251
+  Left = 288
   Height = 617
-  Top = 81
+  Top = 231
   Width = 1077
   Caption = 'Cadastro de Produto'
   ClientHeight = 617
@@ -175,7 +175,7 @@ inherited CadProdutoF: TCadProdutoF
         Top = 519
         Width = 1069
         ClientWidth = 1069
-        TabOrder = 5
+        TabOrder = 7
         inherited bitbtnGravar: TBitBtn
           OnClick = bitbtnGravarClick
         end
@@ -366,7 +366,7 @@ inherited CadProdutoF: TCadProdutoF
         Font.Quality = fqDraft
         MaxLength = 0
         ParentFont = False
-        TabOrder = 4
+        TabOrder = 5
       end
       object DBcbStatus: TDBComboBox[14]
         Left = 592
@@ -405,7 +405,7 @@ inherited CadProdutoF: TCadProdutoF
         Font.Quality = fqDraft
         MaxLength = 0
         ParentFont = False
-        TabOrder = 7
+        TabOrder = 4
         DataField = 'dt_cadastro_produto'
         DataSource = dsProduto
       end

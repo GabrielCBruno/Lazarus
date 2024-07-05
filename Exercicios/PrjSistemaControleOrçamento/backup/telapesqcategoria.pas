@@ -63,6 +63,7 @@ end;
 procedure TTelaPesqCategoriaG.DBGrid1DblClick(Sender: TObject);
 begin
    dmPrincipal.DataModule1.qryProdutocategoriaprodutoid.AsInteger := qryCategoriacategoriaprodutoid.AsInteger;
+   Close;
 end;
 
 procedure TTelaPesqCategoriaG.FormClose(Sender: TObject;

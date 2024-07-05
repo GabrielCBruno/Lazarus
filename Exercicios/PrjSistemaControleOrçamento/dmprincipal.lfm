@@ -2,7 +2,7 @@ object DataModule1: TDataModule1
   OnCreate = DataModuleCreate
   OldCreateOrder = False
   Height = 524
-  HorizontalOffset = 1186
+  HorizontalOffset = 885
   VerticalOffset = 167
   Width = 431
   object ZConnection1: TZConnection
@@ -238,7 +238,6 @@ object DataModule1: TDataModule1
     Connection = ZConnection1
     AfterInsert = qryOrcamentoAfterInsert
     OnNewRecord = qryOrcamentoNewRecord
-    Active = True
     SQL.Strings = (
       'select *  from orcamento;'
     )

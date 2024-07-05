@@ -1,11 +1,11 @@
 object TelaPesqCategoriaG: TTelaPesqCategoriaG
-  Left = 606
-  Height = 432
-  Top = 269
-  Width = 919
+  Left = 427
+  Height = 353
+  Top = 169
+  Width = 561
   Caption = 'Pesquisa de Categoria'
-  ClientHeight = 432
-  ClientWidth = 919
+  ClientHeight = 353
+  ClientWidth = 561
   OnClose = FormClose
   OnCreate = FormCreate
   LCLVersion = '3.4.0.0'
@@ -13,10 +13,10 @@ object TelaPesqCategoriaG: TTelaPesqCategoriaG
     Left = 0
     Height = 96
     Top = 0
-    Width = 919
+    Width = 561
     Align = alTop
     ClientHeight = 96
-    ClientWidth = 919
+    ClientWidth = 561
     TabOrder = 0
     object Label1: TLabel
       Left = 40
@@ -45,6 +45,7 @@ object TelaPesqCategoriaG: TTelaPesqCategoriaG
       TabOrder = 0
     end
     object bitbtnPesquisar: TBitBtn
+      Cursor = crHandPoint
       Left = 288
       Height = 40
       Top = 32
@@ -116,9 +117,9 @@ object TelaPesqCategoriaG: TTelaPesqCategoriaG
   end
   object DBGrid1: TDBGrid
     Left = 0
-    Height = 336
+    Height = 257
     Top = 96
-    Width = 919
+    Width = 561
     Align = alClient
     Color = clWindow
     Columns = <    
@@ -166,8 +167,8 @@ object TelaPesqCategoriaG: TTelaPesqCategoriaG
       'select * from categoria_produto'
     )
     Params = <>
-    Left = 559
-    Top = 32
+    Left = 432
+    Top = 24
     object qryCategoriacategoriaprodutoid: TZIntegerField
       FieldKind = fkData
       FieldName = 'categoriaprodutoid'
@@ -190,7 +191,7 @@ object TelaPesqCategoriaG: TTelaPesqCategoriaG
   end
   object dsCategoria: TDataSource
     DataSet = qryCategoria
-    Left = 664
-    Top = 32
+    Left = 488
+    Top = 24
   end
 end

@@ -1,7 +1,7 @@
 object relCategoriaF: TrelCategoriaF
-  Left = 596
+  Left = 401
   Height = 254
-  Top = 313
+  Top = 217
   Width = 550
   Caption = 'Relatório de Categoria'
   ClientHeight = 254
@@ -79,7 +79,6 @@ object relCategoriaF: TrelCategoriaF
   end
   object qryCategoria: TZQuery
     Connection = DataModule1.ZConnection1
-    Active = True
     SQL.Strings = (
       'select * from categoria_produto;'
     )

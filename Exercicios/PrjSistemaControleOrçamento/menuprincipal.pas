@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, CadCategoria, Cadcliente, CadProduto, CadUsuario, CadOrcamento,
-  relClientes, relProdutos, relCategoria, sobre;
+  relClientes, relProdutos, relCategoria, sobre, relOrcamento;
 
 type
 
@@ -30,6 +30,7 @@ type
     miVendas: TMenuItem;
     procedure miSobreClick(Sender: TObject);
     procedure RelatorioCategoriaClick(Sender: TObject);
+    procedure RelatorioOrcamentoClick(Sender: TObject);
     procedure RelatorioProdutoClick(Sender: TObject);
     procedure OrcamentoClick(Sender: TObject);
     procedure miSairClick(Sender: TObject);
@@ -74,6 +75,12 @@ procedure TMenuPrincipalF.RelatorioCategoriaClick(Sender: TObject);
 begin
   relCategoriaF := TrelCategoriaF.Create(Self);
   relCategoriaF.ShowModal;
+end;
+
+procedure TMenuPrincipalF.RelatorioOrcamentoClick(Sender: TObject);
+begin
+  relOrcamentoF := TrelOrcamentoF.Create(Self);
+  relOrcamentoF.ShowModal;
 end;
 
 procedure TMenuPrincipalF.miSobreClick(Sender: TObject);
