@@ -46,12 +46,12 @@ object MenuPrincipalF: TMenuPrincipalF
         Caption = 'Produtos'
         OnClick = RelatorioProdutoClick
       end
-      object MenuItem2: TMenuItem
+      object RelatorioOrcamento: TMenuItem
         Caption = 'Orçamento'
       end
-      object MenuItem3: TMenuItem
+      object RelatorioCategoria: TMenuItem
         Caption = 'Categorias'
-        OnClick = MenuItem3Click
+        OnClick = RelatorioCategoriaClick
       end
       object MenuItem4: TMenuItem
         Caption = 'Rel Teste Clientes'

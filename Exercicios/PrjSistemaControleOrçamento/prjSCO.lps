@@ -20,8 +20,8 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="MenuPrincipal"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="63"/>
-        <CursorPos X="3" Y="75"/>
+        <TopLine Value="62"/>
+        <CursorPos X="3" Y="74"/>
         <UsageCount Value="78"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -311,7 +311,7 @@
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="14">
+    <JumpHistory HistoryIndex="16">
       <Position>
         <Filename Value="relclientes.pas"/>
         <Caret Line="56" Column="6" TopLine="25"/>
@@ -370,6 +370,14 @@
       <Position>
         <Filename Value="relcategoria.pas"/>
         <Caret Column="18" TopLine="21"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="75" Column="3" TopLine="63"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="74" Column="3" TopLine="62"/>
       </Position>
     </JumpHistory>
     <RunParams>

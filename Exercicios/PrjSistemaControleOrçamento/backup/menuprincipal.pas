@@ -15,8 +15,8 @@ type
   TMenuPrincipalF = class(TForm)
     MainMenu1: TMainMenu;
     RelatorioProduto: TMenuItem;
-    MenuItem2: TMenuItem;
-    MenuItem3: TMenuItem;
+    RelatorioOrcamento: TMenuItem;
+    RelatorioCategoria: TMenuItem;
     MenuItem4: TMenuItem;
     Orcamento: TMenuItem;
     RelatorioCliente: TMenuItem;
@@ -29,7 +29,7 @@ type
     miRelatorios: TMenuItem;
     miCadastrar: TMenuItem;
     miVendas: TMenuItem;
-    procedure MenuItem3Click(Sender: TObject);
+    procedure RelatorioCategoriaClick(Sender: TObject);
     procedure RelatorioProdutoClick(Sender: TObject);
     procedure OrcamentoClick(Sender: TObject);
     procedure miSairClick(Sender: TObject);
@@ -70,7 +70,7 @@ begin
   relProdutosF.ShowModal;
 end;
 
-procedure TMenuPrincipalF.MenuItem3Click(Sender: TObject);
+procedure TMenuPrincipalF.RelatorioCategoriaClick(Sender: TObject);
 begin
   relCategoriaF := TrelCategoriaF.Create(Self);
   relCategoriaF.ShowModal;
