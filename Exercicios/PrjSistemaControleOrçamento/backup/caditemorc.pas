@@ -42,8 +42,7 @@ var
 
 implementation
 
-uses
-  CadOrcamento;
+
 
 {$R *.lfm}
 
@@ -67,14 +66,7 @@ var
     total : Double;
     q : Integer;
 begin
-  if DBedtQuant.Text = '' then
-  begin
-    q := 0;
-    total := DataModule1.qryOrcamentoItensvl_unitario.AsFloat;
-    total := q * total;
-    DataModule1.qryOrcamentoItensvl_total.AsFloat := total;
-  end
-  else
+  if DBedtQuant.Text <> '' then
   begin
        q := StrToInt(DBedtQuant.Text);
        total := DataModule1.qryOrcamentoItensvl_unitario.AsFloat;
