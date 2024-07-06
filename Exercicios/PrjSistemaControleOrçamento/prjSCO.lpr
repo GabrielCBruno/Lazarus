@@ -13,7 +13,7 @@ uses
   Forms, datetimectrls, zcomponent, MenuPrincipal, CadModelo, CadCategoria,
   dmPrincipal, CadCliente, CadProduto, CadUsuario, CadOrcamento, relClientes,
   CadItemOrc, TelaPesqCliente, relCategoria, sobre, TelaPesqProduto, 
-TelaPesqCategoria, relOrcamento;
+TelaPesqCategoria, relOrcamento, login;
 
 {$R *.res}
 
@@ -22,7 +22,7 @@ begin
   Application.Scaled:=True;
   Application.Initialize;
   Application.CreateForm(TDataModule1, DataModule1);
-  Application.CreateForm(TMenuPrincipalF, MenuPrincipalF);
+  Application.CreateForm(TloginF, loginF);
   Application.CreateForm(TCadModeloF, CadModeloF);
   Application.Run;
 end.

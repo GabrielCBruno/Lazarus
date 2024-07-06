@@ -37,6 +37,7 @@ type
     qryProdutoprodutoid: TZIntegerField;
     qryProdutostatus_produto: TZRawStringField;
     qryProdutovl_venda_produto: TZBCDField;
+    qryUsuario: TZQuery;
     qryUsuarioid: TZIntegerField;
     qryUsuarionome_completo: TZRawStringField;
     qryUsuariosenha: TZRawStringField;
@@ -45,7 +46,6 @@ type
     qryGenerica: TZQuery;
     qryCliente: TZQuery;
     qryProduto: TZQuery;
-    qryUsuario: TZQuery;
     qryCategoria: TZQuery;
     qryOrcamento: TZQuery;
     qryOrcamentoItens: TZQuery;

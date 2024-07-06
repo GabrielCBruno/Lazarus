@@ -2,8 +2,8 @@ object DataModule1: TDataModule1
   OnCreate = DataModuleCreate
   OldCreateOrder = False
   Height = 524
-  HorizontalOffset = 885
-  VerticalOffset = 167
+  HorizontalOffset = 556
+  VerticalOffset = 87
   Width = 431
   object ZConnection1: TZConnection
     ControlsCodePage = cCP_UTF8
@@ -154,55 +154,6 @@ object DataModule1: TDataModule1
       ReadOnly = False
       Required = True
       Size = 10
-    end
-  end
-  object qryUsuario: TZQuery
-    Connection = ZConnection1
-    AfterInsert = qryUsuarioAfterInsert
-    SQL.Strings = (
-      'select * from usuarios;'
-    )
-    Params = <>
-    Left = 224
-    Top = 424
-    object qryUsuarioid: TZIntegerField
-      FieldKind = fkData
-      FieldName = 'id'
-      Index = 0
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = False
-    end
-    object qryUsuariousuario: TZRawStringField
-      FieldKind = fkData
-      FieldName = 'usuario'
-      Index = 1
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = False
-      Size = 30
-    end
-    object qryUsuarionome_completo: TZRawStringField
-      FieldKind = fkData
-      FieldName = 'nome_completo'
-      Index = 2
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = False
-      Size = 60
-    end
-    object qryUsuariosenha: TZRawStringField
-      FieldKind = fkData
-      FieldName = 'senha'
-      Index = 3
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = False
-      Size = 50
     end
   end
   object qryCategoria: TZQuery

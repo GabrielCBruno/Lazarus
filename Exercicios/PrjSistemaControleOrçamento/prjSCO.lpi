@@ -178,6 +178,12 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="relOrcamento"/>
       </Unit>
+      <Unit>
+        <Filename Value="login.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="loginF"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

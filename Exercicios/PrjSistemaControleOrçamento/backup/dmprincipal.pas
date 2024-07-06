@@ -45,7 +45,6 @@ type
     qryGenerica: TZQuery;
     qryCliente: TZQuery;
     qryProduto: TZQuery;
-    qryUsuario: TZQuery;
     qryCategoria: TZQuery;
     qryOrcamento: TZQuery;
     qryOrcamentoItens: TZQuery;
@@ -110,12 +109,12 @@ end;
 
 procedure TDataModule1.qryOrcamentoNewRecord(DataSet: TDataSet);
 var
-  data : String;
+  dataFormt : String;
 begin
      dataFormt := FormatDateTime('dd/mm/yyyy', now);
-     qryOrcamentodt_orcamento.AsDateTime := StrToDate(data);
+     qryOrcamentodt_orcamento.AsDateTime := StrToDate(dataFormt);
      dataFormt := FormatDateTime('dd/mm/yyyy', now+15);
-     qryOrcamentodt_validade_orcamento.AsDateTime := StrToDate(data);
+     qryOrcamentodt_validade_orcamento.AsDateTime := StrToDate(dataFormt);
 end;
 
 procedure TDataModule1.qryProdutoAfterInsert(DataSet: TDataSet);
