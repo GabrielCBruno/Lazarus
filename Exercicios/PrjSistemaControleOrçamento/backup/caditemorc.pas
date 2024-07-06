@@ -67,7 +67,7 @@ var
     total : Double;
     q : Integer;
 begin
-  {if DBedtQuant.Text = '' then
+  if DBedtQuant.Text = '' then
   begin
     q := 0;
     total := DataModule1.qryOrcamentoItensvl_unitario.AsFloat;
@@ -80,8 +80,7 @@ begin
        total := DataModule1.qryOrcamentoItensvl_unitario.AsFloat;
        total := q * total;
        DataModule1.qryOrcamentoItensvl_total.AsFloat := total;
-  end;}
-  //ShowMessage('teste');
+  end;
 end;
 
 procedure TCadItemOrcF.FormClose(Sender: TObject; var CloseAction: TCloseAction

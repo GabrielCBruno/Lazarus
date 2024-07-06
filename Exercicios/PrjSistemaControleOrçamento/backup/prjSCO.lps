@@ -56,7 +56,6 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
         <UnitName Value="dmPrincipal"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
         <TopLine Value="103"/>
         <CursorPos X="31" Y="116"/>
@@ -131,8 +130,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadItemOrc"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="74"/>
+        <TopLine Value="64"/>
         <CursorPos X="7" Y="83"/>
         <UsageCount Value="45"/>
         <Loaded Value="True"/>

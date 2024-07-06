@@ -156,8 +156,8 @@ object CadItemOrcF: TCadItemOrcF
     Width = 144
     DataField = 'vl_total'
     DataSource = CadOrcamentoF.dsOrcamentoItens
-    ReadOnly = True
     Alignment = taRightJustify
+    Enabled = False
     Font.CharSet = ANSI_CHARSET
     Font.Height = -16
     Font.Name = 'Arial'
