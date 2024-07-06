@@ -7,7 +7,7 @@ interface
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, ExtCtrls, ComCtrls, StdCtrls, DBCtrls,
   DBGrids, DBExtCtrls, Buttons, ZDataset, ZAbstractRODataset, DBDateTimePicker, CadModelo, dmPrincipal,
-  CadItemOrc, TelaPesqCliente, TelaPesqProduto;
+  CadItemOrc, TelaPesqCliente, TelaPesqProduto, CadItemOrc;
 
 type
 

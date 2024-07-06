@@ -1,6 +1,6 @@
 inherited CadClienteF: TCadClienteF
-  Left = 249
-  Top = 132
+  Left = 252
+  Top = 86
   Width = 999
   Caption = 'Cadastro de Cliente'
   ClientWidth = 999
@@ -153,13 +153,11 @@ inherited CadClienteF: TCadClienteF
         inherited bitbtnExcluir: TBitBtn
           Width = 83
           OnClick = bitbtnExcluirClick
-          TabOrder = 2
         end
         inherited bitbtnCancelar: TBitBtn
           Left = 864
           Width = 105
           OnClick = bitbtnCancelarClick
-          TabOrder = 1
         end
       end
       inherited lblTitulo: TLabel

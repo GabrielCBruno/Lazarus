@@ -24,9 +24,6 @@ begin
   Application.CreateForm(TDataModule1, DataModule1);
   Application.CreateForm(TMenuPrincipalF, MenuPrincipalF);
   Application.CreateForm(TCadModeloF, CadModeloF);
-  Application.CreateForm(TTelaPesqProdutoF, TelaPesqProdutoF);
-  Application.CreateForm(TTelaPesqCategoriaG, TelaPesqCategoriaG);
-  Application.CreateForm(TrelOrcamentoF, relOrcamentoF);
   Application.Run;
 end.
 

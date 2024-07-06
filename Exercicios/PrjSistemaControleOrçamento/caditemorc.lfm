@@ -102,7 +102,7 @@ object CadItemOrcF: TCadItemOrcF
     MaxLength = 0
     ParentFont = False
     TabOrder = 2
-    OnKeyDown = DBedtQuantKeyDown
+    OnKeyPress = DBedtQuantKeyPress
   end
   object Label4: TLabel
     Left = 176
@@ -157,6 +157,7 @@ object CadItemOrcF: TCadItemOrcF
     DataField = 'vl_total'
     DataSource = CadOrcamentoF.dsOrcamentoItens
     Alignment = taRightJustify
+    Enabled = False
     Font.CharSet = ANSI_CHARSET
     Font.Height = -16
     Font.Name = 'Arial'

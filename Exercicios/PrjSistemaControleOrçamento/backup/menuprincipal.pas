@@ -5,14 +5,16 @@ unit MenuPrincipal;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, CadCategoria, Cadcliente, CadProduto, CadUsuario, CadOrcamento,
-  relClientes, relProdutos, relCategoria, sobre;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, StdCtrls,
+  CadCategoria, Cadcliente, CadProduto, CadUsuario, CadOrcamento, relClientes,
+  relProdutos, relCategoria, sobre, relOrcamento;
 
 type
 
   { TMenuPrincipalF }
 
   TMenuPrincipalF = class(TForm)
+    Button1: TButton;
     MainMenu1: TMainMenu;
     RelatorioProduto: TMenuItem;
     RelatorioOrcamento: TMenuItem;
@@ -28,6 +30,7 @@ type
     miRelatorios: TMenuItem;
     miCadastrar: TMenuItem;
     miVendas: TMenuItem;
+    procedure Button1Click(Sender: TObject);
     procedure miSobreClick(Sender: TObject);
     procedure RelatorioCategoriaClick(Sender: TObject);
     procedure RelatorioOrcamentoClick(Sender: TObject);
@@ -79,13 +82,24 @@ end;
 
 procedure TMenuPrincipalF.RelatorioOrcamentoClick(Sender: TObject);
 begin
-
+  relOrcamentoF := TrelOrcamentoF.Create(Self);
+  relOrcamentoF.ShowModal;
 end;
 
 procedure TMenuPrincipalF.miSobreClick(Sender: TObject);
 begin
    sobreF := TsobreF.Create(Self);
    sobreF.ShowModal;
+end;
+
+procedure TMenuPrincipalF.Button1Click(Sender: TObject);
+var
+  data : TDateTime;
+  dataEdt : String;
+begin
+   data := now;
+   dataEdt := FormatDateTime('dd/mm/yyyy', data);
+   ShowMessage('teste: ' + dataEdt);
 end;
 
 procedure TMenuPrincipalF.submiCatergoriaClick(Sender: TObject);

@@ -5,8 +5,9 @@ unit MenuPrincipal;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, CadCategoria, Cadcliente, CadProduto, CadUsuario, CadOrcamento,
-  relClientes, relProdutos, relCategoria, sobre, relOrcamento;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, StdCtrls,
+  CadCategoria, Cadcliente, CadProduto, CadUsuario, CadOrcamento, relClientes,
+  relProdutos, relCategoria, sobre, relOrcamento;
 
 type
 
@@ -28,6 +29,7 @@ type
     miRelatorios: TMenuItem;
     miCadastrar: TMenuItem;
     miVendas: TMenuItem;
+    procedure Button1Click(Sender: TObject);
     procedure miSobreClick(Sender: TObject);
     procedure RelatorioCategoriaClick(Sender: TObject);
     procedure RelatorioOrcamentoClick(Sender: TObject);
@@ -87,6 +89,16 @@ procedure TMenuPrincipalF.miSobreClick(Sender: TObject);
 begin
    sobreF := TsobreF.Create(Self);
    sobreF.ShowModal;
+end;
+
+procedure TMenuPrincipalF.Button1Click(Sender: TObject);
+var
+  data : TDateTime;
+  dataEdt : String;
+begin
+   data := now;
+   dataEdt := FormatDateTime('dd/mm/yyyy', data);
+   ShowMessage('teste: ' + dataEdt);
 end;
 
 procedure TMenuPrincipalF.submiCatergoriaClick(Sender: TObject);
