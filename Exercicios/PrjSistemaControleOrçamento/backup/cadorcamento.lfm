@@ -11,6 +11,8 @@ inherited CadOrcamentoF: TCadOrcamentoF
   inherited pagPrincipal: TPageControl
     Height = 520
     Width = 1100
+    ActivePage = pagPesquisa
+    TabIndex = 0
     OnChange = pagPrincipalChange
     inherited pagPesquisa: TTabSheet
       ClientHeight = 492

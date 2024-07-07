@@ -197,7 +197,6 @@ begin
   pagPrincipal.ActivePage := pagCadastro;
   DataModule1.qryOrcamento.Insert;
   AbreOrcItens(DataModule1.qryOrcamentoorcamentoid.AsInteger);
-
 end;
 
 procedure TCadOrcamentoF.bitbtnPesquisarClick(Sender: TObject);

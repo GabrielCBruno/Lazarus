@@ -58,6 +58,7 @@ object loginF: TloginF
     Font.Name = 'Arial'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
+    HideSelection = False
     ParentFont = False
     TabOrder = 1
   end

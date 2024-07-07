@@ -1,7 +1,7 @@
 object CadItemOrcF: TCadItemOrcF
-  Left = 451
+  Left = 444
   Height = 307
-  Top = 195
+  Top = 201
   Width = 500
   Caption = 'Inserir Item'
   ClientHeight = 307

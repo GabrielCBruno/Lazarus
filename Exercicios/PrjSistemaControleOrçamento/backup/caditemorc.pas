@@ -42,7 +42,8 @@ var
 
 implementation
 
-
+uses
+  CadOrcamento;
 
 {$R *.lfm}
 

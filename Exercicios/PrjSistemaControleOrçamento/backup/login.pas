@@ -30,7 +30,7 @@ type
   private
 
   public
-     procedure TloginF.validarCampos ();
+
   end;
 
 var
@@ -41,11 +41,6 @@ implementation
 {$R *.lfm}
 
 { TloginF }
-
-procedure TloginF.validarCampos ();
-begin
-
-end;
 
 procedure TloginF.bitbtnSairClick(Sender: TObject);
 begin
