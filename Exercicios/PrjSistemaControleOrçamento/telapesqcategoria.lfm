@@ -116,6 +116,7 @@ object TelaPesqCategoriaG: TTelaPesqCategoriaG
     end
   end
   object DBGrid1: TDBGrid
+    Cursor = crHandPoint
     Left = 0
     Height = 257
     Top = 96

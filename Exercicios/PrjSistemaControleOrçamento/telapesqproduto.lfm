@@ -116,6 +116,7 @@ object TelaPesqProdutoF: TTelaPesqProdutoF
     end
   end
   object DBgridPrincipal: TDBGrid
+    Cursor = crHandPoint
     Left = 0
     Height = 316
     Top = 72

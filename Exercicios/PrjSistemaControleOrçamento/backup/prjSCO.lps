@@ -55,12 +55,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
         <UnitName Value="dmPrincipal"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="103"/>
         <CursorPos X="12" Y="110"/>
         <UsageCount Value="89"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="cadcliente.pas"/>
@@ -93,11 +91,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadUsuario"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="87"/>
         <CursorPos X="32" Y="96"/>
         <UsageCount Value="73"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="cadorcamento.pas"/>
@@ -106,9 +103,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadOrcamento"/>
-        <EditorIndex Value="4"/>
-        <TopLine Value="148"/>
-        <CursorPos X="6" Y="153"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="151"/>
+        <CursorPos X="55" Y="158"/>
         <UsageCount Value="66"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -132,10 +130,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadItemOrc"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="37"/>
-        <CursorPos X="3" Y="45"/>
+        <TopLine Value="40"/>
+        <CursorPos X="15" Y="46"/>
         <UsageCount Value="47"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -208,6 +205,19 @@
         <TopLine Value="4"/>
         <CursorPos X="56" Y="20"/>
         <UsageCount Value="25"/>
+      </Unit>
+      <Unit>
+        <Filename Value="login.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="loginF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="26"/>
+        <CursorPos X="36" Y="62"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="Drivers\lazarus\cadcliente.pas"/>
@@ -373,20 +383,8 @@
         <EditorIndex Value="-1"/>
         <UsageCount Value="20"/>
       </Unit>
-      <Unit>
-        <Filename Value="login.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="loginF"/>
-        <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="26"/>
-        <CursorPos X="36" Y="62"/>
-        <UsageCount Value="21"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="25">
+    <JumpHistory HistoryIndex="22">
       <Position>
         <Filename Value="menuprincipal.pas"/>
         <Caret Line="101" Column="47" TopLine="101"/>
@@ -431,10 +429,6 @@
         <Caret Line="50" Column="18" TopLine="30"/>
       </Position>
       <Position>
-        <Filename Value="dmprincipal.pas"/>
-        <Caret Line="109" Column="32" TopLine="103"/>
-      </Position>
-      <Position>
         <Filename Value="login.pas"/>
         <Caret Line="52" Column="26" TopLine="33"/>
       </Position>
@@ -445,14 +439,6 @@
       <Position>
         <Filename Value="login.pas"/>
         <Caret Line="56" Column="23" TopLine="38"/>
-      </Position>
-      <Position>
-        <Filename Value="dmprincipal.pas"/>
-        <Caret Line="108" Column="5" TopLine="102"/>
-      </Position>
-      <Position>
-        <Filename Value="dmprincipal.pas"/>
-        <Caret Line="110" Column="12" TopLine="103"/>
       </Position>
       <Position>
         <Filename Value="login.pas"/>

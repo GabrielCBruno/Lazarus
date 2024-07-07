@@ -1,7 +1,7 @@
 inherited CadProdutoF: TCadProdutoF
-  Left = 317
+  Left = 288
   Height = 617
-  Top = 198
+  Top = 231
   Width = 1077
   Caption = 'Cadastro de Produto'
   ClientHeight = 617
