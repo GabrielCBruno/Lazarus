@@ -1,11 +1,11 @@
 object loginF: TloginF
-  Left = 481
+  Left = 476
   Height = 246
   Top = 216
-  Width = 401
+  Width = 406
   Caption = 'Tela de Login'
   ClientHeight = 246
-  ClientWidth = 401
+  ClientWidth = 406
   OnClose = FormClose
   OnCreate = FormCreate
   LCLVersion = '3.4.0.0'
@@ -45,6 +45,7 @@ object loginF: TloginF
     Font.Name = 'Arial'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
+    MaxLength = 22
     ParentFont = False
     TabOrder = 0
   end
@@ -53,12 +54,15 @@ object loginF: TloginF
     Height = 30
     Top = 111
     Width = 232
+    EchoMode = emPassword
     Font.CharSet = ANSI_CHARSET
     Font.Height = -19
     Font.Name = 'Arial'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
+    MaxLength = 22
     ParentFont = False
+    PasswordChar = '*'
     TabOrder = 1
   end
   object bitbtnEntrar: TBitBtn
