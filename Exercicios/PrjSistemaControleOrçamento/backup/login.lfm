@@ -45,6 +45,7 @@ object loginF: TloginF
     Font.Name = 'Arial'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
+    MaxLength = 22
     ParentFont = False
     TabOrder = 0
   end

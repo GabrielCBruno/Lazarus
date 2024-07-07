@@ -61,9 +61,12 @@ procedure TloginF.bitbtnEntrarClick(Sender: TObject);
 var
   usuario, senha : String;
 begin
-  usuario := qryUsuariosusuario.AsString;
-  senha := qryUsuariossenha.AsString;
-  if (edtUsuario.Text = usuario) and (edtSenha.Text = senha) then
+  usuario := edtUsuario.Text;
+  senha := edtSenha.Text;
+  qryUsuarios.Close;
+  qryUsuarios.SQL.Text := 'select usuario, senha from usuarios where usuario = ''' + usuario + ''' and senha = ''' + senha + ''';';
+  qryUsuarios.Open;
+  if (usuario = qryUsuariosusuario.AsString) and (senha = qryUsuariossenha.AsString) then
   begin
      MenuPrincipalF := TMenuPrincipalF.Create(Self);
      MenuPrincipalF.ShowModal;

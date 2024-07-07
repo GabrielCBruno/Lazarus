@@ -14,7 +14,6 @@ type
   { TMenuPrincipalF }
 
   TMenuPrincipalF = class(TForm)
-    Button1: TButton;
     MainMenu1: TMainMenu;
     RelatorioProduto: TMenuItem;
     RelatorioOrcamento: TMenuItem;
