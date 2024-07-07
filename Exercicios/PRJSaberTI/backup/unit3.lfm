@@ -1,0 +1,21 @@
+object Form2: TForm2
+  Left = 459
+  Height = 347
+  Top = 135
+  Width = 559
+  Caption = 'Form2'
+  ClientHeight = 347
+  ClientWidth = 559
+  Color = clWhite
+  LCLVersion = '3.4.0.0'
+  object PaintBox1: TPaintBox
+    Left = 0
+    Height = 347
+    Top = 0
+    Width = 559
+    Align = alClient
+    Color = clBlue
+    ParentColor = False
+    OnPaint = PaintBox1Paint
+  end
+end

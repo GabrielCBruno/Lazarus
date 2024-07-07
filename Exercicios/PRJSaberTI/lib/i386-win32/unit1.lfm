@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 240
+  Left = 366
   Height = 562
-  Top = 90
+  Top = 116
   Width = 847
   Caption = 'Form1'
   ClientHeight = 562
@@ -423,6 +423,16 @@ object Form1: TForm1
           ParentFont = False
           TabOrder = 3
         end
+      end
+      object PaintBox1: TPaintBox
+        Left = 112
+        Height = 199
+        Top = 72
+        Width = 260
+        Align = alCustom
+        Color = 16744576
+        ParentColor = False
+        OnPaint = PaintBox1Paint
       end
     end
   end

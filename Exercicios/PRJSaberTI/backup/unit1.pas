@@ -35,6 +35,7 @@ type
     Label5: TLabel;
     lblTitulo: TLabel;
     pagPrincipal: TPageControl;
+    PaintBox1: TPaintBox;
     Panel1: TPanel;
     Panel2: TPanel;
     Panel3: TPanel;
@@ -55,6 +56,7 @@ type
     procedure DBGrid1DblClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormShow(Sender: TObject);
+    procedure PaintBox1Paint(Sender: TObject);
   private
 
   public
@@ -187,6 +189,20 @@ procedure TForm1.FormShow(Sender: TObject);
 begin
   qryCliente.Open;
   pagPrincipal.ActivePage := tabsPesquisar;
+end;
+
+procedure TForm1.PaintBox1Paint(Sender: TObject);
+var
+  Rect: TRect;
+  Step, I: Integer;
+  StartColor, EndColor, BlendColor: TColor;
+begin
+  Rect := PaintBox1.ClientRect;
+  StartColor := clSkyBlue; // Cor inicial do degradê
+  EndColor := clNavy;      // Cor final do degradê
+
+  Step := Rect.Height div 256; // Divisão do retângulo
+  for I := 0 to 255 do
 end;
 
 end.
