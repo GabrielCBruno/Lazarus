@@ -1,13 +1,14 @@
 object CadItemOrcF: TCadItemOrcF
-  Left = 451
+  Left = 743
   Height = 307
-  Top = 195
+  Top = 214
   Width = 500
   Caption = 'Inserir Item'
   ClientHeight = 307
   ClientWidth = 500
   Color = clWhite
   OnClose = FormClose
+  OnShow = FormShow
   LCLVersion = '3.4.0.0'
   object Label1: TLabel
     Left = 32

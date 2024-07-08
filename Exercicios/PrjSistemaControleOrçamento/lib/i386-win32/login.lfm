@@ -6,6 +6,7 @@ object loginF: TloginF
   Caption = 'Tela de Login'
   ClientHeight = 246
   ClientWidth = 402
+  Color = clWhite
   OnClose = FormClose
   OnCreate = FormCreate
   LCLVersion = '3.4.0.0'

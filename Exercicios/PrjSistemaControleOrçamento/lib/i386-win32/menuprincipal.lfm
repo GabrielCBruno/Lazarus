@@ -1,9 +1,10 @@
 object MenuPrincipalF: TMenuPrincipalF
-  Left = 399
+  Left = 459
   Height = 498
-  Top = 75
+  Top = 148
   Width = 873
-  Caption = 'Menu Principal - Sistema de Controle de Orçamentos'
+  Caption = 'Sistema de Controle de Orçamentos'
+  Color = clWhite
   Menu = MainMenu1
   LCLVersion = '3.4.0.0'
   WindowState = wsMaximized

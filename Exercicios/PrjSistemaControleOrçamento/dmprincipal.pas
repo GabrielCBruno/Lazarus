@@ -125,7 +125,7 @@ end;
 
 procedure TDataModule1.qryProdutoNewRecord(DataSet: TDataSet);
 begin
- qryProdutodt_cadastro_produto.AsDateTime := now;
+ qryProdutodt_cadastro_produto.AsDateTime := StrToDate(FormatDateTime('dd/mm/yyyy', now));
 end;
 
 procedure TDataModule1.qryUsuarioAfterInsert(DataSet: TDataSet);

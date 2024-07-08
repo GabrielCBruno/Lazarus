@@ -1,11 +1,12 @@
 object sobreF: TsobreF
-  Left = 422
+  Left = 775
   Height = 447
-  Top = 130
+  Top = 256
   Width = 580
   Caption = 'Sobre...'
   ClientHeight = 447
   ClientWidth = 580
+  Color = clWhite
   OnClose = FormClose
   LCLVersion = '3.4.0.0'
   object Label1: TLabel

@@ -37,6 +37,7 @@ type
     qryProdutoprodutoid: TZIntegerField;
     qryProdutostatus_produto: TZRawStringField;
     qryProdutovl_venda_produto: TZBCDField;
+    qryUsuario: TZQuery;
     qryUsuarioid: TZIntegerField;
     qryUsuarionome_completo: TZRawStringField;
     qryUsuariosenha: TZRawStringField;
@@ -124,7 +125,7 @@ end;
 
 procedure TDataModule1.qryProdutoNewRecord(DataSet: TDataSet);
 begin
- qryProdutodt_cadastro_produto.AsDateTime := now;
+ qryProdutodt_cadastro_produto.AsDateTime := FormatDateTime('dd/mm/yyyy', now);
 end;
 
 procedure TDataModule1.qryUsuarioAfterInsert(DataSet: TDataSet);

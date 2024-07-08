@@ -142,7 +142,7 @@ inherited CadClienteF: TCadClienteF
       object lblNome: TLabel[2]
         Left = 40
         Height = 22
-        Top = 184
+        Top = 186
         Width = 61
         Caption = 'Nome: '
         Font.CharSet = ANSI_CHARSET
@@ -155,7 +155,7 @@ inherited CadClienteF: TCadClienteF
       object lblTipo: TLabel[3]
         Left = 752
         Height = 22
-        Top = 184
+        Top = 186
         Width = 117
         Caption = 'Tipo Pessoa: '
         Font.CharSet = ANSI_CHARSET
@@ -181,7 +181,7 @@ inherited CadClienteF: TCadClienteF
       object lblCPFCNPJ: TLabel[5]
         Left = 432
         Height = 22
-        Top = 188
+        Top = 186
         Width = 104
         Caption = 'CPF/CNPJ: '
         Font.CharSet = ANSI_CHARSET

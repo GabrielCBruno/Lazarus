@@ -1,20 +1,20 @@
 inherited CadCategoriaF: TCadCategoriaF
-  Left = 361
-  Height = 549
-  Top = 68
+  Left = 644
+  Height = 537
+  Top = 153
   Width = 741
   Caption = 'Cadastro de Categoria'
-  ClientHeight = 549
+  ClientHeight = 537
   ClientWidth = 741
   OnClose = FormClose
   OnCreate = FormCreate
   inherited pagPrincipal: TPageControl
-    Height = 549
+    Height = 537
     Width = 741
     ActivePage = pagPesquisa
     TabIndex = 0
     inherited pagPesquisa: TTabSheet
-      ClientHeight = 521
+      ClientHeight = 509
       ClientWidth = 733
       inherited Panel1: TPanel
         Width = 733
@@ -34,7 +34,7 @@ inherited CadCategoriaF: TCadCategoriaF
         end
       end
       inherited Panel2: TPanel
-        Top = 451
+        Top = 439
         Width = 733
         ClientWidth = 733
         inherited bitbtnNovo: TBitBtn
@@ -46,7 +46,7 @@ inherited CadCategoriaF: TCadCategoriaF
         end
       end
       inherited DBGridPrincipal: TDBGrid
-        Height = 371
+        Height = 359
         Width = 733
         Columns = <        
           item
@@ -90,10 +90,10 @@ inherited CadCategoriaF: TCadCategoriaF
       end
     end
     inherited pagCadastro: TTabSheet
-      ClientHeight = 521
+      ClientHeight = 509
       ClientWidth = 733
       inherited Panel3: TPanel
-        Top = 451
+        Top = 439
         Width = 733
         ClientWidth = 733
         inherited bitbtnGravar: TBitBtn

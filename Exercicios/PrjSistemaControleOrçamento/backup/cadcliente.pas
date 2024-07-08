@@ -78,6 +78,10 @@ begin
       val := false;
     end;
   end;
+  if cbTipoPessoa.Text = '' then
+  begin
+    val := false;
+  end;
   if val = false then
   begin
        ShowMessage('Por favor, prencha todos os campos!');
