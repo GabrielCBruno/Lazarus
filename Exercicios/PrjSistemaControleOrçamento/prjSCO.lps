@@ -210,8 +210,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="33"/>
-        <CursorPos X="58" Y="50"/>
+        <TopLine Value="55"/>
+        <CursorPos X="28" Y="72"/>
         <UsageCount Value="33"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -383,7 +383,7 @@
         <UsageCount Value="20"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="4">
+    <JumpHistory HistoryIndex="6">
       <Position>
         <Filename Value="login.pas"/>
         <Caret Line="83" Column="24" TopLine="61"/>
@@ -403,6 +403,14 @@
       <Position>
         <Filename Value="login.pas"/>
         <Caret Line="89" Column="33" TopLine="62"/>
+      </Position>
+      <Position>
+        <Filename Value="login.pas"/>
+        <Caret Line="40" Column="12" TopLine="42"/>
+      </Position>
+      <Position>
+        <Filename Value="login.pas"/>
+        <Caret Line="78" Column="18" TopLine="56"/>
       </Position>
     </JumpHistory>
     <RunParams>

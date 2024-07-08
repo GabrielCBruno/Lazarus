@@ -45,7 +45,7 @@ implementation
 
 function TloginF.validarCampos () : Boolean;
 begin
-  if (edtUsuario.Text = '') and (edtSenha.Text = '') then
+  if (edtUsuario.Text = '') or (edtSenha.Text = '') then
   begin
        ShowMessage('Por Favor preencha os campos!');
        Result := false;

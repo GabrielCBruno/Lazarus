@@ -2,10 +2,10 @@ object loginF: TloginF
   Left = 644
   Height = 290
   Top = 291
-  Width = 394
+  Width = 396
   Caption = 'Tela de Login'
   ClientHeight = 290
-  ClientWidth = 394
+  ClientWidth = 396
   Color = clWhite
   OnClose = FormClose
   OnCreate = FormCreate
@@ -193,7 +193,7 @@ object loginF: TloginF
     TabOrder = 3
   end
   object Label3: TLabel
-    Left = 152
+    Left = 176
     Height = 34
     Top = 24
     Width = 69
@@ -212,8 +212,8 @@ object loginF: TloginF
       'select usuario, senha from usuarios;'
     )
     Params = <>
-    Left = 472
-    Top = 88
+    Left = 24
+    Top = 24
     object qryUsuariosusuario: TZRawStringField
       FieldKind = fkData
       FieldName = 'usuario'
@@ -237,7 +237,7 @@ object loginF: TloginF
   end
   object dsUsuarios: TDataSource
     DataSet = qryUsuarios
-    Left = 472
+    Left = 96
     Top = 24
   end
 end
