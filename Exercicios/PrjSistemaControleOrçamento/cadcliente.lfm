@@ -8,6 +8,8 @@ inherited CadClienteF: TCadClienteF
   OnShow = FormShow
   inherited pagPrincipal: TPageControl
     Width = 999
+    ActivePage = pagCadastro
+    TabIndex = 1
     inherited pagPesquisa: TTabSheet
       ClientWidth = 991
       inherited Panel1: TPanel

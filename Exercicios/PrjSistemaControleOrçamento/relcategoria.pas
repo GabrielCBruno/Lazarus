@@ -18,6 +18,8 @@ type
     frRepCategoria: TfrReport;
     qryCategoria: TZQuery;
     procedure bitbtnRelCategoriaClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
+    procedure FormShow(Sender: TObject);
   private
 
   public
@@ -38,6 +40,19 @@ begin
   frRepCategoria.LoadFromFile('RelCategoria.lrf');
   frRepCategoria.PrepareReport;
   frRepCategoria.ShowReport;
+  Close;
+end;
+
+procedure TrelCategoriaF.FormClose(Sender: TObject;
+  var CloseAction: TCloseAction);
+begin
+  qryCategoria.Close;
+  CloseAction:= caFree;
+end;
+
+procedure TrelCategoriaF.FormShow(Sender: TObject);
+begin
+  qryCategoria.Open;
 end;
 
 end.

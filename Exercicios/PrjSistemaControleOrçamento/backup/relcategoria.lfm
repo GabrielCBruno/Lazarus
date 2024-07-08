@@ -6,6 +6,8 @@ object relCategoriaF: TrelCategoriaF
   Caption = 'Relatório de Categoria'
   ClientHeight = 254
   ClientWidth = 550
+  OnClose = FormClose
+  OnShow = FormShow
   LCLVersion = '3.4.0.0'
   object bitbtnRelCategoria: TBitBtn
     Cursor = crHandPoint
@@ -79,7 +81,6 @@ object relCategoriaF: TrelCategoriaF
   end
   object qryCategoria: TZQuery
     Connection = DataModule1.ZConnection1
-    Active = True
     SQL.Strings = (
       'select * from categoria_produto;'
     )

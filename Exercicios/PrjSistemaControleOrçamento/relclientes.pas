@@ -56,6 +56,7 @@ begin
      frRepCliente.LoadFromFile('RelClientes.lrf');
      frRepCliente.PrepareReport;
      frRepCliente.ShowReport;
+     Close;
 end;
 
 end.

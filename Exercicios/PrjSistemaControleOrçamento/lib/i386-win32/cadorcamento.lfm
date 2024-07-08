@@ -1,7 +1,7 @@
 inherited CadOrcamentoF: TCadOrcamentoF
-  Left = 232
+  Left = 491
   Height = 520
-  Top = 109
+  Top = 204
   Width = 1100
   Caption = 'Orçamentos'
   ClientHeight = 520
@@ -11,6 +11,8 @@ inherited CadOrcamentoF: TCadOrcamentoF
   inherited pagPrincipal: TPageControl
     Height = 520
     Width = 1100
+    ActivePage = pagCadastro
+    TabIndex = 1
     OnChange = pagPrincipalChange
     inherited pagPesquisa: TTabSheet
       ClientHeight = 492
@@ -572,12 +574,12 @@ inherited CadOrcamentoF: TCadOrcamentoF
       end
     end
   end
-  object dsOrcamento: TDataSource[2]
+  object dsOrcamento: TDataSource[1]
     DataSet = DataModule1.qryOrcamento
     Left = 568
     Top = 112
   end
-  object dsOrcamentoItens: TDataSource[3]
+  object dsOrcamentoItens: TDataSource[2]
     DataSet = DataModule1.qryOrcamentoItens
     Left = 496
     Top = 112

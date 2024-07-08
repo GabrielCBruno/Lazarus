@@ -6,6 +6,8 @@ object relCategoriaF: TrelCategoriaF
   Caption = 'Relatório de Categoria'
   ClientHeight = 254
   ClientWidth = 550
+  OnClose = FormClose
+  OnShow = FormShow
   LCLVersion = '3.4.0.0'
   object bitbtnRelCategoria: TBitBtn
     Cursor = crHandPoint

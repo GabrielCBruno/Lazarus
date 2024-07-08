@@ -1,21 +1,21 @@
 object relProdutosF: TrelProdutosF
-  Left = 486
-  Height = 220
-  Top = 216
-  Width = 454
+  Left = 771
+  Height = 256
+  Top = 327
+  Width = 382
   Caption = 'Relatório de Produtos'
-  ClientHeight = 220
-  ClientWidth = 454
+  ClientHeight = 256
+  ClientWidth = 382
+  Color = clWhite
   OnClose = FormClose
-  OnCreate = FormCreate
   OnShow = FormShow
   LCLVersion = '3.4.0.0'
   object bitbtnRelProdutos: TBitBtn
     Cursor = crHandPoint
-    Left = 48
-    Height = 52
-    Top = 72
-    Width = 347
+    Left = 32
+    Height = 49
+    Top = 96
+    Width = 320
     Caption = 'Imprimir Relatório de Produtos'
     Font.CharSet = ANSI_CHARSET
     Font.Height = -16
@@ -80,91 +80,19 @@ object relProdutosF: TrelProdutosF
     ParentFont = False
     TabOrder = 0
   end
-  object qryProdutosRelatorio: TZQuery
+  object qryProdutos: TZQuery
     Connection = DataModule1.ZConnection1
-    Active = True
     SQL.Strings = (
       'select * from produto;'
     )
     Params = <>
-    Left = 352
-    Top = 151
-    object qryProdutosRelatorioprodutoid: TZIntegerField
-      FieldKind = fkData
-      FieldName = 'produtoid'
-      Index = 0
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = True
-    end
-    object qryProdutosRelatoriocategoriaprodutoid: TZIntegerField
-      FieldKind = fkData
-      FieldName = 'categoriaprodutoid'
-      Index = 1
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = True
-    end
-    object qryProdutosRelatoriods_produto: TZRawStringField
-      FieldKind = fkData
-      FieldName = 'ds_produto'
-      Index = 2
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = True
-      Size = 50
-    end
-    object qryProdutosRelatorioobs_produto: TZRawStringField
-      FieldKind = fkData
-      FieldName = 'obs_produto'
-      Index = 3
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = False
-      Size = 300
-    end
-    object qryProdutosRelatoriovl_venda_produto: TZBCDField
-      FieldKind = fkData
-      FieldName = 'vl_venda_produto'
-      Index = 4
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = True
-      Precision = 15
-      Currency = False
-      MaxValue = 0
-      MinValue = 0
-      Size = 2
-    end
-    object qryProdutosRelatoriodt_cadastro_produto: TZDateTimeField
-      FieldKind = fkData
-      FieldName = 'dt_cadastro_produto'
-      Index = 5
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = True
-    end
-    object qryProdutosRelatoriostatus_produto: TZRawStringField
-      FieldKind = fkData
-      FieldName = 'status_produto'
-      Index = 6
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = True
-      Size = 10
-    end
+    Left = 280
+    Top = 192
   end
   object frDBDataSet1: TfrDBDataSet
-    DataSet = qryProdutosRelatorio
-    Left = 216
-    Top = 152
+    DataSet = qryProdutos
+    Left = 168
+    Top = 192
   end
   object frRepProdutos: TfrReport
     Dataset = frDBDataSet1
@@ -172,7 +100,7 @@ object relProdutosF: TrelProdutosF
     Options = []
     PreviewButtons = [pbZoom, pbLoad, pbSave, pbPrint, pbFind, pbHelp, pbExit, pbSettings, pbPageSetup]
     DataType = dtDataSet
-    Left = 80
-    Top = 158
+    Left = 64
+    Top = 189
   end
 end

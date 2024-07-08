@@ -53,7 +53,7 @@ end;
 
 procedure TrelClientesF.bitbtnRelClientesClick(Sender: TObject);
 begin
-     frRepCliente.LoadFromFile('relOrcamento.lrf');
+     frRepCliente.LoadFromFile('RelClientes.lrf');
      frRepCliente.PrepareReport;
      frRepCliente.ShowReport;
 end;

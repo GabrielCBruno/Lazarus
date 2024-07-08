@@ -186,6 +186,14 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit>
+      <Unit>
+        <Filename Value="relprodutos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="relProdutosF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="relProdutos"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

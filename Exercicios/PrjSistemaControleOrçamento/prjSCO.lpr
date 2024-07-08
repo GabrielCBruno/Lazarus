@@ -13,7 +13,7 @@ uses
   Forms, datetimectrls, zcomponent, MenuPrincipal, CadModelo, CadCategoria,
   dmPrincipal, CadCliente, CadProduto, CadUsuario, CadOrcamento, relClientes,
   CadItemOrc, TelaPesqCliente, relCategoria, sobre, TelaPesqProduto, 
-TelaPesqCategoria, relOrcamento, login;
+TelaPesqCategoria, relOrcamento, login, relProdutos;
 
 {$R *.res}
 

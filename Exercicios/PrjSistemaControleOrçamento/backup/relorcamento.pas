@@ -18,6 +18,8 @@ type
     frRepOrcamento: TfrReport;
     qryOrcamento: TZQuery;
     procedure bitbtnRelOrcamentoClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
+    procedure FormShow(Sender: TObject);
   private
 
   public
@@ -35,9 +37,21 @@ implementation
 
 procedure TrelOrcamentoF.bitbtnRelOrcamentoClick(Sender: TObject);
 begin
-  frRepOrcamento.LoadFromFile('relOrcamento.lrf');
+  frRepOrcamento.LoadFromFile('RelOrcamento.lrf');
   frRepOrcamento.PrepareReport;
   frRepOrcamento.ShowReport;
+end;
+
+procedure TrelOrcamentoF.FormClose(Sender: TObject;
+  var CloseAction: TCloseAction);
+begin
+    qryOrcamento.Close;
+    CloseAction := caFree;
+end;
+
+procedure TrelOrcamentoF.FormShow(Sender: TObject);
+begin
+     qryOrcamento.Open;
 end;
 
 end.

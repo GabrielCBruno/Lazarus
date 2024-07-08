@@ -7,7 +7,7 @@
     <KeyWords Value=""/>
     <Comments Value=""/>
     <ReportCreateDate Value="1899-12-30 00:00:00"/>
-    <ReportLastChange Value="2024-07-04 21:41:25"/>
+    <ReportLastChange Value="2024-07-08 17:00:48"/>
     <ReportVersionBuild Value=""/>
     <ReportVersionMajor Value=""/>
     <ReportVersionMinor Value=""/>
@@ -131,9 +131,9 @@
           <StreamMode Value="0"/>
           <Size>
             <Left Value="0"/>
-            <Top Value="1000"/>
+            <Top Value="1004"/>
             <Width Value="752"/>
-            <Height Value="60"/>
+            <Height Value="56"/>
           </Size>
           <Flags Value="48"/>
           <Data>
@@ -159,7 +159,7 @@
           <StreamMode Value="0"/>
           <Size>
             <Left Value="0"/>
-            <Top Value="120"/>
+            <Top Value="112"/>
             <Width Value="760"/>
             <Height Value="0"/>
           </Size>
@@ -184,7 +184,7 @@
           <Typ Value="gtMemo"/>
           <StreamMode Value="0"/>
           <Size>
-            <Left Value="160"/>
+            <Left Value="152"/>
             <Top Value="48"/>
             <Width Value="424"/>
             <Height Value="38"/>
@@ -219,7 +219,7 @@
             <Size Value="20"/>
             <Color Value="clBlack"/>
             <Charset Value="0"/>
-            <Style Value=""/>
+            <Style Value="fsUnderline"/>
           </Font>
           <Highlight>
             <FontStyle Value="2"/>
@@ -349,7 +349,7 @@
           <Data>
             <Format Value="556"/>
             <FormatStr Value=""/>
-            <Memo Value="Id&#xD;&#xA;"/>
+            <Memo Value="ID&#xD;&#xA;"/>
             <Script Value=""/>
             <GapX Value="0"/>
             <GapY Value="0"/>
@@ -780,9 +780,9 @@
           <Typ Value="gtMemo"/>
           <StreamMode Value="0"/>
           <Size>
-            <Left Value="36"/>
-            <Top Value="1032"/>
-            <Width Value="216"/>
+            <Left Value="20"/>
+            <Top Value="1024"/>
+            <Width Value="352"/>
             <Height Value="22"/>
           </Size>
           <Flags Value="3"/>
@@ -797,7 +797,7 @@
           <Data>
             <Format Value="556"/>
             <FormatStr Value=""/>
-            <Memo Value="[DATE]   [TIME]&#xD;&#xA;"/>
+            <Memo Value="Data da Emissão: [DATE]   [TIME]&#xD;&#xA;"/>
             <Script Value=""/>
             <GapX Value="0"/>
             <GapY Value="0"/>
@@ -837,7 +837,7 @@
           <StreamMode Value="0"/>
           <Size>
             <Left Value="0"/>
-            <Top Value="1012"/>
+            <Top Value="1008"/>
             <Width Value="756"/>
             <Height Value="0"/>
           </Size>

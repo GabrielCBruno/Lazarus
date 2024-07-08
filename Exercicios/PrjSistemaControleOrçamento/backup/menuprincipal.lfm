@@ -6,7 +6,6 @@ object MenuPrincipalF: TMenuPrincipalF
   Caption = 'Sistema de Controle de Orçamentos'
   Color = clWhite
   Menu = MainMenu1
-  OnCreate = FormCreate
   LCLVersion = '3.4.0.0'
   WindowState = wsMaximized
   object MainMenu1: TMainMenu

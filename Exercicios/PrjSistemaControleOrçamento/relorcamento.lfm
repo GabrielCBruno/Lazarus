@@ -1,11 +1,13 @@
 object relOrcamentoF: TrelOrcamentoF
-  Left = 469
+  Left = 764
   Height = 246
-  Top = 192
+  Top = 333
   Width = 445
   Caption = 'Relatório de Orçamento'
   ClientHeight = 246
   ClientWidth = 445
+  OnClose = FormClose
+  OnShow = FormShow
   LCLVersion = '3.4.0.0'
   object bitbtnRelOrcamento: TBitBtn
     Cursor = crHandPoint
