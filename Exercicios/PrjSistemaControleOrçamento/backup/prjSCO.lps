@@ -19,7 +19,6 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="MenuPrincipal"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="98"/>
         <CursorPos X="5" Y="118"/>
@@ -118,10 +117,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="relClientes"/>
-        <EditorIndex Value="-1"/>
+        <EditorIndex Value="3"/>
         <TopLine Value="25"/>
-        <CursorPos X="3" Y="34"/>
+        <CursorPos X="12" Y="59"/>
         <UsageCount Value="63"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="caditemorc.pas"/>
@@ -154,10 +155,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="relCategoria"/>
-        <EditorIndex Value="-1"/>
+        <EditorIndex Value="2"/>
         <TopLine Value="21"/>
-        <CursorPos X="24" Y="49"/>
+        <CursorPos X="3" Y="43"/>
         <UsageCount Value="47"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="sobre.pas"/>
@@ -201,10 +204,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="relOrcamento"/>
-        <EditorIndex Value="-1"/>
+        <EditorIndex Value="4"/>
         <TopLine Value="21"/>
-        <CursorPos X="29" Y="42"/>
+        <CursorPos X="9" Y="43"/>
         <UsageCount Value="37"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="login.pas"/>
@@ -225,10 +230,13 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="relProdutos"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="21"/>
-        <CursorPos X="25" Y="21"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="20"/>
+        <CursorPos X="9" Y="43"/>
         <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="Drivers\lazarus\cadcliente.pas"/>
@@ -385,7 +393,7 @@
         <UsageCount Value="20"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="14">
+    <JumpHistory HistoryIndex="18">
       <Position>
         <Filename Value="login.pas"/>
         <Caret Line="83" Column="24" TopLine="61"/>
@@ -445,6 +453,22 @@
       <Position>
         <Filename Value="menuprincipal.pas"/>
         <Caret Line="118" Column="5" TopLine="98"/>
+      </Position>
+      <Position>
+        <Filename Value="relcategoria.pas"/>
+        <Caret Line="49" Column="24" TopLine="21"/>
+      </Position>
+      <Position>
+        <Filename Value="relclientes.pas"/>
+        <Caret Line="34" Column="3" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="relorcamento.pas"/>
+        <Caret Line="42" Column="29" TopLine="21"/>
+      </Position>
+      <Position>
+        <Filename Value="relprodutos.pas"/>
+        <Caret Line="21" Column="25" TopLine="21"/>
       </Position>
     </JumpHistory>
     <RunParams>
