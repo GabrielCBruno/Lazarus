@@ -1,6 +1,6 @@
 inherited CadClienteF: TCadClienteF
-  Left = 249
-  Top = 132
+  Left = 497
+  Top = 152
   Width = 999
   Caption = 'Cadastro de Cliente'
   ClientWidth = 999
@@ -14,41 +14,16 @@ inherited CadClienteF: TCadClienteF
         Width = 991
         ClientWidth = 991
         inherited Label1: TLabel
-          Width = 117
-          Caption = 'Pesquisar por: '
+          Width = 137
+          Caption = 'Pesquisar por ID: '
         end
         inherited edtPesquisar: TEdit
-          Left = 256
-          Width = 240
-          NumbersOnly = False
-          TabOrder = 1
+          Left = 184
+          Width = 64
         end
         inherited bitbtnPesquisar: TBitBtn
-          Left = 504
+          Left = 264
           OnClick = bitbtnPesquisarClick
-          TabOrder = 2
-        end
-        object cbPesquisar: TComboBox[3]
-          Cursor = crHandPoint
-          Left = 160
-          Height = 26
-          Top = 24
-          Width = 88
-          Font.CharSet = ANSI_CHARSET
-          Font.Height = -16
-          Font.Name = 'Arial'
-          Font.Pitch = fpVariable
-          Font.Quality = fqDraft
-          ItemHeight = 18
-          ItemIndex = 0
-          Items.Strings = (
-            'ID'
-            'Nome'
-          )
-          ParentFont = False
-          ReadOnly = True
-          TabOrder = 0
-          Text = 'ID'
         end
       end
       inherited Panel2: TPanel
@@ -153,13 +128,11 @@ inherited CadClienteF: TCadClienteF
         inherited bitbtnExcluir: TBitBtn
           Width = 83
           OnClick = bitbtnExcluirClick
-          TabOrder = 2
         end
         inherited bitbtnCancelar: TBitBtn
           Left = 864
           Width = 105
           OnClick = bitbtnCancelarClick
-          TabOrder = 1
         end
       end
       inherited lblTitulo: TLabel
@@ -234,23 +207,7 @@ inherited CadClienteF: TCadClienteF
         ParentFont = False
         TabOrder = 1
       end
-      object DBTipo: TDBEdit[7]
-        Left = 872
-        Height = 26
-        Top = 184
-        Width = 56
-        DataField = 'tipo_cliente'
-        DataSource = dsCliente
-        Font.CharSet = ANSI_CHARSET
-        Font.Height = -16
-        Font.Name = 'Arial'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        MaxLength = 0
-        ParentFont = False
-        TabOrder = 3
-      end
-      object DBId: TDBEdit[8]
+      object DBId: TDBEdit[7]
         Left = 72
         Height = 26
         Top = 128
@@ -268,7 +225,7 @@ inherited CadClienteF: TCadClienteF
         ParentFont = False
         TabOrder = 0
       end
-      object DBCPF: TDBEdit[9]
+      object DBCPF: TDBEdit[8]
         Left = 536
         Height = 26
         Top = 184
@@ -283,6 +240,28 @@ inherited CadClienteF: TCadClienteF
         MaxLength = 0
         ParentFont = False
         TabOrder = 2
+      end
+      object cbTipoPessoa: TDBComboBox[9]
+        Cursor = crHandPoint
+        Left = 872
+        Height = 26
+        Top = 184
+        Width = 64
+        DataField = 'tipo_cliente'
+        DataSource = dsCliente
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ItemHeight = 18
+        Items.Strings = (
+          'F'
+          'J'
+        )
+        MaxLength = 0
+        ParentFont = False
+        TabOrder = 3
       end
     end
   end

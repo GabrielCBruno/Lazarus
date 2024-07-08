@@ -1,7 +1,7 @@
 object CadModeloF: TCadModeloF
-  Left = 257
+  Left = 652
   Height = 551
-  Top = 56
+  Top = 130
   Width = 913
   Caption = 'Modelo'
   ClientHeight = 551
@@ -524,11 +524,5 @@ object CadModeloF: TCadModeloF
         ParentFont = False
       end
     end
-  end
-  object PaintBox1: TPaintBox
-    Left = 8
-    Height = 105
-    Top = 8
-    Width = 105
   end
 end

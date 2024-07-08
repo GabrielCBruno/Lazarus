@@ -13,11 +13,10 @@ type
   { TCadClienteF }
 
   TCadClienteF = class(TCadModeloF)
-    cbPesquisar: TComboBox;
+    cbTipoPessoa: TDBComboBox;
     DBNome: TDBEdit;
     DBId: TDBEdit;
     DBCPF: TDBEdit;
-    DBTipo: TDBEdit;
     dsCliente: TDataSource;
     lblNome: TLabel;
     lblTipo: TLabel;
@@ -95,25 +94,13 @@ end;
 procedure TCadClienteF.bitbtnPesquisarClick(Sender: TObject);
 var
   cod : Integer;
-  nome : String;
 begin
      if edtPesquisar.Text <> '' then
      begin
-          if cbPesquisar.Text = 'ID' then
-          begin
-               dmPrincipal.DataModule1.qryCliente.Close;
-               cod := StrToInt(edtPesquisar.Text);
-               dmPrincipal.DataModule1.qryCliente.SQL.Text := 'select * from cliente where clienteid = ' + IntToStr(cod) + ';';
-               dmPrincipal.DataModule1.qryCliente.Open;
-          end
-          else
-          begin
-            DataModule1.qryCliente.Close;
-            nome := edtPesquisar.Text;
-            nome := UpperCase(nome);
-            dmPrincipal.DataModule1.qryCliente.SQL.Text := 'select * from cliente where nome_cliente LIKE ''' + nome + '%'';';
-            dmPrincipal.DataModule1.qryCliente.Open;
-          end;
+          DataModule1.qryCliente.Close;
+          cod := StrToInt(edtPesquisar.Text);
+          DataModule1.qryCliente.SQL.Text := 'select * from cliente where clienteid = ' + IntToStr(cod) + ';';
+          DataModule1.qryCliente.Open;
      end
      else
      begin

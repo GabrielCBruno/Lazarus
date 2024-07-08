@@ -24,6 +24,7 @@ type
     Label1: TLabel;
     lblTitulo: TLabel;
     pagPrincipal: TPageControl;
+    PaintBox1: TPaintBox;
     Panel1: TPanel;
     Panel2: TPanel;
     Panel3: TPanel;

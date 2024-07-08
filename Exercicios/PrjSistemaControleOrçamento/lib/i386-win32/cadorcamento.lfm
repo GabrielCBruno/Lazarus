@@ -572,12 +572,12 @@ inherited CadOrcamentoF: TCadOrcamentoF
       end
     end
   end
-  object dsOrcamento: TDataSource[1]
+  object dsOrcamento: TDataSource[2]
     DataSet = DataModule1.qryOrcamento
     Left = 568
     Top = 112
   end
-  object dsOrcamentoItens: TDataSource[2]
+  object dsOrcamentoItens: TDataSource[3]
     DataSet = DataModule1.qryOrcamentoItens
     Left = 496
     Top = 112

@@ -30,7 +30,7 @@ type
   private
 
   public
-
+     function validarCampos () : Boolean;
   end;
 
 var
@@ -41,6 +41,19 @@ implementation
 {$R *.lfm}
 
 { TloginF }
+
+function TloginF.validarCampos () : Boolean;
+begin
+  if (edtUsuario.Text = '') and (edtSenha.Text = '') then
+  begin
+       ShowMessage('Por Favor preencha os campos!');
+       Result := false;
+  end
+  else
+  begin
+       Result := true;
+  end;
+end;
 
 procedure TloginF.bitbtnSairClick(Sender: TObject);
 begin
@@ -61,21 +74,24 @@ procedure TloginF.bitbtnEntrarClick(Sender: TObject);
 var
   usuario, senha : String;
 begin
-  usuario := edtUsuario.Text;
-  senha := edtSenha.Text;
-  qryUsuarios.Close;
-  qryUsuarios.SQL.Text := 'select usuario, senha from usuarios where usuario = ' + usuario + ' and senha = ' + senha + ';';
-  qryUsuarios.Open;
-  if (usuario = qryUsuariosusuario.AsString) and (senha = qryUsuariossenha.AsString) then
-  begin
-     MenuPrincipalF := TMenuPrincipalF.Create(Self);
-     MenuPrincipalF.ShowModal;
-     Close;
-  end
-  else
-  begin
-    ShowMessage('Usuário ou senha incorretos!');
-  end;
+    if (validarCampos = true) then
+    begin
+      usuario := edtUsuario.Text;
+      senha := edtSenha.Text;
+      qryUsuarios.Close;
+      qryUsuarios.SQL.Text := 'select usuario, senha from usuarios where usuario = ''' + usuario + ''' and senha = ''' + senha + ''';';
+      qryUsuarios.Open;
+      if (usuario = qryUsuariosusuario.AsString) and (senha = qryUsuariossenha.AsString) then
+      begin
+         MenuPrincipalF := TMenuPrincipalF.Create(Self);
+         MenuPrincipalF.ShowModal;
+         Close;
+      end
+      else
+      begin
+        ShowMessage('Usuário ou senha incorretos!');
+      end;
+    end;
 end;
 
 end.
