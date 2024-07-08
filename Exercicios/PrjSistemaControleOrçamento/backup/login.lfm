@@ -1,19 +1,19 @@
 object loginF: TloginF
-  Left = 759
-  Height = 246
-  Top = 349
-  Width = 402
+  Left = 644
+  Height = 290
+  Top = 291
+  Width = 394
   Caption = 'Tela de Login'
-  ClientHeight = 246
-  ClientWidth = 402
+  ClientHeight = 290
+  ClientWidth = 394
   Color = clWhite
   OnClose = FormClose
   OnCreate = FormCreate
   LCLVersion = '3.4.0.0'
   object Label1: TLabel
-    Left = 32
+    Left = 24
     Height = 34
-    Top = 48
+    Top = 80
     Width = 110
     Caption = 'Usuário: '
     Font.CharSet = ANSI_CHARSET
@@ -24,9 +24,9 @@ object loginF: TloginF
     ParentFont = False
   end
   object Label2: TLabel
-    Left = 48
+    Left = 40
     Height = 34
-    Top = 104
+    Top = 136
     Width = 88
     Caption = 'Senha: '
     Font.CharSet = ANSI_CHARSET
@@ -37,9 +37,9 @@ object loginF: TloginF
     ParentFont = False
   end
   object edtUsuario: TEdit
-    Left = 144
+    Left = 136
     Height = 30
-    Top = 52
+    Top = 84
     Width = 232
     Font.CharSet = ANSI_CHARSET
     Font.Height = -19
@@ -51,9 +51,9 @@ object loginF: TloginF
     TabOrder = 0
   end
   object edtSenha: TEdit
-    Left = 144
+    Left = 136
     Height = 30
-    Top = 111
+    Top = 143
     Width = 232
     EchoMode = emPassword
     Font.CharSet = ANSI_CHARSET
@@ -68,9 +68,9 @@ object loginF: TloginF
   end
   object bitbtnEntrar: TBitBtn
     Cursor = crHandPoint
-    Left = 72
+    Left = 64
     Height = 40
-    Top = 184
+    Top = 216
     Width = 112
     Caption = 'Entrar'
     Font.CharSet = ANSI_CHARSET
@@ -108,9 +108,9 @@ object loginF: TloginF
   end
   object bitbtnSair: TBitBtn
     Cursor = crHandPoint
-    Left = 264
+    Left = 248
     Height = 40
-    Top = 184
+    Top = 216
     Width = 88
     Caption = 'Sair'
     Font.CharSet = ANSI_CHARSET
@@ -192,14 +192,28 @@ object loginF: TloginF
     ParentFont = False
     TabOrder = 3
   end
+  object Label3: TLabel
+    Left = 152
+    Height = 34
+    Top = 24
+    Width = 69
+    Caption = 'Login'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -29
+    Font.Name = 'Cambria'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsUnderline]
+    ParentFont = False
+  end
   object qryUsuarios: TZQuery
     Connection = DataModule1.ZConnection1
     SQL.Strings = (
       'select usuario, senha from usuarios;'
     )
     Params = <>
-    Left = 168
-    Top = 8
+    Left = 472
+    Top = 88
     object qryUsuariosusuario: TZRawStringField
       FieldKind = fkData
       FieldName = 'usuario'
@@ -223,7 +237,7 @@ object loginF: TloginF
   end
   object dsUsuarios: TDataSource
     DataSet = qryUsuarios
-    Left = 232
-    Top = 8
+    Left = 472
+    Top = 24
   end
 end

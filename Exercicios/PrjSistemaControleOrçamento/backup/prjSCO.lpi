@@ -175,6 +175,7 @@
         <Filename Value="relorcamento.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="relOrcamentoF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="relOrcamento"/>
       </Unit>

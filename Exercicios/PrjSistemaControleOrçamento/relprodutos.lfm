@@ -1,11 +1,12 @@
 object relProdutosF: TrelProdutosF
-  Left = 486
+  Left = 757
   Height = 220
-  Top = 216
+  Top = 351
   Width = 454
   Caption = 'Relatório de Produtos'
   ClientHeight = 220
   ClientWidth = 454
+  Color = clWhite
   OnClose = FormClose
   OnCreate = FormCreate
   OnShow = FormShow

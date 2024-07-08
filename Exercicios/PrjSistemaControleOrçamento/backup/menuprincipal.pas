@@ -30,6 +30,7 @@ type
     miCadastrar: TMenuItem;
     miVendas: TMenuItem;
     procedure Button1Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
     procedure miSobreClick(Sender: TObject);
     procedure RelatorioCategoriaClick(Sender: TObject);
     procedure RelatorioOrcamentoClick(Sender: TObject);

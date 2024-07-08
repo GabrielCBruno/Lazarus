@@ -1,11 +1,12 @@
 object relProdutosF: TrelProdutosF
-  Left = 655
+  Left = 772
   Height = 220
-  Top = 258
+  Top = 351
   Width = 454
   Caption = 'Relatório de Produtos'
   ClientHeight = 220
   ClientWidth = 454
+  Color = clWhite
   OnClose = FormClose
   OnCreate = FormCreate
   OnShow = FormShow
@@ -82,7 +83,6 @@ object relProdutosF: TrelProdutosF
   end
   object qryProdutosRelatorio: TZQuery
     Connection = DataModule1.ZConnection1
-    Active = True
     SQL.Strings = (
       'select * from produto;'
     )

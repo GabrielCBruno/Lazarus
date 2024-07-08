@@ -20,6 +20,7 @@ type
     edtSenha: TEdit;
     Label1: TLabel;
     Label2: TLabel;
+    Label3: TLabel;
     qryUsuarios: TZQuery;
     qryUsuariossenha: TZRawStringField;
     qryUsuariosusuario: TZRawStringField;
