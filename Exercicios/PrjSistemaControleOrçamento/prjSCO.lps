@@ -44,7 +44,7 @@
         <UnitName Value="CadCategoria"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="107"/>
-        <CursorPos Y="112"/>
+        <CursorPos X="26" Y="116"/>
         <UsageCount Value="101"/>
       </Unit>
       <Unit>
@@ -114,10 +114,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="relClientes"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="39"/>
-        <CursorPos X="6" Y="56"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="24"/>
+        <CursorPos X="37" Y="56"/>
         <UsageCount Value="60"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="caditemorc.pas"/>
@@ -127,8 +129,8 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadItemOrc"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="52"/>
-        <CursorPos X="6" Y="61"/>
+        <TopLine Value="103"/>
+        <CursorPos X="3" Y="135"/>
         <UsageCount Value="56"/>
       </Unit>
       <Unit>
@@ -150,9 +152,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="relCategoria"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="18"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="7"/>
+        <CursorPos X="33" Y="38"/>
         <UsageCount Value="44"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="sobre.pas"/>
@@ -173,8 +178,8 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="TelaPesqProduto"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="57"/>
-        <CursorPos X="3" Y="41"/>
+        <TopLine Value="49"/>
+        <CursorPos X="3" Y="53"/>
         <UsageCount Value="43"/>
       </Unit>
       <Unit>
@@ -193,12 +198,16 @@
         <Filename Value="relorcamento.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="relOrcamentoF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="relOrcamento"/>
-        <EditorIndex Value="-1"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
         <TopLine Value="4"/>
-        <CursorPos X="56" Y="20"/>
+        <CursorPos X="31" Y="27"/>
         <UsageCount Value="34"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="login.pas"/>
@@ -206,9 +215,9 @@
         <ComponentName Value="loginF"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="61"/>
+        <TopLine Value="59"/>
         <CursorPos X="26" Y="90"/>
+        <FoldState Value=" T1iK02A"/>
         <UsageCount Value="30"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>

@@ -35,7 +35,7 @@ implementation
 
 procedure TrelOrcamentoF.bitbtnRelOrcamentoClick(Sender: TObject);
 begin
-  frRepOrcamento.LoadFromFile('relOrcamento.lrf');
+  frRepOrcamento.LoadFromFile('RelOrcamento.lrf');
   frRepOrcamento.PrepareReport;
   frRepOrcamento.ShowReport;
 end;

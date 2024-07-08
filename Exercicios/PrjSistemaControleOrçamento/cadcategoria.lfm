@@ -11,6 +11,8 @@ inherited CadCategoriaF: TCadCategoriaF
   inherited pagPrincipal: TPageControl
     Height = 537
     Width = 741
+    ActivePage = pagPesquisa
+    TabIndex = 0
     inherited pagPesquisa: TTabSheet
       ClientHeight = 509
       ClientWidth = 733
@@ -49,6 +51,7 @@ inherited CadCategoriaF: TCadCategoriaF
         Columns = <        
           item
             Alignment = taCenter
+            Color = clWindow
             Font.CharSet = ANSI_CHARSET
             Font.Height = -16
             Font.Name = 'Arial'
@@ -56,6 +59,7 @@ inherited CadCategoriaF: TCadCategoriaF
             Font.Quality = fqDraft
             PickList.Strings = (            )
             Title.Alignment = taCenter
+            Title.Color = clBtnFace
             Title.Font.CharSet = ANSI_CHARSET
             Title.Font.Height = -16
             Title.Font.Name = 'Arial'

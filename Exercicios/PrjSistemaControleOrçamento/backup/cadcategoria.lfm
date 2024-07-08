@@ -51,6 +51,7 @@ inherited CadCategoriaF: TCadCategoriaF
         Columns = <        
           item
             Alignment = taCenter
+            Color = clSilver
             Font.CharSet = ANSI_CHARSET
             Font.Height = -16
             Font.Name = 'Arial'
@@ -96,6 +97,7 @@ inherited CadCategoriaF: TCadCategoriaF
         Top = 439
         Width = 733
         ClientWidth = 733
+        TabOrder = 2
         inherited bitbtnGravar: TBitBtn
           OnClick = bitbtnGravarClick
         end
@@ -154,7 +156,7 @@ inherited CadCategoriaF: TCadCategoriaF
         Font.Quality = fqDraft
         MaxLength = 0
         ParentFont = False
-        TabOrder = 1
+        TabOrder = 0
       end
       object DBedtiDesc: TDBEdit[5]
         Left = 112
@@ -170,7 +172,7 @@ inherited CadCategoriaF: TCadCategoriaF
         Font.Quality = fqDraft
         MaxLength = 50
         ParentFont = False
-        TabOrder = 2
+        TabOrder = 1
       end
     end
   end

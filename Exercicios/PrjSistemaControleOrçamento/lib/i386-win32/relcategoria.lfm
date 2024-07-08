@@ -79,7 +79,6 @@ object relCategoriaF: TrelCategoriaF
   end
   object qryCategoria: TZQuery
     Connection = DataModule1.ZConnection1
-    Active = True
     SQL.Strings = (
       'select * from categoria_produto;'
     )
