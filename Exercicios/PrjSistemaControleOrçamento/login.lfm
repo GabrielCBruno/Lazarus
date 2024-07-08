@@ -1,7 +1,7 @@
 object loginF: TloginF
-  Left = 765
+  Left = 500
   Height = 290
-  Top = 348
+  Top = 159
   Width = 396
   Caption = 'Tela de Login'
   ClientHeight = 290
