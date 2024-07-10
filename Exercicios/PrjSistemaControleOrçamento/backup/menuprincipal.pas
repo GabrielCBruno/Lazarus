@@ -69,7 +69,8 @@ end;
 
 procedure TMenuPrincipalF.RelatorioProdutoClick(Sender: TObject);
 begin
-
+  relProdutosF := TrelProdutosF.Create(Self);
+  relProdutosF.ShowModal;
 end;
 
 procedure TMenuPrincipalF.RelatorioCategoriaClick(Sender: TObject);

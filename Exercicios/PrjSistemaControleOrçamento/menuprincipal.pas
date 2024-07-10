@@ -6,14 +6,15 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, StdCtrls,
-  CadCategoria, Cadcliente, CadProduto, CadUsuario, CadOrcamento, relClientes,
-  relCategoria, sobre, relOrcamento, relProdutos;
+  ExtCtrls, CadCategoria, Cadcliente, CadProduto, CadUsuario, CadOrcamento,
+  relClientes, relCategoria, sobre, relOrcamento, relProdutos;
 
 type
 
   { TMenuPrincipalF }
 
   TMenuPrincipalF = class(TForm)
+    Image1: TImage;
     MainMenu1: TMainMenu;
     RelatorioProduto: TMenuItem;
     RelatorioOrcamento: TMenuItem;
