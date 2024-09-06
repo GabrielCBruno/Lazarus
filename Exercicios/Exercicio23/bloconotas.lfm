@@ -1,0 +1,81 @@
+object blocoNotasF: TblocoNotasF
+  Left = 401
+  Height = 386
+  Top = 118
+  Width = 642
+  Caption = 'Bloco de Notas'
+  ClientHeight = 386
+  ClientWidth = 642
+  Menu = menuPrincipal
+  LCLVersion = '3.4.0.0'
+  object fundo: TMemo
+    Left = 0
+    Height = 386
+    Top = 0
+    Width = 642
+    Align = alClient
+    BorderStyle = bsNone
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Cambria'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    ScrollBars = ssVertical
+    TabOrder = 0
+  end
+  object menuPrincipal: TMainMenu
+    Left = 232
+    Top = 24
+    object Arquivo: TMenuItem
+      Caption = 'Arquivo'
+      object Novo: TMenuItem
+        Caption = 'Novo'
+        OnClick = NovoClick
+      end
+      object Abrir: TMenuItem
+        Caption = 'Abrir'
+        OnClick = AbrirClick
+      end
+      object Salvar: TMenuItem
+        Caption = 'Salvar'
+        OnClick = SalvarClick
+      end
+      object Imprimir: TMenuItem
+        Caption = 'Imprimir'
+      end
+    end
+    object Editar: TMenuItem
+      Caption = 'Editar'
+      object Localizar: TMenuItem
+        Caption = 'Localizar'
+      end
+      object Substituir: TMenuItem
+        Caption = 'Substituir'
+      end
+    end
+    object Formatar: TMenuItem
+      Caption = 'Formatar'
+      object Fonte: TMenuItem
+        Caption = 'Fonte'
+        OnClick = FonteClick
+      end
+    end
+  end
+  object abrirArquivo: TOpenDialog
+    Filter = 'Documentos de texto (*.txt)|*.txt|Todos os Arquivos (*.*)|*.*'
+    Left = 232
+    Top = 96
+  end
+  object salvarArquivo: TSaveDialog
+    Filter = 'Documentos de texto (*.txt)|*.txt'
+    Left = 352
+    Top = 24
+  end
+  object fontArquivo: TFontDialog
+    MinFontSize = 0
+    MaxFontSize = 0
+    Left = 352
+    Top = 104
+  end
+end

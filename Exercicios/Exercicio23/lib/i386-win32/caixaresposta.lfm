@@ -1,0 +1,59 @@
+object caixaRespostaF: TcaixaRespostaF
+  Left = 491
+  Height = 94
+  Top = 265
+  Width = 307
+  Caption = 'Bloco de notas'
+  ClientHeight = 94
+  ClientWidth = 307
+  Color = clWhite
+  OnClose = FormClose
+  LCLVersion = '3.4.0.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 38
+    Top = 56
+    Width = 307
+    Align = alBottom
+    ClientHeight = 38
+    ClientWidth = 307
+    Color = 13948116
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 0
+    object btnSalvar: TButton
+      Cursor = crHandPoint
+      Left = 24
+      Height = 25
+      Top = 8
+      Width = 75
+      Caption = 'Salvar'
+      TabOrder = 0
+      OnClick = btnSalvarClick
+    end
+    object btnCancelar: TButton
+      Cursor = crHandPoint
+      Left = 208
+      Height = 25
+      Top = 8
+      Width = 75
+      Caption = 'Cancelar'
+      TabOrder = 1
+      OnClick = btnCancelarClick
+    end
+  end
+  object Label1: TLabel
+    Left = 40
+    Height = 22
+    Top = 16
+    Width = 232
+    Caption = 'Deseja salvar as alterações'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlue
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+end
