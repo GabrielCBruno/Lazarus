@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Lazarus Version="3.4"/>
+  <Compiler Value="C:\lazarus\fpc\3.2.2\bin\i386-win32\fpc.exe" Date="1488545472"/>
+  <Params Value=" -MDelphi -Scgi -O1 -g -gl -l -vewnhibq -FuC:\Users\Micro\Desktop\Gabriel\zeosdbo-8.0.0-stable\src\plain -FuC:\lazarus\packager\units\i386-win32 -FuC:\Users\Micro\Desktop\Gabriel\zeosdbo-8.0.0-stable\packages\lazarus\lib\zcore\i386-win32 -FuC:\Users\Micro\Desktop\Gabriel\zeosdbo-8.0.0-stable\packages\lazarus\ -FUC:\Users\Micro\Desktop\Gabriel\zeosdbo-8.0.0-stable\packages\lazarus\lib\zplain\i386-win32\ zplain.pas"/>
+</CONFIG>

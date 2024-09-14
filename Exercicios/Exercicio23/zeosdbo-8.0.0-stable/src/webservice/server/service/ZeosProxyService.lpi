@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+        <MainUnitHasScaledStatement Value="False"/>
+        <CompatibilityMode Value="True"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="Zeos Web Service Proxy Server"/>
+      <UseAppBundle Value="False"/>
+      <ResourceType Value="res"/>
+    </General>
+    <BuildModes Count="1">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <RequiredPackages Count="3">
+      <Item1>
+        <PackageName Value="wst_fcltransport"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="wst_core"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="LazDaemon"/>
+      </Item3>
+    </RequiredPackages>
+    <Units Count="20">
+      <Unit0>
+        <Filename Value="ZeosProxyService.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="zeosproxymapperunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ZeosProxyMapper"/>
+        <HasResources Value="True"/>
+        <UnitName Value="ZeosProxyMapperUnit"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="zeosproxyunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ZeosProxyDaemon"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\dbcproxyutils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DbcProxyUtils"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\zdbcproxymanagement.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ZDbcProxyManagement"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\dbcproxycleanupthread.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\dbcproxyconfigmanager.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DbcProxyConfigManager"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\dbcproxyconnectionmanager.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DbcProxyConnectionManager"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\dbcproxysecuritymodule.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DbcProxySecurityModule"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\yubiotp.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="YubiOtp"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\zeosproxy_imp.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\dbcproxyfilelogger.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DbcProxyFileLogger"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\dbcproxyldapsecuritymodule.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DbcProxyLdapSecurityModule"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\dbcproxyconfigutils.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\fpc_https_server.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="..\ZDbcProxyMgmtDriver.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="..\ZDbcProxyMgmtMetadata.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="..\ZDbcProxyMgmtStatement.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="..\ZPlainProxyMgmtDriver.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="..\dbcproxycertstore.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit19>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="ZeosProxyService"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="..;..\..\wsdl;..\..\..\core;..\..\..\parsesql;..\..\..\plain;..\..\..\dbc;..\DelphiOTP;..\..\..\..\..\synapse;..\..\..\..\..\mdns4delphi"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Other>
+      <CustomOptions Value="-dUseCThreads
+-dZEOS_DISABLE_ADO"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>
